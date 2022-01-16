@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "秘闻",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:文件/CodeLearning",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:文件/课程笔记",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.45713483146067,
+  "lineSizeMultiplier": 1.98567415730337,
+  "collapse-forces": false,
+  "centerStrength": 0.688235294117647,
+  "repelStrength": 10.8426966292135,
+  "linkStrength": 0.542134831460674,
+  "linkDistance": 278,
+  "scale": 0.6346285676930601,
+  "close": true
+}

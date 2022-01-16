@@ -1,0 +1,26 @@
+{
+  "obsidianCss": false,
+  "showFrontmatter": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "defaultViewMode": "source",
+  "showLineNumber": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "./resource",
+  "foldHeading": false,
+  "foldIndent": false,
+  "communityPluginSortOrder": "download",
+  "readableLineLength": true,
+  "legacyEditor": false,
+  "livePreview": true,
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "spellcheckLanguages": [],
+  "trashOption": "local"
+}

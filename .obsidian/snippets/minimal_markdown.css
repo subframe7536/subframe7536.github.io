@@ -1,0 +1,330 @@
+/*
+    --h1-color: #C94100;
+    --h2-color: #EE9B00;
+    --h3-color: #57C302;
+    --h4-color: #0AB6B9;
+    --h5-color: #5B5396;
+    --h6-color: #024C5B;
+*/
+
+
+/* =====字体设置===== */
+
+*,
+.mod-vertical.mod-root .view-content .document-search-container * {
+    font-family: '苹方-简' !important;
+}
+
+.workspace-split.mod-root .view-content * {
+    font-family: Consolas, '苹方-简' !important;
+}
+
+
+/*===== 链接 =====*/
+
+.external-link {
+    color: #58a8fa;
+}
+
+.external-link:hover {
+    color: #0481d4;
+    text-decoration: none;
+    background-color: #c1e3ffda;
+}
+
+.markdown-preview-view .internal-link {
+    color: orange !important;
+    padding: 4px 4px;
+    text-decoration: underline;
+    /* border: 1px solid #aaa; */
+    border-radius: 2px;
+    background-color: rgb(228, 237, 255);
+    transition: all 0.2s ease-in;
+}
+
+.markdown-preview-view .internal-link:hover {
+    box-shadow: 2px 2px 2px 0px #777 inset;
+    transition: all 0.2s;
+}
+
+.markdown-preview-view .internal-link.is-unresolved {
+    text-decoration: line-through;
+}
+
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+    padding: 0 0.15rem;
+}
+
+.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
+.cm-s-obsidian span.cm-formatting-link {
+    color: coral !important;
+    font-weight: bold;
+}
+
+.cm-link {
+    color: rgb(255, 187, 0) !important;
+}
+
+
+/*===== 键盘 =====*/
+
+kbd {
+    border: 1px solid #ffffff9e;
+    font-size: 1rem;
+    padding: 3px 6px;
+    margin: 0 3px;
+    background-color: #69b3f5 !important;
+    color: aliceblue;
+    user-select: none;
+    box-shadow: 2px 2px 4px #414141;
+}
+
+
+/* ===== 标题 ===== */
+
+
+/* 预览 */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 3px solid #EE9B0066;
+    transition: all 0.2s ease-in !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin: 5px 0 !important;
+}
+
+h1,
+h2 {
+    margin: 15px 0 !important;
+}
+
+h2:hover {
+    border-color: #EE9B00;
+    transition: all 0.2s ease-in !important;
+}
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+    position: absolute;
+    margin-left: -24px;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+h1:hover::before {
+    content: "H1";
+}
+
+h2:hover::before {
+    content: "H2";
+}
+
+h3:hover::before {
+    content: "H3";
+}
+
+h4:hover::before {
+    content: "H4";
+}
+
+h5:hover::before {
+    content: "H5";
+}
+
+h6:hover::before {
+    content: "H6";
+}
+
+.markdown-preview-view h4,
+.cm-s-obsidian .cm-header-4,
+.markdown-preview-view h5,
+.cm-s-obsidian .cm-header-5 {
+    font-variant: normal;
+}
+
+
+/* 编辑 */
+
+.cm-formatting-header {
+    font-size: 13px !important;
+}
+
+div .cm-formatting-header {
+    opacity: 0.4;
+}
+
+div.CodeMirror-activeline .cm-formatting-header {
+    opacity: 1;
+}
+
+
+/*===== 行内代码 =====*/
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
+    opacity: .3;
+}
+
+.markdown-preview-view code {
+    color: #C94100;
+}
+
+
+/*===== 高亮行 ===== */
+
+div.CodeMirror-activeline {
+    background-color: #caecff85 !important;
+    position: relative;
+}
+
+div.CodeMirror-activeline::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    z-index: 99;
+    background-color: #0073ff;
+}
+
+
+/* ===== 高亮 ===== */
+
+.markdown-preview-view mark {
+    border: 2px solid orange;
+}
+
+.cm-highlight:not(.cm-formatting-highlight) {
+    border: 2px solid orange;
+}
+
+.cm-formatting-highlight {
+    border: 2px solid var(--text-highlight-bg);
+    opacity: .3;
+}
+
+div.CodeMirror-activeline .cm-highlight {
+    border-color: var(--text-highlight-bg);
+}
+
+div.CodeMirror-activeline .cm-formatting-highlight {
+    border: 2px solid var(--text-highlight-bg);
+    opacity: 1;
+}
+
+
+/*===== 引用 =====*/
+
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-quote {
+    color: transparent !important;
+}
+
+div:not(.CodeMirror-activeline)>.HyperMD-quote,
+div.CodeMirror-activeline>.HyperMD-quote {
+    border-left: 7px solid #a9c9ff;
+}
+
+.markdown-preview-view blockquote {
+    border: none;
+    border-left: 7px solid #a9c9ff;
+}
+
+
+/*表格*/
+
+.markdown-preview-view table {
+    width: 100%;
+}
+
+.markdown-preview-view table>*>*>* {
+    border: 2px solid #aaa !important;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+    padding: 4px 10px !important;
+}
+
+.markdown-preview-view th {
+    background-color: #dddddd;
+    line-height: 32px;
+    height: 32px;
+}
+
+.markdown-preview-view tbody tr {
+    line-height: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+
+/* 列表 */
+
+ul {
+    margin: 10px auto;
+}
+
+body.minimal-rel-edit .cm-hmd-list-indent>.cm-tab:after {
+    content: none;
+}
+
+body.minimal-rel-preview .markdown-preview-view ul ul,
+body.minimal-rel-preview .markdown-preview-view ol ul,
+body.minimal-rel-preview .markdown-preview-view ul ol,
+body.minimal-rel-preview .markdown-preview-view ol ol {
+    margin-left: -25px;
+    border-width: 3px;
+    border-color: #aaa;
+    transition: all 0.2s ease-in;
+}
+
+body.minimal-rel-preview .markdown-preview-view ul ul:hover,
+body.minimal-rel-preview .markdown-preview-view ol ul:hover,
+body.minimal-rel-preview .markdown-preview-view ul ol:hover,
+body.minimal-rel-preview .markdown-preview-view ol ol:hover {
+    border-color: #a9c9ff;
+    transition: all 0.2s ease-in;
+}
+
+li::marker {
+    font-family: Consolas;
+    margin-left: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+/* 同步面板 */
+
+.workspace-leaf.is-highlighted:before {
+    background-color: rgba(146, 146, 146, 0.5) !important;
+}
+
+
+/* =====标签===== */
+
+a.tag {
+    border-color: #aaa;
+}
+
+a.tag:hover {
+    box-shadow: 1px 1px 2px 0px #414141 inset;
+    border-color: #aaa;
+}

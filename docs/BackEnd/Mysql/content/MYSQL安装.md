@@ -1,0 +1,1 @@
+打开`installer` -> 选择`developr default` -> 显示`excute`就点`excute`，没有就`next`&`no` ->  等待安装 -> 设置密码

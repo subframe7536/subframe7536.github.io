@@ -1,0 +1,217 @@
+/* 文件列表 */
+
+.nav-files-container>div>div.nav-folder-title {
+  visibility: hidden;
+  margin-bottom: -20px;
+}
+
+.nav-folder-children .nav-folder-children {
+  margin-left: 20px;
+  padding-left: 0;
+  border-radius: 0px;
+  transition: all 0.2s ease-in;
+}
+
+.theme-light .nav-folder-children .nav-folder-children {
+  border-left: 2px solid #bebebe;
+}
+
+.theme-dark .nav-folder-children .nav-folder-children {
+  border-left: 2px solid #3a3a3a;
+}
+
+.theme-light .nav-folder-children .nav-folder-children:hover {
+  border-left-color: #4086eec7;
+  transition: all 0.2s ease-in;
+}
+
+.theme-dark .nav-folder-children .nav-folder-children:hover {
+  border-left-color: #a9c9ffdd;
+  transition: all 0.2s ease-in;
+}
+
+.nav-file {
+  margin-left: 12px;
+}
+
+.nav-file-title {
+  padding-left: 2px;
+  margin: 4px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-file-tag {
+  color: #4086eec7 !important;
+  border: 1px solid #4086eec7;
+}
+
+.nav-file-title-content {
+  padding-left: 2px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.nav-folder-title {
+  margin-left: 8px;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+  line-height: 1.6 !important;
+  position: relative;
+}
+
+body:not(.is-grabbing) .nav-file-title:hover {
+  background-color: #e26fff23;
+}
+
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: #e9d8a623;
+}
+
+.theme-light .prompt .suggestion-item.is-selected,
+.theme-light .nav-file-title.is-active,
+.theme-light .nav-folder-title.is-active,
+.theme-light :not(.is-grabbing) .nav-file-title:hover,
+.theme-light :not(.is-grabbing) .nav-folder-title:hover {
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
+  border-radius: 4px;
+}
+
+.theme-light .nav-file-title.is-being-dragged,
+.theme-light .nav-file-title.is-active,
+.theme-light body:not(.is-grabbing) .nav-file-title.is-active:hover {
+  background-color: #b4f4ff !important;
+}
+
+.theme-light :not(.is-grabbing) .nav-file-title:hover {
+  background-color: #f7d8ff;
+  text-decoration: underline;
+}
+
+.theme-light :not(.is-grabbing) .nav-folder-title:hover {
+  background-color: #ffedb7;
+  text-decoration: underline;
+}
+
+.theme-dark :not(.is-grabbing) .nav-file-title:hover::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 9px;
+  top: 0;
+  background-color: #cd8fffdd;
+  border-radius: 5px;
+}
+
+.theme-dark :not(.is-grabbing) .nav-file-title:hover::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  right: 0px;
+  top: 0;
+  position: absolute;
+  background-color: #181c20;
+}
+
+.theme-dark :not(.is-grabbing) .nav-file-title.is-active:hover::after,
+.theme-dark :not(.is-grabbing) .nav-file-title.is-active::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 9px;
+  top: 0;
+  background-color: #a9c9ffdd;
+  border-radius: 5px;
+}
+
+.theme-dark :not(.is-grabbing) .nav-file-title.is-active:hover::before,
+.theme-dark :not(.is-grabbing) .nav-file-title.is-active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: #181c20;
+}
+
+.theme-dark :not(.is-grabbing) .nav-folder-title:hover::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  right: 0px;
+  top: 0;
+  position: absolute;
+  background-color: #e9d8a6dd;
+  border-radius: 5px;
+}
+
+.nav-folder-title-content {
+  padding-left: 6px;
+}
+
+
+/*大纲*/
+
+.outline .tree-item-self.is-clickable {
+  position: relative;
+  padding-left: 26px;
+}
+
+.outline .tree-item-self .collapse-icon {
+  position: absolute;
+  left: 20px;
+}
+
+.outline .tree-item {
+  padding-left: 15px;
+}
+
+.outline .tree-item-inner {
+  overflow: auto;
+  white-space: pre-wrap;
+  position: relative;
+}
+
+.theme-light .outline .tree-item>.tree-item-self:hover {
+  background-color: #e9d8a6;
+  text-decoration: underline;
+  box-shadow: 2px 2px 2px 0px #777 inset;
+}
+
+.theme-dark .outline .tree-item>.tree-item-self:hover::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  right: -8px;
+  top: 0;
+  position: absolute;
+  background-color: #e9d8a6dd;
+  border-radius: 5px;
+}
+
+
+/* 搜索 */
+
+.search-result-file-match {
+  font-size: 12px;
+}
+
+.workspace-tabs .search-input-container {
+  margin-top: 13px !important;
+}
+
+.search-result-file-match-replace-button {
+  display: none !important;
+}
+
+.backlink-pane .tree-item-inner {
+  font-size: 14px !important;
+}
+
+.obsidian-search-match-highlight {
+  border: 2px solid #e23d5a !important;
+  box-sizing: border-box;
+}

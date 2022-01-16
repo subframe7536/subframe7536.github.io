@@ -1,0 +1,315 @@
+.markdown-preview-view pre {
+  position: relative;
+}
+
+.markdown-preview-view pre[class*="language-"]:before {
+  font-weight: bold;
+  position: absolute;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  padding-left: 14px;
+  width: 100%;
+  left: 10px;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  top: 0px;
+  margin-left: -10px;
+  font-family: Consolas, "Microsoft YaHei";
+}
+
+.theme-light .markdown-preview-view pre[class*="language-"]:before {
+  background-color: #d1eafc;
+  color: #222;
+}
+
+.theme-dark .markdown-preview-view pre[class*="language-"]:before {
+  background-color: #2e4e68;
+  color: #ddd;
+}
+
+
+/* 复制代码按钮*/
+
+.copy-code-button {
+  box-sizing: border-box;
+  letter-spacing: 3px;
+  font-family: "Microsoft YaHei";
+  font-size: .8rem !important;
+  padding: 0 !important;
+  padding-left: 5px !important;
+  border-radius: 5px !important;
+  width: 50px;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  top: .3rem !important;
+  right: .3rem !important;
+  margin: 0px !important;
+  display: unset !important;
+}
+
+.theme-light .copy-code-button {
+  color: aliceblue !important;
+  background-color: rgb(135, 191, 255) !important;
+  transition: all 0.2s ease-in;
+}
+
+.theme-dark .copy-code-button {
+  color: rgb(190, 217, 241) !important;
+  background-color: rgb(54, 117, 189) !important;
+}
+
+.theme-light .copy-code-button:hover {
+  background-color: rgb(84, 164, 255) !important;
+  box-shadow: 1px 1px 1px 0px #777 inset;
+  transition: all 0.2s ease-in;
+}
+
+.theme-dark .copy-code-button:hover {
+  background-color: rgb(33, 84, 141) !important;
+}
+
+
+/*预览代码块*/
+
+.markdown-preview-section pre {
+  padding: .8rem !important;
+  border-radius: 8px;
+}
+
+.markdown-preview-section pre[class*="language-"] {
+  padding-top: 3rem !important;
+}
+
+.markdown-preview-section pre[class*="language-"] code {
+  padding: 0 !important;
+  font-size: 1rem !important;
+  line-height: 1.8rem;
+}
+
+
+/* 编辑代码块 */
+
+.cm-s-obsidian .HyperMD-codeblock>span {
+  /* padding-left: 8px; */
+  line-height: 30px !important;
+}
+
+.cm-s-obsidian .HyperMD-codeblock>span * {
+  font-size: 1rem;
+}
+
+
+/* 标注类型 */
+
+pre[class*='language-']:before {
+  content: "未知语言";
+}
+
+pre[class~='language-c']:before {
+  content: "C";
+}
+
+pre[class~='language-properties']:before {
+  content: "PROPERTIES";
+}
+
+pre[class~='language-python']:before {
+  content: "PYTHON";
+}
+
+pre[class~='language-nginx']:before {
+  content: "NGINX";
+}
+
+pre[class~='language-css']:before {
+  content: "CSS";
+}
+
+pre[class~='language-js']:before,
+pre[class~='language-javascript']:before {
+  content: "JS";
+}
+
+pre[class~='language-php']:before {
+  content: "PHP";
+}
+
+pre[class~='language-lua']:before {
+  content: "LUA";
+}
+
+pre[class~='language-shell']:before {
+  content: "SHELL";
+}
+
+pre[class~='language-powershell']:before {
+  content: "POWERSHELL";
+}
+
+pre[class~='language-flow']:before {
+  content: "FLOW";
+}
+
+pre[class~='language-sequence']:before {
+  content: "SEQUENCE";
+}
+
+pre[class~='language-sql']:before {
+  content: "SQL";
+}
+
+pre[class~='language-yml']:before,
+pre[class~='language-yaml']:before {
+  content: "YAML";
+}
+
+pre[class~='language-ini']:before {
+  content: "INI";
+}
+
+pre[class~='language-xml']:before {
+  content: "XML";
+}
+
+pre[class~='language-git']:before {
+  content: "GIT";
+}
+
+pre[class~='language-cs']:before {
+  content: "C#";
+}
+
+pre[class~='language-cpp']:before {
+  content: "C++";
+}
+
+pre[class~='language-java']:before {
+  content: "JAVA";
+}
+
+pre[class~='language-html']:before {
+  content: "HTML";
+}
+
+pre[class~='language-text']:before,
+pre[class~='language-txt']:before {
+  content: "TXT";
+}
+
+pre[class~='language-markdown']:before,
+pre[class~='language-md']:before {
+  content: "MARKDOWN";
+}
+
+pre[class~='language-bat']:before {
+  content: "BAT";
+}
+
+pre[class~='language-json']:before {
+  content: "JSON";
+}
+
+pre[class~='language-groovy']:before {
+  content: "GROOVY";
+}
+
+
+/*===== 语法高亮 =====*/
+
+.token.number {
+  color: #02b11f !important;
+  font-weight: bold;
+}
+
+.token.selector,
+.token.tag,
+.token.variable {
+  color: rgb(255, 77, 77) !important;
+}
+
+.token.property,
+.token.attr-name {
+  color: #eba000 !important;
+}
+
+.token.attr-value {
+  color: #02b11f !important;
+}
+
+.token.unit {
+  color: #41b1fc !important;
+}
+
+.token.property-access {
+  color: #ac80ff;
+}
+
+.token.doctype *,
+.token.comment,
+.token.comment * {
+  color: rgb(167, 167, 167) !important;
+}
+
+.language-json .token.punctuation {
+  color: #41b1fc !important;
+}
+
+
+/* light */
+
+.theme-light .markdown-preview-section pre code .url,
+.theme-light .markdown-preview-section pre code {
+  color: #000000 !important;
+}
+
+.theme-light .token.keyword {
+  color: #af6aff !important;
+}
+
+.theme-light .token.class-name {
+  color: #eea403 !important;
+}
+
+.theme-light .token.function {
+  color: #1fa4fc !important;
+}
+
+.theme-light .token.string {
+  color: #02b11f !important;
+}
+
+.theme-light .token.annotation.punctuation {
+  color: #e9b8ff !important;
+}
+
+
+/* dark */
+
+.theme-dark .markdown-preview-section pre code .url,
+.theme-dark .markdown-preview-section pre code {
+  color: #ddd !important;
+}
+
+.theme-dark .token.keyword {
+  color: #6ac3ff !important;
+}
+
+.theme-dark .token.class-name {
+  color: #ffae00 !important;
+}
+
+.theme-dark .token.function {
+  color: #3a7fff !important;
+}
+
+.theme-dark .token.string {
+  color: #02cc24 !important;
+}
+
+.theme-dark .token.annotation.punctuation {
+  color: #ac80ff !important;
+}
+
+.theme-dark .cm-comment {
+  color: #aaa !important;
+}

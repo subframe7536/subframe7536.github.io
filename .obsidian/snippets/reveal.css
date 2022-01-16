@@ -1,0 +1,46 @@
+.reveal {
+    font-size: 1.4rem !important;
+}
+
+.reveal li {
+    line-height: 2.4rem;
+}
+
+.reveal:not(.has-vertical-slides) .controls {
+    height: 20vh;
+    width: 100vw;
+    top: 40vh;
+    right: 0;
+}
+
+.reveal:not(.has-vertical-slides) .controls button {
+    border-radius: 10px !important;
+    opacity: 0 !important;
+}
+
+.reveal:not(.has-vertical-slides) .controls .enabled:hover {
+    background-color: #eeeeee60;
+    transition: all 0.4s;
+    opacity: 1 !important;
+}
+
+.reveal:not(.has-vertical-slides) .controls .enabled:focus {
+    box-shadow: none !important;
+}
+
+.reveal:not(.has-vertical-slides) .controls .navigate-left {
+    top: 0;
+    left: 12px;
+    width: 10.8em;
+}
+
+.reveal:not(.has-vertical-slides) .controls .navigate-right {
+    top: 0;
+    right: 0;
+    width: 10.8em;
+}
+
+.reveal:not(.has-vertical-slides) .controls .navigate-left .controls-arrow,
+.reveal:not(.has-vertical-slides) .controls .navigate-right .controls-arrow {
+    margin-left: 3.6em;
+}
