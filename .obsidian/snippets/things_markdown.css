@@ -500,14 +500,6 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
 }
 
 
-/* kanban */
-
-.kanban-plugin__item-prefix-button-wrapper,
-.kanban-plugin__item-postfix-button-wrapper {
-  justify-content: center;
-}
-
-
 /* 符号 */
 
 .theme-dark .workspace-split.mod-root .view-content .cm-formatting,

@@ -1,0 +1,84 @@
+/* excalidraw */
+
+.excalidraw .context-menu {
+  border: none;
+}
+
+.excalidraw .context-menu-option .context-menu-option__shortcut {
+  color: #000 !important;
+}
+
+
+/* advanced table */
+
+.workspace-leaf-content[data-type='advanced-tables-toolbar'] .nav-buttons-container {
+  display: flex;
+  border: 0 !important;
+  margin: 0 30px;
+}
+
+.workspace-leaf-content[data-type='advanced-tables-toolbar'] .nav-action-button {
+  flex: 1;
+  max-width: 50px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 4px;
+}
+
+
+/* git */
+
+.git-view-body>div {
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.git-view-body .file-view main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* kanban */
+
+.kanban-plugin__item-prefix-button-wrapper,
+.kanban-plugin__item-postfix-button-wrapper {
+  justify-content: center;
+}
+
+
+/* calendar */
+
+#calendar-container {
+  padding-top: 0;
+}
+
+#calendar-container .title {
+  margin: 0 !important;
+}
+
+#calendar-container .title:hover::before {
+  content: none !important;
+}
+
+#calendar-container .reset-button,
+#calendar-container th.svelte-pcimu8 {
+  font-size: 0.8em;
+}
+
+#calendar-container .day {
+  line-height: 1.4;
+}
+
+#calendar-container .day:not(.today):hover,
+#calendar-container .day.active {
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
+}
+
+#calendar-container .today {
+  background-color: #a9c9ffa2 !important;
+}
+
+.workspace-leaf-content[data-type='calendar'] .view-content {
+  padding-top: 0;
+}

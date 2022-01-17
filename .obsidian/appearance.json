@@ -9,7 +9,8 @@
     "things_folder",
     "reveal",
     "things_code",
-    "things_markdown"
+    "things_markdown",
+    "things_plugin"
   ],
   "baseFontSize": 21,
   "baseFontSizeAction": true
