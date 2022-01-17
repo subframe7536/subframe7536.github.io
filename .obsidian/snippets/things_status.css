@@ -383,7 +383,6 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 
 /* 关系图谱 */
 
-body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type='localgraph'] .view-content,
 body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type='graph'] .view-content {
   height: calc(100% - 36px);
   top: 36px;
@@ -393,7 +392,7 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type=
 .mod-root .workspace-leaf-content[data-type='graph'] .graph-controls {
   left: 10px;
   top: 10px;
-  border-color: #a5d6ff;
+  border: 2px solid #a5d6ff;
   border-radius: 8px;
 }
 
@@ -411,4 +410,24 @@ body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type=
 
 .graph-controls:not(.is-close):hover .graph-controls-button.mod-reset {
   padding: 3px;
+}
+
+.graph-controls .tree-item-self .tree-item-icon.collapse-icon::after {
+  content: none;
+}
+
+
+/* 文件列表 */
+
+#quick-explorer {
+  display: flex !important;
+  height: 70%;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+#quick-explorer span {
+  padding: 4px 1px !important;
+  margin: 0 !important;
 }
