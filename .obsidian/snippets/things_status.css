@@ -379,3 +379,36 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 .suggestion-item {
   margin-right: 10px;
 }
+
+
+/* 关系图谱 */
+
+body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type='localgraph'] .view-content,
+body:not(.plugin-sliding-panes-rotate-header) .workspace-leaf-content[data-type='graph'] .view-content {
+  height: calc(100% - 36px);
+  top: 36px;
+}
+
+.mod-root .workspace-leaf-content[data-type='localgraph'] .graph-controls,
+.mod-root .workspace-leaf-content[data-type='graph'] .graph-controls {
+  left: 10px;
+  top: 10px;
+  border-color: #a5d6ff;
+  border-radius: 8px;
+}
+
+.graph-controls.is-close {
+  padding: 8px;
+}
+
+.graph-controls .tree-item-self {
+  align-items: center;
+}
+
+.graph-controls .tree-item-self * {
+  font-size: 12px;
+}
+
+.graph-controls:not(.is-close):hover .graph-controls-button.mod-reset {
+  padding: 3px;
+}
