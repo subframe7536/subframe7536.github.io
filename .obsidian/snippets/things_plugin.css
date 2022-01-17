@@ -46,6 +46,45 @@
   justify-content: center;
 }
 
+.kanban-plugin__item {
+  position: relative;
+}
+
+button.kanban-plugin__item-postfix-button.is-enabled,
+.kanban-plugin__item:hover button.kanban-plugin__item-postfix-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.theme-light button.kanban-plugin__item-postfix-button.is-enabled:hover,
+.theme-light .kanban-plugin__item:hover button.kanban-plugin__item-postfix-button:hover {
+  background-color: #eee;
+}
+
+.theme-light .kanban-plugin__lane-settings-button:hover {
+  background-color: #fff !important;
+}
+
+.theme-dark button.kanban-plugin__item-postfix-button.is-enabled:hover,
+.theme-dark .kanban-plugin__item:hover button.kanban-plugin__item-postfix-button:hover {
+  background-color: #111;
+}
+
+.theme-dark .kanban-plugin__lane-settings-button:hover {
+  background-color: #333 !important;
+}
+
+.theme-dark .kanban-plugin__lane-wrapper {
+  border: 2px solid #444;
+  border-radius: 8px;
+}
+
+.theme-dark .kanban-plugin__item-title-wrapper {
+  background-color: #28323e;
+}
+
 
 /* calendar */
 
@@ -81,4 +120,75 @@
 
 .workspace-leaf-content[data-type='calendar'] .view-content {
   padding-top: 0;
+}
+
+
+/* quick explorer */
+
+
+/* 文件列表 */
+
+#quick-explorer {
+  display: flex !important;
+  height: 70%;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+#quick-explorer span {
+  padding: 4px 0 !important;
+  padding-left: 2px !important;
+  margin: 0 !important;
+}
+
+#quick-explorer span.selected {
+  font-weight: 700 !important;
+}
+
+.theme-light #quick-explorer span[data-file-path$=".md"] {
+  color: rgb(34, 144, 255);
+  padding-right: 2px !important;
+}
+
+.theme-dark #quick-explorer span[data-file-path$=".md"] {
+  color: #2ac6ff;
+  padding-right: 2px !important;
+}
+
+.theme-dark #quick-explorer span[data-file-path$=".md"]:hover {
+  color: #eee;
+}
+
+#quick-explorer span[data-file-path$=".md"]:hover {
+  color: #eee;
+}
+
+.theme-dark .qe-popup-menu .nav-file-tag {
+  color: #6cd8ff !important;
+  border-color: #6cd8ff !important;
+}
+
+.qe-popup-menu .selected .nav-file-tag {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.menu-separator {
+  border-width: 2px;
+}
+
+.theme-dark .is-qe-file.selected::after,
+.theme-dark .is-qe-folder.selected::after {
+  right: 0 !important;
+}
+
+.theme-dark #quick-explorer .titlebar-button::after {
+  content: none;
+}
+
+#quick-explorer .explorable.selected,
+#quick-explorer .explorable:hover,
+.theme-dark .qe-popup-menu .menu-item:not(.is-disabled):not(.is-label).selected {
+  background-color: #748aae !important;
 }
