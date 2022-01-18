@@ -50,12 +50,13 @@
   position: relative;
 }
 
+.kanban-plugin__item-postfix-button-wrapper {
+  align-items: center;
+}
+
 button.kanban-plugin__item-postfix-button.is-enabled,
 .kanban-plugin__item:hover button.kanban-plugin__item-postfix-button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  align-self: unset;
 }
 
 .theme-light button.kanban-plugin__item-postfix-button.is-enabled:hover,

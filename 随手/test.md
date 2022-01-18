@@ -18,14 +18,14 @@
 
 2. IO方面：BIO\NIO\AIO你有能知道多少呢？这个话题可就多了也见深浅了，话题也开放了。基本的IO操作，到实现机制、设计模式乃至操作系统的各种调度我都可以和你聊一聊，也顺便可以和你扯一扯mina，netty，Grizzly，听没听过，玩没玩耍过，相信很快能摸出你的深浅。
 
-3.多线程：你以为这个你能跑得掉？线程的生命周期，同步异步的区别，什么时候需要同步，什么时候需要异步，线程的调度方式，聊聊并发编程，为啥要并发，怎么去并发，你处理了哪些并发问题，你能没经验，不过没关系，问问还是可以的。
+3. 多线程：你以为这个你能跑得掉？线程的生命周期，同步异步的区别，什么时候需要同步，什么时候需要异步，线程的调度方式，聊聊并发编程，为啥要并发，怎么去并发，你处理了哪些并发问题，你能没经验，不过没关系，问问还是可以的。
 
-4.[虚拟机](https://www.zhihu.com/search?q=%E8%99%9A%E6%8B%9F%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)的那些事儿：都搞java了，虚拟机的一些东西你总得知道吧？JVM的内存模型，垃圾回收机制，各种机制下的垃圾回收器怎么工作还是知晓些吧。JVM字节码那个太苛刻了，不要求你，但是你有真功夫，大家聊聊还是可以的。
+4. [虚拟机](https://www.zhihu.com/search?q=%E8%99%9A%E6%8B%9F%E6%9C%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)的那些事儿：都搞java了，虚拟机的一些东西你总得知道吧？JVM的内存模型，垃圾回收机制，各种机制下的垃圾回收器怎么工作还是知晓些吧。JVM字节码那个太苛刻了，不要求你，但是你有真功夫，大家聊聊还是可以的。
 
-5.一些基本的东西你还是要有吧：[http协议](https://www.zhihu.com/search?q=http%E5%8D%8F%E8%AE%AE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)、https协议，dns解析过程、servlet是个什么东西？生命周期如何？request/response区别，session/cookie区别实现机制，redirect/forward的区别你能给简单讲讲？
+5. 一些基本的东西你还是要有吧：[http协议](https://www.zhihu.com/search?q=http%E5%8D%8F%E8%AE%AE&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)、https协议，dns解析过程、servlet是个什么东西？生命周期如何？request/response区别，session/cookie区别实现机制，redirect/forward的区别你能给简单讲讲？
 
-6.编程框架：web类的框架执行流程总得讲一下吧，比如SpringMVC是如何工作的？你自己实现个web框架可以还是不可以？怎么做，可有思路？既然是Spring了那么IOC\AOP的实现原理怎么来的,bean的作用域有哪些，务传播机制，隔离层级，基本还是要问问的？反射，代理怎么回事不可能搞不清楚吧。代理的几种方式JDK的cglib的aspectJ的，你又只多少？抛弃了框架你自己实现基于类的代理有门么？mybatis听过没？不管你听没听过反正jdbc那些事情，数据库连接池的那些事情，我们有得聊，只要你能勾起我们的聊天兴趣。
+6. 编程框架：web类的框架执行流程总得讲一下吧，比如SpringMVC是如何工作的？你自己实现个web框架可以还是不可以？怎么做，可有思路？既然是Spring了那么IOC\AOP的实现原理怎么来的,bean的作用域有哪些，务传播机制，隔离层级，基本还是要问问的？反射，代理怎么回事不可能搞不清楚吧。代理的几种方式JDK的cglib的aspectJ的，你又只多少？抛弃了框架你自己实现基于类的代理有门么？mybatis听过没？不管你听没听过反正jdbc那些事情，数据库连接池的那些事情，我们有得聊，只要你能勾起我们的聊天兴趣。
 
-7.通用性质的一些东西：大名鼎鼎的apache你知道吗？web服务器，应用服务器类的区别你知道吗？ngnix玩耍过没？ngnix你都用来干了些什么？缓存可有听过？怎么来玩耍？从浏览器端一直到后端的各层缓存该怎么来玩耍？策略又是如何来定的？分布式缓存可有听过？memcached，redis可有玩耍过总之话题很多，不一而足。
+7. 通用性质的一些东西：大名鼎鼎的apache你知道吗？web服务器，应用服务器类的区别你知道吗？ngnix玩耍过没？ngnix你都用来干了些什么？缓存可有听过？怎么来玩耍？从浏览器端一直到后端的各层缓存该怎么来玩耍？策略又是如何来定的？分布式缓存可有听过？memcached，redis可有玩耍过总之话题很多，不一而足。
 
-8.分布式的一些概念：你可知晓为啥要分布式？分布式有哪些经典问题？简单点的如何实现应用无状态，全局唯一ID(莫要拿什么雪花算法之类的烂大街的来扯，要有点实际意义的)，负载均衡有没有概念？如何做？如何去做高可用？如何去保障分布式环境下的一致性问题？[消息中间件](https://www.zhihu.com/search?q=%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)玩耍过没有？知不知道都有哪些，实现区别在哪里，用它干嘛去？分布式的环境下如何去保障服务的可靠性？如何面临雪崩问题？如何面临穿透问题？包括但不限于[spring cloud](https://www.zhihu.com/search?q=spring+cloud&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)的相关话题，都解决了哪些分布式方面性的问题，如何解决的，策略有哪些？问题多的是，看你有多少深浅了。
+8. 分布式的一些概念：你可知晓为啥要分布式？分布式有哪些经典问题？简单点的如何实现应用无状态，全局唯一ID(莫要拿什么雪花算法之类的烂大街的来扯，要有点实际意义的)，负载均衡有没有概念？如何做？如何去做高可用？如何去保障分布式环境下的一致性问题？[消息中间件](https://www.zhihu.com/search?q=%E6%B6%88%E6%81%AF%E4%B8%AD%E9%97%B4%E4%BB%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)玩耍过没有？知不知道都有哪些，实现区别在哪里，用它干嘛去？分布式的环境下如何去保障服务的可靠性？如何面临雪崩问题？如何面临穿透问题？包括但不限于[spring cloud](https://www.zhihu.com/search?q=spring+cloud&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1318777850%7D)的相关话题，都解决了哪些分布式方面性的问题，如何解决的，策略有哪些？问题多的是，看你有多少深浅了。
