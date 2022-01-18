@@ -267,16 +267,18 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
 
 div.cm-active.cm-line {
   position: relative;
+  border-radius: 6px;
 }
 
 div.cm-active.cm-line::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
+  width: 4px;
+  height: 100%;
   z-index: 99;
+  top: 0;
+  right: 0;
+  border-radius: 16px;
 }
 
 .theme-light .cm-active.cm-line {
@@ -284,11 +286,11 @@ div.cm-active.cm-line::before {
 }
 
 .theme-dark .cm-active.cm-line {
-  background-color: #233f4f85 !important;
+  background-color: #21262c !important;
 }
 
 .cm-active.cm-line::before {
-  background-color: #0073ff;
+  background-color: #758cb0;
 }
 
 
