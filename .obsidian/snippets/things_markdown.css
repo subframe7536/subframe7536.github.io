@@ -311,7 +311,7 @@ div.cm-active.cm-line::before {
   padding-right: 0!important;
 }
 
- :not(.cm-active.cm-line) .cm-formatting-highlight {
+:not(.cm-active.cm-line) .cm-formatting-highlight {
   display: none;
 }
 

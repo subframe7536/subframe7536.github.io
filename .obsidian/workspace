@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "日记/2022-01-16.md",
-            "mode": "source",
+            "file": "随手/test.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2022-01-16.md"
+                "file": "随手/test.md"
               }
             }
           },
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2022-01-16.md",
+                "file": "随手/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "日记/2022-01-16.md",
+                "file": "随手/test.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -167,15 +167,15 @@
   },
   "active": "6377caacdd297c56",
   "lastOpenFiles": [
-    "日记/2022-01-16.md",
+    "随手/test.md",
+    "随手/bp.md",
+    "_TODO/面试学习内容.md",
     "_TODO/易循.md",
+    "_TODO/learning tasklist.md",
+    "日记/2022-01-16.md",
     "项目/易循/问卷调查.md",
     "docs/FrontEnd/CSS/content/LESS.md",
     "docs/FrontEnd/CSS/content/选择器.md",
-    "docs/BackEnd/PHP/content/时间.md",
-    "docs/BackEnd/Spring/Mybatis.md",
-    "杂/vscode下载慢.md",
-    "随手/bp.md",
-    "docs/tool/Git.md"
+    "docs/BackEnd/PHP/content/时间.md"
   ]
 }
