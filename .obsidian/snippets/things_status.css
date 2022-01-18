@@ -208,7 +208,7 @@ body:not(.is-mobile) .document-replace {
 /* 状态栏 */
 
 .status-bar {
-  /* position: absolute; */
+  position: unset !important;
   padding: 5px 15px !important;
 }
 

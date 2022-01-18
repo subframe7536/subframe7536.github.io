@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "706ad0102a4de7a2",
+        "id": "518d3f00189c859f",
         "type": "leaf",
         "state": {
           "type": "kanban",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "test",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -95,7 +95,7 @@
       {
         "id": "37917c2df535ce63",
         "type": "tabs",
-        "dimension": 63.27868852459017,
+        "dimension": 56.00991325898389,
         "children": [
           {
             "id": "3439ad1afdc95300",
@@ -146,7 +146,7 @@
       {
         "id": "9948ad5d903dbf76",
         "type": "tabs",
-        "dimension": 36.721311475409834,
+        "dimension": 43.99008674101611,
         "children": [
           {
             "id": "9c3a023025004665",
@@ -163,17 +163,17 @@
     "width": 279.5,
     "collapsed": true
   },
-  "active": "706ad0102a4de7a2",
+  "active": "518d3f00189c859f",
   "lastOpenFiles": [
     "_TODO/面试.md",
     "随手/test.md",
-    "docs/BackEnd/设计模式/行为型模式.md",
-    "docs/BackEnd/设计模式/结构型模式.md",
-    "docs/BackEnd/设计模式/创建型模式.md",
-    "随手/bp.md",
-    "_TODO/易循.md",
-    "_TODO/learning tasklist.md",
+    "项目/易循/问卷调查.md",
     "日记/2022-01-16.md",
-    "项目/易循/问卷调查.md"
+    "杂/编码猜测.md",
+    "心得/人如何变强.md",
+    "docs/BackEnd/Spring/content/拦截器.md",
+    "docs/BackEnd/Spring/content/初始配置mybatis.md",
+    "docs/BackEnd/Spring/content/编写业务.md",
+    "docs/BackEnd/设计模式/创建型模式.md"
   ]
 }

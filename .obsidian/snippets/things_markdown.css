@@ -331,6 +331,10 @@ div.cm-active.cm-line::before {
   margin: 0 0.05em;
 }
 
+.theme-dark ::selection {
+  background-color: #40536e;
+}
+
 
 /*===== 引用 =====*/
 
@@ -447,6 +451,19 @@ a.tag:hover {
 
 .cm-s-obsidian span.cm-hashtag {
   line-height: inherit !important;
+}
+
+.obsidian-search-match-highlight {
+  background: none !important;
+  border: none !important;
+}
+
+.theme-light .obsidian-search-match-highlight span {
+  background-color: rgb(255, 207, 119) !important;
+}
+
+.theme-dark .obsidian-search-match-highlight span {
+  background-color: rgba(255, 169, 9, 0.521) !important;
 }
 
 
