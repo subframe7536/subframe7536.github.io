@@ -54,6 +54,10 @@
   align-items: center;
 }
 
+.kanban-plugin__lane-header-wrapper p {
+  font-weight: bold;
+}
+
 button.kanban-plugin__item-postfix-button.is-enabled,
 .kanban-plugin__item:hover button.kanban-plugin__item-postfix-button {
   align-self: unset;
