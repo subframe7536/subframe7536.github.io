@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/tool/bat.md",
+            "file": "_TODO/日常todo.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tool/bat.md"
+                "file": "_TODO/日常todo.md"
               }
             }
           },
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tool/bat.md",
+                "file": "_TODO/日常todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/tool/bat.md",
+                "file": "_TODO/日常todo.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -167,6 +167,7 @@
   },
   "active": "518d3f00189c859f",
   "lastOpenFiles": [
+    "_TODO/日常todo.md",
     "docs/tool/bat.md",
     "项目/易循/问卷调查.md",
     "_TODO/面试.md",
@@ -175,7 +176,6 @@
     "杂/编码猜测.md",
     "心得/人如何变强.md",
     "docs/BackEnd/Spring/content/拦截器.md",
-    "docs/BackEnd/Spring/content/初始配置mybatis.md",
-    "docs/BackEnd/Spring/content/编写业务.md"
+    "docs/BackEnd/Spring/content/初始配置mybatis.md"
   ]
 }
