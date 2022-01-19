@@ -7,10 +7,20 @@
         "id": "518d3f00189c859f",
         "type": "leaf",
         "state": {
+          "type": "kanban",
+          "state": {
+            "file": "_TODO/面试.md"
+          }
+        }
+      },
+      {
+        "id": "ecf5006865514b7d",
+        "type": "leaf",
+        "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/tool/c++算法&函数.md",
-            "mode": "preview",
+            "file": "docs/面试/JVM/jdk和jre.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -40,7 +50,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tool/c++算法&函数.md"
+                "file": "docs/面试/JVM/jdk和jre.md"
               }
             }
           },
@@ -65,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tool/c++算法&函数.md",
+                "file": "docs/面试/JVM/jdk和jre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,8 +94,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -114,7 +123,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/tool/c++算法&函数.md",
+                "file": "docs/面试/JVM/jdk和jre.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -166,17 +175,17 @@
     "width": 279.5,
     "collapsed": true
   },
-  "active": "518d3f00189c859f",
+  "active": "ecf5006865514b7d",
   "lastOpenFiles": [
-    "docs/tool/c++算法&函数.md",
+    "docs/面试/JVM/jdk和jre.md",
     "_TODO/面试.md",
-    "docs/BackEnd/设计模式/创建型模式.md",
+    "docs/tool/c++算法&函数.md",
+    "docs/面试/设计模式/创建型模式.md",
     "项目/易循/问卷调查.md",
-    "docs/BackEnd/设计模式/行为型模式.md",
-    "docs/BackEnd/设计模式/结构型模式.md",
+    "docs/面试/设计模式/行为型模式.md",
+    "docs/面试/设计模式/结构型模式.md",
     "_TODO/易循.md",
     "_TODO/日常todo.md",
-    "docs/tool/bat.md",
-    "随手/test.md"
+    "docs/tool/bat.md"
   ]
 }

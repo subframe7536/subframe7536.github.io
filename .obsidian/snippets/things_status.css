@@ -350,6 +350,14 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 }
 
 
+/* 重置按钮 */
+
+body:not(.minimal-icons-off) svg.reset {
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+
 /* 提示框 */
 
 .tooltip {
