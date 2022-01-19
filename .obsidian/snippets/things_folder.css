@@ -5,7 +5,7 @@
 }
 
 .nav-files-container:hover {
-  overflow: scroll !important;
+  overflow-y: scroll !important;
 }
 
 .nav-files-container>div>div.nav-folder-title {
@@ -39,7 +39,7 @@
 }
 
 .nav-file {
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .nav-file-title {
@@ -47,6 +47,8 @@
   margin: 4px;
   border-radius: 4px;
   position: relative;
+  margin-left: 0;
+  padding-left: 8px;
 }
 
 .nav-file-tag {
@@ -66,6 +68,7 @@
   padding-bottom: 1.5px;
   line-height: 1.6 !important;
   position: relative;
+  width: calc(100% - 12px) !important;
 }
 
 body:not(.is-grabbing) .nav-file-title:hover {
@@ -106,20 +109,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   width: 4px;
   height: 100%;
   position: absolute;
-  right: 9px;
+  right: 1px;
   top: 0;
   background-color: #cd8fffdd;
   border-radius: 5px;
-}
-
-.theme-dark :not(.is-grabbing) .nav-file-title:hover::before {
-  content: "";
-  width: 8px;
-  height: 100%;
-  right: 0px;
-  top: 0;
-  position: absolute;
-  background-color: #181c20;
 }
 
 .theme-dark :not(.is-grabbing) .nav-file-title.is-active:hover::after,
@@ -128,21 +121,10 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   width: 4px;
   height: 100%;
   position: absolute;
-  right: 9px;
+  right: 1px;
   top: 0;
   background-color: #a9c9ffdd;
   border-radius: 5px;
-}
-
-.theme-dark :not(.is-grabbing) .nav-file-title.is-active:hover::before,
-.theme-dark :not(.is-grabbing) .nav-file-title.is-active::before {
-  content: "";
-  width: 8px;
-  height: 100%;
-  position: absolute;
-  right: 0px;
-  top: 0;
-  background-color: #181c20;
 }
 
 .theme-dark :not(.is-grabbing) .nav-folder-title:hover::after {
@@ -162,6 +144,14 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 
 
 /*大纲*/
+
+.workspace-leaf-content[data-type="outline"] .view-content {
+  overflow: hidden !important;
+}
+
+.workspace-leaf-content[data-type="outline"] .view-content:hover {
+  overflow-y: auto !important;
+}
 
 .outline .tree-item-self.is-clickable {
   position: relative;

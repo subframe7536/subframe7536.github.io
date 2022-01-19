@@ -152,7 +152,7 @@ button.kanban-plugin__item-postfix-button.is-enabled,
 }
 
 .theme-light #quick-explorer span[data-file-path$=".md"] {
-  color: rgb(34, 144, 255);
+  color: #6991d6;
   padding-right: 2px !important;
 }
 

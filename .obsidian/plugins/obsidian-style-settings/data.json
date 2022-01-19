@@ -92,9 +92,9 @@
   "things-style@@h3-color@@light": "#57C302",
   "things-style@@h4": "1.4rem",
   "things-style@@h4-color@@light": "#0AB6B9",
-  "things-style@@h5": "1.2rem",
+  "things-style@@h5": "1.3rem",
   "things-style@@h5-color@@light": "#5B5396",
-  "things-style@@h6": "1.2rem",
+  "things-style@@h6": "1.3rem",
   "things-style@@h6-color@@light": "#024C5B",
   "things-style@@h1": "2.0rem",
   "things-style@@font-normal": 16,
@@ -108,5 +108,7 @@
   "things-style@@h4-color": "#0993D3",
   "things-style@@h5-color": "#5B5396",
   "things-style@@h6-color": "#F177FF",
-  "things-style@@h4-weight": 700
+  "things-style@@h4-weight": 700,
+  "things-style@@h5-weight": 700,
+  "things-style@@h6-weight": 700
 }

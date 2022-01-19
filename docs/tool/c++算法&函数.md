@@ -3,7 +3,7 @@
 ###### 背包
 ###### 最短路
 ###### 二叉搜索树
-###### lca
+###### lcaL
 ###### 贪心
 ###### 染色问题
 ###### 最大流理解
@@ -128,7 +128,7 @@ LL getInv(int a, int mod) {
  	return d == 1 ? (x % mod + mod) % mod : -1;
 }
 ```
-#### `dfs`（深度优先搜索）
+#### dfs（深度优先搜索）
 https://www.cnblogs.com/brucekun/p/8503042.html
 ```c++
 void DFS(int x, int y) {

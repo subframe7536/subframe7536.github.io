@@ -228,6 +228,12 @@ h6:hover::before {
 .markdown-preview-view h5,
 .cm-s-obsidian .cm-header-5 {
   font-variant: normal;
+  text-transform: unset;
+}
+
+.markdown-preview-view h6,
+.cm-s-obsidian .cm-header-6 {
+  font-variant: small-caps;
 }
 
 .is-live-preview .HyperMD-header-2 {

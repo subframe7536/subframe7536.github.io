@@ -343,10 +343,10 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 }
 
 
-/* 右面板按钮 */
+/* 面板按钮 */
 
-.workspace-ribbon.mod-right {
-  right: 15px;
+.workspace-ribbon-collapse-btn {
+  color: #8faad8;
 }
 
 
