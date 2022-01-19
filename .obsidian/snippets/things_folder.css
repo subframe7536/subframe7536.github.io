@@ -1,5 +1,13 @@
 /* 文件列表 */
 
+.nav-files-container {
+  overflow: hidden !important;
+}
+
+.nav-files-container:hover {
+  overflow: scroll !important;
+}
+
 .nav-files-container>div>div.nav-folder-title {
   visibility: hidden;
   margin-bottom: -20px;

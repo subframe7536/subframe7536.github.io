@@ -286,7 +286,7 @@ div.cm-active.cm-line::before {
 }
 
 .theme-dark .cm-active.cm-line {
-  background-color: #21262c !important;
+  background-color: #323a44 !important;
 }
 
 .cm-active.cm-line::before {
@@ -332,7 +332,7 @@ div.cm-active.cm-line::before {
 }
 
 .theme-dark ::selection {
-  background-color: #40536e;
+  background-color: #465b79;
 }
 
 
