@@ -94,6 +94,12 @@ body:not(.is-grabbing) .nav-folder-title:hover {
   background-color: #b4f4ff !important;
 }
 
+.theme-dark .nav-file-title.is-being-dragged,
+.theme-dark .nav-file-title.is-active,
+.theme-dark body:not(.is-grabbing) .nav-file-title.is-active:hover {
+  background-color: #323a44 !important;
+}
+
 .theme-light :not(.is-grabbing) .nav-file-title:hover {
   background-color: #f7d8ff;
   text-decoration: underline;
