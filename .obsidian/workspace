@@ -6,11 +6,25 @@
       {
         "id": "518d3f00189c859f",
         "type": "leaf",
+        "dimension": 25.627705627705627,
         "state": {
           "type": "markdown",
           "state": {
             "file": "docs/面试/算法.md",
             "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "8e221015b81f1971",
+        "type": "leaf",
+        "dimension": 74.37229437229436,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "杂/windows功能.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +54,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/面试/算法.md"
+                "file": "杂/windows功能.md"
               }
             }
           },
@@ -65,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "杂/windows功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +119,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "杂/windows功能.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -157,8 +171,9 @@
     "width": 279.5,
     "collapsed": true
   },
-  "active": "518d3f00189c859f",
+  "active": "8e221015b81f1971",
   "lastOpenFiles": [
+    "杂/windows功能.md",
     "docs/面试/算法.md",
     "_TODO/面试.md",
     "docs/面试/JVM/jdk和jre.md",
@@ -167,7 +182,6 @@
     "docs/tool/c++算法&函数.md",
     "docs/面试/设计模式/创建型模式.md",
     "项目/易循/问卷调查.md",
-    "docs/面试/设计模式/行为型模式.md",
-    "docs/面试/设计模式/结构型模式.md"
+    "docs/面试/设计模式/行为型模式.md"
   ]
 }

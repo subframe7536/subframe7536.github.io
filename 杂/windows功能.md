@@ -36,4 +36,24 @@ ssh-add C:\Users\subframe\.ssh\id_rsa
 3. 右键 `Blocked` ，新建字符串值，重命名为 `{e2bf9676-5f8f-435c-97eb-11607a5bedf7}`
 4. 重启资源管理器
 
-
+### windows动画
+系统属性 -> 高级 -> 性能 -> 设置
+![[动画.png]]
+### wsa
+#### 下载
+https://store.rg-adguard.net/
+RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
+#### 安装
+1. 管理员模式powershell
+2. `Add-AppPackage 安装包路径` 
+3. 打开开发人员选项
+#### 问题
+- 开了虚拟机和bios也无法开启，之前模拟器设置过hyper-v了
+`bcdedit /set hypervisorlaunchtype auto`
+---
+- 一直无法连接adb
+1. 重启 
+2. 点击 关闭适用于Android... 右边的关闭按钮，等待转圈完毕，点击IP地址右边的按钮，可以看到开发人员模式的地址刷新了，这样就可以使用adb了
+---
+- 不断需要联网
+`adb shell settings put global captive_portal_mode 0`

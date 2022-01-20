@@ -128,6 +128,11 @@ a.tag,
   border-bottom: #58a8fa 2px dashed;
 }
 
+.markdown-preview-view hr {
+  border-top: #58a8fa 2px dashed;
+  border-bottom: #58a8fa 2px dashed;
+}
+
 
 /*===== 键盘 =====*/
 
@@ -425,6 +430,10 @@ li::marker {
 
 .theme-dark li::marker {
   color: #618fc7;
+}
+
+.markdown-preview-view ul>li:not(.task-list-item)::marker {
+  font-size: 1.3em;
 }
 
 p {
