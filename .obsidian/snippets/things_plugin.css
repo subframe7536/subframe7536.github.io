@@ -121,6 +121,7 @@ button.kanban-plugin__item-postfix-button.is-enabled,
 
 #calendar-container .today {
   background-color: #a9c9ffa2 !important;
+  color: #eee !important;
 }
 
 .workspace-leaf-content[data-type='calendar'] .view-content {
