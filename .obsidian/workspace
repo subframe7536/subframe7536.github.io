@@ -7,8 +7,12 @@
         "id": "f767e356a3aeca7b",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/面试/算法.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -35,7 +39,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/面试/算法.md"
+              }
             }
           },
           {
@@ -59,6 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/面试/算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "docs/面试/算法.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -151,9 +159,9 @@
   },
   "active": "f767e356a3aeca7b",
   "lastOpenFiles": [
+    "docs/面试/算法.md",
     "杂/windows功能.md",
     "docs/FrontEnd/CSS/css-start.md",
-    "docs/面试/算法.md",
     "_TODO/面试.md",
     "docs/面试/JVM/jdk和jre.md",
     "随手/bp.md",
