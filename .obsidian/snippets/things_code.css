@@ -89,14 +89,10 @@
 
 /* 编辑代码块 */
 
-.cm-s-obsidian .HyperMD-codeblock>span {
-  /* padding-left: 8px; */
-  line-height: 30px !important;
-}
 
-.cm-s-obsidian .HyperMD-codeblock>span * {
-  font-size: 1rem;
-}
+/* .cm-s-obsidian .HyperMD-codeblock>span {}
+
+.cm-s-obsidian .HyperMD-codeblock>span * {} */
 
 
 /* 标注类型 */

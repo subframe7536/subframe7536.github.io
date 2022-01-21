@@ -8,9 +8,9 @@
     "things_status",
     "things_folder",
     "reveal",
-    "things_code",
+    "things_plugin",
     "things_markdown",
-    "things_plugin"
+    "things_code"
   ],
   "baseFontSize": 21,
   "baseFontSizeAction": true
