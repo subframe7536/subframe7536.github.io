@@ -22,5 +22,6 @@
   "strictLineBreaks": false,
   "spellcheck": false,
   "spellcheckLanguages": [],
-  "trashOption": "local"
+  "trashOption": "local",
+  "autoConvertHtml": false
 }

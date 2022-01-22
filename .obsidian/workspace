@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/BackEnd/JavaSE.md",
-            "mode": "preview",
+            "file": "docs/面试/算法.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/BackEnd/JavaSE.md"
+                "file": "docs/面试/算法.md"
               }
             }
           },
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/BackEnd/JavaSE.md",
+                "file": "docs/面试/算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/BackEnd/JavaSE.md",
+                "file": "docs/面试/算法.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,8 +159,8 @@
   },
   "active": "f767e356a3aeca7b",
   "lastOpenFiles": [
-    "docs/BackEnd/JavaSE.md",
     "docs/面试/算法.md",
+    "docs/BackEnd/JavaSE.md",
     "项目/易循/问卷调查.md",
     "_TODO/易循.md",
     "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
