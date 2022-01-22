@@ -1,46 +1,22 @@
 # ThreadLocal
 使用上锁之外的方式创建线程本地变量，用于规避线程安全问题。
 ```java
-package test;
+class ThreadLocalUtil {
+    private static final ThreadLocal<Map<String,String>> LOGIN_THREAD_LOCAL = new ThreadLocal<>();
 
-public class ThreadLocalTest {
-
-    static ThreadLocal<String> localVar = new ThreadLocal<>();
-
-    static void print(String str) {
-        //打印当前线程中本地内存中本地变量的值
-        System.out.println(str + " :" + localVar.get());
-        //清除本地内存中的本地变量
-        localVar.remove();
+    public static void map(Map<String,String> map){
+        LOGIN_THREAD_LOCAL.set(map);
+    }
+    public static String userId(){
+        return get("userId");
+    }
+    public static String get(String key){
+        Map<String,String> map = LOGIN_THREAD_LOCAL.get();
+        return map.get(key);
+    }
+    public static void clear(){
+        LOGIN_THREAD_LOCAL.remove();
     }
 
-    public static void main(String[] args) {
-        Thread t1  = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //设置线程1中本地变量的值
-                localVar.set("localVar1");
-                //调用打印方法
-                print("thread1");
-                //打印本地变量
-                System.out.println("after remove : " + localVar.get());
-            }
-        });
-
-        Thread t2  = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                //设置线程1中本地变量的值
-                localVar.set("localVar2");
-                //调用打印方法
-                print("thread2");
-                //打印本地变量
-                System.out.println("after remove : " + localVar.get());
-            }
-        });
-
-        t1.start();
-        t2.start();
-    }
 }
 ```
