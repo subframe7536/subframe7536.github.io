@@ -7,9 +7,19 @@
         "id": "f767e356a3aeca7b",
         "type": "leaf",
         "state": {
+          "type": "kanban",
+          "state": {
+            "file": "_TODO/面试.md"
+          }
+        }
+      },
+      {
+        "id": "b36e624de53dbafc",
+        "type": "leaf",
+        "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/面试/算法.md",
+            "file": "docs/面试/JavaSE/threadlocal.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +50,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/面试/算法.md"
+                "file": "docs/面试/JavaSE/threadlocal.md"
               }
             }
           },
@@ -65,7 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "docs/面试/JavaSE/threadlocal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "docs/面试/JavaSE/threadlocal.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -157,17 +167,17 @@
     "width": 279.5,
     "collapsed": true
   },
-  "active": "f767e356a3aeca7b",
+  "active": "b36e624de53dbafc",
   "lastOpenFiles": [
-    "docs/面试/算法.md",
+    "docs/面试/JavaSE/threadlocal.md",
     "docs/BackEnd/JavaSE.md",
+    "_TODO/面试.md",
+    "docs/面试/算法.md",
     "项目/易循/问卷调查.md",
     "_TODO/易循.md",
     "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
     "docs/课程笔记/大二下/操作系统/操作系统.md",
     "杂/windows功能.md",
-    "docs/FrontEnd/CSS/css-start.md",
-    "_TODO/面试.md",
-    "docs/面试/JVM/jdk和jre.md"
+    "docs/FrontEnd/CSS/css-start.md"
   ]
 }
