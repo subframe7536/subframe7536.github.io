@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
-            "mode": "source",
+            "file": "docs/BackEnd/JavaSE.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md"
+                "file": "docs/BackEnd/JavaSE.md"
               }
             }
           },
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
+                "file": "docs/BackEnd/JavaSE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,8 +76,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
+                "file": "docs/BackEnd/JavaSE.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -160,15 +159,15 @@
   },
   "active": "f767e356a3aeca7b",
   "lastOpenFiles": [
+    "docs/BackEnd/JavaSE.md",
+    "docs/面试/算法.md",
+    "项目/易循/问卷调查.md",
+    "_TODO/易循.md",
     "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
     "docs/课程笔记/大二下/操作系统/操作系统.md",
-    "docs/面试/算法.md",
     "杂/windows功能.md",
     "docs/FrontEnd/CSS/css-start.md",
     "_TODO/面试.md",
-    "docs/面试/JVM/jdk和jre.md",
-    "随手/bp.md",
-    "日记/2022-01-16.md",
-    "docs/tool/c++算法&函数.md"
+    "docs/面试/JVM/jdk和jre.md"
   ]
 }

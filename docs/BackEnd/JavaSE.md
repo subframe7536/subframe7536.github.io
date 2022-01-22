@@ -294,5 +294,17 @@ System.out.println(packageName);
 ```java
 URLDecoder.decode("","UTF-8");
 ```
+### 封装类
+
+| 数据类型 | 封装类    |
+| -------- | --------- |
+| int      | Integer   |
+| short    | Short     |
+| float    | Float     |
+| double   | Double    |
+| long     | Long      |
+| boolean  | Boolean   |
+| byte     | Byte      |
+| char     | Character | 
 
 #todo HashMap，HashSet，TreeSet，TreeMap，Deque，LinkedHashMap；排序算法，DFS，BFS，Sliding Window，sweep line

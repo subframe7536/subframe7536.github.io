@@ -70,8 +70,8 @@ input:focus {
 .document-search-container {
   position: absolute !important;
   height: unset;
-  top: 10px !important;
-  right: 10px;
+  top: 15px !important;
+  right: 15px;
   border: none;
   width: 400px !important;
   padding: 5px !important;
@@ -81,7 +81,7 @@ input:focus {
 .theme-light .document-search-container {
   border-left: 5px solid #a9c9ff;
   background-color: #f0f0f0 !important;
-  box-shadow: 1px 1px 10px 0px #777 inset !important;
+  box-shadow: 1px 1px 10px 0px #aaa !important;
 }
 
 .theme-dark .document-search-container {
@@ -378,7 +378,7 @@ body:not(.minimal-icons-off) svg.reset {
 
 /* suggestion */
 
-.suggestion-hotkey {
+.prompt .suggestion-hotkey {
   float: none;
   position: absolute;
   right: 10px;
@@ -386,8 +386,22 @@ body:not(.minimal-icons-off) svg.reset {
   transform: translateY(-50%);
 }
 
-.suggestion-item {
+.prompt .suggestion-item {
   margin-right: 10px;
+}
+
+.suggestion-container {
+  border-radius: 6px;
+  padding: 5px 0;
+}
+
+.suggestion-container .suggestion-item {
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.suggestion-container .suggestion-item.is-selected {
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
 }
 
 

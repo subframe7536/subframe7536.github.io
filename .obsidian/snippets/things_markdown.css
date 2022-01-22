@@ -418,7 +418,7 @@ div.cm-active.cm-line::before {
 /* 列表 */
 
 ul {
-  margin: 10px auto;
+  margin: 0px auto;
 }
 
 body .cm-hmd-list-indent>.cm-tab:after {
@@ -444,6 +444,11 @@ p {
 
 .markdown-source-view.mod-cm6 .list-bullet:after {
   top: -7px;
+}
+
+.markdown-preview-view ul ul::before {
+  border-width: 3px;
+  left: -1.15rem;
 }
 
 
@@ -476,13 +481,13 @@ a.tag:hover {
 }
 
 .theme-light .obsidian-search-match-highlight span {
-  border: 2px solid rgb(255, 207, 119) !important;
+  border: 2px solid rgb(255, 178, 34) !important;
   border-radius: 4px !important;
   background-color: unset !important;
 }
 
 .theme-dark .obsidian-search-match-highlight span {
-  border: 2px solid rgb(255, 190, 68) !important;
+  border: 2px solid rgb(211, 137, 0) !important;
   border-radius: 4px !important;
   background-color: unset !important;
 }
