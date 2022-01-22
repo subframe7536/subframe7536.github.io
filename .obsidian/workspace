@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/面试/算法.md",
+            "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/面试/算法.md"
+                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "test",
+                "query": "换页",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,7 +76,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -105,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/面试/算法.md",
+                "file": "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -159,6 +160,8 @@
   },
   "active": "f767e356a3aeca7b",
   "lastOpenFiles": [
+    "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
+    "docs/课程笔记/大二下/操作系统/操作系统.md",
     "docs/面试/算法.md",
     "杂/windows功能.md",
     "docs/FrontEnd/CSS/css-start.md",
@@ -166,8 +169,6 @@
     "docs/面试/JVM/jdk和jre.md",
     "随手/bp.md",
     "日记/2022-01-16.md",
-    "docs/tool/c++算法&函数.md",
-    "docs/面试/设计模式/创建型模式.md",
-    "项目/易循/问卷调查.md"
+    "docs/tool/c++算法&函数.md"
   ]
 }

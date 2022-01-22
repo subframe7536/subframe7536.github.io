@@ -307,8 +307,14 @@ div.cm-active.cm-line::before {
 
 /* ===== 高亮 ===== */
 
-.markdown-preview-view mark {
-  border: 2px solid orange;
+.theme-light .markdown-preview-view mark {
+  background-color: orange;
+  color: white;
+}
+
+.theme-dark .markdown-preview-view mark {
+  background-color: rgba(230, 149, 0, 0.8);
+  color: white;
 }
 
 .cm-highlight {
@@ -336,10 +342,6 @@ div.cm-active.cm-line::before {
 
 .theme-dark .cm-highlight {
   background-color: rgba(255, 169, 9, 0.521) !important;
-}
-
-.markdown-preview-view mark {
-  margin: 0 0.05em;
 }
 
 .theme-dark ::selection {
@@ -399,7 +401,7 @@ div.cm-active.cm-line::before {
 }
 
 .theme-light .markdown-preview-view th {
-  background-color: #ffe676;
+  background-color: #ffefa9;
 }
 
 .theme-dark .markdown-preview-view th {
@@ -474,11 +476,15 @@ a.tag:hover {
 }
 
 .theme-light .obsidian-search-match-highlight span {
-  background-color: rgb(255, 207, 119) !important;
+  border: 2px solid rgb(255, 207, 119) !important;
+  border-radius: 4px !important;
+  background-color: unset !important;
 }
 
 .theme-dark .obsidian-search-match-highlight span {
-  background-color: rgba(255, 169, 9, 0.521) !important;
+  border: 2px solid rgb(255, 190, 68) !important;
+  border-radius: 4px !important;
+  background-color: unset !important;
 }
 
 
@@ -489,13 +495,13 @@ a.tag:hover {
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #ffc06d;
-  color: #222;
+  background-color: rgb(56, 77, 109);
+  color: rgba(203, 243, 255, .8);
 }
 
 .theme-dark .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #b16d14;
-  color: #ddd;
+  background-color: rgba(203, 243, 255, .8);
+  color: rgb(56, 77, 109);
 }
 
 

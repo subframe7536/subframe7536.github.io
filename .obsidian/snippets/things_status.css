@@ -81,7 +81,7 @@ input:focus {
 .theme-light .document-search-container {
   border-left: 5px solid #a9c9ff;
   background-color: #f0f0f0 !important;
-  box-shadow: 3px 3px 5px #c7c7c7;
+  box-shadow: 1px 1px 10px 0px #777 inset !important;
 }
 
 .theme-dark .document-search-container {
@@ -114,20 +114,20 @@ body:not(.is-mobile) .document-replace {
 .theme-light .document-search-button,
 .theme-light .document-search-close-button {
   border: 1px solid #ccc;
-  line-height: 26px;
+  line-height: 21px;
   transition: all 0.2s ease-in;
 }
 
 .theme-light .document-search-button:hover,
 .theme-light .document-search-close-button:hover {
-  box-shadow: 2px 2px 2px 0px #777 inset;
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
   transition: all 0.2s ease-in;
 }
 
 .document-search-close-button {
   display: inline-block;
   height: 26px;
-  line-height: 22px;
+  line-height: 19px !important;
   border-radius: 4px;
   margin-left: 4px;
 }
@@ -190,7 +190,7 @@ body:not(.is-mobile) .document-replace {
 
 .theme-light .selected {
   font-weight: 400 !important;
-  box-shadow: 1px 1px 2px 0px #414141 inset;
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
 }
 
 .theme-dark .selected:not(.is-disabled)::after {
@@ -354,7 +354,7 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 
 body:not(.minimal-icons-off) svg.reset {
   top: 50%;
-  transform: translateY(-70%);
+  /* transform: translateY(-70%); */
 }
 
 
