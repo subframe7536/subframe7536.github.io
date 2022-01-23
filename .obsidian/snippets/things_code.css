@@ -225,7 +225,7 @@ pre[class~='language-groovy']:before {
 .token.selector,
 .token.tag,
 .token.variable {
-  color: rgb(255, 77, 77) !important;
+  color: #ff6565 !important;
 }
 
 .token.property,
