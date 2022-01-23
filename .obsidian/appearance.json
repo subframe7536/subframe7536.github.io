@@ -1,15 +1,14 @@
 {
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "",
+  "cssTheme": "Things",
   "enabledCssSnippets": [
     "sliding-panes",
     "setting_folder",
-    "things_status",
     "things_folder",
-    "reveal",
-    "things_plugin",
     "things_markdown",
+    "things_plugin",
+    "things_status",
     "things_code"
   ],
   "baseFontSize": 21,

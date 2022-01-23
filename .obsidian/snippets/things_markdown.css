@@ -142,7 +142,7 @@ kbd {
 .theme-light kbd {
   color: aliceblue;
   border: 1px solid #ffffff9e;
-  box-shadow: 1px 1px 3px #414141;
+  box-shadow: 1px 1px 1px #777;
   background-color: #69b3f5 !important;
 }
 
@@ -528,6 +528,14 @@ a.tag:hover {
 
 .markdown-source-view.mod-cm6 .cm-selection {
   background-color: transparent;
+}
+
+.theme-light .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
+  background-color: #caecff;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
+  background-color: #3d4d61;
 }
 
 

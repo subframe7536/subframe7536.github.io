@@ -1,5 +1,10 @@
 .markdown-preview-view pre {
   position: relative;
+  border-radius: 0 !important;
+}
+
+.markdown-preview-view code {
+  border-radius: 0 !important;
 }
 
 .markdown-preview-view pre[class*="language-"]:before {

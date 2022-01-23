@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/FrontEnd/CSS/content/CSS函数.md",
+            "file": "docs/FrontEnd/CSS/content/选择器.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/FrontEnd/CSS/content/CSS函数.md"
+                "file": "docs/FrontEnd/CSS/content/选择器.md"
               }
             }
           },
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/FrontEnd/CSS/content/CSS函数.md",
+                "file": "docs/FrontEnd/CSS/content/选择器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/FrontEnd/CSS/content/CSS函数.md",
+                "file": "docs/FrontEnd/CSS/content/选择器.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -168,6 +168,8 @@
   },
   "active": "ec8e312021137913",
   "lastOpenFiles": [
+    "docs/FrontEnd/CSS/content/选择器.md",
+    "docs/FrontEnd/CSS/css-start.md",
     "docs/FrontEnd/CSS/content/CSS函数.md",
     "docs/面试/虚拟内存.md",
     "_TODO/面试.md",
@@ -175,8 +177,6 @@
     "docs/课程笔记/大二下/操作系统/操作系统.md",
     "docs/面试/JavaSE/threadlocal.md",
     "docs/面试/java四种引用.md",
-    "docs/BackEnd/Spring/content/编写业务.md",
-    "docs/tool/bat.md",
-    "docs/tool/c++算法&函数.md"
+    "docs/BackEnd/Spring/content/编写业务.md"
   ]
 }
