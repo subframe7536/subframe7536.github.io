@@ -7,11 +7,9 @@
         "id": "b36e624de53dbafc",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "docs/面试/JavaSE/threadlocal.md",
-            "mode": "preview",
-            "source": false
+            "file": "_TODO/面试.md"
           }
         }
       }
@@ -40,7 +38,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md"
+                "file": "_TODO/面试.md"
               }
             }
           },
@@ -65,7 +63,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md",
+                "file": "_TODO/面试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -76,8 +74,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md",
+                "file": "_TODO/面试.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -168,11 +165,11 @@
   },
   "active": "b36e624de53dbafc",
   "lastOpenFiles": [
+    "_TODO/面试.md",
     "docs/面试/JavaSE/threadlocal.md",
     "docs/BackEnd/Spring/content/编写业务.md",
     "docs/tool/bat.md",
     "docs/tool/c++算法&函数.md",
-    "_TODO/面试.md",
     "docs/BackEnd/JavaSE.md",
     "docs/面试/算法.md",
     "项目/易循/问卷调查.md",
