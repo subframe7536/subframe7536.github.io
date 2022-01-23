@@ -429,12 +429,18 @@ div.cm-active.cm-line::before {
 
 /* 列表 */
 
-ul {
-  margin: 0px auto;
+ul,
+ol {
+  margin: 5px auto !important;
 }
 
 body .cm-hmd-list-indent>.cm-tab:after {
   content: none;
+}
+
+ol>li,
+ul>li {
+  margin: 5px auto;
 }
 
 li::marker {

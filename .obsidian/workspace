@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "ec8e312021137913",
+        "id": "10b55b72d3593072",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "_TODO/易循.md"
+            "file": "随手/未命名.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_TODO/易循.md"
+                "file": "随手/未命名.md"
               }
             }
           },
@@ -63,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_TODO/易循.md",
+                "file": "随手/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_TODO/易循.md",
+                "file": "随手/未命名.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,17 +165,17 @@
     "width": 312.5,
     "collapsed": true
   },
-  "active": "ec8e312021137913",
+  "active": "10b55b72d3593072",
   "lastOpenFiles": [
+    "随手/未命名.md",
+    "docs/课程笔记/大二下/马原.md",
+    "随手/test.md",
+    "随手/bp.md",
     "_TODO/易循.md",
     "docs/面试/虚拟内存.md",
     "docs/课程笔记/English.md",
     "docs/面试/JavaSE/threadlocal.md",
     "docs/面试/JVM/jdk和jre.md",
-    "docs/FrontEnd/HTML/html-start.md",
-    "docs/课程笔记/大二下/操作系统/content/操作系统简要.md",
-    "docs/FrontEnd/CSS/content/选择器.md",
-    "docs/FrontEnd/CSS/css-start.md",
-    "docs/FrontEnd/CSS/content/CSS函数.md"
+    "docs/FrontEnd/HTML/html-start.md"
   ]
 }
