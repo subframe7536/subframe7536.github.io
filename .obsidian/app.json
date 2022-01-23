@@ -23,5 +23,5 @@
   "spellcheck": false,
   "spellcheckLanguages": [],
   "trashOption": "local",
-  "autoConvertHtml": false
+  "autoConvertHtml": true
 }

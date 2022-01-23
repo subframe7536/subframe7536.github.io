@@ -60,6 +60,7 @@
 
 .kanban-plugin__item {
   position: relative;
+  border: none;
 }
 
 .kanban-plugin__item-postfix-button-wrapper {
@@ -80,13 +81,18 @@ button.kanban-plugin__item-postfix-button.is-enabled,
   background-color: #eee;
 }
 
-body.theme-light .kanban-plugin__lane {
+.theme-light .kanban-plugin__lane {
   background: #ececec !important;
   border: 2px solid #ddd;
 }
 
 .theme-light .kanban-plugin__lane-settings-button:hover {
   background-color: #fff !important;
+}
+
+.theme-light .kanban-plugin__item-content-wrapper {
+  border: 2px solid #ededed;
+  border-radius: 8px;
 }
 
 .theme-dark button.kanban-plugin__item-postfix-button.is-enabled:hover,

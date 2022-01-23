@@ -395,6 +395,7 @@ div.cm-active.cm-line::before {
 
 .markdown-preview-view table {
   width: 100%;
+  margin: 15px 0;
 }
 
 .markdown-preview-view table>*>*>* {
@@ -507,7 +508,7 @@ a.tag:hover {
 /* 选中区域 */
 
 .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
-  background-color: transparent;
+  background-color: #caecff40;
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-selection {

@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "b36e624de53dbafc",
+        "id": "ec8e312021137913",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "_TODO/面试.md"
+            "file": "docs/面试/虚拟内存.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_TODO/面试.md"
+                "file": "docs/面试/虚拟内存.md"
               }
             }
           },
@@ -63,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_TODO/面试.md",
+                "file": "docs/面试/虚拟内存.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -78,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 320.5
+    "width": 320.5,
+    "collapsed": true
   },
   "right": {
     "id": "1a5a600bbc148501",
@@ -103,7 +106,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_TODO/面试.md",
+                "file": "docs/面试/虚拟内存.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -163,17 +166,17 @@
     "width": 279.5,
     "collapsed": true
   },
-  "active": "b36e624de53dbafc",
+  "active": "ec8e312021137913",
   "lastOpenFiles": [
+    "docs/面试/虚拟内存.md",
     "_TODO/面试.md",
+    "docs/课程笔记/大二下/操作系统/content/操作系统简要.md",
+    "docs/课程笔记/大二下/操作系统/操作系统.md",
     "docs/面试/JavaSE/threadlocal.md",
+    "docs/面试/java四种引用.md",
     "docs/BackEnd/Spring/content/编写业务.md",
     "docs/tool/bat.md",
     "docs/tool/c++算法&函数.md",
-    "docs/BackEnd/JavaSE.md",
-    "docs/面试/算法.md",
-    "项目/易循/问卷调查.md",
-    "_TODO/易循.md",
-    "docs/课程笔记/大二下/操作系统/content/虚拟内存.md"
+    "docs/BackEnd/JavaSE.md"
   ]
 }
