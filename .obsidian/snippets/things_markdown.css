@@ -288,7 +288,8 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
 
 div.cm-active.cm-line {
   position: relative;
-  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 div.cm-active.cm-line::before {
@@ -298,7 +299,7 @@ div.cm-active.cm-line::before {
   height: 100%;
   z-index: 99;
   top: 0;
-  left: -6px;
+  right: -4px;
   border-radius: 16px;
 }
 
@@ -530,10 +531,14 @@ a.tag:hover {
   background-color: transparent;
 }
 
+.theme-light .markdown-source-view.mod-cm6 .cm-quote .cm-selection,
+.theme-light .markdown-source-view.mod-cm6 .cm-hmd-indent-in-quote .cm-selection,
 .theme-light .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
   background-color: #caecff;
 }
 
+.theme-dark .markdown-source-view.mod-cm6 .cm-quote .cm-selection,
+.theme-dark .markdown-source-view.mod-cm6 .cm-hmd-indent-in-quote .cm-selection,
 .theme-dark .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
   background-color: #3d4d61;
 }
