@@ -493,20 +493,20 @@ a.tag:hover {
 }
 
 
-/* 选中框 */
+/* 选中区域 */
 
 .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
   background-color: transparent;
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: rgb(56, 77, 109);
-  color: rgba(203, 243, 255, .8);
+  background-color: rgba(94, 195, 253, 0.3);
+  /* color: rgba(203, 243, 255, .8); */
 }
 
 .theme-dark .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: rgba(203, 243, 255, .8);
-  color: rgb(56, 77, 109);
+  background-color: rgb(117, 223, 255, .3);
+  /* color: rgb(56, 77, 109); */
 }
 
 
