@@ -36,7 +36,7 @@ a.tag,
 
 .cm-line:not(.HyperMD-list-line):not(.HyperMD-quote) {
   line-height: 1.6 !important;
-  padding: 3px 2px !important;
+  padding: 3px 0 !important;
 }
 
 .cm-line.HyperMD-list-line {
@@ -288,8 +288,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
 
 div.cm-active.cm-line {
   position: relative;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 4px;
 }
 
 div.cm-active.cm-line::before {
@@ -299,7 +298,7 @@ div.cm-active.cm-line::before {
   height: 100%;
   z-index: 99;
   top: 0;
-  right: -4px;
+  left: -6px;
   border-radius: 16px;
 }
 
@@ -507,17 +506,21 @@ a.tag:hover {
 
 /* 选中区域 */
 
-.markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
-  background-color: #caecff40;
+.theme-light .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
+  background-color: #caecff;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
+  background-color: #323a44;
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: rgba(94, 195, 253, 0.3);
+  background-color: #caecff;
   /* color: rgba(203, 243, 255, .8); */
 }
 
 .theme-dark .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: rgb(117, 223, 255, .3);
+  background-color: #323a44;
   /* color: rgb(56, 77, 109); */
 }
 
