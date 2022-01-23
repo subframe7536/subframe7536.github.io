@@ -390,17 +390,17 @@ body:not(.minimal-icons-off) svg.reset {
   margin-right: 10px;
 }
 
-.suggestion-container {
+.prompt .suggestion-container {
   border-radius: 6px;
   padding: 5px 0;
 }
 
-.suggestion-container .suggestion-item {
+.prompt .suggestion-container .suggestion-item {
   border-radius: 6px;
   margin: 0 5px;
 }
 
-.suggestion-container .suggestion-item.is-selected {
+.prompt .suggestion-container .suggestion-item.is-selected {
   box-shadow: 1px 1px 1px 0px #777 inset !important;
 }
 

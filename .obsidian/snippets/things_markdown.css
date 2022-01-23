@@ -242,9 +242,18 @@ h6:hover::before {
 }
 
 .is-live-preview .HyperMD-header-2 {
-  border-bottom-color: #EE9B00;
-  border-bottom-width: 2px;
-  padding-bottom: 5px !important;
+  position: relative;
+  border: none;
+}
+
+.is-live-preview .HyperMD-header-2::after {
+  content: " ";
+  width: 100%;
+  height: 3px;
+  background-color: #EE9B00;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
 }
 
 body .app-container .view-content .HyperMD-header {

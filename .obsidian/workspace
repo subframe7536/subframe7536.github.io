@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/面试/JavaSE/threadlocal.md",
-            "mode": "source",
+            "file": "docs/tool/bat.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md"
+                "file": "docs/tool/bat.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "换页",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md",
+                "file": "docs/tool/bat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/面试/JavaSE/threadlocal.md",
+                "file": "docs/tool/bat.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -167,6 +167,7 @@
   },
   "active": "b36e624de53dbafc",
   "lastOpenFiles": [
+    "docs/tool/bat.md",
     "docs/面试/JavaSE/threadlocal.md",
     "docs/tool/c++算法&函数.md",
     "_TODO/面试.md",
@@ -175,7 +176,6 @@
     "项目/易循/问卷调查.md",
     "_TODO/易循.md",
     "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
-    "docs/课程笔记/大二下/操作系统/操作系统.md",
-    "杂/windows功能.md"
+    "docs/课程笔记/大二下/操作系统/操作系统.md"
   ]
 }
