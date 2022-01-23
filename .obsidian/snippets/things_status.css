@@ -393,6 +393,15 @@ body:not(.minimal-icons-off) svg.reset {
 .suggestion-container {
   border-radius: 6px;
   padding: 5px 0;
+  border: 2px solid #666;
+}
+
+.theme-light .suggestion-container {
+  border: 2px solid #ddd;
+}
+
+.theme-dark .suggestion-container {
+  border: 2px solid #555;
 }
 
 .suggestion-container:not(.mod-search-suggestion) .suggestion-item {
@@ -400,8 +409,13 @@ body:not(.minimal-icons-off) svg.reset {
   margin: 0 5px;
 }
 
-.suggestion-container:not(.mod-search-suggestion) .suggestion-item.is-selected {
+.theme-light .suggestion-container:not(.mod-search-suggestion) .suggestion-item.is-selected {
   box-shadow: 1px 1px 1px 0px #777 inset !important;
+}
+
+.theme-dark .suggestion-container:not(.mod-search-suggestion) .suggestion-item.is-selected {
+  background-color: #a9c9ff !important;
+  color: #222;
 }
 
 
