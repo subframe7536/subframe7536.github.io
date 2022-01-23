@@ -4,7 +4,7 @@
 class ThreadLocalUtil {
     private static final ThreadLocal<Map<String,String>> LOGIN_THREAD_LOCAL = new ThreadLocal<>();
 
-    public static void map(Map<String,String> map){
+    public static void set(Map<String,String> map){
         LOGIN_THREAD_LOCAL.set(map);
     }
     public static String userId(){

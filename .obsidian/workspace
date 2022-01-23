@@ -4,23 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f767e356a3aeca7b",
-        "type": "leaf",
-        "state": {
-          "type": "kanban",
-          "state": {
-            "file": "_TODO/面试.md"
-          }
-        }
-      },
-      {
         "id": "b36e624de53dbafc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "docs/面试/JavaSE/threadlocal.md",
-            "mode": "preview",
+            "mode": "source",
             "source": false
           }
         }
@@ -170,14 +160,14 @@
   "active": "b36e624de53dbafc",
   "lastOpenFiles": [
     "docs/面试/JavaSE/threadlocal.md",
-    "docs/BackEnd/JavaSE.md",
+    "docs/tool/c++算法&函数.md",
     "_TODO/面试.md",
+    "docs/BackEnd/JavaSE.md",
     "docs/面试/算法.md",
     "项目/易循/问卷调查.md",
     "_TODO/易循.md",
     "docs/课程笔记/大二下/操作系统/content/虚拟内存.md",
     "docs/课程笔记/大二下/操作系统/操作系统.md",
-    "杂/windows功能.md",
-    "docs/FrontEnd/CSS/css-start.md"
+    "杂/windows功能.md"
   ]
 }
