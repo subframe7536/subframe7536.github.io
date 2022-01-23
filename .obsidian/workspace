@@ -6,10 +6,24 @@
       {
         "id": "10b55b72d3593072",
         "type": "leaf",
+        "dimension": 43.03030303030303,
         "state": {
           "type": "markdown",
           "state": {
             "file": "随手/未命名.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "9390db1f24ef92d3",
+        "type": "leaf",
+        "dimension": 56.96969696969697,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "项目/易循/整体方案.md",
             "mode": "source",
             "source": false
           }
@@ -142,8 +156,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "9948ad5d903dbf76",
@@ -168,14 +181,14 @@
   "active": "10b55b72d3593072",
   "lastOpenFiles": [
     "随手/未命名.md",
-    "docs/课程笔记/大二下/马原.md",
+    "项目/易循/整体方案.md",
     "随手/test.md",
-    "随手/bp.md",
     "_TODO/易循.md",
-    "docs/面试/虚拟内存.md",
-    "docs/课程笔记/English.md",
-    "docs/面试/JavaSE/threadlocal.md",
-    "docs/面试/JVM/jdk和jre.md",
-    "docs/FrontEnd/HTML/html-start.md"
+    "项目/易循/每周任务模板.md",
+    "项目/易循/1.24.md",
+    "项目/易循/问卷调查.md",
+    "_TODO/1.24.md",
+    "项目/易循/任务分配.md",
+    "docs/课程笔记/大二下/马原.md"
   ]
 }

@@ -357,6 +357,11 @@ body:not(.minimal-icons-off) svg.reset {
   /* transform: translateY(-70%); */
 }
 
+body:not(.minimal-icons-off) .setting-item svg.reset {
+  /* top: 50%; */
+  transform: translateY(-70%);
+}
+
 
 /* 提示框 */
 
