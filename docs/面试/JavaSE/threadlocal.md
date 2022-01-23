@@ -3,7 +3,6 @@
 ```java
 class ThreadLocalUtil {
     private static final ThreadLocal<Map<String,String>> LOGIN_THREAD_LOCAL = new ThreadLocal<>();
-
     public static void set(Map<String,String> map){
         LOGIN_THREAD_LOCAL.set(map);
     }
@@ -17,6 +16,8 @@ class ThreadLocalUtil {
     public static void clear(){
         LOGIN_THREAD_LOCAL.remove();
     }
-
 }
 ```
+## 用途
+### 代替显示传参
+### 

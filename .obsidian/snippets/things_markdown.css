@@ -244,6 +244,11 @@ h6:hover::before {
 .is-live-preview .HyperMD-header-2 {
   border-bottom-color: #EE9B00;
   border-bottom-width: 2px;
+  padding-bottom: 5px !important;
+}
+
+body .app-container .view-content .HyperMD-header {
+  padding: 8px 0 !important;
 }
 
 
