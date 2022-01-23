@@ -307,7 +307,7 @@ div.cm-active.cm-line::before {
 }
 
 .theme-dark .cm-active.cm-line {
-  background-color: #323a44 !important;
+  background-color: #86a1c440 !important;
 }
 
 .cm-active.cm-line::before {
@@ -510,18 +510,24 @@ a.tag:hover {
   background-color: #caecff;
 }
 
+.theme-light .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:first-child {
+  border-top: 1px solid #caecff;
+  border-bottom: 1px solid #caecff;
+  box-sizing: content-box;
+}
+
 .theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
-  background-color: #323a44;
+  background-color: #3d4d61;
 }
 
-.theme-light .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #caecff;
-  /* color: rgba(203, 243, 255, .8); */
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:first-child {
+  border-top: 1px solid #3d4d61;
+  border-bottom: 1px solid #3d4d61;
+  box-sizing: content-box;
 }
 
-.theme-dark .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #323a44;
-  /* color: rgb(56, 77, 109); */
+.markdown-source-view.mod-cm6 .cm-selection {
+  background-color: transparent;
 }
 
 

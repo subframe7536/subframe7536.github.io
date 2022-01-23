@@ -1,7 +1,7 @@
 {
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "Things",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "sliding-panes",
     "setting_folder",
