@@ -76,7 +76,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -133,9 +134,17 @@
                 }
               }
             }
+          },
+          {
+            "id": "c5d539fd75a0ab73",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "9948ad5d903dbf76",
@@ -154,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5,
-    "collapsed": true
+    "width": 279.5
   },
   "active": "b36e624de53dbafc",
   "lastOpenFiles": [
