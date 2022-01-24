@@ -523,6 +523,10 @@ a.tag:hover {
 
 /* 选中区域 */
 
+.theme-light .markdown-source-view.mod-cm6 .cm-selection {
+  background-color: #caecff;
+}
+
 .theme-light .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
   background-color: #caecff;
 }
@@ -533,34 +537,30 @@ a.tag:hover {
   box-sizing: content-box;
 }
 
-.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
-  background-color: #3d4d61;
-}
-
-.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:first-child {
-  border-top: 1px solid #3d4d61;
-  border-bottom: 1px solid #3d4d61;
-  box-sizing: content-box;
-}
-
-.theme-light .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #caecff;
-}
-
-.theme-dark .markdown-source-view.mod-cm6 .cm-selection {
-  background-color: #3d4d61;
-}
-
 .theme-light .markdown-source-view.mod-cm6 .cm-quote .cm-selection,
 .theme-light .markdown-source-view.mod-cm6 .cm-hmd-indent-in-quote .cm-selection,
 .theme-light .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
   background-color: #caecff;
 }
 
+.theme-dark .markdown-source-view.mod-cm6 .cm-selection {
+  background-color: #5779a5;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground {
+  background-color: #5779a5;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-editor .cm-selectionBackground:first-child {
+  border-top: 1px solid #5779a5;
+  border-bottom: 1px solid #5779a5;
+  box-sizing: content-box;
+}
+
 .theme-dark .markdown-source-view.mod-cm6 .cm-quote .cm-selection,
 .theme-dark .markdown-source-view.mod-cm6 .cm-hmd-indent-in-quote .cm-selection,
 .theme-dark .markdown-source-view.mod-cm6 .cm-hmd-codeblock .cm-selection {
-  background-color: #3d4d61;
+  background-color: #5779a5;
 }
 
 

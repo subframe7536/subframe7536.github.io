@@ -7,9 +7,11 @@
         "id": "9390db1f24ef92d3",
         "type": "leaf",
         "state": {
-          "type": "excalidraw",
+          "type": "markdown",
           "state": {
-            "file": "Excalidraw/手绘2022-01-24 21_44_52.excalidraw.md"
+            "file": "项目/易循/整体方案.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/手绘2022-01-24 21_44_52.excalidraw.md"
+                "file": "项目/易循/整体方案.md"
               }
             }
           },
@@ -94,7 +96,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Excalidraw/手绘2022-01-24 21_44_52.excalidraw.md",
+                "file": "项目/易循/整体方案.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -129,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/手绘2022-01-24 21_44_52.excalidraw.md",
+                "file": "项目/易循/整体方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,9 +175,9 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
-    "Excalidraw/手绘2022-01-24 21_44_52.excalidraw.md",
-    "Excalidraw/智能垃圾柜.md",
     "项目/易循/整体方案.md",
+    "Excalidraw/垃圾暂存箱.md",
+    "Excalidraw/智能垃圾柜.md",
     "日记/2022-01-24.md",
     "日记/寒假日记模板.md",
     "docs/课程笔记/大二下/马原.md",
