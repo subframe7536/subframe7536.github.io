@@ -7,11 +7,9 @@
         "id": "9390db1f24ef92d3",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "kanban",
           "state": {
-            "file": "杂/windows功能.md",
-            "mode": "source",
-            "source": true
+            "file": "_TODO/learning tasklist.md"
           }
         }
       }
@@ -40,7 +38,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂/windows功能.md"
+                "file": "_TODO/learning tasklist.md"
               }
             }
           },
@@ -65,7 +63,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "杂/windows功能.md",
+                "file": "_TODO/learning tasklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +103,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "杂/windows功能.md",
+                "file": "_TODO/learning tasklist.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -166,9 +164,9 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "_TODO/learning tasklist.md",
     "杂/windows功能.md",
     "_TODO/面试.md",
-    "_TODO/learning tasklist.md",
     "_TODO/易循.md",
     "日记/2022-01-16.md",
     "随手/test.md",
