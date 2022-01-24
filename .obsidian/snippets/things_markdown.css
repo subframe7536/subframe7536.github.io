@@ -534,8 +534,12 @@ a.tag:hover {
   box-sizing: content-box;
 }
 
-.markdown-source-view.mod-cm6 .cm-selection {
-  background-color: transparent;
+.theme-light .markdown-source-view.mod-cm6 .cm-selection {
+  background-color: #caecff;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-selection {
+  background-color: #3d4d61;
 }
 
 .theme-light .markdown-source-view.mod-cm6 .cm-quote .cm-selection,

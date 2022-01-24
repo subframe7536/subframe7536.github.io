@@ -7,9 +7,11 @@
         "id": "9390db1f24ef92d3",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "markdown",
           "state": {
-            "file": "_TODO/面试.md"
+            "file": "杂/windows功能.md",
+            "mode": "source",
+            "source": true
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_TODO/面试.md"
+                "file": "杂/windows功能.md"
               }
             }
           },
@@ -63,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_TODO/面试.md",
+                "file": "杂/windows功能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_TODO/面试.md",
+                "file": "杂/windows功能.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -164,6 +166,7 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "杂/windows功能.md",
     "_TODO/面试.md",
     "_TODO/learning tasklist.md",
     "_TODO/易循.md",
@@ -172,7 +175,6 @@
     "随手/bp.md",
     "docs/课程笔记/大二下/马原.md",
     "项目/易循/整体方案.md",
-    "随手/未命名.md",
-    "项目/易循/每周任务模板.md"
+    "随手/未命名.md"
   ]
 }
