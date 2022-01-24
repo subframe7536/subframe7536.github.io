@@ -224,6 +224,7 @@ body:not(.is-mobile) .document-replace {
 
 .status-bar * {
   font-size: 1rem;
+  color: var(--text-muted);
 }
 
 
@@ -357,7 +358,7 @@ body:not(.minimal-icons-off) svg.reset {
   /* transform: translateY(-70%); */
 }
 
-body:not(.minimal-icons-off) .setting-item svg.reset {
+body:not(.minimal-icons-off) .hotkey-settings-container .setting-item svg.reset {
   /* top: 50%; */
   transform: translateY(-70%);
 }

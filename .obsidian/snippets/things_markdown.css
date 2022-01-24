@@ -4,6 +4,10 @@
   --interactive-accent-hover: #6dc2da !important;
 }
 
+.theme-dark {
+  --interactive-accent-hover: #0088ad !important;
+}
+
 
 /* =====字体设置===== */
 
@@ -464,6 +468,10 @@ p {
 
 .markdown-source-view.mod-cm6 .list-bullet:after {
   top: -7px;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .list-bullet:after {
+  color: aliceblue;
 }
 
 .markdown-preview-view ul ul::before {

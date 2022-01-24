@@ -222,3 +222,29 @@ button.kanban-plugin__item-postfix-button.is-enabled,
 
 
 /* day planner */
+
+.plugin-obsidian-day-planner {
+  padding-top: 0 !important;
+}
+
+.day-planner-progress-bar {
+  margin-top: 0 !important;
+}
+
+.status-bar-item-segment.day-planner-status-bar-text {
+  font-size: 0.9rem !important;
+}
+
+#now-line.svelte-e43ld1.svelte-e43ld1,
+#now-line.svelte-e43ld1.svelte-e43ld1 span {
+  background-color: rgb(255, 149, 78) !important;
+}
+
+input[type='checkbox']:checked {
+  background-image: none !important;
+}
+
+#scroll-controls.svelte-e43ld1 label.svelte-e43ld1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
