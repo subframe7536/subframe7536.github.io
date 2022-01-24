@@ -434,6 +434,10 @@ div.cm-active.cm-line::before {
 
 /* 列表 */
 
+ul {
+  padding-inline-start: 1.4em;
+}
+
 ul,
 ol {
   margin-top: 5px !important;
@@ -449,9 +453,20 @@ ul>li {
   margin: 8px auto;
 }
 
+ul>li {
+  padding-left: .5em;
+}
+
+ul>li>ul>li {
+  list-style: square;
+}
+
+ul>li>ul>li>ul>li {
+  list-style: circle;
+}
+
 li::marker {
   font-family: Consolas;
-  margin-left: 5px;
 }
 
 .theme-dark li::marker {
@@ -476,7 +491,15 @@ p {
 
 .markdown-preview-view ul ul::before {
   border-width: 3px;
-  left: -1.15rem;
+  left: -1.7rem;
+}
+
+.theme-dark .markdown-preview-view ul ul::before {
+  border-color: #466baa;
+}
+
+.theme-dark .workspace-split.mod-root .view-content div .cm-formatting {
+  color: #ddd !important;
 }
 
 
