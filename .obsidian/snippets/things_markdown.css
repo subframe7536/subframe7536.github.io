@@ -1,6 +1,7 @@
 .theme-light {
   --background-primary: #fafafa !important;
   --background-primary-alt: #fefefe !important;
+  --interactive-accent-hover: #6dc2da !important;
 }
 
 
