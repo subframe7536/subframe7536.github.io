@@ -431,7 +431,8 @@ div.cm-active.cm-line::before {
 
 ul,
 ol {
-  margin: 5px auto !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
 }
 
 body .cm-hmd-list-indent>.cm-tab:after {
@@ -440,7 +441,7 @@ body .cm-hmd-list-indent>.cm-tab:after {
 
 ol>li,
 ul>li {
-  margin: 5px auto;
+  margin: 8px auto;
 }
 
 li::marker {
