@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,6 +176,7 @@
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
     "日记/2022-01-25.md",
+    "_TODO/面试.md",
     "日记/寒假日记模板.md",
     "docs/tool/c++算法&函数.md",
     "项目/易循/整体方案.md",
@@ -184,7 +184,6 @@
     "docs/FrontEnd/CSS/css-start.md",
     "Excalidraw/垃圾暂存箱.md",
     "日记/2022-01-24.md",
-    "docs/课程笔记/大二下/马原.md",
-    "_TODO/大三上寒假计划.md"
+    "docs/课程笔记/大二下/马原.md"
   ]
 }
