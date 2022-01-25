@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/BackEnd/NoSql/MongoDB.md",
-            "mode": "source",
+            "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/BackEnd/NoSql/MongoDB.md"
+                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md"
               }
             }
           },
@@ -67,7 +67,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -96,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/BackEnd/NoSql/MongoDB.md",
+                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -131,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/BackEnd/NoSql/MongoDB.md",
+                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,6 +176,8 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
+    "docs/BackEnd/Spring/Springboot.md",
     "docs/BackEnd/NoSql/MongoDB.md",
     "docs/BackEnd/NoSql/resource/Pasted image 20220125205813.png",
     "docs/tool/Linux/Linux常用命令.md",
@@ -182,8 +185,6 @@
     "_TODO/面试.md",
     "日记/寒假日记模板.md",
     "docs/tool/c++算法&函数.md",
-    "项目/易循/整体方案.md",
-    "Excalidraw/智能零散垃圾柜.md",
-    "docs/FrontEnd/CSS/css-start.md"
+    "项目/易循/整体方案.md"
   ]
 }
