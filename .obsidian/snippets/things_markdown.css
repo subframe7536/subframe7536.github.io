@@ -637,6 +637,10 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
   background: inherit;
 }
 
+img {
+  max-width: unset !important;
+}
+
 
 /* 符号 */
 
