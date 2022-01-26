@@ -7,6 +7,8 @@
 ```bat
 set /p 变量名=输入前的文字
 ```
+### 获取返回值
+[怎么用bat得到一个命令执行后的返回值赋值给一个变量_百度知道 (baidu.com)](https://zhidao.baidu.com/question/563606780.html)
 ### 跳转
 ```bat
 goto 名称
