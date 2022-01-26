@@ -92,16 +92,8 @@
       {
         "id": "37917c2df535ce63",
         "type": "tabs",
-        "dimension": 37.244897959183675,
+        "dimension": 51.053283767038415,
         "children": [
-          {
-            "id": "3439ad1afdc95300",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
           {
             "id": "ff86cec1d93aa1e9",
             "type": "leaf",
@@ -161,13 +153,22 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "e74b339b1189d3da",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "9948ad5d903dbf76",
         "type": "tabs",
-        "dimension": 62.755102040816325,
+        "dimension": 48.946716232961585,
         "children": [
           {
             "id": "9c3a023025004665",
@@ -181,8 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5,
-    "collapsed": true
+    "width": 312.5
   },
   "active": "cef2625b3fa0f118",
   "lastOpenFiles": [

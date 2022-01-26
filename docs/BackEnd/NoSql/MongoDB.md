@@ -15,7 +15,7 @@
 | database | database   | 数据库        |
 | table    | collection | 数据库表/集合 |
 | row      | document   | 数据行/文档   |
-| column   | filed      | 数据字段/域   |
+| column   | field      | 数据字段/域   |
 | index    | index      | 索引          |
 
 ### 数据库

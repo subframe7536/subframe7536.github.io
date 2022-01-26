@@ -1,5 +1,4 @@
 [
-  "table-editor-obsidian",
   "obsidian-mind-map",
   "obsidian-excalidraw-plugin",
   "cm-chs-patch",
@@ -9,5 +8,6 @@
   "calendar",
   "quick-explorer",
   "obsidian-outliner",
-  "obsidian-day-planner"
+  "obsidian-day-planner",
+  "table-editor-obsidian"
 ]
