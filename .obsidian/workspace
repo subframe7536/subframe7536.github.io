@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
-            "mode": "preview",
+            "file": "日记/2022-01-26.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md"
+                "file": "日记/2022-01-26.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
+                "file": "日记/2022-01-26.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
+                "file": "日记/2022-01-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,6 +176,7 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "日记/2022-01-26.md",
     "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
     "docs/BackEnd/Spring/Springboot.md",
     "docs/BackEnd/NoSql/MongoDB.md",
@@ -184,7 +185,6 @@
     "日记/2022-01-25.md",
     "_TODO/面试.md",
     "日记/寒假日记模板.md",
-    "docs/tool/c++算法&函数.md",
-    "项目/易循/整体方案.md"
+    "docs/tool/c++算法&函数.md"
   ]
 }
