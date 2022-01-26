@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "docs/tool/bat.md",
-            "mode": "source",
+            "mode": "preview",
             "source": false
           }
         }
@@ -67,7 +67,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
