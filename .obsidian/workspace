@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "项目/易循/数据库.md",
+            "file": "docs/tool/bat.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "项目/易循/数据库.md"
+                "file": "docs/tool/bat.md"
               }
             }
           },
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "项目/易循/数据库.md",
+                "file": "docs/tool/bat.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "项目/易循/数据库.md",
+                "file": "docs/tool/bat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,6 +175,7 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "docs/tool/bat.md",
     "项目/易循/数据库.md",
     "docs/BackEnd/NoSql/MongoDB.md",
     "项目/易循/整体方案.md",
@@ -183,7 +184,6 @@
     "日记/2022-01-26.md",
     "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
     "docs/BackEnd/Spring/Springboot.md",
-    "docs/BackEnd/NoSql/resource/Pasted image 20220125205813.png",
-    "docs/tool/Linux/Linux常用命令.md"
+    "docs/BackEnd/NoSql/resource/Pasted image 20220125205813.png"
   ]
 }
