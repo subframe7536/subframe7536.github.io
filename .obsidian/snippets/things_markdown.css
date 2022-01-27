@@ -534,13 +534,13 @@ a.tag:hover {
   border: none !important;
 }
 
-.theme-light .obsidian-search-match-highlight span {
+.theme-light .obsidian-search-match-highlight {
   border: 2px solid rgb(255, 178, 34) !important;
   border-radius: 4px !important;
   background-color: unset !important;
 }
 
-.theme-dark .obsidian-search-match-highlight span {
+.theme-dark .obsidian-search-match-highlight {
   border: 2px solid rgb(211, 137, 0) !important;
   border-radius: 4px !important;
   background-color: unset !important;

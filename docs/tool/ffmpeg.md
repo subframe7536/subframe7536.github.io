@@ -16,6 +16,10 @@
 ```shell
 ffmpeg -i 源文件 -filter_complex afade=t=out:st=开始减弱时间:d=减弱持续时间 输出文件
 ```
+### 视频帧截取
+```shell
+ffmpeg -i 源文件 -ss 开始时间 -to 结束时间 -vframes 帧数 %03.png
+```
 ### 视频裁剪
 -ss 开始时间 -to 结束时间
 -ss 开始时间 -t 持续时间
