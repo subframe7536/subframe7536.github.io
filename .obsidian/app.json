@@ -17,7 +17,7 @@
   "foldIndent": false,
   "communityPluginSortOrder": "download",
   "readableLineLength": true,
-  "legacyEditor": false,
+  "legacyEditor": true,
   "livePreview": true,
   "strictLineBreaks": false,
   "spellcheck": false,
