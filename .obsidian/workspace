@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/tool/bat.md",
+            "file": "日记/2022-01-27.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tool/bat.md"
+                "file": "日记/2022-01-27.md"
               }
             }
           },
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -89,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/tool/bat.md",
+                "file": "日记/2022-01-27.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tool/bat.md",
+                "file": "日记/2022-01-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,6 +176,7 @@
   },
   "active": "9390db1f24ef92d3",
   "lastOpenFiles": [
+    "日记/2022-01-27.md",
     "docs/tool/bat.md",
     "项目/易循/数据库.md",
     "docs/BackEnd/NoSql/MongoDB.md",
@@ -184,7 +185,6 @@
     "Excalidraw/手绘2022-01-26 19_52_51.excalidraw.md",
     "日记/2022-01-26.md",
     "docs/BackEnd/Spring/content/Awesome Spring Boot.md",
-    "docs/BackEnd/Spring/Springboot.md",
-    "docs/BackEnd/NoSql/resource/Pasted image 20220125205813.png"
+    "docs/BackEnd/Spring/Springboot.md"
   ]
 }
