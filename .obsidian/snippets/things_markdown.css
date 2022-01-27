@@ -18,6 +18,7 @@
 
 .workspace-split.mod-root .view-content * {
   font-family: Consolas, Microsoft Yahei !important;
+  word-break: keep-all;
 }
 
 a.tag,
