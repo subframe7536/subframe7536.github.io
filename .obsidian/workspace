@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_TODO/大三上寒假计划.md",
-            "mode": "preview",
+            "file": "项目/易循/数据库.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_TODO/大三上寒假计划.md"
+                "file": "项目/易循/数据库.md"
               }
             }
           },
@@ -88,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_TODO/大三上寒假计划.md",
+                "file": "项目/易循/数据库.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_TODO/大三上寒假计划.md",
+                "file": "项目/易循/数据库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,17 +170,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 312.5,
+    "collapsed": true
   },
   "active": "4453592aac5949aa",
   "lastOpenFiles": [
+    "项目/易循/数据库.md",
     "_TODO/大三上寒假计划.md",
     "_TODO/易循.md",
     "_TODO/learning tasklist.md",
     "项目/易循/1.24.md",
     "_TODO/日常todo.md",
     "_TODO/面试.md",
-    "项目/易循/数据库.md",
     "docs/BackEnd/Mysql/Mysql.md",
     "docs/BackEnd/go.md",
     "docs/tool/bat.md"
