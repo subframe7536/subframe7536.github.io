@@ -7,8 +7,12 @@
         "id": "4453592aac5949aa",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "项目/易循/数据库.md",
+            "mode": "preview",
+            "source": false
+          }
         }
       }
     ],
@@ -35,7 +39,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "项目/易循/数据库.md"
+              }
             }
           },
           {
@@ -82,6 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "项目/易循/数据库.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -116,6 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "项目/易循/数据库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,10 +175,10 @@
   },
   "active": "4453592aac5949aa",
   "lastOpenFiles": [
-    "docs/BackEnd/go.md",
-    "日记/2022-01-27.md",
-    "docs/tool/bat.md",
     "项目/易循/数据库.md",
+    "docs/BackEnd/go.md",
+    "docs/tool/bat.md",
+    "日记/2022-01-27.md",
     "docs/BackEnd/NoSql/MongoDB.md",
     "项目/易循/整体方案.md",
     "Excalidraw/智能零散垃圾柜.md",
