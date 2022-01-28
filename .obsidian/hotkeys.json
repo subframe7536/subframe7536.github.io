@@ -52,14 +52,6 @@
     }
   ],
   "app:go-back": [],
-  "editor:toggle-highlight": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "editor:delete-paragraph": [],
   "editor:toggle-strikethrough": [
     {
@@ -280,6 +272,23 @@
         "Shift"
       ],
       "key": "]"
+    }
+  ],
+  "editor:toggle-highlight": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "global-search:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
     }
   ]
 }
