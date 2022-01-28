@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "日记/2022-01-28.md",
+            "file": "项目/易循/数据库.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2022-01-28.md"
+                "file": "项目/易循/数据库.md"
               }
             }
           },
@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -89,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "日记/2022-01-28.md",
+                "file": "项目/易循/数据库.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2022-01-28.md",
+                "file": "项目/易循/数据库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,15 +175,15 @@
   },
   "active": "4453592aac5949aa",
   "lastOpenFiles": [
-    "日记/2022-01-28.md",
-    "docs/tool/ffmpeg.md",
     "项目/易循/数据库.md",
+    "日记/2022-01-28.md",
+    "日记/2022-01-25.md",
+    "日记/2022-01-24.md",
+    "日记/2022-01-26.md",
+    "日记/2022-01-27.md",
+    "docs/tool/ffmpeg.md",
     "_TODO/大三上寒假计划.md",
     "_TODO/易循.md",
-    "_TODO/learning tasklist.md",
-    "项目/易循/1.24.md",
-    "_TODO/日常todo.md",
-    "_TODO/面试.md",
-    "docs/BackEnd/Mysql/Mysql.md"
+    "_TODO/learning tasklist.md"
   ]
 }
