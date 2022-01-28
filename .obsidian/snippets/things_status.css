@@ -170,13 +170,17 @@ body:not(.is-mobile) .document-replace {
   border-radius: 9px;
   padding: 8px 6px;
 }
+.theme-dark .menu {
+  border: 1px solid #666;
+}
 
 .menu-item {
   border-radius: 4px;
-  height: 36px;
-  line-height: 36px;
+  height: 30px;
+  line-height: 30px;
   position: relative;
   padding: 0 10px;
+  margin: 4px 0;
 }
 
 .menu-item-title {
@@ -199,11 +203,15 @@ body:not(.is-mobile) .document-replace {
   right: -4px;
   top: 0;
   background-color: #a5d6ff;
-  height: 36px;
+  height: 100%;
   width: 3px;
   border-radius: 5px;
 }
-
+.theme-dark .menu-separator{
+  border-color: #444;
+  width: calc(100% - 8px);
+  margin-left: 4px;
+}
 
 /* 状态栏 */
 
