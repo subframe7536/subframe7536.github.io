@@ -21,6 +21,8 @@ Host *
   User git
   IdentityFile C:\\Users\\subframe\\.ssh\\none_pass_phrase
 ```
+## 结构
+![[Pasted image 20220129165357.png]]
 ### 暂存、评论、管理修改
 分为 工作空间(working directory) 和 暂存区 ()
 每次暂存将工作空间的修改提交到暂存区，推送时将暂存区的文件推送

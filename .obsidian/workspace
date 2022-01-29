@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/BackEnd/Spring/content/代码生成器.md",
+            "file": "docs/tool/Git.md",
             "mode": "preview",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/BackEnd/Spring/content/代码生成器.md"
+                "file": "docs/tool/Git.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jdbc",
+                "query": "mapper-lo",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -89,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/BackEnd/Spring/content/代码生成器.md",
+                "file": "docs/tool/Git.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -124,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/BackEnd/Spring/content/代码生成器.md",
+                "file": "docs/tool/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,6 +175,8 @@
   },
   "active": "18e8d051edbf2c0d",
   "lastOpenFiles": [
+    "docs/tool/Git.md",
+    "docs/BackEnd/Spring/content/swagger2模板.md",
     "docs/BackEnd/Spring/content/代码生成器.md",
     "docs/BackEnd/Spring/Mybatis.md",
     "docs/BackEnd/Spring/Spring.md",
@@ -183,8 +184,6 @@
     "docs/BackEnd/Spring/SpringMVC.md",
     "docs/BackEnd/Spring/Springboot.md",
     "docs/BackEnd/Spring/content/helloworld of springboot.md",
-    "docs/BackEnd/Spring/content/helloworld.md",
-    "docs/BackEnd/Spring/content/Druid+JDBCTemplate.md",
-    "docs/BackEnd/Spring/content/Awesome Spring Boot.md"
+    "docs/BackEnd/Spring/content/helloworld.md"
   ]
 }
