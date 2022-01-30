@@ -1,16 +1,17 @@
 {
-  "theme": "obsidian",
+  "theme": "moonstone",
   "translucency": false,
   "cssTheme": "Things",
   "enabledCssSnippets": [
     "sliding-panes",
     "setting_folder",
-    "things_folder",
-    "things_markdown",
-    "things_plugin",
     "things_status",
-    "things_code"
+    "things_plugin",
+    "things_markdown",
+    "things_code",
+    "things_folder",
+    "reveal"
   ],
-  "baseFontSize": 21,
+  "baseFontSize": 23,
   "baseFontSizeAction": true
 }

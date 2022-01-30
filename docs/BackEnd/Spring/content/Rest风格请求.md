@@ -1,4 +1,4 @@
-# Rest风格请求
+## 定义
 > 增删改查的请求URI相同，通过不同请求方式区分
 > 原理：利用Filter拦截请求，如果是_methed为put或者delete就将post请求转换成put或者delete
 

@@ -205,27 +205,27 @@ h6::before {
   font-size: 1rem;
 }
 
-h1:hover::before {
+div:not(.markdown-embed-content) h1:hover::before {
   content: "H1";
 }
 
-h2:hover::before {
+div:not(.markdown-embed-content) h2:hover::before {
   content: "H2";
 }
 
-h3:hover::before {
+div:not(.markdown-embed-content) h3:hover::before {
   content: "H3";
 }
 
-h4:hover::before {
+div:not(.markdown-embed-content) h4:hover::before {
   content: "H4";
 }
 
-h5:hover::before {
+div:not(.markdown-embed-content) h5:hover::before {
   content: "H5";
 }
 
-h6:hover::before {
+div:not(.markdown-embed-content) h6:hover::before {
   content: "H6";
 }
 
@@ -409,7 +409,7 @@ div.cm-active.cm-line::before {
 
 .markdown-preview-view th,
 .markdown-preview-view td {
-  padding: 4px 10px !important;
+  padding: 4px 5px !important;
   word-wrap: break-word;
 }
 
@@ -417,6 +417,14 @@ div.cm-active.cm-line::before {
   line-height: 32px;
   height: 32px;
   max-height: 32px;
+  text-align: left;
+}
+
+.markdown-preview-view th[align="right"] {
+  text-align: right;
+}
+
+.markdown-preview-view th[align="center"] {
   text-align: center;
 }
 
@@ -640,10 +648,15 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
   background: inherit;
 }
 
+.theme-light img {
+  box-shadow: 0 0 20px 0 #ddd;
+  border-radius: 8px;
+}
 
-/* img {
-  max-width: unset !important;
-} */
+.view-content .markdown-preview-view img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 /* 符号 */
@@ -651,4 +664,71 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
 .theme-dark .workspace-split.mod-root .view-content .cm-formatting,
 .theme-dark .workspace-split.mod-root .view-content .cm-hmd-table-sep {
   color: #618fc7 !important;
+}
+
+
+/* 内嵌链接 */
+
+.internal-embed {
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.theme-light .internal-embed {
+  border: 0 !important;
+  box-shadow: 0 0 20px 0 #dadada;
+  margin: 12px 0;
+  padding: 0 24px;
+  padding-bottom: 12px;
+}
+
+.theme-light .internal-embed:hover {
+  box-shadow: 0 0 20px 0 #bbb !important;
+  transition: all 0.5s;
+}
+
+.internal-embed .markdown-embed {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+.theme-dark .internal-embed {
+  border: 3px solid #466baa !important;
+}
+
+.markdown-embed .markdown-embed-title {
+  text-align: center;
+  padding: 0 !important;
+  height: 48px;
+  line-height: 48px;
+}
+
+.theme-light .markdown-embed .markdown-embed-title {
+  border-top: 4px groove #a9c9ff;
+}
+
+.popover.hover-popover .markdown-preview-view .markdown-embed,
+.popover .markdown-preview-sizer.markdown-preview-section {
+  height: auto;
+  min-height: min-content !important;
+}
+
+.markdown-embed-link,
+.file-embed-link {
+  position: absolute;
+  right: 0 !important;
+  left: unset !important;
+  cursor: pointer;
+  opacity: 0;
+  width: 48px !important;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.markdown-embed:hover .markdown-embed-link,
+.markdown-embed:hover .file-embed-link {
+  opacity: 1;
 }

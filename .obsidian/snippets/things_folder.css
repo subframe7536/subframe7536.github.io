@@ -48,7 +48,7 @@
   border-radius: 4px;
   position: relative;
   margin-left: 0;
-  padding-left: 8px;
+  padding-left: 4px;
 }
 
 .nav-file-tag {
@@ -63,6 +63,7 @@
 }
 
 .nav-folder-title {
+  margin: 0 0 4px 8px;
   margin-left: 8px;
   padding-top: 1.5px;
   padding-bottom: 1.5px;
