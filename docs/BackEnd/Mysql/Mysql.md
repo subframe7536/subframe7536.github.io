@@ -12,9 +12,13 @@
 - 数据控制语言 DCL (Data Control Language)
 `grant` / `revoke`
 [[相关概念]]
-## 内容
-### MYSQL 安装
-打开`installer` -> 选择`developr default` -> 显示`excute`就点`excute`，没有就`next`&`no` ->  等待安装 -> 设置密码
+
+## MYSQL安装
+打开`installer` -> 选择`developr default` -> 显示`excute`就点`excute`，没有就`next` & `no` ->  等待安装 -> 设置密码
+## MYSQL备份
+```shell
+mysqldump -h服务器名 -u用户名 -p密码 --routines --default-character-set=utf8 数据库名 > 文件位置/文件名.sql
+```
 ### 数据类型
 #### Text 类型
 

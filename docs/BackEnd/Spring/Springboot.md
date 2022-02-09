@@ -1,4 +1,4 @@
-# Springboot
+# SpringBoot
 > 自动配置 spring 框架
 ### 博客&demo
 [[Awesome Spring Boot]]

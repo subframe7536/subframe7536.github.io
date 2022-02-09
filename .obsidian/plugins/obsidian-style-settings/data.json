@@ -80,10 +80,6 @@
   "perso@@menus": "menu-v5",
   "things-style@@minimal-icons-off": false,
   "things-style@@full-file-names": false,
-  "things-style@@text": "\"苹方-简\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-  "things-style@@text-editor": "\"苹方-简\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-  "things-style@@font-ui": "\"苹方-简\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-  "things-style@@font-monospace": "Consolas,Microsoft Yahei,\"苹方-简\",JetBrains Mono,Menlo,SFMono-Regular,Consolas,\"Roboto Mono\",monospace",
   "things-style@@macOS-translucent": true,
   "things-style@@h1-color@@light": "#C94100",
   "things-style@@h2": "1.8rem",
@@ -110,5 +106,9 @@
   "things-style@@h6-color": "#F177FF",
   "things-style@@h4-weight": 700,
   "things-style@@h5-weight": 700,
-  "things-style@@h6-weight": 700
+  "things-style@@h6-weight": 700,
+  "things-style@@font-monospace": "\"Subframe7536 Code Round\",Microsoft YaHei,Menlo,SFMono-Regular,Consolas,\"Roboto Mono\",monospace",
+  "things-style@@font-ui": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+  "things-style@@text-editor": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+  "things-style@@text": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
 }

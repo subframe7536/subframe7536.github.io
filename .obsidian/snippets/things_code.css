@@ -5,8 +5,9 @@
   border-bottom-right-radius: 8px !important;
 }
 
-.markdown-preview-view code {
+.app-container .workspace .markdown-preview-view pre[class*="language-"] code {
   border-radius: 0 !important;
+  font-size: 1.1rem !important;
   white-space: pre;
 }
 
@@ -22,7 +23,7 @@
   line-height: 2.2rem;
   top: 0px;
   margin-left: -10px;
-  font-family: Consolas, "Microsoft YaHei";
+  font-family: 'subcode', Consolas, "Microsoft YaHei";
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -95,14 +96,6 @@
   font-size: 1rem !important;
   line-height: 1.8rem;
 }
-
-
-/* 编辑代码块 */
-
-
-/* .cm-s-obsidian .HyperMD-codeblock>span {}
-
-.cm-s-obsidian .HyperMD-codeblock>span * {} */
 
 
 /* 标注类型 */

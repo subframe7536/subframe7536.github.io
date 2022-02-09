@@ -20,6 +20,7 @@ goto 名称
 名称
 ```
 ### 判断语句
+[bat中if语句的用法 - tao之夭夭 - 博客园 (cnblogs.com)](https://www.cnblogs.com/yigui/p/10889135.html)
 ```bat
 if 条件 (
 : ....

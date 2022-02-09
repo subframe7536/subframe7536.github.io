@@ -1,7 +1,8 @@
-### 简介
+# swagger2
 
 > 用于前后端分离自动生成文档并与API 定义同步更新
 > 官网：https://swagger.io/
+> swagger3不再支持，现使用[[springdoc]]
 
 [[swagger2模板]]
 ### SpringBoot集成Swagger
@@ -279,4 +280,3 @@ location ~* ^(/csrf|/v2|/webjars|/swagger-resources|/swagger-ui.html){
     proxy_pass http://127.0.0.1:9011; # 后端服务地址
 }
 ```
-

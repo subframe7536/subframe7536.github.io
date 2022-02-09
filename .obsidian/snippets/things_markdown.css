@@ -11,19 +11,14 @@
 
 /* =====字体设置===== */
 
-*,
-.mod-vertical.mod-root .view-content .document-search-container * {
-  font-family: Microsoft Yahei !important;
-}
-
 .workspace-split.mod-root .view-content * {
-  font-family: Consolas, Microsoft Yahei !important;
+  font-family: 'subcode', Consolas, 'Microsoft YaHei', 'Courier New', monospace !important;
 }
 
 a.tag,
 .CodeMirror,
 .markdown-source-view,
-.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-inline-code:not(.cm-header),
 .cm-s-obsidian,
 .markdown-preview-view code,
 .workspace-split.mod-root .view-content p,
@@ -286,6 +281,7 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
 .markdown-preview-view code {
   color: #C94100 !important;
+  background-color: #eee;
 }
 
 
@@ -629,7 +625,7 @@ a.tag:hover {
 
 /* img放大 */
 
-body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
+body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:not(.image-embed):active {
   cursor: inherit;
   display: unset;
   z-index: inherit;
@@ -669,14 +665,14 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
 
 /* 内嵌链接 */
 
-.internal-embed {
+.internal-embed:not(.image-embed) {
   margin: 12px 0;
   padding: 16px;
   border-radius: 8px;
   transition: all 0.5s;
 }
 
-.theme-light .internal-embed {
+.theme-light .internal-embed:not(.image-embed) {
   border: 0 !important;
   box-shadow: 0 0 20px 0 #dadada;
   margin: 12px 0;
@@ -684,17 +680,17 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:active {
   padding-bottom: 12px;
 }
 
-.theme-light .internal-embed:hover {
+.theme-light .internal-embed:not(.image-embed):hover {
   box-shadow: 0 0 20px 0 #bbb !important;
   transition: all 0.5s;
 }
 
-.internal-embed .markdown-embed {
+.internal-embed:not(.image-embed) .markdown-embed {
   border: 0 !important;
   padding: 0 !important;
 }
 
-.theme-dark .internal-embed {
+.theme-dark .internal-embed:not(.image-embed) {
   border: 3px solid #466baa !important;
 }
 
