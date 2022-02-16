@@ -36,6 +36,23 @@ public class Test {
     }
 }
 ```
+##### object转list
+```java
+@Test
+public static <T> List<T> castList(Object obj, Class<T> clazz)
+{
+    List<T> result = new ArrayList<T>();
+	if(obj instanceof List<?> && "test".equals(asd))
+    {
+        for (Object o : (List<?>) obj)
+        {
+            result.add(clazz.cast(o));
+        }
+        return result;
+    }
+    return null;
+}
+```
 #### Set（不可重复）
 - HashSet
 - TreeSet
@@ -204,7 +221,67 @@ while (sc.hasNextLine()) {
 }
 ```
 # LocalDate/LocalTime/LocalDateTime
-#todo 
+```java
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+
+/**
+ * @author subframe7536
+ */
+public class TimeUtil {
+
+    /**
+     * 获取时间戳
+     *
+     * @param isMillisecond 是否输出毫秒时间戳
+     */
+    public static Long getTimestamp(boolean isMillisecond) {
+        long stamp;
+        if (isMillisecond) {
+            stamp = LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
+        } else {
+            stamp = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
+        }
+        return stamp;
+    }
+
+    /**
+     * 根据当前时间获取时间字符串
+     *
+     * @param pattern 时间格式
+     */
+    public static String getTimeString(String pattern) {
+        String time;
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+            time = LocalDateTime.now(ZoneOffset.of("+8")).format(formatter);
+        } catch (Exception e) {
+            time = "pattern error!";
+        }
+        return time;
+    }
+
+    /**
+     * <p>时间字符串转LocalDateTime</p>
+     * 格式：yyyy-MM-dd HH:mm:ss
+     */
+    public static LocalDateTime getLocalDateTimeByTimeString(String timeString) {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return LocalDateTime.parse(timeString, df);
+    }
+
+    /**
+     * <p>时间字符串转LocalDateTime</p>
+     * 格式自定义
+     */
+    public static LocalDateTime getLocalDateTimeByTimeString(String timeString, String pattern) {
+        DateTimeFormatter df = DateTimeFormatter.ofPattern(pattern);
+        return LocalDateTime.parse(timeString, df);
+    }
+
+}
+```
 [JDK8的LocalDateTime用法 - 闲人鹤 - 博客园 (cnblogs.com)](https://www.cnblogs.com/huanshilang/p/12013386.html)
 # File
 ## 基本方法
@@ -307,4 +384,6 @@ URLDecoder.decode("","UTF-8");
 | byte     | Byte      |
 | char     | Character | 
 
+## checked exception
+[Java中的Checked Exception——美丽世界中潜藏的恶魔？ - loveis715 - 博客园 (cnblogs.com)](https://www.cnblogs.com/loveis715/p/4596551.html)
 #todo HashMap，HashSet，TreeSet，TreeMap，Deque，LinkedHashMap；排序算法，DFS，BFS，Sliding Window，sweep line

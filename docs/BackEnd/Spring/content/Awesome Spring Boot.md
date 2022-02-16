@@ -66,22 +66,22 @@ Spring Boot Starters 列表
 
 **Spring Boot 生产级 starters**
 
-|名称|描述|
-|----|:----|
-|spring-boot-starter-actuator|用于使用Spring Boot的Actuator，它提供了production ready功能来帮助你监控和管理应用程序|
+| 名称                         | 描述                                                                                  |
+| ---------------------------- |:------------------------------------------------------------------------------------- |
+| spring-boot-starter-actuator | 用于使用Spring Boot的Actuator，它提供了production ready功能来帮助你监控和管理应用程序 |
 
 最后，Spring Boot还包含一些用于排除或交换某些特定技术方面的starters：
 
 **Spring Boot 技术性 Starters**
 
-|名称|描述|
-|------|:------|
-|spring-boot-starter-jetty|用于使用Jetty作为内嵌servlet容器，可使用[spring-boot-starter-tomcat](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-tomcat)替代|
-|spring-boot-starter-log4j2|用于使用Log4j2记录日志，可使用[spring-boot-starter-logging](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-logging)代替|
-|spring-boot-starter-logging|用于使用Logback记录日志，默认的日志starter|
-|spring-boot-starter-reactor-netty|用于使用 netty 作为响应式内嵌容器|
-|spring-boot-starter-tomcat|用于使用Tomcat作为内嵌servlet容器，[spring-boot-starter-web](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-web)使用的默认servlet容器|
-|spring-boot-starter-undertow|用于使用Undertow作为内嵌servlet容器，可使用[spring-boot-starter-tomcat](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-tomcat)替代|
+| 名称                              | 描述                                                                                                                                                                                     |
+| --------------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| spring-boot-starter-jetty         | 用于使用Jetty作为内嵌servlet容器，可使用[spring-boot-starter-tomcat](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-tomcat)替代       |
+| spring-boot-starter-log4j2        | 用于使用Log4j2记录日志，可使用[spring-boot-starter-logging](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-logging)代替               |
+| spring-boot-starter-logging       | 用于使用Logback记录日志，默认的日志starter                                                                                                                                               |
+| spring-boot-starter-reactor-netty | 用于使用 netty 作为响应式内嵌容器                                                                                                                                                        |
+| spring-boot-starter-tomcat        | 用于使用Tomcat作为内嵌servlet容器，[spring-boot-starter-web](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-web)使用的默认servlet容器 |
+| spring-boot-starter-undertow      | 用于使用Undertow作为内嵌servlet容器，可使用[spring-boot-starter-tomcat](http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#spring-boot-starter-tomcat)替代    |
 
 
 
@@ -167,10 +167,3 @@ Spring Boot Starters 列表
 - [程序员导航网站](http://tooool.org/)  
 - [IT行业中文资源大全](https://github.com/ityouknow/awesome-list)  
 - [很多的 Hello Demo](https://github.com/hellokoding)  
-
-
----
-
-关注公众号：纯洁的微笑，回复"springboot"进群交流
-
-![](http://ityouknow.com/assets/images/keeppuresmile.jpg)

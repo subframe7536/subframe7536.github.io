@@ -205,8 +205,6 @@ public User getUser(){
 
 @ApiModelProperty为类属性添加注释
 
-![image-20210827093626152](D:\MarkdownNote\CodeLearning\后端\Spring\content\image-20210827093626152.png)
-
 ### 常用注解
 
 Swagger的所有注解定义在io.swagger.annotations包下

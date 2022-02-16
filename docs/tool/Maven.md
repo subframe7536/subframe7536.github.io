@@ -27,14 +27,41 @@ mvn -v
 3. 将`<dependencies>` -> `<dependency>` -> `<version>`改为`4.12`
 4. 删除`<build>` -> `<pluginsManagement>`
 ## 构建多模块
-1. 建父项目
-	- 只选`jdk`不选模板	
-2. 建子项目
-	- `Java`项目(`dao`/`service`)选择`quickstart`
-	- `web`项目(`controller`)选择`webapp`
-3. 构建依赖...
-#todo 
-4. 设置运行`jetty`服务器
+### 建父项目
+1. 使用spring initializer创建项目
+2. 修改打包方式为pom`<packaging>pom</packaging>`
+3. 将`<dependencies></dependencies>`外添加`<dependencyManagement></dependencyManagement>`标签，并填写项目版本号(用于管理子项目版本)
+4. 原`<dependencies><dependencies>`内的依赖为全局依赖(所有子项目公用依赖)
+5. 填写主类
+
+```xml
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<configuration>
+				<excludes>
+					<exclude>
+						<groupId>org.projectlombok</groupId>
+						<artifactId>lombok</artifactId>
+					</exclude>
+				</excludes>
+				<!-- 填写主类 -->
+				<mainClass>org.ecycle.web.ServerApplication</mainClass>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+```
+### 建子项目
+1. 新建子项目
+2. 填写依赖
+### 构建依赖
+```shell
+mvn clean compile
+```
+## 设置运行`jetty`服务器
 `Run` -> `Edit Configurations`添加`maven`,命名为`runJetty`，路径选择`webapp`所在地址，`Command line`输入`jetty:run`并确认。在`pom.xml` -> `<build>`中添加
 ```xml
 <mirrors> 

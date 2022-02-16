@@ -170,6 +170,7 @@ body:not(.is-mobile) .document-replace {
   border-radius: 9px;
   padding: 8px 6px;
 }
+
 .theme-dark .menu {
   border: 1px solid #666;
 }
@@ -207,11 +208,13 @@ body:not(.is-mobile) .document-replace {
   width: 3px;
   border-radius: 5px;
 }
-.theme-dark .menu-separator{
+
+.theme-dark .menu-separator {
   border-color: #444;
   width: calc(100% - 8px);
   margin-left: 4px;
 }
+
 
 /* 状态栏 */
 
@@ -363,12 +366,16 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 
 body:not(.minimal-icons-off) svg.reset {
   top: 50%;
-  /* transform: translateY(-70%); */
+  transform: translateY(-50%);
 }
 
 body:not(.minimal-icons-off) .hotkey-settings-container .setting-item svg.reset {
   /* top: 50%; */
   transform: translateY(-70%);
+}
+
+body:not(.minimal-icons-off) svg.any-key {
+  transform: translateY(-40%);
 }
 
 

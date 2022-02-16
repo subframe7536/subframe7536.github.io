@@ -8,7 +8,7 @@ $('selector').on('event','childSelector',data,function(){})
 | data          | 可选。规定传递到函数的额外数据。                                                                               |
 | function      | 可选。规定当事件发生时运行的函数。                                                                             |
 ```js
-$('.main').on('click', 'div', function() {//动态获取元素
+$('.main').on('click', 'div', () => {//动态获取元素
     var $big = $(this).clone();
 	$('.main').append($big);
 })

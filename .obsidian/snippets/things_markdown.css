@@ -23,7 +23,7 @@ a.tag,
 .markdown-preview-view code,
 .workspace-split.mod-root .view-content p,
 .workspace-split.mod-root .view-content li {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 }
 
 .workspace-split.mod-root .view-content mjx-container * {
@@ -173,13 +173,13 @@ h4,
 h5,
 h6 {
   position: relative;
-  margin: 10px 0 !important;
-  padding: 5px 0;
+  margin: 0 !important;
+  padding: 4px 0;
 }
 
 h1,
 h2 {
-  margin: 15px 0 !important;
+  margin: 8px 0 !important;
 }
 
 h2:hover {
@@ -237,9 +237,10 @@ div:not(.markdown-embed-content) h6:hover::before {
   font-variant: small-caps;
 }
 
-.is-live-preview .HyperMD-header-2 {
+body .app-container .is-live-preview .HyperMD-header-2 {
   position: relative;
   border: none;
+  margin-bottom: 4px !important;
 }
 
 .is-live-preview .HyperMD-header-2::after {
@@ -248,12 +249,12 @@ div:not(.markdown-embed-content) h6:hover::before {
   height: 2px;
   background-color: #EE9B00;
   position: absolute;
-  bottom: 8px;
+  bottom: 4px;
   left: 0;
 }
 
 body .app-container .view-content .HyperMD-header {
-  padding: 8px 0 !important;
+  padding: 4px 0 !important;
 }
 
 
@@ -441,14 +442,17 @@ div.cm-active.cm-line::before {
 
 /* 列表 */
 
-ul {
-  padding-inline-start: 1.4em;
+ul,
+ul ul,
+ol,
+ol ol {
+  padding-inline-start: 1.4rem;
 }
 
 ul,
 ol {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
 }
 
 body .cm-hmd-list-indent>.cm-tab:after {
@@ -457,11 +461,11 @@ body .cm-hmd-list-indent>.cm-tab:after {
 
 ol>li,
 ul>li {
-  margin: 8px auto;
+  margin: 4px auto;
 }
 
 ul>li {
-  padding-left: .5em;
+  padding-left: .2rem;
 }
 
 ul>li>ul>li {
@@ -498,7 +502,7 @@ p {
 
 .markdown-preview-view ul ul::before {
   border-width: 3px;
-  left: -1.7rem;
+  left: -1.24rem;
 }
 
 .theme-dark .markdown-preview-view ul ul::before {

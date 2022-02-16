@@ -1,5 +1,5 @@
-# 安装
-## 全局
+# Electron-start
+## 安装(全局)
 ```shell
 npm i -g electron
 ```

@@ -39,6 +39,10 @@ $ git commit -m "wrote fileName1"
 $ git restore . # 撤销所有修改
 $ git restore --stage . # 将暂存区文件
 ```
+#### 回退所有未暂存的修改
+```shell
+$ git checkout .
+```
 #### 隐藏未提交的修改
 ```shell
 git stash save "name"

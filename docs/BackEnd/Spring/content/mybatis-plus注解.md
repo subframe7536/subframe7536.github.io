@@ -83,8 +83,6 @@ public class User {
 ```
 #### 3. 创建自动填充处理器
 ```java
-package org.ovo.returnhome.conf;
-
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.apache.ibatis.reflection.MetaObject;
@@ -123,8 +121,6 @@ public class MybatisPlusConfig implements MetaObjectHandler {
 #### 1. 数据库表添加 version 字段，默认值为 1
 #### 2. 实体类添加 version 成员变量，并且添加 @Version 
 ```java
-package com.southwind.mybatisplus.entity;
-
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
@@ -150,8 +146,6 @@ public class User {
 ```
 #### 3. 注册配置类
 ```java
-package com.southwind.mybatisplus.config;
-
 import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
