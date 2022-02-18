@@ -8,6 +8,10 @@
   --interactive-accent-hover: #0088ad !important;
 }
 
+body .app-container {
+  --strong-color: #0eadda !important
+}
+
 
 /* =====字体设置===== */
 
@@ -23,7 +27,7 @@ a.tag,
 .markdown-preview-view code,
 .workspace-split.mod-root .view-content p,
 .workspace-split.mod-root .view-content li {
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
 }
 
 .workspace-split.mod-root .view-content mjx-container * {
@@ -66,13 +70,11 @@ a.tag,
 }
 
 .theme-light .markdown-preview-view .internal-link {
-  color: rgb(255, 134, 86) !important;
-  background-color: rgb(219, 233, 255);
+  color: #ff7f50 !important;
 }
 
 .theme-dark .markdown-preview-view .internal-link {
-  color: rgb(255, 134, 86) !important;
-  border: 2px solid #aaa;
+  color: #ff7f50 !important;
   font-style: normal !important;
 }
 
@@ -97,12 +99,12 @@ a.tag,
 
 .cm-formatting.cm-formatting-link-string.cm-string.cm-url,
 .cm-s-obsidian span.cm-formatting-link {
-  color: coral !important;
+  color: #ff7f50 !important;
   font-weight: bold;
 }
 
 .cm-link {
-  color: rgb(255, 198, 42) !important;
+  color: #ffc62a !important;
 }
 
 
@@ -175,6 +177,36 @@ h6 {
   position: relative;
   margin: 0 !important;
   padding: 4px 0;
+}
+
+.cm-header-1,
+.markdown-preview-view h1 strong {
+  color: var(--h1-color) !important;
+}
+
+.cm-header-2,
+.markdown-preview-view h2 strong {
+  color: var(--h2-color) !important;
+}
+
+.cm-header-3,
+.markdown-preview-view h3 strong {
+  color: var(--h3-color) !important;
+}
+
+.cm-header-4,
+.markdown-preview-view h4 strong {
+  color: var(--h4-color) !important;
+}
+
+.cm-header-5,
+.markdown-preview-view h5 strong {
+  color: var(--h5-color) !important;
+}
+
+.cm-header-6,
+.markdown-preview-view h6 strong {
+  color: var(--h6-color) !important;
 }
 
 h1,
@@ -279,10 +311,16 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
   opacity: .3;
 }
 
-.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-.markdown-preview-view code {
+.theme-light .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.theme-light .markdown-preview-view p code {
   color: #C94100 !important;
   background-color: #eee;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.markdown-preview-view p>code {
+  color: #e45276 !important;
+  background-color: #333;
 }
 
 
@@ -390,6 +428,10 @@ div.cm-active.cm-line::before {
 .theme-dark .markdown-preview-view blockquote {
   border-left: 7px solid #466baa;
   background-color: #262e3d;
+}
+
+.cm-s-obsidian span.cm-quote {
+  color: #6693e2;
 }
 
 

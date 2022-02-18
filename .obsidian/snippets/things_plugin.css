@@ -222,11 +222,12 @@ button.kanban-plugin__item-postfix-button.is-enabled,
 
 
 /* day planner */
-.theme-light{
-  --day-planner-pie: #f19c1c;
-  --day-planner-timeline: #000000;
-  --day-planner-line: #dfcf77;
-  --day-planner-dot: #dfcf77;
+
+.theme-light {
+  --day-planner-pie: #eee;
+  --day-planner-timeline: #111;
+  --day-planner-line: #eee;
+  --day-planner-dot: #eee;
   --day-planner-item-hover: #345e96;
   --event-item-color1: #283493bb;
   --event-item-color2: #1565c0bb;
@@ -240,7 +241,7 @@ button.kanban-plugin__item-postfix-button.is-enabled,
   --event-item-color10: #6a1b9abb;
 }
 
-.theme-dark{
+.theme-dark {
   --day-planner-pie: #eca95c;
   --day-planner-timeline: #d62f2f;
   --day-planner-line: #ffd900;
@@ -255,7 +256,7 @@ button.kanban-plugin__item-postfix-button.is-enabled,
   --event-item-color7: #1652acbb;
   --event-item-color8: #0c469cbb;
   --event-item-color9: #0a3c86bb;
-  --event-item-color10:#072f6bbb;
+  --event-item-color10: #072f6bbb;
 }
 
 .plugin-obsidian-day-planner {
@@ -268,11 +269,6 @@ button.kanban-plugin__item-postfix-button.is-enabled,
 
 .status-bar-item-segment.day-planner-status-bar-text {
   font-size: 0.9rem !important;
-}
-
-#now-line.svelte-e43ld1.svelte-e43ld1,
-#now-line.svelte-e43ld1.svelte-e43ld1 span {
-  background-color: rgb(255, 149, 78) !important;
 }
 
 input[type='checkbox']:checked {
@@ -322,45 +318,56 @@ input[type='checkbox']:checked {
   overflow: hidden !important;
 }
 
-#now-line, .timeline-time {
+#now-line,
+.timeline-time {
   background-color: var(--day-planner-timeline) !important;
 }
 
 .event_item:hover {
   background-color: var(--day-planner-item-hover) !important;
-  box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 52px -18px #000000bf;
 }
 
 .event_item_color1 {
   background-color: var(--event-item-color1) !important;
 }
+
 .event_item_color2 {
   background-color: var(--event-item-color2) !important;
 }
+
 .event_item_color3 {
   background-color: var(--event-item-color3) !important;
 }
+
 .event_item_color4 {
   background-color: var(--event-item-color4) !important;
 }
+
 .event_item_color5 {
   background-color: var(--event-item-color5) !important;
 }
+
 .event_item_color6 {
   background-color: var(--event-item-color6) !important;
 }
+
 .event_item_color7 {
   background-color: var(--event-item-color7) !important;
 }
+
 .event_item_color8 {
   background-color: var(--event-item-color8) !important;
 }
+
 .event_item_color9 {
   background-color: var(--event-item-color9) !important;
 }
+
 .event_item_color10 {
   background-color: var(--event-item-color10) !important;
 }
+
 .day-planner-status-bar-text {
-    margin-top: 0px !important;
+  margin-top: 0px !important;
 }

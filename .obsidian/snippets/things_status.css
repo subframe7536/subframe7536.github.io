@@ -302,6 +302,14 @@ body:not(.is-mobile) .document-replace {
   border-style: none;
 }
 
+.theme-light pre ::-webkit-scrollbar-thumb:horizontal {
+  background-color: #8faad8;
+}
+
+.theme-light pre ::-webkit-scrollbar-track {
+  background-color: #181c20;
+}
+
 .theme-light ::-webkit-scrollbar-thumb:vertical:hover {
   background-color: rgba(102, 102, 102);
 }
@@ -374,10 +382,6 @@ body:not(.minimal-icons-off) .hotkey-settings-container .setting-item svg.reset 
   transform: translateY(-70%);
 }
 
-body:not(.minimal-icons-off) svg.any-key {
-  transform: translateY(-40%);
-}
-
 
 /* 提示框 */
 
@@ -437,6 +441,10 @@ body:not(.minimal-icons-off) svg.any-key {
 .theme-dark .suggestion-container:not(.mod-search-suggestion) .suggestion-item.is-selected {
   background-color: #a9c9ff !important;
   color: #222;
+}
+
+.theme-dark .modal-container .suggestion-item.is-selected {
+  background-color: var(--blue-highlighter);
 }
 
 

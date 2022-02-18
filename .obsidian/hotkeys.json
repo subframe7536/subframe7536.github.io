@@ -41,7 +41,6 @@
       "key": "ArrowDown"
     }
   ],
-  "app:delete-file": [],
   "graph:open": [],
   "editor:toggle-code": [
     {
@@ -51,7 +50,14 @@
       "key": "`"
     }
   ],
-  "app:go-back": [],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowLeft"
+    }
+  ],
   "editor:delete-paragraph": [],
   "editor:toggle-strikethrough": [
     {
@@ -61,8 +67,6 @@
       "key": "D"
     }
   ],
-  "editor:follow-link": [],
-  "editor:open-link-in-new-leaf": [],
   "editor:insert-wikilink": [
     {
       "modifiers": [
@@ -246,7 +250,6 @@
     }
   ],
   "table-editor-obsidian:table-control-bar": [],
-  "app:go-forward": [],
   "table-editor-obsidian:move-row-down": [
     {
       "modifiers": [
@@ -274,14 +277,6 @@
       "key": "]"
     }
   ],
-  "editor:toggle-highlight": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "global-search:open": [
     {
       "modifiers": [
@@ -290,5 +285,40 @@
       ],
       "key": "F"
     }
-  ]
+  ],
+  "copy-as-html:copy-as-html-command": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "editor:toggle-highlight": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Delete"
+    }
+  ],
+  "workspace:undo-close-pane": [],
+  "obsidian-excalidraw-plugin:insert-link": []
 }

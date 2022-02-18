@@ -92,7 +92,7 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 .theme-light .nav-file-title.is-being-dragged,
 .theme-light .nav-file-title.is-active,
 .theme-light body:not(.is-grabbing) .nav-file-title.is-active:hover {
-  background-color: #b4f4ff !important;
+  background-color: #aad5fd !important;
 }
 
 .theme-dark .nav-file-title.is-being-dragged,
@@ -181,16 +181,21 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 }
 
 .theme-light .outline .tree-item>.tree-item-self:hover {
-  background-color: #e9d8a6;
+  background-color: #ffedb7;
   text-decoration: underline;
-  box-shadow: 2px 2px 2px 0px #777 inset;
+  box-shadow: 1px 1px 1px 0px #777 inset !important;
+}
+
+.theme-dark .outline .tree-item>.tree-item-self:hover {
+  background-color: #ffedb71e;
+  text-decoration: underline;
 }
 
 .theme-dark .outline .tree-item>.tree-item-self:hover::after {
   content: "";
   width: 4px;
   height: 100%;
-  right: -8px;
+  right: 0px;
   top: 0;
   position: absolute;
   background-color: #e9d8a6dd;

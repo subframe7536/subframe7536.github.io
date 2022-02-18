@@ -1,8 +1,8 @@
 .markdown-preview-view pre[class*="language-"] {
   position: relative;
-  border-radius: 0 !important;
-  border-bottom-left-radius: 8px !important;
-  border-bottom-right-radius: 8px !important;
+  /* border: 2px solid #619ffd; */
+  border-radius: 8px !important;
+  background-color: #181c20;
 }
 
 .app-container .workspace .markdown-preview-view pre[class*="language-"] code {
@@ -24,13 +24,13 @@
   top: 0px;
   margin-left: -10px;
   font-family: 'subcode', Consolas, "Microsoft YaHei";
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .theme-light .markdown-preview-view pre[class*="language-"]:before {
-  background-color: #d1eafc;
-  color: #222;
+  background-color: #418bc9;
+  color: #ddd;
 }
 
 .theme-dark .markdown-preview-view pre[class*="language-"]:before {
@@ -215,100 +215,64 @@ pre[class~='language-groovy']:before {
 
 /*===== 语法高亮 =====*/
 
+.markdown-preview-section pre code .url,
+.markdown-preview-section pre code {
+  color: #b7d1ae !important;
+}
+
 .token.number {
-  color: #02b11f !important;
+  color: #B1CBE8 !important;
   font-weight: bold;
 }
 
+.cm-tag,
 .token.selector,
-.token.tag,
-.token.variable {
-  color: #ff6565 !important;
+.token.tag {
+  color: #e45276 !important;
 }
 
+.token.punctuation,
+.token.operator,
+.cm-bracket {
+  color: #d6ccb3 !important;
+}
+
+.cm-def,
+.cm-type,
+.cm-attribute,
 .token.property,
-.token.attr-name {
-  color: #eba000 !important;
+.token.attr-name,
+.token.class-name {
+  color: #ee9f55 !important;
 }
 
+.markdown-preview-section pre.language-css code,
+.cm-string,
+.token.string,
 .token.attr-value {
-  color: #02b11f !important;
+  color: #5BC877 !important;
 }
 
+.theme-dark pre .token.annotation.punctuation,
+.theme-light pre .token.annotation.punctuation,
 .token.unit {
-  color: #41b1fc !important;
+  color: #3794ff !important;
 }
 
-.token.property-access {
-  color: #ac80ff;
-}
-
+.cm-comment,
 .token.doctype *,
 .token.comment,
 .token.comment * {
-  color: rgb(167, 167, 167) !important;
+  color: #666 !important;
 }
 
-.language-json .token.punctuation {
-  color: #41b1fc !important;
+.cm-keyword,
+.token.variable,
+.token.boolean,
+.token.keyword {
+  color: #B8A1FF !important;
 }
 
-
-/* light */
-
-.theme-light .markdown-preview-section pre code .url,
-.theme-light .markdown-preview-section pre code {
-  color: #000000 !important;
-}
-
-.theme-light .token.keyword {
-  color: #af6aff !important;
-}
-
-.theme-light .token.class-name {
-  color: #eea403 !important;
-}
-
-.theme-light .token.function {
-  color: #1fa4fc !important;
-}
-
-.theme-light .token.string {
-  color: #02b11f !important;
-}
-
-.theme-light .token.annotation.punctuation {
-  color: #e9b8ff !important;
-}
-
-
-/* dark */
-
-.theme-dark .markdown-preview-section pre code .url,
-.theme-dark .markdown-preview-section pre code {
-  color: #ddd !important;
-}
-
-.theme-dark .token.keyword {
-  color: #6ac3ff !important;
-}
-
-.theme-dark .token.class-name {
-  color: #ffae00 !important;
-}
-
-.theme-dark .token.function {
-  color: #3a7fff !important;
-}
-
-.theme-dark .token.string {
-  color: #02cc24 !important;
-}
-
-.theme-dark .token.annotation.punctuation {
-  color: #ac80ff !important;
-}
-
-.theme-dark .cm-comment {
-  color: #aaa !important;
+.token.function {
+  color: #7ab8ff !important;
 }
