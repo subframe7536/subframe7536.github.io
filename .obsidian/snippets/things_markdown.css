@@ -1,11 +1,19 @@
+:root {
+  --shadow-inset: 1px 1px 1px 0px #777 inset;
+  --shadow-outset: 1px 1px 1px #777;
+}
+
 .theme-light {
   --background-primary: #fafafa !important;
   --background-primary-alt: #fefefe !important;
   --interactive-accent-hover: #6dc2da !important;
+  /* 自定义颜色 */
+  --color-1: #58a8fa;
 }
 
 .theme-dark {
   --interactive-accent-hover: #0088ad !important;
+  --text-faint: #666
 }
 
 body .app-container {
@@ -51,15 +59,30 @@ a.tag,
 
 /*===== 链接 =====*/
 
+.theme-light {
+  --external-link: #ff7f50;
+  --internal-link: #58a8fa;
+  --external-link-hover: #ff7f5033;
+  --internal-link-hover: #58a8fa33;
+  --link-shadow: var(--shadow-inset);
+}
+
+.theme-dark {
+  --external-link: #ff7f50dd;
+  --internal-link: #58a8fadd;
+  --external-link-hover: #ff7f5033;
+  --internal-link-hover: #58a8fa33;
+  --link-shadow: none;
+}
+
 .external-link {
-  color: #58a8fa;
+  color: var(--external-link) !important;
 }
 
 .external-link:hover {
-  color: #0481d4;
   text-decoration: none;
   border-radius: 2px;
-  background-color: #c1e3ff;
+  background-color: var(--external-link-hover) !important;
 }
 
 .markdown-preview-view .internal-link {
@@ -67,44 +90,29 @@ a.tag,
   text-decoration: underline;
   border-radius: 4px;
   transition: all 0.2s ease-in;
+  color: var(--internal-link) !important;
 }
 
-.theme-light .markdown-preview-view .internal-link {
-  color: #ff7f50 !important;
+.markdown-preview-view .internal-link:hover {
+  background-color: var(--internal-link-hover);
 }
 
 .theme-dark .markdown-preview-view .internal-link {
-  color: #ff7f50 !important;
   font-style: normal !important;
 }
 
-.theme-light .markdown-preview-view .internal-link:hover {
-  box-shadow: 1px 1px 1px 0px #777 inset;
+.markdown-preview-view .internal-link:hover {
+  box-shadow: var(--link-shadow);
   transition: all 0.2s;
-}
-
-.theme-dark .markdown-preview-view .internal-link:hover {
-  background-color: #414141;
-  transition: all 0.2s;
-}
-
-.markdown-preview-view .internal-link.is-unresolved {
-  text-decoration: line-through;
 }
 
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-  padding: 0;
-}
-
-.cm-formatting.cm-formatting-link-string.cm-string.cm-url,
-.cm-s-obsidian span.cm-formatting-link {
-  color: #ff7f50 !important;
-  font-weight: bold;
+  padding: 2px;
 }
 
 .cm-link {
-  color: #ffc62a !important;
+  color: var(--external-link) !important;
 }
 
 
@@ -118,17 +126,24 @@ a.tag,
 
 /*===== 分割线 ===== */
 
+.theme-light {
+  --hr-color: #58a8fa;
+  --hr-border: var(--hr-border) 2px dashed;
+}
+
+.theme-dark {}
+
 .hr.cm-line::after {
   content: "";
   width: 100%;
   height: 1px;
-  border-top: #58a8fa 2px dashed;
-  border-bottom: #58a8fa 2px dashed;
+  border-top: var(--hr-border);
+  border-bottom: var(--hr-border);
 }
 
 .markdown-preview-view hr {
-  border-top: #58a8fa 2px dashed;
-  border-bottom: #58a8fa 2px dashed;
+  border-top: var(--hr-border);
+  border-bottom: var(--hr-border);
 }
 
 
@@ -144,7 +159,7 @@ kbd {
 .theme-light kbd {
   color: aliceblue;
   border: 1px solid #ffffff9e;
-  box-shadow: 1px 1px 1px #777;
+  box-shadow: var(--shadow-outset);
   background-color: #69b3f5 !important;
 }
 
@@ -292,15 +307,7 @@ body .app-container .view-content .HyperMD-header {
 
 /* 编辑 */
 
-.cm-header {
-  text-transform: none !important;
-}
-
 div .cm-formatting-header {
-  opacity: 0.6;
-}
-
-div.CodeMirror-activeline .cm-formatting-header {
   opacity: 1;
 }
 
@@ -311,8 +318,13 @@ div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting-code {
   opacity: .3;
 }
 
+h3 code,
+h4 code,
+h5 code,
+h6 code,
+.theme-light li>code,
 .theme-light .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-.theme-light .markdown-preview-view p code {
+.theme-light .markdown-preview-view p>code {
   color: #C94100 !important;
   background-color: #eee;
 }
@@ -652,6 +664,7 @@ a.tag:hover {
 
 .theme-dark .task-list-item-checkbox {
   border-color: #58a8fa;
+  filter: none;
 }
 
 
@@ -721,9 +734,8 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .internal-embed:not(.image-em
 .theme-light .internal-embed:not(.image-embed) {
   border: 0 !important;
   box-shadow: 0 0 20px 0 #dadada;
-  margin: 12px 0;
-  padding: 0 24px;
-  padding-bottom: 12px;
+  margin: 12px 0 !important;
+  padding: 12px 24px;
 }
 
 .theme-light .internal-embed:not(.image-embed):hover {

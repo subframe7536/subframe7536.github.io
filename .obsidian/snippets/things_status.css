@@ -372,6 +372,10 @@ body:not(.plugin-sliding-panes-rotate-header) .view-header-title,
 
 /* 重置按钮 */
 
+.style-settings-heading svg.reset {
+  transform: unset !important;
+}
+
 body:not(.minimal-icons-off) svg.reset {
   top: 50%;
   transform: translateY(-50%);

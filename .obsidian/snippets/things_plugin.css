@@ -8,6 +8,10 @@
   color: #000 !important;
 }
 
+.excalidraw-svg img {
+  box-shadow: none;
+}
+
 
 /* advanced table */
 

@@ -249,6 +249,7 @@ pre[class~='language-groovy']:before {
 .markdown-preview-section pre.language-css code,
 .cm-string,
 .token.string,
+.token.important,
 .token.attr-value {
   color: #5BC877 !important;
 }
@@ -256,7 +257,7 @@ pre[class~='language-groovy']:before {
 .theme-dark pre .token.annotation.punctuation,
 .theme-light pre .token.annotation.punctuation,
 .token.unit {
-  color: #3794ff !important;
+  color: #499eff !important;
 }
 
 .cm-comment,
@@ -267,6 +268,10 @@ pre[class~='language-groovy']:before {
 }
 
 .cm-keyword,
+
+/* yml */
+
+.token.atrule,
 .token.variable,
 .token.boolean,
 .token.keyword {

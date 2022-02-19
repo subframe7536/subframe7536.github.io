@@ -320,5 +320,14 @@
     }
   ],
   "workspace:undo-close-pane": [],
-  "obsidian-excalidraw-plugin:insert-link": []
+  "obsidian-excalidraw-plugin:insert-link": [],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ]
 }

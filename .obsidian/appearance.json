@@ -1,5 +1,5 @@
 {
-  "theme": "obsidian",
+  "theme": "moonstone",
   "translucency": false,
   "cssTheme": "Things",
   "enabledCssSnippets": [
@@ -10,7 +10,8 @@
     "things_markdown",
     "things_code",
     "things_folder",
-    "reveal"
+    "reveal",
+    "things_markdown.min"
   ],
   "baseFontSize": 23,
   "baseFontSizeAction": true
