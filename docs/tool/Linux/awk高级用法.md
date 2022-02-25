@@ -199,7 +199,7 @@ capital["Ohio"] = "Columbus"
 在引用数组变量时，必须用索引值（index）来提取相应的数据元素值，例如：
 
 ```shell
-[root@localhost ~]# awk 'BEGIN{
+[root@localhost ~] awk 'BEGIN{
 \> capital["Illinois"] = "Springfield"
 \> print capital["Illinois"]
 \> }'
@@ -208,7 +208,7 @@ Springfield
 
 数组变量也是变量，也可以使用其进行基本的算术运算，例如：
 ```shell
-[root@localhost ~]# awk 'BEGIN{
+[root@localhost ~] awk 'BEGIN{
 \> var[1] = 34
 \> var[2] = 3
 \> total = var[1] + var[2]
@@ -232,7 +232,7 @@ for (var in array)
 
 举个例子：
 ```shell
-[root@localhost ~]# awk 'BEGIN{
+[root@localhost ~] awk 'BEGIN{
 \> var["a"] = 1
 \> var["g"] = 2
 \> var["m"] = 3
@@ -260,7 +260,7 @@ delete 命令的基本格式如下：
 
 举个例子：
 ```shell
-[root@localhost ~]# awk 'BEGIN{
+[root@localhost ~] awk 'BEGIN{
 \> var["a"] = 1
 \> var["g"] = 2
 \> for (test in var)
@@ -301,13 +301,13 @@ else
 
 #### 例子：
 ```shell
-[root@localhost ~]# cat data4
+[root@localhost ~] cat data4
 10
 5
 13
 50
 34
-[root@localhost ~]# awk '{if ($1 > 20) print $1 * 2; else print $1 / 2}' data4
+[root@localhost ~] awk '{if ($1 > 20) print $1 * 2; else print $1 / 2}' data4
 5
 2.5
 6.5
@@ -367,11 +367,11 @@ awk 脚本程序中，可以使用 while、do-while、for 这 3 种循环结构�
 ### while
 `while (条件) {运行代码; `
 ```shell
-[root@localhost ~]# cat data5 
+[root@localhost ~] cat data5 
 130 120 135
 160 113 140
 145 170 215 
-[root@localhost ~]# awk '{ 
+[root@localhost ~] awk '{ 
 > total = 0 
 > i = 1 
 > while (i < 4) 
@@ -389,7 +389,7 @@ Average: 176.667
 ### dowhile
 `do { 运行代码； }while(条件)`     
 ```shell
-[root@localhost ~]# awk '{ 
+[root@localhost ~] awk '{ 
 > total = 0 
 > i = 1 
 > do > { 
@@ -404,7 +404,7 @@ Average: 176.667
 ### for
 `for(变量；条件；计数器) {运行代码;}`  
 ```shell
-[root@localhost ~]# awk '{ 
+[root@localhost ~] awk '{ 
 > total = 0 
 > for (i = 1; i < 4; i++) 
 > { 
@@ -511,7 +511,7 @@ awk 提供了一种途径来将多个函数放到一个库文件中，这样用�
 
 首先，我们需要创建一个存储所有 awk 函数的文件：
 ```shell
-[root@localhost ~]# cat funclib
+[root@localhost ~] cat funclib
 function myprint() {
   printf "%-16s - %s\n", $1, $4
 }
@@ -527,12 +527,12 @@ function printthird()
 
 要想让 awk 成功读取 funclib 函数库文件，就需要使用 -f 选项，但此选项无法和 awk 脚本程序同时放到命令行中一起使用。因此，要使用库函数文件，只能再创建一个脚本程序文件，例如：
 ```shell
-[root@localhost ~]# cat script4
+[root@localhost ~] cat script4
 BEGIN{ FS="\n"; RS=""}
 {
    myprint()
 }
-[root@localhost ~]# awk -f funclib -f script4 data2
+[root@localhost ~] awk -f funclib -f script4 data2
 Riley Mullen   - (312)555-1234
 Frank Williams  - (317)555-9876
 Haley Snell   - (313)555-4938

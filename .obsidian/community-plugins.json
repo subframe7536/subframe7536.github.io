@@ -1,8 +1,6 @@
 [
   "obsidian-mind-map",
   "obsidian-excalidraw-plugin",
-  "cm-chs-patch",
-  "obsidian-style-settings",
   "obsidian-kanban",
   "obsidian-git",
   "calendar",
@@ -10,5 +8,6 @@
   "obsidian-day-planner",
   "table-editor-obsidian",
   "obsidian-outliner",
-  "copy-as-html"
+  "copy-as-html",
+  "obsidian-style-settings"
 ]

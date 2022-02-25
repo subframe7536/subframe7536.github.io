@@ -1,18 +1,22 @@
 {
-  "theme": "moonstone",
+  "theme": "obsidian",
   "translucency": false,
-  "cssTheme": "Things",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "sliding-panes",
     "setting_folder",
-    "things_status",
     "things_plugin",
-    "things_markdown",
+    "reveal",
     "things_code",
     "things_folder",
-    "reveal",
-    "things_markdown.min"
+    "things_markdown",
+    "things_markdown.min",
+    "things_status",
+    "icons",
+    "markdown.min",
+    "plugin.min",
+    "status.min"
   ],
-  "baseFontSize": 23,
+  "baseFontSize": 16,
   "baseFontSizeAction": true
 }

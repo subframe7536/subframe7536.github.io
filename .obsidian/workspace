@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "5c575dd9c0ee0045",
+        "id": "19ebbd5580319780",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_temp/未命名.md",
-            "mode": "source",
+            "file": "_temp/装机配置.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_temp/未命名.md"
+                "file": "_temp/装机配置.md"
               }
             }
           },
@@ -50,21 +50,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#行为型模式",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "f3838120c7ddd646",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
             }
           }
         ]
@@ -80,7 +72,6 @@
       {
         "id": "37917c2df535ce63",
         "type": "tabs",
-        "dimension": 51.05328376703842,
         "children": [
           {
             "id": "ff86cec1d93aa1e9",
@@ -88,30 +79,30 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_temp/未命名.md",
+                "file": "_temp/装机配置.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 2,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
                   "showTags": true,
                   "showAttachments": false,
                   "hideUnresolved": false,
-                  "collapse-color-groups": true,
+                  "collapse-color-groups": false,
                   "colorGroups": [],
-                  "collapse-display": false,
+                  "collapse-display": true,
                   "showArrow": false,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 0.608846153846154,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
+                  "collapse-forces": false,
                   "centerStrength": 0.86551724137931,
                   "repelStrength": 5.94109195402299,
                   "linkStrength": 0.62816091954023,
                   "linkDistance": 278,
-                  "scale": 1.0000000000000009,
+                  "scale": 0.6554983534946922,
                   "close": true
                 }
               }
@@ -123,13 +114,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_temp/未命名.md",
+                "file": "_temp/装机配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
               }
             }
@@ -143,7 +134,7 @@
             }
           },
           {
-            "id": "4c4c9fe6913c3b73",
+            "id": "15fbd948ffd1be90",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -154,12 +145,11 @@
         "currentTab": 3
       },
       {
-        "id": "9948ad5d903dbf76",
+        "id": "37886f2bdf528e19",
         "type": "tabs",
-        "dimension": 48.94671623296158,
         "children": [
           {
-            "id": "9c3a023025004665",
+            "id": "871b2592944d764c",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -172,17 +162,17 @@
     "direction": "horizontal",
     "width": 311.5
   },
-  "active": "5c575dd9c0ee0045",
+  "active": "19ebbd5580319780",
   "lastOpenFiles": [
-    "_temp/未命名.md",
-    "docs/面试/JavaSE/java常见类的原理和区别.md",
-    "docs/面试/JavaSE/LinkedHashMap原理.md",
-    "Excalidraw/collection&map接口.md",
-    "Excalidraw/手绘2022-01-28 14_52_27.excalidraw.md",
-    "docs/面试/JavaSE/hashmap&hastable区别.md",
-    "docs/BackEnd/Spring/SpringMVC.md",
-    "docs/BackEnd/Spring/Spring.md",
-    "docs/BackEnd/Spring/content/mybatis-plus注解.md",
-    "Excalidraw/垃圾暂存箱.md"
+    "_temp/装机配置.md",
+    "_TODO/learning tasklist.md",
+    "_TODO/面试.md",
+    "_TODO/大三上寒假计划.md",
+    "docs/tool/Linux/awk高级用法.md",
+    "docs/面试/面经/校招大厂面经.md",
+    "docs/tool/数论.md",
+    "docs/BackEnd/Spring/content/helloworld.md",
+    "docs/BackEnd/Spring/Mybatis.md",
+    "docs/BackEnd/Spring/SpringMVC.md"
   ]
 }

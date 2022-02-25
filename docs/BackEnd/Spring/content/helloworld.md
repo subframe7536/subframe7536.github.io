@@ -42,8 +42,10 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # mapper.xml路径(在resources/mapper下)
+  mapper-locations: classpath*:mapper/*.xml
 ```
-6. 启动类需要添加 @MapperScan("mapper所在的包")，否则无法加载 Mppaer bean。
+6. 启动类需要添加 @MapperScan("mapper接口所在的包")，否则无法加载 Mppaer bean
 ```java
 package com.southwind.mybatisplus;
 
@@ -82,4 +84,9 @@ class UserMapperTest {
 
 }
 ```
-
+**文件目录必须要按照预设的，不然会报错invalid bound...？**
+```
+service\
+|--impl\
+mapper\
+```

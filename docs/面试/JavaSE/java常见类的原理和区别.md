@@ -17,6 +17,7 @@
 [[hashmap原理]]
 [[hashset原理]]
 [[hashmap&hastable区别]]
+[[hashmap&hastset区别]]
 [[concurrenthashmap原理]]
 [[LinkedList、ArrayList和Vector区别]]
 [[TreeSet原理]]
