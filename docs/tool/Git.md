@@ -33,7 +33,7 @@ $ git add . # 暂存所有
 $ git commit -m "wrote fileName1"
 ```
 - 可以暂存多个文件
-- `-m` 后输入这次提交的评论
+- `-m`后输入这次提交的评论
 #### 回退修改
 ```shell
 $ git restore . # 撤销所有修改

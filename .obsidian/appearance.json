@@ -6,7 +6,6 @@
     "sliding-panes",
     "setting_folder",
     "things_plugin",
-    "reveal",
     "things_code",
     "things_folder",
     "things_markdown",
@@ -15,8 +14,10 @@
     "icons",
     "markdown.min",
     "plugin.min",
-    "status.min"
+    "status.min",
+    "code.min",
+    "reveal.min"
   ],
-  "baseFontSize": 16,
+  "baseFontSize": 18,
   "baseFontSizeAction": true
 }

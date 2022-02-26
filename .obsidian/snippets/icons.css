@@ -1,24 +1,18 @@
-.theme-light {
-  --text-folder-file-icon: #333
-}
-
-.theme-dark {
-  --text-folder-file-icon: #ddd
-}
-
 body:not(.remove-file-icons) .nav-folder-children .nav-file-title-content:first-child::before {
-  position: relative;
+  position: absolute;
   content: " ";
   display: inline-block;
-  width: 1em;
+  width: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.8;
-  top: 2px;
-  height: 1em;
+  left: 4px;
+  height: 1rem;
   margin-right: 8px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: var(--text-folder-file-icon);
+  background-color: var(--folder-file-icon);
   -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>');
 }
 

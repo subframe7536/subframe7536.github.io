@@ -1,0 +1,235 @@
+//code
+.markdown-preview-view {
+  pre[class*="language-"] {
+    padding: .8rem !important;
+    padding-top: 3rem !important;
+    position: relative;
+    border-radius: 8px !important;
+    background-color: #181c20;
+
+    code {
+      padding: 0 !important;
+      font-size: 1rem !important;
+      line-height: 1.8rem;
+      border-radius: 0 !important;
+      font-size: 1rem !important;
+      white-space: pre;
+    }
+
+    .copy-code-button {
+      font-family: 'Microsoft YaHei';
+      box-sizing: border-box;
+      letter-spacing: 3px;
+      font-size: .8rem !important;
+      padding: 0 !important;
+      padding-left: 5px !important;
+      border-radius: 5px !important;
+      width: 50px;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      top: .3rem !important;
+      right: .3rem !important;
+      margin: 0px !important;
+      display: unset !important;
+      color: var(--interactive-normal);
+      background-color: var(--text-accent-hover);
+
+      &:hover {
+        box-shadow: var(--shadow);
+        transition: all .2s;
+        filter: var(--hover);
+      }
+    }
+
+    &::before {
+      font-weight: bold;
+      position: absolute;
+      box-sizing: border-box;
+      letter-spacing: 1px;
+      padding-left: 14px;
+      width: 100%;
+      left: 10px;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      top: 0px;
+      margin-left: -10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-color: var(--language-title);
+      color: #fff;
+    }
+  }
+
+}
+
+$language: c,
+properties,
+python,
+nginx,
+css,
+js,
+php,
+lua,
+shell,
+powershell,
+flow,
+sequence,
+sql,
+yml,
+ini,
+xml,
+cs,
+cpp,
+java,
+html,
+txt,
+md,
+bat,
+json,
+groovy;
+
+pre[class*='language-']:before {
+  content: "未知语言";
+}
+
+@each $lan in $language {
+  pre[class~='language-#{$lan}']::before {
+    $t: to-upper-case($string: $lan);
+    content: quote($t);
+  }
+}
+
+/*===== 语法高亮 =====*/
+:root {
+  //底色
+  --color-basic: #b7d1ae;
+  //xml标签，选择器
+  --color-selector: #e45276;
+  //数字
+  --color-number: #B1CBE8;
+  //加减法、括号
+  --color-operator: #d6ccb3;
+  //属性、类名
+  --color-property: #ee9f55;
+  //字符串
+  --color-string: #1ac847;
+  //@metadata、单位
+  --color-annotation: #499eff;
+  //注释
+  --color-comment: #666;
+  //关键字
+  --color-important: #B8A1FF;
+  //方法
+  --color-function: #7ab8ff;
+}
+
+//==预览==
+.markdown-preview-section {
+  pre {
+    &.language-css code {
+      color: var(--color-string);
+    }
+
+    code {
+
+      &,
+      &.url {
+        color: var(--color-basic) !important;
+      }
+
+      .token {
+
+        &.number {
+          color: var(--color-number) !important;
+          font-weight: bold;
+        }
+
+        &.selector,
+        &.tag {
+          color: var(--color-selector) !important;
+        }
+
+        &.punctuation,
+        &.operator {
+          color: var(--color-operator) !important;
+        }
+
+        &.property,
+        &.attr-name,
+        &.class-name {
+          color: var(--color-property) !important;
+        }
+
+        &.string,
+        &.important,
+        &.attr-value {
+          color: var(--color-string) !important;
+        }
+
+        &.annotation.punctuation,
+        &.annotation.punctuation,
+        &.unit {
+          color: var(--color-annotation) !important;
+        }
+
+        &.doctype *,
+        &.comment,
+        &.comment * {
+          color: var(--color-comment) !important;
+        }
+
+        // yml
+        &.atrule,
+        &.variable,
+        &.boolean,
+        &.keyword {
+          color: var(--color-important) !important;
+        }
+
+        &.function {
+          color: var(--color-function) !important;
+        }
+      }
+    }
+  }
+
+}
+
+//==编辑==
+.cm-num {
+  color: var(--color-number) !important;
+}
+
+//xml标签
+.cm-tag {
+  color: var(--color-selector) !important;
+}
+
+//括号
+.cm-bracket {
+  color: var(--color-operator) !important;
+}
+
+.cm-def,
+.cm-type,
+.cm-attribute {
+  color: var(--color-property) !important;
+}
+
+.cm-string {
+  color: var(--color-string) !important;
+}
+
+.cm-comment {
+  color: var(--color-comment) !important;
+}
+
+.cm-keyword {
+  color: var(--color-important) !important;
+}
+
+
+//行内代码
+.cm-inline-code {
+  color: var(--inline-code) !important;
+}
