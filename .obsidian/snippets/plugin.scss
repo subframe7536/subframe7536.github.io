@@ -58,17 +58,26 @@
       border-radius: 5px;
     }
 
-    .file-view>main {
-      position: relative;
-      // margin-left: 10px;
+    .file-view {
+      margin-left: 0;
 
-      padding: 3px;
+      &>main {
+        position: relative;
+        width: 100%;
 
-      &:hover {
-        background-color: var(--file-item-bg);
+        padding: {
+          top: 3px;
+          bottom: 3px;
+          right: 16px;
+          left: 8px;
+        }
 
-        &::after {
-          @include dark-item-end(var(--file-item))
+        &:hover {
+          background-color: var(--file-item-bg);
+
+          &::after {
+            @include dark-item-end(var(--file-item))
+          }
         }
       }
     }
