@@ -54,6 +54,7 @@ kanban-plugin: basic
 - [ ] lua
 - [ ] 演示 prezi
 - [ ] erlang State Machine
+- [ ] webassembly
 
 
 

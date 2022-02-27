@@ -1,6 +1,6 @@
 {
   "obsidianCss": false,
-  "showFrontmatter": false,
+  "showFrontmatter": true,
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",

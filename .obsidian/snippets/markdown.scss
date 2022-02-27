@@ -100,6 +100,7 @@
 //键盘
 kbd {
   user-select: none;
+  padding: 0 5px !important;
 }
 
 .theme-light {
@@ -111,6 +112,8 @@ kbd {
 .theme-dark {
   kbd {
     background-color: var(--file-item-selected-bg);
+    border: 2px solid var(--file-item-selected);
+    color: #ddd;
   }
 }
 
@@ -123,32 +126,36 @@ kbd {
 //标题
 @for $i from 1 through 6 {
 
-  .cm-header-#{$i},
-  h#{$i} {
-    color: var(--h#{$i}-color) !important;
-    font-size: var(--h#{$i}-size) !important;
-    font-weight: var(--h#{$i}-weight) !important;
-  }
+  .markdown-preview-view,
+  .cm-editor {
 
-  .HyperMD-header-#{$i} {
-    padding: 4px 0 !important;
-  }
-
-  div:not(.popover) h#{$i} {
-    position: relative;
-
-    &::before {
-      @include absolute-center();
-      margin-left: -24px;
-      font-size: .9rem;
-      content: "H#{$i}";
-      opacity: 0;
-      transition: var(--transition);
+    .cm-header-#{$i},
+    h#{$i} {
+      color: var(--h#{$i}-color) !important;
+      font-size: var(--h#{$i}-size) !important;
+      font-weight: var(--h#{$i}-weight) !important;
     }
 
-    &:hover::before {
-      transition: var(--transition);
-      opacity: 1;
+    .HyperMD-header-#{$i} {
+      padding: 4px 0 !important;
+    }
+
+    div:not(.popover) h#{$i} {
+      position: relative;
+
+      &::before {
+        @include absolute-center();
+        margin-left: -24px;
+        font-size: .9rem;
+        content: "H#{$i}";
+        opacity: 0;
+        transition: var(--transition);
+      }
+
+      &:hover::before {
+        transition: var(--transition);
+        opacity: 1;
+      }
     }
   }
 
@@ -176,7 +183,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 3px solid var(--h2);
+  border-bottom: 3px solid var(--h2-color);
 }
 
 .cm-header-5,
@@ -490,10 +497,13 @@ p,
 
   &:not(.HyperMD-list-line) {
     padding: {
-      left: 0 !important;
       top: 0 !important;
       bottom: 0 !important;
     }
+  }
+
+  &.HyperMD-list-line {
+    padding-top: 0 !important;
   }
 
   height: fit-content !important;

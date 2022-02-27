@@ -67,6 +67,7 @@ properties,
 python,
 nginx,
 css,
+javascript,
 js,
 php,
 lua,
@@ -232,4 +233,9 @@ pre[class*='language-']:before {
 //行内代码
 .cm-inline-code {
   color: var(--inline-code) !important;
+
+
+  &.cm-header {
+    color: var(--inline-code) !important;
+  }
 }
