@@ -7,9 +7,11 @@
         "id": "15bebfc994635026",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "PDFs/spring-boot-reference.pdf"
+            "file": "_TODO/日常todo.md",
+            "mode": "preview",
+            "source": false
           }
         }
       }
@@ -38,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDFs/spring-boot-reference.pdf"
+                "file": "_TODO/日常todo.md"
               }
             }
           },
@@ -78,7 +80,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "PDFs/spring-boot-reference.pdf",
+                "file": "_TODO/日常todo.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -113,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDFs/spring-boot-reference.pdf",
+                "file": "_TODO/日常todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,8 +166,8 @@
   },
   "active": "15bebfc994635026",
   "lastOpenFiles": [
-    "PDFs/spring-boot-reference.pdf",
     "_TODO/日常todo.md",
+    "PDFs/spring-boot-reference.pdf",
     "PDFs/2022张宇数学基础30讲01.pdf",
     "Excalidraw/collection&map接口.md",
     "docs/tool/subcode Maple 特殊符号.md",
