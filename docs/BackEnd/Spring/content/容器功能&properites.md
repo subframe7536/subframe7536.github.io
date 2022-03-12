@@ -20,12 +20,6 @@
 用于导入配置文件，前缀为xx	
 
 
-## .properties配置springboot
-### 新建
-`new` -> `Resource Bundle`
-### 查找自动配置文件
-或者`debug=true`
-
 
 
 

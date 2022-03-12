@@ -2,11 +2,14 @@
 > 自动配置 spring 框架
 ### 博客&demo
 [[Awesome Spring Boot]]
+### IDEA远程调试
+[[远程调试]]
 ### hello world
 [[helloworld of springboot]]
 ### 文档
 [[spring-boot-reference.pdf|springboot文档]]
 ### 内容
+[[Tomcat内嵌]]
 [[容器功能&properites]]
 [[插件&yml]]
 跨域Access-Control-Allow-Origin设置

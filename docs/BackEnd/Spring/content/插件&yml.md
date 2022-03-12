@@ -6,5 +6,7 @@ build时自动重新部署
 配置语言
 ### 4. [[swagger2]]
 自动生成API文档
-### 5. [[screw]]
+[[springdoc]]
+### 5. screw
 自动生成数据库文档
+[项目地址&使用](https://gitee.com/leshalv/screw/tree/master/)

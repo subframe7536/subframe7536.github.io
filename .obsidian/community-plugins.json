@@ -8,5 +8,10 @@
   "obsidian-day-planner",
   "table-editor-obsidian",
   "copy-as-html",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-system-dark-mode",
+  "obsidian-outliner",
+  "obsidian-pandoc",
+  "templater-obsidian",
+  "obsidian-metatable"
 ]

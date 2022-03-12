@@ -15,9 +15,9 @@
     "icons",
     "status.min",
     "plugin.min",
-    "markdown.min",
-    "code.min"
+    "code.min",
+    "markdown.min"
   ],
-  "baseFontSize": 17,
+  "baseFontSize": 16,
   "baseFontSizeAction": true
 }

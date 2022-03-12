@@ -159,9 +159,9 @@ vim ~/.zshrc
 设置`ZSH_THEME="ys"`
 - 或者用 [[powerlevel10k主题]]
 4. 启用插件
-- zsh-autosuggestions
+- `zsh-autosuggestions`
 它是Oh-myszh的一个插件，作用基本上是根据历史输入指令的记录即时的提示，能够很大的提高效率。
-- zsh-syntax-highlighting
+- `zsh-syntax-highlighting`
 这是一个命令高亮插件，输入为绿色时表示可用命令，路径带有下划线时表示可用路径
 ```shell
 cd ~/.oh-my-zsh/plugins 

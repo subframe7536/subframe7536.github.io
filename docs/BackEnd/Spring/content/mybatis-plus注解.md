@@ -43,15 +43,14 @@ UUID(4);
 
 ### @TableField
 > 映射非主键字段
-#### 参数
-- value 
-映射字段名
-- exist 
-表示是否为数据库字段 false，如果实体类中的成员变量在数据库中没有对应的字段，则可以使用 exist，VO，DTO
-- select 
-表示是否查询该字段
-- fill
-表示是否自动填充，将对象存入数据库的时候，由 MyBatis Plus 自动给某些字段赋值，create_time、update_time
+
+| 参数   | 含义                                                                                                           |
+| ------ | -------------------------------------------------------------------------------------------------------------- |
+| value  | 映射字段名                                                                                                     |
+| exist  | 表示是否为数据库字段 false，如果实体类中的成员变量在数据库中没有对应的字段，则可以使用 exist，如在`VO`/`DTO`中 |
+| select | 表示是否查询该字段                                                                                             |
+| fill   | 表示是否自动填充，将对象存入数据库的时候，由 MyBatis Plus 自动给某些字段赋值，如`create_time`/`update_time`    |
+
 #### 1. 给表添加 create_time、update_time 字段
 #### 2. 实体类中添加成员变量
 ```java
@@ -82,6 +81,7 @@ public class User {
 }
 ```
 #### 3. 创建自动填充处理器
+#code-snippet 
 ```java
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
@@ -113,6 +113,16 @@ public class MybatisPlusConfig implements MetaObjectHandler {
     }
 }
 ```
+#### 4. 添加序列化器
+```xml
+<!-- 序列化器 -->
+<dependency>  
+    <groupId>com.fasterxml.jackson.datatype</groupId>  
+    <artifactId>jackson-datatype-jsr310</artifactId>  
+    <version>2.13.0</version>  
+</dependency>
+```
+
 ### @Version
 > 标记乐观锁，通过 version 字段来保证数据的安全性，当修改数据的时候，会以 version 作为条件，当条件成立的时候才会修改成功。
 - version = 2

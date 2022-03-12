@@ -1,11 +1,26 @@
+.theme-light {
+  --inline-code: var(--h1-color);
+}
+
+.theme-dark {
+  --inline-code: var(--h1-color);
+}
+
 //code
 .markdown-preview-view {
+  pre {
+    background-color: #181c20 !important;
+
+    code {
+      background: none !important;
+    }
+  }
+
   pre[class*="language-"] {
     padding: .8rem !important;
     padding-top: 3rem !important;
     position: relative;
     border-radius: 8px !important;
-    background-color: #181c20;
 
     code {
       padding: 0 !important;
@@ -87,7 +102,10 @@ txt,
 md,
 bat,
 json,
-groovy;
+groovy,
+scss,
+bash,
+cmd;
 
 pre[class*='language-']:before {
   content: "未知语言";
@@ -102,26 +120,35 @@ pre[class*='language-']:before {
 
 /*===== 语法高亮 =====*/
 :root {
+  --red: #ff7070;
+  --orange: #ff9f31;
+  --yellow: #ffd080;
+  --green: #a3e6a1;
+  --green-dark: #6fcc74;
+  --cyan: #B1CBE8;
+  --blue: #6fa9ff;
+  --purple: #B8A4FF;
+
   //底色
-  --color-basic: #b7d1ae;
+  --color-basic: var(--yellow);
   //xml标签，选择器
-  --color-selector: #e45276;
+  --color-selector: var(--red);
   //数字
-  --color-number: #B1CBE8;
+  --color-number: var(--green);
   //加减法、括号
-  --color-operator: #d6ccb3;
+  --color-operator: var(--cyan);
   //属性、类名
-  --color-property: #ee9f55;
+  --color-property: var(--orange);
   //字符串
-  --color-string: #1ac847;
+  --color-string: var(--green-dark);
   //@metadata、单位
-  --color-annotation: #499eff;
+  --color-annotation: var(--blue);
   //注释
   --color-comment: #666;
   //关键字
-  --color-important: #B8A1FF;
+  --color-important: var(--purple);
   //方法
-  --color-function: #7ab8ff;
+  --color-function: var(--blue);
 }
 
 //==预览==
@@ -142,7 +169,6 @@ pre[class*='language-']:before {
 
         &.number {
           color: var(--color-number) !important;
-          font-weight: bold;
         }
 
         &.selector,
@@ -231,6 +257,10 @@ pre[class*='language-']:before {
 
 
 //行内代码
+.cm-hmd-codeblock.cm-formatting {
+  color: var(--inline-code);
+}
+
 .cm-inline-code {
   color: var(--inline-code) !important;
 
@@ -238,4 +268,8 @@ pre[class*='language-']:before {
   &.cm-header {
     color: var(--inline-code) !important;
   }
+}
+
+.markdown-preview-view code {
+  color: var(--inline-code);
 }

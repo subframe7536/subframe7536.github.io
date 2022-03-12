@@ -11,7 +11,7 @@
 [[盒子模型 padding+margin+border]]
 [[浮动&位置 float+position]]
 [[切换是否显示]]
-[[精灵图]]
+[[精灵图(过时)]]
 [[字体图标 iconfont]]
 [[三角形]]
 [[鼠标&光标样式]]
@@ -46,6 +46,7 @@
 https://www.cnblogs.com/guangzan/p/13524990.html
 # LESS
 [[LESS]]
+[[SCSS(SASS)]]
 
 
 

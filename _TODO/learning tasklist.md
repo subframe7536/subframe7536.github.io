@@ -29,14 +29,15 @@ kanban-plugin: basic
 - [ ] Hazelcast
 
 
-## server
+## frame
 
 - [ ] docker
 - [ ] webflux
 - [ ] k8s/promrtheus https://www.cnblogs.com/chenqionghe/p/10494868.html
 - [ ] epoll
-- [ ] manjaro/arch
-- [ ] front matter hexo https www.jekyll.com.cn
+- [ ] Elasticsearch
+- [ ] TiDB https://docs.pingcap.com/zh/tidb/v5.0/
+- [ ] graphQL
 
 
 ## Machine Learning
@@ -52,9 +53,16 @@ kanban-plugin: basic
 - [ ] golang/python
 - [ ] Vert.x
 - [ ] lua
-- [ ] 演示 prezi
 - [ ] erlang State Machine
 - [ ] webassembly
+
+
+## tools
+
+- [ ] [[manjaro]]
+- [ ] fossil
+- [ ] front matter hexo https www.jekyll.com.cn
+- [ ] 演示 prezi
 
 
 

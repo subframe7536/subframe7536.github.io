@@ -41,6 +41,10 @@
     .collapse-icon {
       width: 24px;
     }
+
+    .tree-item-flair {
+      line-height: 15px;
+    }
   }
 
   .git-view-body {
@@ -70,6 +74,10 @@
           bottom: 3px;
           right: 16px;
           left: 8px;
+        }
+
+        @at-root .theme-light .git-view-body .file-view main:hover {
+          box-shadow: var(--shadow-inset);
         }
 
         &:hover {
@@ -114,8 +122,8 @@
   line-height: 16px;
 
   span {
-    padding: 0 !important;
-    padding-left: 2px !important;
+    padding: 2px 0 !important;
+    padding-left: 1kpx !important;
     margin: 0 !important;
     border-radius: 2px;
   }
@@ -128,22 +136,37 @@
   }
 
   .day {
+    margin: 2px;
+    padding: 2px;
+
+    &:hover {
+      background-color: var(--file-item-bg) !important;
+    }
+
+
     @at-root .theme-light .day:hover {
       box-shadow: var(--shadow-inset);
     }
 
-    @at-root .theme-dark .day:not(.today):hover {
-      background-color: var(--file-item-bg) !important;
+    &.today {
+      background-color: var(--file-item-selected-bg);
+      color: #fff;
+
+      &:hover {
+        background-color: var(--interactive-accent-hover);
+        color: #fff;
+      }
     }
 
-    &.today:hover {
-      background-color: var(--interactive-accent-hover);
-      color: #fff;
-    }
   }
 
   .nav {
     padding: 0;
+
+    margin: {
+      top: -4px;
+      bottom: 8px;
+    }
 
     .title {
       display: flex;
@@ -172,7 +195,6 @@
       font-size: .7rem;
     }
 
-    margin-bottom: 10px;
     border-bottom: 2px solid var(--text-accent);
   }
 

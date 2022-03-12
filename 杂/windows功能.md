@@ -58,3 +58,4 @@ RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
 ---
 - 不断需要联网
 `adb shell settings put global captive_portal_mode 0`
+
