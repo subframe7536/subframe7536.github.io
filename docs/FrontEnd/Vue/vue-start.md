@@ -13,7 +13,7 @@
 ```shell
 npm install –g vue-cli @vue/cli-init
 ```
-### 创建项目  
+### 创建项目  **
 #### 使用webpack
 ```shell
 vue init webpack myproject
@@ -24,3 +24,6 @@ npm install
 ```
 ## 语法
 [vue笔记整理与总结 - SegmentFault 思否](https://segmentfault.com/a/1190000019162582)
+
+## 注意
+- 数据加载完再渲染页面，可以用`v-if`，初始为`false`，刷新完改为`true`

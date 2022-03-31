@@ -1,5 +1,4 @@
 [
-  "obsidian-mind-map",
   "obsidian-excalidraw-plugin",
   "obsidian-kanban",
   "obsidian-git",
@@ -7,11 +6,9 @@
   "quick-explorer",
   "obsidian-day-planner",
   "table-editor-obsidian",
-  "copy-as-html",
-  "obsidian-style-settings",
-  "obsidian-system-dark-mode",
-  "obsidian-outliner",
   "obsidian-pandoc",
+  "obsidian-metatable",
   "templater-obsidian",
-  "obsidian-metatable"
+  "obsidian-outliner",
+  "obsidian-mind-map"
 ]

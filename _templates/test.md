@@ -1,0 +1,1 @@
+<%tp.obsidian.plugin.addCommand("Day Planner: Link today's Day Planner to the current note")%>

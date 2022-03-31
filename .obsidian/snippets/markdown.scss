@@ -81,7 +81,7 @@
   &:before {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: 0px;
     width: 0;
     right: 0;
     height: 3px;
@@ -100,13 +100,21 @@
 
 
 
-.cm-link,
+.cm-link {
+  color: var(--external-link) !important;
+}
+
+.markdown-preview-view .cm-link,
 .external-link:not(.external-link[contenteditable="false"]) {
   color: var(--external-link) !important;
   @include underline-anime(var(--external-link));
 }
 
-.cm-url,
+.cm-url {
+  color: var(--internal-link) !important;
+}
+
+.markdown-preview-view .cm-url,
 .internal-link {
   color: var(--internal-link) !important;
   @include underline-anime(var(--internal-link));
@@ -121,12 +129,27 @@
   color: var(--link-formatting) !important;
 }
 
+//todo
+// .markdown-preview-view .contains-task-list li,
+// .markdown-preview-view p {
+//   display: flex;
+//   align-items: center;
+
+//   a.external-link {
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     max-width: 100%;
+//     display: inline-block;
+//     white-space: nowrap;
+//   }
+// }
 
 //键盘
 kbd {
   user-select: none;
   padding: 0 4px !important;
   margin: 0 4px;
+  background-color: var(--background-primary);
 }
 
 .theme-light {
@@ -161,11 +184,16 @@ em {
 //标题
 @for $i from 1 through 6 {
 
+  h#{$i} {
+    color: var(--h#{$i}-color) !important;
+    font-size: var(--h#{$i}-size) !important;
+    font-weight: var(--h#{$i}-weight) !important;
+  }
+
   .markdown-preview-view,
   .cm-editor {
 
-    .cm-header-#{$i},
-    h#{$i} {
+    .cm-header-#{$i} {
       color: var(--h#{$i}-color) !important;
       font-size: var(--h#{$i}-size) !important;
       font-weight: var(--h#{$i}-weight) !important;
@@ -251,6 +279,7 @@ h6 {
 }
 
 //表格
+.cm-embed-block table,
 .markdown-preview-view table {
 
   width: 100% !important;
@@ -284,24 +313,32 @@ ul,
 ol {
   padding-inline-start: 1rem;
 
+  margin: {
+    top: 2px;
+    bottom: 2px;
+    left: 1.2rem;
+  }
+
   ul,
   ol {
-    padding-inline-start: 1rem;
+    padding-inline-start: .4rem;
   }
 
   li {
     margin: 6px auto;
+    line-height: 1.8rem;
 
     &::marker {
+      font-family: 'subcode Maple', consolas !important;
       color: var(--internal-link);
     }
   }
 
-  margin: {
-    top: 2px;
-    bottom: 2px;
-    left: 1rem;
-  }
+}
+
+ul.contains-task-list {
+  padding-inline-start: .2rem;
+  margin-inline-start: 0 !important;
 }
 
 ul>li>ul>li {
@@ -331,11 +368,14 @@ ul>li>ul>li {
 .markdown-preview-view a.tag {
   padding: 2px 10px;
   background-color: var(--tag);
+  // border: var(--border) !important;
   border-radius: 12px;
   text-decoration: none;
   transition: var(--transition);
 
   &:hover {
+    background-color: var(--tag) !important;
+    color: var(--text-nomarl) !important;
     border-radius: 6px;
   }
 
@@ -372,9 +412,6 @@ $radius:999px;
 
 //任务列表
 .HyperMD-task-line {
-
-  // height: 1.4rem;
-  // line-height: 1.4;
   padding: {
     top: 0 !important;
   }
@@ -387,6 +424,7 @@ $radius:999px;
 
 .task-list-item-checkbox {
   filter: none;
+  transform: translateY(-.2rem);
 }
 
 //内嵌文档
@@ -533,10 +571,11 @@ mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
   background-color: var(--highlight-search) !important;
+  color: #fff !important;
 
-  &,
-  & * {
+  * {
     color: #fff !important;
+    background-color: transparent !important;
   }
 }
 
@@ -576,9 +615,6 @@ p,
   border: 0;
 }
 
-.HyperMD-header {
-  margin-top: 4px !important;
-}
 
 .HyperMD-codeblock {
   line-height: 1.8rem !important;
@@ -594,4 +630,14 @@ p,
 .cm-cursor {
   border-width: 2px !important;
   border-color: var(--text-accent) !important;
+}
+
+//编辑块
+.markdown-source-view.mod-cm6 .cm-embed-block {
+  border-radius: 5px;
+
+  .edit-block-button {
+    top: 2px;
+    right: 2px;
+  }
 }

@@ -1,0 +1,100 @@
+{
+  "choices": [
+    {
+      "id": "976e5e76-86fb-4861-84c3-044a807f5326",
+      "name": "rrr 添加日记并添加时间线",
+      "type": "Macro",
+      "command": true,
+      "macroId": "5ec1d42d-10d1-44a2-8ceb-e1547cb298f1"
+    },
+    {
+      "id": "9a563d56-10af-4481-bcca-74ae50cc2162",
+      "name": "yyy 添加易循任务",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "项目/易循/问题.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": false,
+        "format": ""
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "## {{DATE}} ",
+        "insertAtEnd": true,
+        "createIfNotFound": true,
+        "createIfNotFoundLocation": "bottom"
+      },
+      "prepend": false,
+      "task": true,
+      "openFileInNewTab": {
+        "enabled": true,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": [
+    {
+      "name": "add diary",
+      "id": "5ec1d42d-10d1-44a2-8ceb-e1547cb298f1",
+      "commands": [
+        {
+          "name": "diary",
+          "type": "NestedChoice",
+          "id": "62a28e07-bb2c-4c82-ab01-62f1f14286f3",
+          "choice": {
+            "id": "8c38c2d0-dfec-4ad5-9118-885322907f21",
+            "name": "diary",
+            "type": "Template",
+            "command": false,
+            "templatePath": "_templates/template-daily",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{DATE:}} 日记"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "日记"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false
+            },
+            "appendLink": false,
+            "incrementFileName": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Day Planner: Link today's Day Planner to the current note",
+          "type": "Obsidian",
+          "id": "5ee798bd-b70f-4aa1-9963-cd6612b8d7f0",
+          "commandId": "obsidian-day-planner:app:link-day-planner-to-note"
+        },
+        {
+          "name": "Day Planner: Show the Day Planner Timeline",
+          "type": "Obsidian",
+          "id": "55168ff1-1f57-4117-a638-f85966945c99",
+          "commandId": "obsidian-day-planner:app:show-day-planner-timeline"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line"
+}

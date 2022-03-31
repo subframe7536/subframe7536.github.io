@@ -1,4 +1,5 @@
 {
   "folder": "日记",
-  "template": "_templates/template-daily"
+  "template": "_templates/template-daily",
+  "format": ""
 }

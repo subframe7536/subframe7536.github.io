@@ -3,6 +3,8 @@
 ## hello world
 [[初始配置mybatis]]
 [[编写业务]]
+### 注意
+`#{var}` 自带单引号
 ## mybatis-plus
 > 国产框架，简化mybatis开发，代码生成、物理分页、性能分析
 ### helloworld

@@ -8,7 +8,7 @@
   "pullBeforePush": false,
   "disablePopups": false,
   "listChangedFilesInMessageBody": true,
-  "showStatusBar": true,
+  "showStatusBar": false,
   "updateSubmodules": false,
   "syncMethod": "merge",
   "gitPath": "",

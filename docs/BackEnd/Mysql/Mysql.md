@@ -148,3 +148,7 @@ DROP USER 用户名
 [[ER图]]
 ### 范式
 [[范式]]
+
+## 注意
+`ifnull(a,0)` a为null，则返回0
+`Date_format(time,'%y-%m-%d')` 格式化时间

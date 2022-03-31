@@ -7,75 +7,75 @@
 }
 
 //code
-.markdown-preview-view {
-  pre {
-    background-color: #181c20 !important;
+// .markdown-preview-view,
+// .reveal {
+pre {
+  background-color: #181c20 !important;
 
-    code {
-      background: none !important;
-    }
+  code {
+    background: none !important;
   }
-
-  pre[class*="language-"] {
-    padding: .8rem !important;
-    padding-top: 3rem !important;
-    position: relative;
-    border-radius: 8px !important;
-
-    code {
-      padding: 0 !important;
-      font-size: 1rem !important;
-      line-height: 1.8rem;
-      border-radius: 0 !important;
-      font-size: 1rem !important;
-      white-space: pre;
-    }
-
-    .copy-code-button {
-      font-family: 'Microsoft YaHei';
-      box-sizing: border-box;
-      letter-spacing: 3px;
-      font-size: .8rem !important;
-      padding: 0 !important;
-      padding-left: 5px !important;
-      border-radius: 5px !important;
-      width: 50px;
-      height: 1.6rem;
-      line-height: 1.6rem;
-      top: .3rem !important;
-      right: .3rem !important;
-      margin: 0px !important;
-      display: unset !important;
-      color: var(--interactive-normal);
-      background-color: var(--text-accent-hover);
-
-      &:hover {
-        box-shadow: var(--shadow);
-        transition: all .2s;
-        filter: var(--hover);
-      }
-    }
-
-    &::before {
-      font-weight: bold;
-      position: absolute;
-      box-sizing: border-box;
-      letter-spacing: 1px;
-      padding-left: 14px;
-      width: 100%;
-      left: 10px;
-      height: 2.2rem;
-      line-height: 2.2rem;
-      top: 0px;
-      margin-left: -10px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      background-color: var(--language-title);
-      color: #fff;
-    }
-  }
-
 }
+
+pre[class*="language-"] {
+  padding: .8rem !important;
+  padding-top: 3rem !important;
+  position: relative;
+  border-radius: 8px !important;
+
+  code {
+    padding: 0 !important;
+    font-size: 1rem !important;
+    line-height: 1.8rem;
+    border-radius: 0 !important;
+    font-size: 1rem !important;
+  }
+
+  .copy-code-button {
+    font-family: 'Microsoft YaHei';
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    font-size: .8rem !important;
+    padding: 0 !important;
+    padding-left: 5px !important;
+    border-radius: 5px !important;
+    width: 50px;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    top: .3rem !important;
+    right: .3rem !important;
+    margin: 0px !important;
+    display: unset !important;
+    color: #666;
+    background-color: var(--text-accent-hover);
+
+    &:hover {
+      box-shadow: var(--shadow);
+      transition: all .2s;
+      filter: var(--hover);
+    }
+  }
+
+  &::before {
+    font-weight: bold;
+    position: absolute;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    padding-left: 14px;
+    width: 100%;
+    left: 10px;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    top: 0px;
+    margin-left: -10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--language-title);
+    color: #fff;
+  }
+}
+
+// }
 
 $language: c,
 properties,
@@ -91,6 +91,7 @@ powershell,
 flow,
 sequence,
 sql,
+yaml,
 yml,
 ini,
 xml,
@@ -152,79 +153,80 @@ pre[class*='language-']:before {
 }
 
 //==预览==
-.markdown-preview-section {
-  pre {
-    &.language-css code {
-      color: var(--color-string);
+// .markdown-preview-section,
+// .reveal {
+pre {
+  &.language-css code {
+    color: var(--color-string);
+  }
+
+  code {
+
+    &,
+    &.url {
+      color: var(--color-basic) !important;
     }
 
-    code {
+    .token {
 
-      &,
-      &.url {
-        color: var(--color-basic) !important;
+      &.number {
+        color: var(--color-number) !important;
       }
 
-      .token {
+      &.selector,
+      &.tag {
+        color: var(--color-selector) !important;
+      }
 
-        &.number {
-          color: var(--color-number) !important;
-        }
+      &.punctuation,
+      &.operator {
+        color: var(--color-operator) !important;
+      }
 
-        &.selector,
-        &.tag {
-          color: var(--color-selector) !important;
-        }
+      &.property,
+      &.attr-name,
+      &.class-name {
+        color: var(--color-property) !important;
+      }
 
-        &.punctuation,
-        &.operator {
-          color: var(--color-operator) !important;
-        }
+      &.string,
+      &.important,
+      &.attr-value {
+        color: var(--color-string) !important;
+      }
 
-        &.property,
-        &.attr-name,
-        &.class-name {
-          color: var(--color-property) !important;
-        }
+      &.annotation.punctuation,
+      &.annotation.punctuation,
+      &.unit {
+        color: var(--color-annotation) !important;
+      }
 
-        &.string,
-        &.important,
-        &.attr-value {
-          color: var(--color-string) !important;
-        }
+      &.doctype *,
+      &.comment,
+      &.comment * {
+        color: var(--color-comment) !important;
+      }
 
-        &.annotation.punctuation,
-        &.annotation.punctuation,
-        &.unit {
-          color: var(--color-annotation) !important;
-        }
+      // yml
+      &.atrule,
+      &.variable,
+      &.boolean,
+      &.keyword {
+        color: var(--color-important) !important;
+      }
 
-        &.doctype *,
-        &.comment,
-        &.comment * {
-          color: var(--color-comment) !important;
-        }
-
-        // yml
-        &.atrule,
-        &.variable,
-        &.boolean,
-        &.keyword {
-          color: var(--color-important) !important;
-        }
-
-        &.function {
-          color: var(--color-function) !important;
-        }
+      &.function {
+        color: var(--color-function) !important;
       }
     }
   }
-
 }
 
+// }
+
 //==编辑==
-.cm-num {
-  color: var(--color-number) !important;
+.cm-number {
+  color: #40c546 !important;
 }
 
 //xml标签
@@ -232,15 +234,15 @@ pre[class*='language-']:before {
   color: var(--color-selector) !important;
 }
 
-//括号
-.cm-bracket {
-  color: var(--color-operator) !important;
+//符号
+.cm-operator {
+  color: #3787ff !important;
 }
 
 .cm-def,
 .cm-type,
 .cm-attribute {
-  color: var(--color-property) !important;
+  color: #f18810 !important;
 }
 
 .cm-string {
@@ -248,15 +250,16 @@ pre[class*='language-']:before {
 }
 
 .cm-comment {
-  color: var(--color-comment) !important;
+  color: #888 !important;
 }
 
 .cm-keyword {
-  color: var(--color-important) !important;
+  color: #987bff !important;
 }
 
 
 //行内代码
+.markdown-preview-view code,
 .cm-hmd-codeblock.cm-formatting {
   color: var(--inline-code);
 }
@@ -264,12 +267,7 @@ pre[class*='language-']:before {
 .cm-inline-code {
   color: var(--inline-code) !important;
 
-
   &.cm-header {
     color: var(--inline-code) !important;
   }
-}
-
-.markdown-preview-view code {
-  color: var(--inline-code);
 }

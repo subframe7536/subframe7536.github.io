@@ -16,6 +16,7 @@ $a_{10}$
 #### 分数
 `\(d)frac{分子}{分母}`
 $\dfrac{1}{2}$
+- dfrac 分数超出行的高度
 #### 上标
 `{}^{}`
 $2^2$
@@ -56,8 +57,26 @@ $\neq$
 `\quad 123`
 $\quad 123$
 ##### 1/3空格
-`\ 123`
-$\ 123$
+`1\ 123`
+$1\ 123$
+#### 大括号
+`\lbrace1,2,3\rbrace`
+$\lbrace1,2,3\rbrace$
+#### 对数
+`\log_{a}x`
+$\log_{a}x$
+##### ln
+`\ln x`
+$\ln x$
+##### lg
+`\lg x`
+$\lg x$
+#### 相似
+`\sim`
+$\sim$
+#### 约等于
+`\approx`
+$\approx$
 #### 异或
 `\oplus`
 $\oplus$
@@ -75,6 +94,8 @@ $\rightarrow$
 $\nrightarrow$
 `\Rightarrow`
 $\Rightarrow$
+#### 双箭头
+$\Leftrightarrow$
 #### 上划线
 `\overline{111}`
 $\overline{111}$
@@ -98,11 +119,17 @@ $\prod_{i=1}^3 {a_i}$
 `\equiv`
 $\equiv$
 #### 极限
-`\lim`
-$\lim$
-#### 求导
-`\cap`
-$\int$
+`\displaystyle\lim_{x \to 0^+}`
+$\displaystyle\lim_{x \to 0^+}$
+#### 求积分
+`\int^{}_x{}`
+$\int^{x}_{1}$
+#### 存在
+`{\forall}`
+$\forall$
+#### 任取
+`\exists`
+$\exists$
 #### 框
 `\boxed`
 $\boxed{123}$
@@ -155,9 +182,23 @@ $$\begin{split}
 `\mu`
 - $\pi$
 `\pi`
-- $\phi$
-`\phi`
+- $\varphi$
+`\varphi`
 - $\omega$
 `\omega`
 - $\sigma$
 `\sigma`
+- $\Sigma$
+`\Sigma`
+- $\varepsilon$
+`\varepsilon`
+- $\psi$
+`\psi`
+- $\xi$
+`\xi`
+- $\eta$
+`\eta`
+- $\mu$
+`\mu`
+- $\Omega$
+`\Omega`

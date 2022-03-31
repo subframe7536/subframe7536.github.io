@@ -36,6 +36,7 @@
   .tree-item-self {
     &:hover {
       background-color: var(--fold-item-bg);
+      box-shadow: var(--shadow-inset);
     }
 
     .collapse-icon {
@@ -76,12 +77,9 @@
           left: 8px;
         }
 
-        @at-root .theme-light .git-view-body .file-view main:hover {
-          box-shadow: var(--shadow-inset);
-        }
-
         &:hover {
           background-color: var(--file-item-bg);
+          box-shadow: var(--shadow-inset);
 
           &::after {
             @include dark-item-end(var(--file-item))
@@ -107,6 +105,21 @@
         padding: 4px 10px;
       }
     }
+
+    .context-menu-option:hover {
+      background-color: var(--file-item-bg);
+      color: var(--text-normal);
+
+      kbd {
+        background-color: var(--background-primary) !important;
+      }
+    }
+  }
+
+  h3 {
+    font-size: .75rem !important;
+    font-weight: bold !important;
+    color: inherit !important;
   }
 }
 
@@ -139,22 +152,49 @@
     margin: 2px;
     padding: 2px;
 
-    &:hover {
+    &.has-note.active:not(.today) {
       background-color: var(--file-item-bg) !important;
+      color: #333;
     }
 
-
-    @at-root .theme-light .day:hover {
+    &:hover {
+      background-color: var(--file-item-bg) !important;
       box-shadow: var(--shadow-inset);
     }
 
     &.today {
-      background-color: var(--file-item-selected-bg);
+      background-color: var(--interactive-accent);
       color: #fff;
 
       &:hover {
         background-color: var(--interactive-accent-hover);
-        color: #fff;
+        color: #333;
+
+        .dot-container {
+
+          .filled {
+            stroke: var(--color-dot) !important;
+            fill: var(--color-dot) !important;
+          }
+
+          .hollow {
+            stroke: var(--color-dot) !important;
+            fill: none;
+          }
+        }
+      }
+
+      .dot-container {
+
+        .filled {
+          stroke: #fff !important;
+          fill: var(--file-item-bg) !important;
+        }
+
+        .hollow {
+          stroke: #fff !important;
+          fill: none;
+        }
       }
     }
 
@@ -252,9 +292,28 @@
   font-size: 0.9rem !important;
 }
 
+.status-bar-item-segment.day-planner-progress-bar {
+  transform: translateY(2.5px);
+}
+
 #scroll-controls.svelte-e43ld1 label.svelte-e43ld1 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+#scroll-controls.svelte-e43ld1 {
+  padding-top: 10px !important;
+
+  .toggle.svelte-e43ld1 {
+    height: 24px !important;
+    width: 54px !important;
+    margin: 0 !important;
+    margin-top: 2px !important;
+  }
+}
+
+.workspace-leaf-content[data-type="timeline"] .view-content {
+  padding: 0 !important;
 }
 
 .status-bar-item>* {

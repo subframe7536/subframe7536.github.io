@@ -38,3 +38,5 @@ public class CorsConfig extends WebMvcConfigurerAdapter {
 spring.resources.chain.strategy.content.enabled=true
 spring.resources.chain.strategy.content.paths=/css/**,/js/**,/img/**
 ```
+### 注意事项
+1. `@Resource`导入实例时需要注意，相同类名的实例名需要一致

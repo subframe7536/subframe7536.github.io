@@ -1,1 +1,427 @@
-{}
+{
+  "workspaces": {
+    "829": {
+      "main": {
+        "id": "88c7cf786abd1393",
+        "type": "split",
+        "children": [
+          {
+            "id": "dfbc368589aeeac3",
+            "type": "split",
+            "children": [
+              {
+                "id": "5383c9225cf05246",
+                "type": "leaf",
+                "dimension": 24.574540503744043,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/考研/829/大纲.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c9d955cc94cc0a73",
+                "type": "leaf",
+                "dimension": 40.16337644656229,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/考研/829/组成原理/数据表示和运算.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                },
+                "group": "2f162d52daeabc5b"
+              },
+              {
+                "id": "56bbb526e144f773",
+                "type": "leaf",
+                "dimension": 35.26208304969367,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/考研/829/组成原理/数据表示和运算.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                },
+                "group": "2f162d52daeabc5b"
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "81b38d2624157c21",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b093ab7c7062ae6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9e92a312ba3184ec",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "15a90fe8f3e2638d",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "docs/考研/829/组成原理/数据表示和运算.md"
+                  }
+                }
+              },
+              {
+                "id": "d8ddfd97073244dd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#高数基础",
+                    "matchingCase": true,
+                    "explainSearch": true,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "3fb9f523ae69dd20",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 276,
+        "collapsed": true
+      },
+      "right": {
+        "id": "1a5a600bbc148501",
+        "type": "split",
+        "children": [
+          {
+            "id": "37917c2df535ce63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ff86cec1d93aa1e9",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "docs/考研/829/组成原理/数据表示和运算.md",
+                    "options": {
+                      "collapse-filter": false,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": false,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 0.608846153846154,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": false,
+                      "centerStrength": 0.86551724137931,
+                      "repelStrength": 5.94109195402299,
+                      "linkStrength": 0.62816091954023,
+                      "linkDistance": 278,
+                      "scale": 1.000000000000001,
+                      "close": true
+                    }
+                  }
+                }
+              },
+              {
+                "id": "58c2b50ab89a3491",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "docs/考研/829/组成原理/数据表示和运算.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": true,
+                    "searchQuery": "",
+                    "backlinkCollapsed": true,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "a9407cb6ce1722fd",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "4919fa2c17a8b425",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "37886f2bdf528e19",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "871b2592944d764c",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 335,
+        "collapsed": true
+      },
+      "active": "c9d955cc94cc0a73"
+    },
+    "数学": {
+      "main": {
+        "id": "88c7cf786abd1393",
+        "type": "split",
+        "children": [
+          {
+            "id": "dfbc368589aeeac3",
+            "type": "split",
+            "children": [
+              {
+                "id": "e75bfabea899594c",
+                "type": "leaf",
+                "dimension": 17.222600408441117,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/tool/LaTex.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c9d955cc94cc0a73",
+                "type": "leaf",
+                "dimension": 42.341729067392784,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/考研/数学/高数/基础/函数.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                },
+                "group": "2f162d52daeabc5b"
+              },
+              {
+                "id": "56bbb526e144f773",
+                "type": "leaf",
+                "dimension": 40.4356705241661,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "docs/考研/数学/高数/基础/函数.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                },
+                "group": "2f162d52daeabc5b"
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "81b38d2624157c21",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b093ab7c7062ae6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9e92a312ba3184ec",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "15a90fe8f3e2638d",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "docs/tool/LaTex.md"
+                  }
+                }
+              },
+              {
+                "id": "d8ddfd97073244dd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#高数基础",
+                    "matchingCase": true,
+                    "explainSearch": true,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "3fb9f523ae69dd20",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 276,
+        "collapsed": true
+      },
+      "right": {
+        "id": "1a5a600bbc148501",
+        "type": "split",
+        "children": [
+          {
+            "id": "37917c2df535ce63",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ff86cec1d93aa1e9",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "docs/tool/LaTex.md",
+                    "options": {
+                      "collapse-filter": false,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": false,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 0.608846153846154,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": false,
+                      "centerStrength": 0.86551724137931,
+                      "repelStrength": 5.94109195402299,
+                      "linkStrength": 0.62816091954023,
+                      "linkDistance": 278,
+                      "scale": 1.000000000000001,
+                      "close": true
+                    }
+                  }
+                }
+              },
+              {
+                "id": "58c2b50ab89a3491",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "docs/tool/LaTex.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": true,
+                    "searchQuery": "",
+                    "backlinkCollapsed": true,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "a9407cb6ce1722fd",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "4919fa2c17a8b425",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "37886f2bdf528e19",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "871b2592944d764c",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 335,
+        "collapsed": true
+      },
+      "active": "e75bfabea899594c"
+    }
+  },
+  "active": "829"
+}
