@@ -15,7 +15,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: #0481d4      
+      primary: #0481d4
       accent: #58a8fa
       toggle:
         icon: material/toggle-switch
@@ -27,7 +27,13 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks

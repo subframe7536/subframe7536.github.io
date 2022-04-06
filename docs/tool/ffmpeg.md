@@ -42,7 +42,8 @@ ffmpeg -i 原始视频文件 -acodec copy -an 输出视频文件
 ```
 ### 音视频合成
 ```shell
-ffmpeg –i 原始视频文件 –i 原始音频文件 –vcodec copy –acodec copy 输出视频文件
+ffmpeg –i 原始视频文件 –i 原始音频文件 
+输出视频文件
 ```
 ### 水印去除
 -vf delogo
@@ -79,4 +80,4 @@ ffmpeg -i 原始视频文件 -strict -2 -qscale 0 -intra 输出视频文件
 ffmpeg -i 原始视频文件 -fs 1024K 输出视频文件
 ```
 - 计算输出文件大小 
-$(视频码率+音频码率) * 时长 /8 = 文件大小$
+`(视频码率+音频码率) * 时长 /8 = 文件大小`

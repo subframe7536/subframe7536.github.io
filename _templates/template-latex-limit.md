@@ -1,0 +1,1 @@
+$\displaystyle\lim_{x\to\ <%tp.file.cursor()%>}$

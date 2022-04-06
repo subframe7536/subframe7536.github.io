@@ -284,26 +284,26 @@ h6 {
 
   width: 100% !important;
 
-  th,
-  td {
-    border: none;
-    border-bottom: 2px solid var(--background-secondary-alt);
-    word-wrap: break-word;
-  }
+  // th,
+  // td {
+  //   border: none;
+  //   border-bottom: 2px solid var(--background-secondary-alt);
+  //   word-wrap: break-word;
+  // }
 
-  th {
-    background-color: var(--thead);
-    text-align: left;
-    border-bottom-color: var(--text-faint);
+  // th {
+  //   background-color: var(--thead);
+  //   text-align: left;
+  //   border-bottom-color: var(--text-faint);
 
-    &[align="right"] {
-      text-align: right;
-    }
+  //   &[align="right"] {
+  //     text-align: right;
+  //   }
 
-    &[align="center"] {
-      text-align: center;
-    }
-  }
+  //   &[align="center"] {
+  //     text-align: center;
+  //   }
+  // }
 
 }
 

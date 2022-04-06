@@ -5,10 +5,13 @@
   "calendar",
   "quick-explorer",
   "obsidian-day-planner",
-  "table-editor-obsidian",
   "obsidian-pandoc",
   "obsidian-metatable",
   "templater-obsidian",
   "obsidian-outliner",
-  "obsidian-mind-map"
+  "obsidian-mind-map",
+  "markdown-table-editor",
+  "obsidian-float-toc-plugin",
+  "obsidian-system-dark-mode",
+  "table-editor-obsidian"
 ]

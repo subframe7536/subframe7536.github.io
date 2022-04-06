@@ -20,6 +20,10 @@ date: 2022-03-12
 - [ ] `$ npm install -g supervisor`
 - [ ] https://www.cnblogs.com/qqfontofweb/p/6776102asdaasdasdasdasdasd
 - [ ] [[vscode theme]] 
+- [ ] https://www.zhihu.com/question/366242487/answer/977808189 、 https://www.autohotkey.com/boards/viewtopic.php?f=80&t=77248
+- [ ] cubase
+- [ ] sql2md py
+- [ ] git license https://blog.csdn.net/qq_35246620/article/details/77647234
 ### css snippets
 - [x] 浅色 目录hover和选中颜色互换
 - [x] <kbd>ctrl+1</kbd>弹出框颜色
@@ -50,3 +54,6 @@ date: 2022-03-12
 - [ ] 预览模式标题hover距离
 - [ ] p间距加大
 - [ ] 图片width
+- [ ] embed 右上角链接位置
+- [ ] indent 当前行高亮，列表预览线太近
+- [ ] font css修改

@@ -396,5 +396,14 @@
       ],
       "key": "K"
     }
+  ],
+  "markdown-table-editor:markdown-table-editor-open-horizontal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "E"
+    }
   ]
 }

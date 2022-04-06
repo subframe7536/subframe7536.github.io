@@ -4,7 +4,7 @@
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "showLineNumber": false,
   "pdfExportSettings": {
     "pageSize": "A4",
