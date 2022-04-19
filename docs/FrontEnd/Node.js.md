@@ -6,24 +6,25 @@
 1. 管理员身份运行`powershell`
 2. 输入命令`set-ExecutionPolicy RemoteSigned`，更改执行策略
 3. 输入命令`get-ExecutionPolicy`，查看是否成功
-# npm
+## 包管理
+### npm
 全局安装
 ```shell
 npm i -g 
 ``` 
-### 设置镜像源
+#### 设置镜像源
 ```shell
 npm config set registry https://registry.npm.taobao.org
 ```
-## nrm
+### nrm
 > 管理npm镜像源地址的工具
-### nrm ls
+#### nrm ls
 查看所有npm镜像源的地址
-### nrm use taobao
+#### nrm use taobao
 使用taobao镜像源
-### nrm current
+#### nrm current
 查看当前npm镜像源地址
-### 报错
+#### 报错
 ```shell
 internal/validators.js:124
     throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
@@ -41,16 +42,28 @@ internal/validators.js:124
   code: 'ERR_INVALID_ARG_TYPE'
 }
 ```
-#### 解决方法
+##### 解决方法
 修改上述地址文件第17行
 改为
 ```js
 const NRMRC = path.join(process.env[(process.platform == 'win32') 
 ?'USERPROFILE' : 'HOME'], '.nrmrc');
 ```
-## cnpm
+### cnpm
 > 中国npm镜像的客户端
-### 安装
+#### 安装
 ```shell 
 npm install cnpm -g --registry=https://registry.npm.taobao.org
+```
+### pnpm
+进阶，优化很多，但有些bug
+
+## cors
+```js
+app.use('*',(req,res,next) => {
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.setHeader('Access-Control-Allow-Credential','true');
+    res.setHeader('Access-Control-Allow-Methods','GET,POST,PUT,DELETE,OPTIONS');
+    next();
+});
 ```

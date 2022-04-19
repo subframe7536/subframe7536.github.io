@@ -7,3 +7,10 @@
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+#### 报错
+`THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS FILE.`
+网速原因&超时
+##### 解决方法
+```python
+pip install --upgrade --default-timeout=100000 包名
+```

@@ -16,8 +16,12 @@
     "plugin.min",
     "reveal.min",
     "status.min",
+    "callout.min",
     "markdown.min"
   ],
   "baseFontSize": 17,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "interfaceFontFamily": "subui HanYi complete",
+  "textFontFamily": "subui HanYi complete",
+  "monospaceFontFamily": "subcode maple,subui HanYi complete"
 }

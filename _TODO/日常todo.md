@@ -5,7 +5,7 @@ tag:
 date: 2022-03-12
 ---
 
-## 12
+## 1
 - [ ] dd工具 [“���”引发的线上事故 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/136963587)
 - [ ] input type=range
 - [ ] 取n个数全排列，递归实现
@@ -14,21 +14,24 @@ date: 2022-03-12
 - [ ] [webflux](https://blog.csdn.net/get_set/article/details/79480233)
 - [ ] [架构](https://zhuanlan.zhihu.com/p/114876283)
 - [ ] [kafka](https://www.cnblogs.com/jerrice/p/7194001.html)
-- [ ] RPC #创建型模式 
+- [ ] RPC
 - [ ] [groovy](https://www.jianshu.com/p/e8dec95c4326)
 - [ ] [node 模块](https://www.jianshu.com/p/95c13145ada8)
 - [ ] `$ npm install -g supervisor`
-- [ ] https://www.cnblogs.com/qqfontofweb/p/6776102asdaasdasdasdasdasd
+- [x] https://www.cnblogs.com/qqfontofweb/p/6776102.html
 - [ ] [[vscode theme]] 
 - [ ] https://www.zhihu.com/question/366242487/answer/977808189 、 https://www.autohotkey.com/boards/viewtopic.php?f=80&t=77248
 - [ ] cubase
 - [ ] sql2md py
 - [ ] git license https://blog.csdn.net/qq_35246620/article/details/77647234
+- [ ] 歌词view https://juejin.cn/post/7046235192616779784?share_token=955c09e0-2175-4333-828a-763f238b1b81
+- [ ] sa-token权限框架
+- [ ] 光与影的传说
 ### css snippets
 - [x] 浅色 目录hover和选中颜色互换
 - [x] <kbd>ctrl+1</kbd>弹出框颜色
 - [x] link embed 滚动条往右，链接按钮背景？】
-- [ ] 实时预览图片shadow 导出pdf中图片的shadow
+- [x] 实时预览图片shadow 导出pdf中图片的shadow
 - [x] 实时预览代码、数字颜色
 - [x] 图片图标颜色
 - [x] 列表 两位数的缩进、样式
@@ -50,10 +53,11 @@ date: 2022-03-12
 - [x] 日历 非当前日期选中时颜色
 - [x] 链接 实时模式不要hover，预览模式超出隐藏
 - [x] 右侧栏关闭时边间距
-- [ ] 页面宽度缩小后块状的文字或代码不要换行，tasklist打勾框大小
-- [ ] 预览模式标题hover距离
-- [ ] p间距加大
-- [ ] 图片width
-- [ ] embed 右上角链接位置
-- [ ] indent 当前行高亮，列表预览线太近
-- [ ] font css修改
+- [x] 预览模式标题hover距离
+- [x] p间距加大
+- [x] 图片width
+- [x] embed 右上角链接位置
+- [x] callout css 整合
+- [x] 全局搜索数字和上下箭头
+- [ ] subui HanYi 连字=>，`t`的尾巴圆角拉大，空格宽度？
+- [x] excalidraw zen mode 勾的间距

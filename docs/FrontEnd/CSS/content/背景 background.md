@@ -6,7 +6,7 @@ background-color: rgb(xx,xx,xx)/transparent透明
 ### 背景图片
 图片在颜色上方
 ```css
-background-image: none/url(pictureURL)
+background-image: none/url('pictureURL')
 ```
 ### 背景平铺
 ```css

@@ -35,8 +35,13 @@ ssh-add C:\Users\subframe\.ssh\id_rsa
 2. 在 `Shell Extensions` 上右键新建项，命名为 `Blocked`
 3. 右键 `Blocked` ，新建字符串值，重命名为 `{e2bf9676-5f8f-435c-97eb-11607a5bedf7}`
 4. 重启资源管理器
-
-### windows动画
+### 多标签页
+下载vivetool
+管理员模式powershell
+```shell
+.\ViVeTool.exe addconfig 34370472 2
+```
+## windows动画
 系统属性 -> 高级 -> 性能 -> 设置
 ![[动画.png]]
 
@@ -59,3 +64,6 @@ RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
 - 不断需要联网
 `adb shell settings put global captive_portal_mode 0`
 
+## 以太网不见了
+1. 打开服务，找到`network connections`/`wired Auto Config`，打开，重启
+2. （可能没用）设备管理器 -> 点击网络适配器 -> 操作 -> 添加过时硬件 -> 下一页 -> 手动 -> 选择网络适配器 -> Microsoft 回环适配器 -> 

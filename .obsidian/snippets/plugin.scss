@@ -68,21 +68,38 @@
 
       &>main {
         position: relative;
-        width: 100%;
 
         padding: {
           top: 3px;
           bottom: 3px;
-          right: 16px;
+          // right: 16px;
           left: 8px;
         }
 
-        &:hover {
-          background-color: var(--file-item-bg);
-          box-shadow: var(--shadow-inset);
+        .opener {
+          font-weight: bold;
+        }
 
-          &::after {
-            @include dark-item-end(var(--file-item))
+        .tools {
+          .svelte-1furf50:not([data-type=M]):hover {
+            color: #fff;
+          }
+
+          span {
+            transform: translateY(1.2px)
+          }
+        }
+
+        &.svelte-1furf50 {
+          padding-right: 16px;
+
+          &:hover {
+            background-color: var(--file-item-bg);
+            box-shadow: var(--shadow-inset);
+
+            &::after {
+              @include dark-item-end(var(--file-item))
+            }
           }
         }
       }
@@ -94,6 +111,7 @@
 //excalidraw
 .excalidraw {
   .context-menu {
+    box-shadow: var(--shadow-outset) !important;
     border: none !important;
     padding: 5px 0 !important;
 
@@ -102,7 +120,17 @@
 
       button {
         border-radius: 6px;
-        padding: 4px 10px;
+        padding: 4px;
+        padding-left: 24px;
+
+        &>div {
+          margin-inline-end: 4px !important;
+        }
+
+        kbd {
+          border: 0;
+          box-shadow: none;
+        }
       }
     }
 
@@ -121,6 +149,10 @@
     font-weight: bold !important;
     color: inherit !important;
   }
+}
+
+.theme-light .context-menu-option:hover kbd {
+  box-shadow: var(--shadow-outset);
 }
 
 .excalidraw-svg img {

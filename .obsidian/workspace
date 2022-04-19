@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "31df12291a4e611c",
+        "id": "7b96aa4240e7622b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "日记/2022-04-06.md",
+            "file": "_TODO/日常todo.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2022-04-06.md"
+                "file": "_TODO/日常todo.md"
               }
             }
           },
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "日记/2022-04-06.md",
+                "file": "_TODO/日常todo.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -122,14 +122,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2022-04-06.md",
+                "file": "_TODO/日常todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": true,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -170,17 +170,17 @@
     "direction": "horizontal",
     "width": 335
   },
-  "active": "31df12291a4e611c",
+  "active": "7b96aa4240e7622b",
   "lastOpenFiles": [
-    "日记/2022-04-06.md",
     "_TODO/日常todo.md",
+    "Excalidraw/手绘2022-04-10 14_28_53.excalidraw.md",
+    "_temp/课程作业class.md",
+    "_temp/test.md",
     "_temp/实验7.md",
-    "Excalidraw/手绘2022-04-06 09_02_51.excalidraw.md",
+    "docs/BackEnd/Spring/SpringMVC.md",
+    "docs/FrontEnd/CSS/SCSS(SASS).md",
     "_temp/未命名 2.md",
-    "日记/2022-04-05.md",
-    "日记/未命名.md",
-    "docs/BackEnd/Spring/Spring.md",
-    "docs/BackEnd/Spring/content/Druid+JDBCTemplate.md",
-    "日记/2022-04-03.md"
+    "_temp/装机配置.md",
+    "杂/提示框callout.md"
   ]
 }
