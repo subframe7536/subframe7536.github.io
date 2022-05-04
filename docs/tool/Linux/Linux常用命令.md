@@ -1,3 +1,7 @@
+## 版本信息
+```shell
+neofetch
+```
 ## 文件/路径
 ### 查看当前路径 pwd
 ```shell

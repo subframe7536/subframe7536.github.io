@@ -1,4 +1,5 @@
 :root {
+  --font-bold: 700;
   --h1-color: #ea572a;
   --h2-color: #EE9B00;
   --h3-color: #57C302;
@@ -11,12 +12,12 @@
   --h4-size: 1.4rem;
   --h5-size: 1.3rem;
   --h6-size: 1.2rem;
-  --h1-weight: 700;
-  --h2-weight: 600;
-  --h3-weight: 550;
-  --h4-weight: 500;
-  --h5-weight: 500;
-  --h6-weight: 450;
+  --h1-weight: var(--font-bold);
+  --h2-weight: var(--font-bold);
+  --h3-weight: var(--font-bold);
+  --h4-weight: var(--font-bold);
+  --h5-weight: var(--font-bold);
+  --h6-weight: var(--font-bold);
   --transition: all .2s ease-in;
 }
 
@@ -29,7 +30,7 @@
   // --internal-link-hover: #5d94ca22;
 
   --quote: var(--file-item-bg);
-  --strong: var(--text-accent);
+  --strong: #ff9bd5;
   --thead: #ffefa9;
   --hr: 2px dashed var(--text-accent);
   --tag: var(--thead);
@@ -98,17 +99,22 @@
   }
 }
 
-.cm-link {
+.cm-url {
   color: var(--external-link) !important;
 }
 
 .markdown-preview-view .cm-link,
 .external-link:not(.external-link[contenteditable="false"]) {
   color: var(--external-link) !important;
-  @include underline-anime(var(--external-link));
+  text-decoration: none;
+
+  // @include underline-anime(var(--external-link));
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-.cm-url {
+.cm-link {
   color: var(--internal-link) !important;
 }
 
@@ -118,13 +124,12 @@
   @include underline-anime(var(--internal-link));
 }
 
-.cm-url {
-  font-weight: bold;
-}
-
 .cm-formatting-link,
-.cm-formatting-link-string {
+.cm-formatting-link-string,
+.cm-formatting-image {
   color: var(--link-formatting) !important;
+  font-weight: var(--font-bold);
+  margin: 0 2px;
 }
 
 //todo
@@ -169,13 +174,18 @@ kbd {
 .cm-em,
 strong,
 em {
-  color: var(--strong) !important;
+  color: var(--text-accent);
+  font-weight: var(--font-bold);
 }
 
-@mixin absolute-center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+div[data-type="markdown"] {
+
+  .cm-strong,
+  .cm-em,
+  strong,
+  em {
+    color: var(--strong);
+  }
 }
 
 //标题
@@ -190,6 +200,13 @@ em {
   .markdown-preview-view,
   .cm-editor {
 
+    .cm-formatting-header {
+      filter: grayscale(70%);
+      font-size: 1.2rem !important;
+      font-family: var(--font-monospace);
+      font-weight: 400 !important;
+    }
+
     .cm-header-#{$i} {
       color: var(--h#{$i}-color) !important;
       font-size: var(--h#{$i}-size) !important;
@@ -200,14 +217,26 @@ em {
       padding: 4px 0 !important;
     }
 
+    @at-root .is-live-preview .HyperMD-header-#{$i},
     div:not(.popover) h#{$i} {
       position: relative;
-      margin: 8px 0;
+      margin: 14px 0;
 
       &::before {
-        @include absolute-center();
-        margin-left: -28px;
-        font-size: calc(var(--h#{$i}-size) / 2);
+        position: absolute;
+        border: 2px solid var(--h#{$i}-color);
+        border-radius: 4px;
+
+        padding: {
+          top: 2px;
+          left: 1px;
+          right: 1px;
+        }
+
+        font-size: .6rem;
+        font-weight: var(--font-bold);
+        height: .6rem;
+        line-height: .6rem;
         content: "H#{$i}";
         opacity: 0;
         transition: var(--transition);
@@ -218,14 +247,45 @@ em {
         opacity: .8;
       }
     }
+
+    @at-root .is-live-preview .HyperMD-header-#{$i}::before {
+      position: absolute;
+      top: calc(50% - 1px);
+      transform: translateY(-50%);
+      left: -22px;
+    }
+
+    div:not(.popover) h#{$i}::before {
+      top: -13px;
+    }
+
+    @at-root .theme-light {
+
+      .is-live-preview .HyperMD-header-#{$i}::before,
+      div:not(.popover) h#{$i}::before {
+        color: var(--h#{$i}-color);
+      }
+    }
+
+    @at-root .theme-dark {
+
+      .is-live-preview .HyperMD-header-#{$i}::before,
+      div:not(.popover) h#{$i}::before {
+        background-color: var(--h#{$i}-color);
+        color: #fff;
+      }
+    }
   }
 
-  @if $i==6 {
+  // 折叠
+  .collapse-indicator {
+    opacity: 0;
+    transition: var(--transition);
+  }
 
-    .cm-header-#{$i},
-    h#{$i} {
-      font-variant: small-caps;
-    }
+  h#{$i}:hover .collapse-indicator {
+    opacity: 1;
+    transition: var(--transition);
   }
 
 }
@@ -235,7 +295,19 @@ h1 {
 }
 
 h2 {
-  border-bottom: 3px solid var(--h2-color);
+  // border-bottom: 3px solid var(--h2-color);
+  position: relative;
+
+  &::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--h2-color);
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    border-radius: 99px;
+  }
 }
 
 .cm-header-5,
@@ -245,12 +317,21 @@ h6 {
   font-weight: normal !important;
 }
 
+.cm-header-6,
+h6 {
+  font-variant: small-caps;
+}
+
+
 //==引用==
 //预览
+.markdown-rendered blockquote,
 .markdown-preview-view blockquote {
   background-color: var(--background-primary-alt);
   border: none !important;
   border-left: 8px solid var(--quote) !important;
+  border-radius: 2px;
+  margin-inline-end: 0;
 
   margin: {
     left: 0;
@@ -278,8 +359,12 @@ h6 {
 //表格
 .cm-embed-block table,
 .markdown-preview-view table {
-
-  width: 100% !important;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  resize: both !important;
+  border-radius: 8px;
+  box-shadow: var(--shadow-outset);
 
   th,
   td {
@@ -371,35 +456,27 @@ ul>li>ul>li {
   }
 
   .HyperMD-list-line-3 .list-bullet:after {
-    font-weight: bold;
+    font-weight: var(--font-bold);
     content: '\25cb';
   }
 
   .HyperMD-list-line-4 .list-bullet:after {
-    font-weight: bold;
+    font-weight: var(--font-bold);
     content: '\25a1';
   }
 
-  .cm-indent {
-    position: relative;
+  // .cm-indent {
+  //   position: relative;
 
-    &::before {
-      left: 5px;
-    }
-  }
+  //   &::before {
+  //     left: 5px;
+  //   }
+  // }
 
   .cm-formatting-list {
     padding-right: 6px;
+    color: var(--text-accent);
   }
-}
-
-//tab缩进
-.markdown-rendered.show-indentation-guide li>ul::before {
-  left: -.9em;
-}
-
-.markdown-rendered.show-indentation-guide li>ol::before {
-  left: -1.4em;
 }
 
 //分割线
@@ -422,7 +499,7 @@ ul>li>ul>li {
   padding: 2px 10px;
   background-color: var(--tag);
   // border: var(--border) !important;
-  border-radius: 12px;
+  border-radius: 999px;
   text-decoration: none;
   transition: var(--transition);
   border: 2px solid var(--text-accent);
@@ -479,7 +556,7 @@ $radius:999px;
 
 .task-list-item-checkbox {
   filter: none;
-  transform: translateY(-.2rem);
+  transform: translateY(-.1rem);
 }
 
 //内嵌文档
@@ -490,8 +567,32 @@ $radius:999px;
   margin: 10px 2px !important;
   padding: 2px !important;
 
+  .markdown-embed-link,
+  .file-embed-link {
+    opacity: 0;
+    top: 4px;
+    right: 2px;
+    padding: 4px;
+    height: 28px;
+    width: 28px;
+    border-radius: 8px;
+    transition: var(--transition);
+    color: var(--text-normal);
+  }
+
   &:hover {
     transition: var(--transition);
+
+    .markdown-embed-link,
+    .file-embed-link {
+
+      opacity: 1;
+      background-color: var(--file-item-bg);
+
+      &:hover {
+        box-shadow: var(--shadow);
+      }
+    }
   }
 
   img,
@@ -525,16 +626,6 @@ $radius:999px;
     }
   }
 
-  .markdown-embed-link,
-  .file-embed-link {
-    top: 14px;
-    padding: 4px;
-    height: 28px;
-    width: 28px;
-    border-radius: 4px;
-    transition: var(--transition);
-    color: var(--text-normal);
-  }
 
 
   .markdown-embed-title {
@@ -575,8 +666,8 @@ mark,
 
 .app-container .workspace .cm-editor .is-flashing,
 .search-highlight div.is-active {
-  font-weight: bold;
-  transition: 1s all ease-out;
+  font-weight: var(--font-bold);
+  transition: .5s all ease-out;
   background-color: unset !important;
   border: 2px solid var(--highlight-search);
   border-radius: 4px;
@@ -594,7 +685,7 @@ p,
   line-height: 2rem;
   margin: 10px 0;
 
-  &:not(.HyperMD-list-line) {
+  &:not(.HyperMD-list-line):not(.HyperMD-header) {
     padding: {
       top: 0 !important;
       bottom: 0 !important;
@@ -628,8 +719,8 @@ p,
 
 //编辑代码块
 .markdown-source-view.mod-cm6 .cm-embed-block {
-  // border: 0;
-  // padding-top: 9px;
+  border: 0;
+  padding: 4px 0;
 
   .edit-block-button {
     padding: 1px;
@@ -638,8 +729,10 @@ p,
     right: 0px;
 
     &::before {
-      width: 25px;
-      font-size: 11px;
+      width: 28px;
+      height: 16px;
+      line-height: 16px;
+      font-size: 12px;
       text-align: center;
       content: '</>';
     }

@@ -15,13 +15,13 @@
     "icons",
     "plugin.min",
     "reveal.min",
-    "status.min",
     "callout.min",
-    "markdown.min"
+    "markdown.min",
+    "status.min"
   ],
-  "baseFontSize": 17,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "interfaceFontFamily": "subui HanYi complete",
-  "textFontFamily": "subui HanYi complete",
-  "monospaceFontFamily": "subcode maple,subui HanYi complete"
+  "interfaceFontFamily": "MapleX UI,subui,Microsoft YaHei",
+  "textFontFamily": "MapleX UI,subui,Microsoft YaHei",
+  "monospaceFontFamily": "MapleX Code,Consolas"
 }

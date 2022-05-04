@@ -324,7 +324,7 @@
   "templater-obsidian:jump-to-next-cursor-location": [
     {
       "modifiers": [
-        "Shift"
+        "Mod"
       ],
       "key": "Tab"
     }
@@ -388,15 +388,6 @@
       "key": "K"
     }
   ],
-  "editor:insert-link": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "K"
-    }
-  ],
   "markdown-table-editor:markdown-table-editor-open-horizontal": [
     {
       "modifiers": [
@@ -404,6 +395,17 @@
         "Mod"
       ],
       "key": "E"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
+  "obsidian-excalidraw-plugin:toggle-lock": [],
+  "editor:insert-link": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "K"
     }
   ]
 }

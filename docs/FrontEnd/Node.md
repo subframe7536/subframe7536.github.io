@@ -57,7 +57,24 @@ npm install cnpm -g --registry=https://registry.npm.taobao.org
 ```
 ### pnpm
 进阶，优化很多，但有些bug
-
+### Express
+#### 安装
+```shell
+npm install express express-static --save
+```
+#### 使用
+```js
+//1.引入express和express-static模块
+const express = require("express");
+const expressStatic = requier("express-static");
+//2. 创建服务器
+let app = express();
+//3. 指定文件夹
+//浏览器可以浏览当前文件目录下的'「www」文件夹
+app.use(expressStatic(__dirname + '/www'));
+//4. 服务器监听
+app.listen(8080);
+```
 ## cors
 ```js
 app.use('*',(req,res,next) => {

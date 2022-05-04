@@ -33,7 +33,7 @@ mysqldump -h服务器名 -u用户名 -p密码 --routines --default-characte
 | MEDIUMBLOB    | 用于 BLOBs (Binary Large OBjects)。存放最多 16,777,215 字节的数据。    |
 | LONGTEXT      | 存放最大长度为 4,294,967,295 个字符的字符串。                          |
 | LONGBLOB      | 用于 BLOBs (Binary Large OBjects)。存放最多 4,294,967,295 字节的数据。 |
-- | ENUM(x,y,z,etc.) | 允许你输入可能值的列表|
+| ENUM(x,y,z,etc.) | 允许你输入可能值的列表|
 | SET              | 与 ENUM 类似，SET 最多只能包含 64 个列表项，不过 SET 可存储一个以上的值。                                                                                                                |
 - 需要加`'单引号'`
 #### Number 类型

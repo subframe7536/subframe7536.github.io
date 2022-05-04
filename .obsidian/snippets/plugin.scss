@@ -410,18 +410,6 @@
 .kanban-plugin {
   padding-bottom: 3px;
 
-  .kanban-plugin__scroll-container {
-
-    &::-webkit-scrollbar {
-      width: 10px !important;
-      height: 10px !important;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      border: none !important;
-    }
-  }
-
   .kanban-plugin__item-title-wrapper {
     align-items: center;
   }

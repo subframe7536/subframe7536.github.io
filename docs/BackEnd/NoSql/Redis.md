@@ -28,21 +28,27 @@ CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE
 ```
 ## 基本语法
 ### 数据类型
-#### 字符串
+#### 字符串 String
 [string](https://www.runoob.com/redis/redis-strings.html)
 key-value
-#### 哈希
+#### 哈希 Hash
 [hash](https://www.runoob.com/redis/redis-hashes.html)
 键值对映射表，用于存储对象
-#### 列表
+#### 列表 List
 [list](https://www.runoob.com/redis/redis-lists.html)
 按照插入顺序排序，可以从左和右插入
-#### 集合
+#### 集合 Set
 [set](https://www.runoob.com/redis/redis-sets.html)
 String类型无序集合，无重复键
-#### 有序集合
+#### 有序集合 Sorted Set
 [zset](https://www.runoob.com/redis/redis-sorted-sets.html)
 set中每个键有一个double的分数，表示顺序(分数可以重复)
+#### 日志 HyperHyperLog
+#todo 
+#### 流 Stream
+#todo 
+#### 地理位置 GEO
+#todo 
 ### 失效时间
 可以设置键的失效时间，过期无法访问，永远存在设为-1
 ```shell
@@ -68,8 +74,8 @@ persist key
 "发布/订阅"模式包含两种角色，分别是发布者和订阅者。订阅者可以订阅一个或者多个频道(channel),而发布者可以向指定的频道(channel)发送消息，所有订阅此频道的订阅者都会收到此消息。
 #### 发布
 ```shell
-publish channel message
 # 返回订阅者数量
+publish channel message
 ```
 #### 订阅
 ```shell

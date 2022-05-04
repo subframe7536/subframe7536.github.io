@@ -4,13 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "7b96aa4240e7622b",
+        "id": "c9d955cc94cc0a73",
         "type": "leaf",
+        "dimension": 73.30543933054393,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_TODO/日常todo.md",
+            "file": "docs/FrontEnd/Electron.md",
             "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "775327725aff435b",
+        "type": "leaf",
+        "dimension": 26.694560669456067,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/tool/LaTex.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +54,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_TODO/日常todo.md"
+                "file": "docs/FrontEnd/Electron.md"
               }
             }
           },
@@ -50,7 +64,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#高数基础",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -87,7 +101,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "_TODO/日常todo.md",
+                "file": "docs/FrontEnd/Electron.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -122,14 +136,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_TODO/日常todo.md",
+                "file": "docs/FrontEnd/Electron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -170,17 +184,17 @@
     "direction": "horizontal",
     "width": 335
   },
-  "active": "7b96aa4240e7622b",
+  "active": "c9d955cc94cc0a73",
   "lastOpenFiles": [
+    "docs/FrontEnd/Electron.md",
+    "杂/75v3键盘快捷键.md",
+    "docs/tool/LaTex.md",
+    "docs/考研/数学/高数/基础/多元函数.md",
+    "docs/考研/数学/高数/基础/积分应用.md",
+    "日记/2022-05-03.md",
     "_TODO/日常todo.md",
-    "Excalidraw/手绘2022-04-10 14_28_53.excalidraw.md",
-    "_temp/课程作业class.md",
-    "_temp/test.md",
-    "_temp/实验7.md",
-    "docs/BackEnd/Spring/SpringMVC.md",
-    "docs/FrontEnd/CSS/SCSS(SASS).md",
-    "_temp/未命名 2.md",
-    "_temp/装机配置.md",
-    "杂/提示框callout.md"
+    "docs/考研/数学/高数/基础/content/函数重要结论.md",
+    "docs/考研/数学/高数/基础/积分.md",
+    "_templates/template-daily.md"
   ]
 }

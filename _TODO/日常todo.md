@@ -19,7 +19,7 @@ date: 2022-03-12
 - [ ] [node 模块](https://www.jianshu.com/p/95c13145ada8)
 - [ ] `$ npm install -g supervisor`
 - [x] https://www.cnblogs.com/qqfontofweb/p/6776102.html
-- [ ] [[vscode theme]] 
+- [x] [[vscode theme]] 
 - [ ] https://www.zhihu.com/question/366242487/answer/977808189 、 https://www.autohotkey.com/boards/viewtopic.php?f=80&t=77248
 - [ ] cubase
 - [ ] sql2md py
@@ -27,6 +27,8 @@ date: 2022-03-12
 - [ ] 歌词view https://juejin.cn/post/7046235192616779784?share_token=955c09e0-2175-4333-828a-763f238b1b81
 - [ ] sa-token权限框架
 - [ ] 光与影的传说
+- [ ] 油猴脚本 打#
+- [ ] krita绘画b
 ### css snippets
 - [x] 浅色 目录hover和选中颜色互换
 - [x] <kbd>ctrl+1</kbd>弹出框颜色
@@ -59,5 +61,8 @@ date: 2022-03-12
 - [x] embed 右上角链接位置
 - [x] callout css 整合
 - [x] 全局搜索数字和上下箭头
-- [ ] subui HanYi 连字=>，`t`的尾巴圆角拉大，空格宽度？
+- [x] subui HanYi 连字=>，`t`的尾巴圆角拉大，空格宽度？
 - [x] excalidraw zen mode 勾的间距
+- [x] 链接[]加粗间距加大
+- [ ] 行高
+- [ ] latex字体

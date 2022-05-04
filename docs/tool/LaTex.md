@@ -59,9 +59,12 @@ $\quad 123$
 ##### 1/3空格
 `1\ 123`
 $1\ 123$
-#### 大括号
-`\lbrace1,2,3\rbrace`
-$\lbrace1,2,3\rbrace$
+#### 属于
+`a\in b`
+$a\in b$
+##### 不属于
+`a\notin b`
+$a\notin b$
 #### 对数
 `\log_{a}x`
 $\log_{a}x$
@@ -77,6 +80,9 @@ $\sim$
 #### 约等于
 `\approx`
 $\approx$
+#### 同或
+`\oplus`
+$\oplus$
 #### 异或
 `\oplus`
 $\oplus$
@@ -122,7 +128,7 @@ $\equiv$
 `\displaystyle\lim_{x \to 0^+}`
 $\displaystyle\lim_{x \to 0^+}$
 #### 求积分
-`\int^{}_x{}`
+`\int^{x}_{1}`
 $\int^{x}_{1}$
 #### 存在
 `{\forall}`
@@ -202,3 +208,5 @@ $$\begin{split}
 `\mu`
 - $\Omega$
 `\Omega`
+- $\partial$
+`\partial`

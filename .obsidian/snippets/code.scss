@@ -6,9 +6,6 @@
   --inline-code: var(--h1-color);
 }
 
-//code
-// .markdown-preview-view,
-// .reveal {
 pre {
   background-color: #181c20 !important;
 
@@ -18,8 +15,7 @@ pre {
 }
 
 pre[class*="language-"] {
-  padding: .8rem !important;
-  padding-top: 3rem !important;
+  padding: 1.4rem !important;
   position: relative;
   border-radius: 8px !important;
 
@@ -28,50 +24,39 @@ pre[class*="language-"] {
     font-size: 1rem !important;
     line-height: 1.8rem;
     border-radius: 0 !important;
-    font-size: 1rem !important;
   }
 
   .copy-code-button {
-    font-family: 'Microsoft YaHei';
-    box-sizing: border-box;
     letter-spacing: 3px;
-    font-size: .8rem !important;
     padding: 0 !important;
     padding-left: 5px !important;
     border-radius: 5px !important;
     width: 50px;
     height: 1.6rem;
     line-height: 1.6rem;
-    top: .3rem !important;
-    right: .3rem !important;
-    margin: 0px !important;
-    display: unset !important;
-    color: #666;
-    background-color: var(--text-accent-hover);
+    background-color: var(--file-item-bg);
+    transition: var(--transition);
 
     &:hover {
       box-shadow: var(--shadow);
-      transition: all .2s;
+      transition: var(--transition);
+      background-color: var(--file-item-selected-bg);
+      color: #ddd;
       filter: var(--hover);
     }
   }
 
   &::before {
+    content: "未知语言";
+    font-family: var(--font-monospace);
     font-weight: bold;
+    font-size: .8rem;
     position: absolute;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    padding-left: 14px;
-    width: 100%;
-    left: 10px;
-    height: 2.2rem;
-    line-height: 2.2rem;
-    top: 0px;
-    margin-left: -10px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: var(--language-title);
-    color: #fff;
+    letter-spacing: 2px;
+    text-align: right;
+    right: 60px;
+    top: 9px;
+    color: #eee;
   }
 }
 
@@ -108,10 +93,6 @@ scss,
 bash,
 cmd;
 
-pre[class*='language-']:before {
-  content: "未知语言";
-}
-
 @each $lan in $language {
   pre[class~='language-#{$lan}']::before {
     $t: to-upper-case($string: $lan);
@@ -145,7 +126,7 @@ pre[class*='language-']:before {
   //@metadata、单位
   --color-annotation: var(--blue);
   //注释
-  --color-comment: #666;
+  --color-comment: #888;
   //关键字
   --color-important: var(--purple);
   //方法

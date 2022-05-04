@@ -4,3 +4,5 @@
 [[消息系统原理]]
 ## kafka
 [[kafka介绍]]
+### 结合websocket
+[kafka+springboot websocket](https://www.cnblogs.com/love-zf/p/15201518.html)

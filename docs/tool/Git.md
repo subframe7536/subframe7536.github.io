@@ -100,9 +100,17 @@ git remote set-url remoteName URL
 ```shell
 git branch
 ```
+#### 查看所有分支
+```shell
+git branch -a
+```
+#### 切换分支
+```shell
+git checkout branchName
+```
 #### 创建新分支并切换 (签出)
 ```shell
-git check -b branchName
+git checkout -b branchName
 ```
 ##### 获取远程分支
 ```shell

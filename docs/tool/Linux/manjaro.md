@@ -74,3 +74,7 @@ export LANG=zh_CN.UTF-8
 
 ### wine
 [wine install](https://blog.csdn.net/zzxian/article/details/7166572)
+
+## GNOME
+https://extensions.gnome.org/
+gnome orchis

@@ -81,3 +81,54 @@ app.on('ready', () => {
 运行
 # 渲染
 #todo 
+## 功能模块
+#### 存储 electron-store+Vuex
+`app.getPath('exe')`
+getPath未定义？？？ 
+- 使用`remote.app.getPath('exe')`
+### 获取系统字体
+使用`font-list`
+#### 安装
+```shell
+npm install font-list
+```
+#### 使用
+```js
+import fontList from 'font-list';
+
+fontList
+	.getFonts()
+	.then(fonts => {
+		//有引号
+		console.log(newFontList);
+		//去引号
+		const newFontList = [];
+		data.map(item => {
+			if (item.indexOf('"') === 0) {
+				newFontList.push(item.replace(/^"|"$/g,''));
+			} else {
+				newFontList.push(item);
+			}
+		});
+		console.log(newFontList);
+	})
+	.catch(err => {
+		 console.log(err);
+	});
+```
+##### 打包之后找不到
+(Windows)经过调试后发现打包之后找不到`fonts.vbs`文件, 最简单的办法, 把fonts.vbs放到打包后能找到的地方, 于是我就把他拷贝到了`app/dist`里面. 然后将`index.js`中的
+```javascript
+ fn = path.join(__dirname, 'fonts.vbs')
+```
+改成了
+```javascript
+let fn
+if(process.env.NODE_ENV === 'development') {
+  fn = path.join(__dirname, 'fonts.vbs')
+} else {
+  fn = path.join(__dirname, 'dist/fonts.vbs')
+}
+```
+- 最好再打个包
+## 样例
