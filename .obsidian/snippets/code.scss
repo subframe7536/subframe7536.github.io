@@ -69,6 +69,7 @@ nginx,
 css,
 javascript,
 js,
+jsp,
 php,
 lua,
 shell,
@@ -91,7 +92,8 @@ json,
 groovy,
 scss,
 bash,
-cmd;
+cmd,
+latex;
 
 @each $lan in $language {
   pre[class~='language-#{$lan}']::before {

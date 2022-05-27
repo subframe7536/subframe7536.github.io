@@ -7,7 +7,7 @@
 2. 在盒子的当前位置加1个移动距离
 3. 利用定时器不断重复
 4. 加一个结束定时器的条件
-==盒子需要添加定位才能使用==`element.style.left`
+**盒子需要添加定位才能使用**`element.style.left`
 #### 线性动画封装
 ```javascript
 function animate(obj, target) {

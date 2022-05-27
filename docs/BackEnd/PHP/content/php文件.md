@@ -80,7 +80,7 @@
 | [fgets()](https://www.w3school.com.cn/php/func_filesystem_fgets.asp)                           | 从打开的文件中返回一行。                                                                 |
 | [fgetss()](https://www.w3school.com.cn/php/func_filesystem_fgetss.asp)                         | 从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。                                        |
 | [file()](https://www.w3school.com.cn/php/func_filesystem_file.asp)                             | 把文件读入一个数组中。                                                                   |
-| [==file_exists()==](https://www.w3school.com.cn/php/func_filesystem_file_exists.asp)           | 检查文件或目录是否存在。                                                                 |
+| [**file_exists()**](https://www.w3school.com.cn/php/func_filesystem_file_exists.asp)           | 检查文件或目录是否存在。                                                                 |
 | [file_get_contents()](https://www.w3school.com.cn/php/func_filesystem_file_get_contents.asp)   | 将文件读入字符串。                                                                       |
 | [file_put_contents()](https://www.w3school.com.cn/php/func_filesystem_file_put_contents.asp)   | 将字符串写入文件。                                                                       |
 | [fileatime()](https://www.w3school.com.cn/php/func_filesystem_fileatime.asp)                   | 返回文件的上次访问时间。                                                                 |
@@ -90,8 +90,8 @@
 | [filemtime()](https://www.w3school.com.cn/php/func_filesystem_filemtime.asp)                   | 返回文件的上次修改时间。                                                                 |
 | [fileowner()](https://www.w3school.com.cn/php/func_filesystem_fileowner.asp)                   | 文件的 user ID （所有者）。                                                              |
 | [fileperms()](https://www.w3school.com.cn/php/func_filesystem_fileperms.asp)                   | 返回文件的权限。                                                                         |
-| [==filesize()==](https://www.w3school.com.cn/php/func_filesystem_filesize.asp)                 | 返回文件大小。                                                                           |
-| [==filetype()==](https://www.w3school.com.cn/php/func_filesystem_filetype.asp)                 | 返回文件类型。                                                                           |
+| [**filesize()**](https://www.w3school.com.cn/php/func_filesystem_filesize.asp)                 | 返回文件大小。                                                                           |
+| [**filetype()**](https://www.w3school.com.cn/php/func_filesystem_filetype.asp)                 | 返回文件类型。                                                                           |
 | [flock()](https://www.w3school.com.cn/php/func_filesystem_flock.asp)                           | 锁定或释放文件。                                                                         |
 | [fnmatch()](https://www.w3school.com.cn/php/func_filesystem_fnmatch.asp)                       | 根据指定的模式来匹配文件名或字符串。                                                     |
 | [fopen()](https://www.w3school.com.cn/php/func_filesystem_fopen.asp)                           | 打开一个文件或 URL。                                                                     |
@@ -106,7 +106,7 @@
 | [ftruncate()](https://www.w3school.com.cn/php/func_filesystem_ftruncate.asp)                   | 将文件截断到指定的长度。                                                                 |
 | [fwrite()](https://www.w3school.com.cn/php/func_filesystem_fwrite.asp)                         | 写入文件。                                                                               |
 | [glob()](https://www.w3school.com.cn/php/func_filesystem_glob.asp)                             | 返回一个包含匹配指定模式的文件名/目录的数组。                                            |
-| [==is_dir()==](https://www.w3school.com.cn/php/func_filesystem_is_dir.asp)                     | 判断指定的文件名是否是一个目录。                                                         |
+| [**is_dir()**](https://www.w3school.com.cn/php/func_filesystem_is_dir.asp)                     | 判断指定的文件名是否是一个目录。                                                         |
 | [is_executable()](https://www.w3school.com.cn/php/func_filesystem_is_executable.asp)           | 判断文件是否可执行。                                                                     |
 | [is_file()](https://www.w3school.com.cn/php/func_filesystem_is_file.asp)                       | 判断指定文件是否为常规的文件。                                                           |
 | [is_link()](https://www.w3school.com.cn/php/func_filesystem_is_link.asp)                       | 判断指定的文件是否是连接。                                                               |
@@ -117,7 +117,7 @@
 | [link()](https://www.w3school.com.cn/php/func_filesystem_link.asp)                             | 创建一个硬连接。                                                                         |
 | [linkinfo()](https://www.w3school.com.cn/php/func_filesystem_linkinfo.asp)                     | 返回有关一个硬连接的信息。                                                               |
 | [lstat()](https://www.w3school.com.cn/php/func_filesystem_lstat.asp)                           | 返回关于文件或符号连接的信息。                                                           |
-| [==mkdir()==](https://www.w3school.com.cn/php/func_filesystem_mkdir.asp)                       | 创建目录。                                                                               |
+| [**mkdir()**](https://www.w3school.com.cn/php/func_filesystem_mkdir.asp)                       | 创建目录。                                                                               |
 | [move_uploaded_file()](https://www.w3school.com.cn/php/func_filesystem_move_uploaded_file.asp) | 将上传的文件移动到新位置。                                                               |
 | [parse_ini_file()](https://www.w3school.com.cn/php/func_filesystem_parse_ini_file.asp)         | 解析一个配置文件。                                                                       |
 | [pathinfo()](https://www.w3school.com.cn/php/func_filesystem_pathinfo.asp)                     | 返回关于文件路径的信息。                                                                 |
@@ -125,7 +125,7 @@
 | [popen()](https://www.w3school.com.cn/php/func_filesystem_popen.asp)                           | 打开一个进程。                                                                           |
 | [readfile()](https://www.w3school.com.cn/php/func_filesystem_readfile.asp)                     | 读取一个文件，并输出到输出缓冲。                                                         |
 | [readlink()](https://www.w3school.com.cn/php/func_filesystem_readlink.asp)                     | 返回符号连接的目标。                                                                     |
-| [==realpath()==](https://www.w3school.com.cn/php/func_filesystem_realpath.asp)                 | 返回绝对路径名。                                                                         |
+| [**realpath()**](https://www.w3school.com.cn/php/func_filesystem_realpath.asp)                 | 返回绝对路径名。                                                                         |
 | [rename()](https://www.w3school.com.cn/php/func_filesystem_rename.asp)                         | 重名名文件或目录。                                                                       |
 | [rewind()](https://www.w3school.com.cn/php/func_filesystem_rewind.asp)                         | 倒回文件指针的位置。                                                                     |
 | [rmdir()](https://www.w3school.com.cn/php/func_filesystem_rmdir.asp)                           | 删除空的目录。                                                                           |

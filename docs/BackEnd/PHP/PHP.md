@@ -45,7 +45,7 @@ Option：`JSON_UNESCAPED_UNICODE` 中文不进行 unicode 编码
 `json_decode ($json_string [,$assoc = false [, $depth = 512 [, $options = 0 ]]])`
 将 json 数据转换为变量
 - Json_string: 待解码的 JSON 字符串，必须是 UTF-8 编码数据
-- Assoc: 当该参数为==TRUE==时返回数组，==FALSE==时返回对象。
+- Assoc: 当该参数为**TRUE**时返回数组，**FALSE**时返回对象。
 - Depth: 整数类型的参数，它指定递归深度
 - Options: 二进制掩码，目前只支持 JSON_BIGINT_AS_STRING 。	
 ### 数据库

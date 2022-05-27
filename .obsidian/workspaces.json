@@ -12,7 +12,7 @@
               {
                 "id": "5383c9225cf05246",
                 "type": "leaf",
-                "dimension": 30.79537729435758,
+                "dimension": 47.08939708939708,
                 "state": {
                   "type": "markdown",
                   "state": {
@@ -25,11 +25,11 @@
               {
                 "id": "c9d955cc94cc0a73",
                 "type": "leaf",
-                "dimension": 69.20462270564242,
+                "dimension": 52.91060291060291,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "docs/考研/829/组成原理/数据表示和运算.md",
+                    "file": "docs/考研/829/组成原理/中央处理器.md",
                     "mode": "source",
                     "source": false
                   }
@@ -63,7 +63,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "docs/考研/829/大纲.md"
+                    "file": "docs/考研/829/组成原理/中央处理器.md"
                   }
                 }
               },
@@ -111,7 +111,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "docs/考研/829/大纲.md",
+                    "file": "docs/考研/829/组成原理/中央处理器.md",
                     "options": {
                       "collapse-filter": false,
                       "search": "",
@@ -146,7 +146,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "docs/考研/829/大纲.md",
+                    "file": "docs/考研/829/组成原理/中央处理器.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -194,7 +194,7 @@
         "width": 335,
         "collapsed": true
       },
-      "active": "5383c9225cf05246"
+      "active": "c9d955cc94cc0a73"
     },
     "数学": {
       "main": {
@@ -385,5 +385,5 @@
       "active": "c9d955cc94cc0a73"
     }
   },
-  "active": "数学"
+  "active": "829"
 }

@@ -16,7 +16,7 @@ border-width: 2px;
 | hidden | 隐藏边框                                               |
 | dotted | 点线                                                   |
 | dashed | 虚线                                                   |
-| ==solid==  | 实线边框                                               |
+| **solid**  | 实线边框                                               |
 | double | 双线边框，两条单线与其间隔的和等于指定的border-width值 |
 | groove | 根据border-color的值画3D凹槽                           |
 | ridge  | 根据border-color的值画菱形边框                         |

@@ -69,7 +69,7 @@ SELECT 聚合函数(列名) FROM 表名
 SELECT 列名 FROM 表名 GROUP BY 列名
 ```
 - 计算聚合函数的结果
-- 列名只包含==分组依据列==或者==聚合函数列==
+- 列名只包含**分组依据列**或者**聚合函数列**
 #### 分组过滤查询
 ```sql
 SELECT 列名 FROM 表名 WHERE 条件 GROUP BY 分组列 HAVING 过滤规则

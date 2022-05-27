@@ -28,7 +28,8 @@ date: 2022-03-12
 - [ ] sa-token权限框架
 - [ ] 光与影的传说
 - [ ] 油猴脚本 打#
-- [ ] krita绘画b
+- [ ] krita绘画
+- [ ] clickhouse 数据库
 ### css snippets
 - [x] 浅色 目录hover和选中颜色互换
 - [x] <kbd>ctrl+1</kbd>弹出框颜色

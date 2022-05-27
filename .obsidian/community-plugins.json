@@ -1,6 +1,5 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-kanban",
   "obsidian-git",
   "calendar",
   "quick-explorer",
@@ -13,5 +12,6 @@
   "markdown-table-editor",
   "obsidian-float-toc-plugin",
   "table-editor-obsidian",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "quick-latex"
 ]

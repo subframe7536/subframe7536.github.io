@@ -16,3 +16,9 @@
 ### 深色夜间模式
 [web深色模式适配 - guangzan - 博客园 (cnblogs.com)](https://www.cnblogs.com/guangzan/p/13524990.html)
 #todo async await promise fetch
+
+`~~var`
+- 两次取反
+- 数字字符串转数字/boolean转数字/非数字符号转0
+
+`navigator.mediaSession.metadata`

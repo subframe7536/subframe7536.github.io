@@ -6,25 +6,11 @@
       {
         "id": "c9d955cc94cc0a73",
         "type": "leaf",
-        "dimension": 73.30543933054393,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/FrontEnd/Electron.md",
+            "file": "杂/字体.md",
             "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "775327725aff435b",
-        "type": "leaf",
-        "dimension": 26.694560669456067,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/tool/LaTex.md",
-            "mode": "preview",
             "source": false
           }
         }
@@ -54,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/FrontEnd/Electron.md"
+                "file": "杂/字体.md"
               }
             }
           },
@@ -85,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276
+    "width": 316
   },
   "right": {
     "id": "1a5a600bbc148501",
@@ -101,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/FrontEnd/Electron.md",
+                "file": "杂/字体.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -136,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/FrontEnd/Electron.md",
+                "file": "杂/字体.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,15 +172,15 @@
   },
   "active": "c9d955cc94cc0a73",
   "lastOpenFiles": [
-    "docs/FrontEnd/Electron.md",
-    "杂/75v3键盘快捷键.md",
-    "docs/tool/LaTex.md",
-    "docs/考研/数学/高数/基础/多元函数.md",
-    "docs/考研/数学/高数/基础/积分应用.md",
-    "日记/2022-05-03.md",
+    "杂/字体.md",
+    "杂/浏览器.md",
     "_TODO/日常todo.md",
-    "docs/考研/数学/高数/基础/content/函数重要结论.md",
-    "docs/考研/数学/高数/基础/积分.md",
-    "_templates/template-daily.md"
+    "_TODO/面试.md",
+    "_TODO/大三上寒假计划.md",
+    "_TODO/learning tasklist.md",
+    "_temp/软件测试.md",
+    "docs/考研/829/组成原理/6.总线.md",
+    "docs/考研/829/组成原理/5.中央处理器.md",
+    "docs/考研/829/组成原理/4.指令系统.md"
   ]
 }

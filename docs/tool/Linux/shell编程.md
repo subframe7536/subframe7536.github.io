@@ -81,7 +81,7 @@ ${test}
 ### 变量替换
 string符合shell语法，可以是常量或者语句
 #### ${var:-string}
-判断var是否为空，==为空==则用string替换
+判断var是否为空，**为空**则用string替换
 ```shell
 $ echo newvar  
 
@@ -91,7 +91,7 @@ $ echo newvar
 
 ```
 #### ${var:=string} 
-判断var是否为空，==为空==则用string替换并赋值给var
+判断var是否为空，**为空**则用string替换并赋值给var
 - 设置变量的默认值
 ```shell
 $ echo newvar  
@@ -102,7 +102,7 @@ $ echo newvar
 a
 ```
 #### ${var:+string}
-判断var是否为空，==不为空==则用string替换
+判断var是否为空，**不为空**则用string替换
 ```shell
 $ echo $newvar  
 a  
@@ -115,7 +115,7 @@ $ echo ${newvar:+b}
 
 ```
 #### ${var:?string}
-判断var是否为空，==为空==则把string输出到标准错误中，并从脚本中退出
+判断var是否为空，**为空**则把string输出到标准错误中，并从脚本中退出
 - 判断是否输入变量
 ```shell
 $ newvar=  
@@ -133,14 +133,14 @@ $ echo $((3>2))
 1  
 $ echo $((25<3?2:3))  
 3  
-#========================#
+#************************#
 $ echo $var  
 
 $ echo $((var=2+3))  
 5  
 $ echo $var  
 5  
-#========================#
+#************************#
 $ echo $((var++))  
 5  
 $ echo $var  
@@ -217,7 +217,7 @@ done
 #### 模式
 ![[getopts错误模式.png]]
 #### 使用
-OPTSTRING => 告诉==getopts==会有哪些选项和参数
+OPTSTRING => 告诉**getopts**会有哪些选项和参数
 VARNAME => 保存getopts获取到的选项
 ```shell
 getopts ":d:D" opt

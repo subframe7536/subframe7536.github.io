@@ -14,7 +14,7 @@ wrapper.gt("age",2);
 wrapper.ne("name","小红");
 wrapper.ge("age",2);
 ```
-- ==实体类必须要有空的构造方法==
+- **实体类必须要有空的构造方法**
 #### 选择部分列
 ```java
 wrapper.select("col1,col2");

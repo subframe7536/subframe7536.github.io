@@ -276,14 +276,6 @@
       "key": "ArrowRight"
     }
   ],
-  "editor:toggle-highlight": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "G"
-    }
-  ],
   "app:delete-file": [
     {
       "modifiers": [
@@ -407,5 +399,8 @@
       ],
       "key": "K"
     }
-  ]
+  ],
+  "quick-latex:addAlignBlock": [],
+  "quick-latex:addCasesBlock": [],
+  "quick-latex:addMatrixBlock": []
 }

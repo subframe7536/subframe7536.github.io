@@ -17,7 +17,7 @@ public class Account {
 ```
 ### @TableId
 > 设置主键映射，value 映射主键字段名
-- type 设置==主键类型==和==主键的生成策略==
+- type 设置**主键类型**和**主键的生成策略**
 ```java
 AUTO(0),
 NONE(1),
@@ -257,7 +257,7 @@ type-enums-package:
 
 
 ### @TableLogic
-映射==逻辑删除==
+映射**逻辑删除**
 #### 1. 数据表添加 deleted 字段
 #### 2. 实体类添加注解
 ```java

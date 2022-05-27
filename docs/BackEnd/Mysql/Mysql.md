@@ -59,8 +59,8 @@ mysqldump -h服务器名 -u用户名 -p密码 --routines --default-characte
 | DATE         | YYYY-MM-DD          | 1000-01-01          |
 | TIME         | HH:MM:SS            | -838:59:59          |
 | YEAR         | YYYY                | 1901                |
-- 如果在时间上要**超过 Linux 时间的**，或者想要使用自动插入时间或者**自动更新时间**功能的，timestamp 会随时区变化而变化，服务器时区不一样，用==timestamp==。
-- 如果只是想表示年、日期、时间的还可以使用 year、date、time，它们分别占据 1、3、3 字节，用==datetime==
+- 如果在时间上要**超过 Linux 时间的**，或者想要使用自动插入时间或者**自动更新时间**功能的，timestamp 会随时区变化而变化，服务器时区不一样，用**timestamp**。
+- 如果只是想表示年、日期、时间的还可以使用 year、date、time，它们分别占据 1、3、3 字节，用**datetime**
 #### 数据库表字段类型规范
 - 用尽量少的存储空间来存数一个字段的数据;
 - 例如：能使用int就不要使用varchar、char,能用varchar(16)就不要使用varchar(256);
@@ -130,12 +130,12 @@ GRANT privileges ON 数据库.表 TO 用户名/public(所有人)
 	- `delete`
 	- `all(update、select、insert、delete)`
 #### 撤销授权
-==账户需要重新连接数据库才会生效==
+**账户需要重新连接数据库才会生效**
 ```sql
 REVOKE privileges ON 数据库.表 FROM 用户名
 ```
 #### 删除用户
-==账户需要重新连接数据库才会生效==
+**账户需要重新连接数据库才会生效**
 ```sql
 DROP USER 用户名
 ```

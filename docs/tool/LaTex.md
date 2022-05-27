@@ -80,9 +80,6 @@ $\sim$
 #### 约等于
 `\approx`
 $\approx$
-#### 同或
-`\oplus`
-$\oplus$
 #### 异或
 `\oplus`
 $\oplus$
@@ -114,7 +111,18 @@ $\enclose{horizontalstrike}{x+y}$
 #### 省略号
 `\dots`
 $\dots$
+#### 加粗
+`\boldsymbol{a}`
+$\boldsymbol{a}$
+#### 向量
+`\vec{a}`
+$\vec{a}$
+`\overrightarrow{a}`
+$\overrightarrow{a}$
 ### 其他
+#### 长竖线
+`\bigg|_{x=1}`
+$\bigg|_{x=1}$
 #### 求和
 `\sum_start^end {}`
 $\sum_{i=1}^3 {a_i}$
@@ -126,10 +134,15 @@ $\prod_{i=1}^3 {a_i}$
 $\equiv$
 #### 极限
 `\displaystyle\lim_{x \to 0^+}`
+`\lim\limits_{x \to 0^+}`
 $\displaystyle\lim_{x \to 0^+}$
-#### 求积分
+$\lim\limits_{x \to 0^+}$
+#### 积分
 `\int^{x}_{1}`
 $\int^{x}_{1}$
+##### 多重积分
+`\iint` `\iiint`
+$\iint \iiint$
 #### 存在
 `{\forall}`
 $\forall$
@@ -141,10 +154,10 @@ $\exists$
 $\boxed{123}$
 #### 分支公式
 ```latex
-$$y=\begin{cases}
+y=\begin{cases}
 -x,x\leq 0\\
 x,x>0
-\end{cases}$$
+\end{cases}
 ```
 $$y=\begin{cases}
 -x,x\leq 0\\
@@ -153,13 +166,13 @@ x, x>0
 ##### 对齐
 &占位
 ```latex
-$$\begin{split}
+\begin{split}
 \begin{align}
 1&=4-1\times3\\
 &=(26-2\times11)-[11-2\times(26-2\times11)]\\
 &=-7\times11+3\times26
 \end{align}
-\end{split}$$
+\end{split}
 
 ```
 $$\begin{split}
@@ -169,6 +182,16 @@ $$\begin{split}
 &=-7\times11+3\times26
 \end{align}
 \end{split}$$
+#### 矩阵
+```Latex
+\begin{vmatrix}i&j&k\\a_{x}&a_{y}&a_{z}\\b_{x}&b_{y}&b_{z}\end{vmatrix}
+```
+$$\begin{vmatrix}i&j&k\\a_{x}&a_{y}&a_{z}\\b_{x}&b_{y}&b_{z}\end{vmatrix}$$
+- `matrix` 无边框
+- `pmatrix` 小括号
+- `bmatrix` 中括号
+- `Bmatrix` 大括号
+- `Vmatrix` 双竖线
 ### 特殊字符
 - $\infty$
 `\infty`

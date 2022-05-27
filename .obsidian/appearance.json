@@ -21,7 +21,7 @@
   ],
   "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "interfaceFontFamily": "MapleX UI,subui,Microsoft YaHei",
-  "textFontFamily": "MapleX UI,subui,Microsoft YaHei",
+  "interfaceFontFamily": "MapleX UI,Microsoft YaHei",
+  "textFontFamily": "MapleX UI,Microsoft YaHei",
   "monospaceFontFamily": "MapleX Code,Consolas"
 }

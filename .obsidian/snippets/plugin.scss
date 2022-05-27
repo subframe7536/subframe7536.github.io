@@ -21,7 +21,7 @@
 }
 
 //git
-.workspace-leaf-content[data-type="git-view"] {
+.workspace-leaf-content[data-type='git-view'] {
   .opener {
     position: relative;
 
@@ -43,9 +43,9 @@
       width: 24px;
     }
 
-    .tree-item-flair {
-      line-height: 15px;
-    }
+    // .tree-item-flair {
+    //   line-height: 15px;
+    // }
   }
 
   .git-view-body {
@@ -53,7 +53,7 @@
     padding-right: 10px !important;
 
     @mixin dark-item-end($color) {
-      content: "";
+      content: '';
       width: 4px;
       height: 100%;
       position: absolute;
@@ -66,7 +66,7 @@
     .file-view {
       margin-left: 0;
 
-      &>main {
+      & > main {
         position: relative;
 
         padding: {
@@ -81,12 +81,12 @@
         }
 
         .tools {
-          .svelte-1furf50:not([data-type=M]):hover {
+          .svelte-1furf50:not([data-type='M']):hover {
             color: #fff;
           }
 
           span {
-            transform: translateY(1.2px)
+            transform: translateY(1.2px);
           }
         }
 
@@ -98,14 +98,13 @@
             box-shadow: var(--shadow-inset);
 
             &::after {
-              @include dark-item-end(var(--file-item))
+              @include dark-item-end(var(--file-item));
             }
           }
         }
       }
     }
   }
-
 }
 
 //excalidraw
@@ -123,7 +122,7 @@
         padding: 4px;
         padding-left: 24px;
 
-        &>div {
+        & > div {
           margin-inline-end: 4px !important;
         }
 
@@ -145,7 +144,7 @@
   }
 
   h3 {
-    font-size: .75rem !important;
+    font-size: 0.75rem !important;
     font-weight: bold !important;
     color: inherit !important;
   }
@@ -203,7 +202,6 @@
         color: #333;
 
         .dot-container {
-
           .filled {
             stroke: var(--color-dot) !important;
             fill: var(--color-dot) !important;
@@ -217,7 +215,6 @@
       }
 
       .dot-container {
-
         .filled {
           stroke: #fff !important;
           fill: var(--file-item-bg) !important;
@@ -229,7 +226,6 @@
         }
       }
     }
-
   }
 
   .nav {
@@ -250,7 +246,7 @@
         color: var(--text-normal);
 
         &::after {
-          content: "年";
+          content: '年';
           margin-right: 4px;
         }
       }
@@ -264,14 +260,14 @@
 
   thead {
     & * {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
 
     border-bottom: 2px solid var(--text-accent);
   }
 
   .reset-button {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -344,11 +340,11 @@
   }
 }
 
-.workspace-leaf-content[data-type="timeline"] .view-content {
+.workspace-leaf-content[data-type='timeline'] .view-content {
   padding: 0 !important;
 }
 
-.status-bar-item>* {
+.status-bar-item > * {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }

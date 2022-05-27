@@ -42,7 +42,7 @@
 | 行内样式style=""             | 1000   |
 | !important(写在属性值后)     | 无穷   |
 复合选择器权重相加
-==继承的权重永远为0==
+**继承的权重永远为0**
 ## 深色模式
 https://www.cnblogs.com/guangzan/p/13524990.html
 # LESS

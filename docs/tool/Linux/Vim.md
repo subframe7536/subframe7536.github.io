@@ -265,7 +265,7 @@ $ d'a       # 从光标所在行 删除到 标记a 之间的所有代码
 - <kbd>Ctrl+D</kbd> ，定义补全
 - <kbd>Ctrl+E</kbd> ，向上滚动文本
 - <kbd>Ctrl+F</kbd> ，文件名补全
-- <kbd>Ctrl+I</kbd> ，==当前文件以及包含进来的文件补全==
+- <kbd>Ctrl+I</kbd> ，**当前文件以及包含进来的文件补全**
 - <kbd>Ctrl+K</kbd> ，字典补全
 - <kbd>Ctrl+L</kbd> ，整行补全
 - <kbd>Ctrl+N</kbd> ，当前文件内的关键字补全，向下选择匹配项

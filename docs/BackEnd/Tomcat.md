@@ -1,6 +1,6 @@
 # Tomcat
 ## 安装事项
-1. 下载安装包，解压后放到==可直接访问的目录==下
+1. 下载安装包，解压后放到**可直接访问的目录**下
 2. 配置环境变量中的`JAVA_HOME`(JDK所在路径)和`CATALINA_HOME`(tomcat所在路径)，并在Path中添加`%JAVA_HOME%\bin`和`%CATALINA_HOME%\bin`
 ## 配置服务器
 1. 新建`Module`，选择`Java Enterprise`，直接`next`到底

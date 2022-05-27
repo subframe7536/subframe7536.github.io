@@ -6,37 +6,26 @@ npm i -g electron
 ### 卡在install.js不动的问题
 `UnhandledPromiseRejectionWarning: RequestError: read ECONNRESET`
 #### 解决方案
-[原文](https://blog.csdn.net/qq_27005821/article/details/102748201)
-1. 停顿在`node install.js`时，ctrl+c取消，y确认
-2. 进入 http://npm.taobao.org/mirrors/electron/ ，下载相应版本zip
-3. 修改`./node_modules/electron/install.js`
-```js
-#!/usr/bin/env node
-
-const version = require('./package').version
-
-const fs = require('fs')
-const os = require('os')
-const path = require('path')
-const extract = require('extract-zip')
-const platformPath = 'electron.exe'
-const zipPath = "./electron.zip"
-extractFile (zipPath)
-// unzips and makes path.txt point at the correct executable
-function extractFile (zipPath) {
-	extract(zipPath, { dir: path.join(__dirname, 'dist') }, function (err) {
-    if (err) return onerror(err)
-    fs.writeFile(path.join(__dirname, 'path.txt'), platformPath, function (err) {
-		if (err) return onerror(err)
-    })
-  })
-}
+```shell
+npm config set ELECTRON_MIRROR http://npm.taobao.org/mirrors/electron/
 ```
-4. `./node_modules/electron`目录下运行`node install.js`
-5. `npx electron -v`检查版本
+或者
+node install.js 报错 RequestError: read ECONNRESET
+
+1. 进入 node_modules/electron文件下， 编辑install.js
+2. 修改downloadArtifact这段代码， 添加淘宝镜像地址`https://npm.taobao.org/mirrors/electron`
+ ```js
+ {.....
+	mirrorOptions: {
+		mirror: 'https://npm.taobao.org/mirrors/electron',
+	    platform,
+	    arch,
+	}
+ }
+ ```
 ## 项目安装
 ```shell
-npm i --save-dev electron
+npm i --save electron
 ```
 # Hello World
 1. 创建`index.html`
@@ -132,3 +121,6 @@ if(process.env.NODE_ENV === 'development') {
 ```
 - 最好再打个包
 ## 样例
+
+
+`howler` 音频api
