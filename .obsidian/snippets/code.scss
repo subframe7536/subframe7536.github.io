@@ -6,25 +6,24 @@
   --inline-code: var(--h1-color);
 }
 
-pre {
-  background-color: #181c20 !important;
-
-  code {
-    background: none !important;
-  }
+code {
+  font-family: var(--font-monospace);
+  background-color: var(--background-primary-alt);
+  border-radius: 4px;
+  font-size: 0.85em;
+  line-height: 1.8rem !important;
+  color: var(--inline-code);
 }
 
-pre[class*="language-"] {
-  padding: 1.4rem !important;
+pre {
+  background-color: #181c20 !important;
+}
+
+pre[class*='language-'] {
+  padding: 0.4rem !important;
+  padding-top: 0.8rem !important;
   position: relative;
   border-radius: 8px !important;
-
-  code {
-    padding: 0 !important;
-    font-size: 1rem !important;
-    line-height: 1.8rem;
-    border-radius: 0 !important;
-  }
 
   .copy-code-button {
     letter-spacing: 3px;
@@ -47,10 +46,10 @@ pre[class*="language-"] {
   }
 
   &::before {
-    content: "未知语言";
-    font-family: var(--font-monospace);
+    content: '未知语言';
+    font-family: var(--font-text);
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: absolute;
     letter-spacing: 2px;
     text-align: right;
@@ -62,42 +61,15 @@ pre[class*="language-"] {
 
 // }
 
-$language: c,
-properties,
-python,
-nginx,
-css,
-javascript,
-js,
-jsp,
-php,
-lua,
-shell,
-powershell,
-flow,
-sequence,
-sql,
-yaml,
-yml,
-ini,
-xml,
-cs,
-cpp,
-java,
-html,
-txt,
-md,
-bat,
-json,
-groovy,
-scss,
-bash,
-cmd,
-latex;
+$language: c, properties, python, nginx, css, javascript, js, jsp, php, lua,
+  shell, powershell, flow, sequence, sql, yaml, yml, ini, xml, cs, cpp, java,
+  html, txt, md, bat, json, groovy, scss, bash, cmd, latex;
 
 @each $lan in $language {
   pre[class~='language-#{$lan}']::before {
-    $t: to-upper-case($string: $lan);
+    $t: to-upper-case(
+      $string: $lan,
+    );
     content: quote($t);
   }
 }
@@ -109,9 +81,9 @@ latex;
   --yellow: #ffd080;
   --green: #a3e6a1;
   --green-dark: #6fcc74;
-  --cyan: #B1CBE8;
+  --cyan: #b1cbe8;
   --blue: #6fa9ff;
-  --purple: #B8A4FF;
+  --purple: #b8a4ff;
 
   //底色
   --color-basic: var(--yellow);
@@ -144,14 +116,12 @@ pre {
   }
 
   code {
-
     &,
     &.url {
       color: var(--color-basic) !important;
     }
 
     .token {
-
       &.number {
         color: var(--color-number) !important;
       }
@@ -201,6 +171,10 @@ pre {
       &.function {
         color: var(--color-function) !important;
       }
+
+      &.constant {
+        color: var(--red) !important;
+      }
     }
   }
 }
@@ -239,7 +213,6 @@ pre {
 .cm-keyword {
   color: #987bff !important;
 }
-
 
 //行内代码
 .markdown-preview-view code,

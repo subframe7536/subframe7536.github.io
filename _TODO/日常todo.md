@@ -14,22 +14,24 @@ date: 2022-03-12
 - [ ] [webflux](https://blog.csdn.net/get_set/article/details/79480233)
 - [ ] [架构](https://zhuanlan.zhihu.com/p/114876283)
 - [ ] [kafka](https://www.cnblogs.com/jerrice/p/7194001.html)
-- [ ] RPC
 - [ ] [groovy](https://www.jianshu.com/p/e8dec95c4326)
 - [ ] [node 模块](https://www.jianshu.com/p/95c13145ada8)
 - [ ] `$ npm install -g supervisor`
 - [x] https://www.cnblogs.com/qqfontofweb/p/6776102.html
-- [x] [[vscode theme]] 
-- [ ] https://www.zhihu.com/question/366242487/answer/977808189 、 https://www.autohotkey.com/boards/viewtopic.php?f=80&t=77248
+- [x] [[software]] 
+- [ ] [ahk](https://www.zhihu.com/question/366242487/answer/977808189 、 https://www.autohotkey.com/boards/viewtopic.php?f=80&t=77248)
 - [ ] cubase
 - [ ] sql2md py
-- [ ] git license https://blog.csdn.net/qq_35246620/article/details/77647234
-- [ ] 歌词view https://juejin.cn/post/7046235192616779784?share_token=955c09e0-2175-4333-828a-763f238b1b81
+- [ ] [git license](https://blog.csdn.net/qq_35246620/article/details/77647234)
+- [ ] [歌词view](https://juejin.cn/post/7046235192616779784?share_token=955c09e0-2175-4333-828a-763f238b1b81)
 - [ ] sa-token权限框架
-- [ ] 光与影的传说
 - [ ] 油猴脚本 打#
 - [ ] krita绘画
 - [ ] clickhouse 数据库
+- [ ] drone CI
+- [ ] [vue setup](https://blog.csdn.net/weixin_43931876/article/details/120058286)
+- [ ] docker&podman
+- [ ] [vercel]([vercel是什么神仙网站？ - 知乎](https://zhuanlan.zhihu.com/p/347990778))
 ### css snippets
 - [x] 浅色 目录hover和选中颜色互换
 - [x] <kbd>ctrl+1</kbd>弹出框颜色
@@ -66,4 +68,5 @@ date: 2022-03-12
 - [x] excalidraw zen mode 勾的间距
 - [x] 链接[]加粗间距加大
 - [ ] 行高
-- [ ] latex字体
+- [x] latex字体
+- [x] 列表缩进加大

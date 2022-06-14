@@ -65,6 +65,17 @@ $a\in b$
 ##### 不属于
 `a\notin b`
 $a\notin b$
+#### 子集
+`\subset`
+$A\subset B$
+`\subseteq`
+$A\subseteq B$
+##### 超集
+`supset`
+$A\supset B$
+##### 空集
+`\varnothing`
+$\varnothing$
 #### 对数
 `\log_{a}x`
 $\log_{a}x$

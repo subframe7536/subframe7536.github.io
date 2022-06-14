@@ -13,6 +13,8 @@
   --background-primary: #fefefe;
   --background-primary-alt: #f4f4f4;
   --background-modifier-cover: #eeeeeedd;
+  --highlight-mix-blend-mode: normal !important;
+  // --highlight-search: #973000;
 
   --language-title: #4d9ddf;
   --shadow: var(--shadow-inset);
@@ -46,6 +48,7 @@
   --text-muted: #9da5a8;
   --interactive-accent: #6d97deb3;
   --interactive-accent-hover: #6eabef6e;
+  --highlight-mix-blend-mode: normal !important;
 
   --language-title: #2e4e68;
   --shadow: none !important;
@@ -96,6 +99,7 @@ body .app-container mjx-container * {
 input {
   padding: 6px !important;
   font-size: 0.9rem !important;
+  font-family: var(--font-text);
   border: var(--border) !important;
 
   &.document-search-input.mod-no-match,
@@ -484,7 +488,9 @@ body {
     border: 1px;
     padding: 0;
     border-radius: 4px;
-
+    &.is-being-dragged {
+      color: var(--text-muted) !important;
+    }
     &:hover {
       text-decoration: underline;
       box-shadow: var(--shadow);
@@ -632,7 +638,9 @@ body {
     position: relative;
   }
 }
-
+.search-highlight div.is-active {
+  border-radius: 2px;
+}
 .document-search-container {
   position: absolute !important;
   top: 15px !important;

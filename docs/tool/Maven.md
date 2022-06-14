@@ -81,7 +81,7 @@ mvn clean compile
 		</activation> 
 		<properties>
 			<maven.compiler.source>1.8</maven.compiler.source> 
-			<maven.compiler.target>1.8</maven.compiler.target> 
+			<maven.compiler.target>1.8</maven.compiler.target>
 			<maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
 		</properties> 
 	</profile>
@@ -150,4 +150,5 @@ mvn clean compile
 打开`Run/Debug Configuarations`，输入`clean compile package -Pdev -Dmaven.test.skip=true`(`-Pdev`可以换成`-Ptest`或者`-Pproduct`)
 
 ## web项目注意事项
-`maven`中导入的jar包需要在`project structure` -> `Artifacts` -> `Output Latout` -> 将右侧`jar`包放到左侧`WEB-INF`中
+- `maven`中导入的jar包需要在`project structure` -> `Artifacts` -> `Output Latout` -> 将右侧`jar`包放到左侧`WEB-INF`中
+- 如果运行、打包出现问题，观察`<package>`标签的打包类型

@@ -49,7 +49,7 @@
   "experimentalFileTag": "✏️",
   "experimentalLivePreview": true,
   "experimentalEnableFourthFont": true,
-  "experimantalFourthFont": "Excalidraw/subcode z.woff2",
+  "experimantalFourthFont": "Excalidraw/Maple hand.ttf",
   "fieldSuggester": true,
   "compatibilityMode": false,
   "drawingOpenCount": 0,
@@ -67,10 +67,78 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
-  "scriptEngineSettings": {},
+  "scriptEngineSettings": {
+    "Downloaded/Connect elements": {
+      "Starting arrowhead": {
+        "value": "none",
+        "valueset": [
+          "none",
+          "arrow",
+          "triangle",
+          "bar",
+          "dot"
+        ]
+      },
+      "Ending arrowhead": {
+        "value": "arrow",
+        "valueset": [
+          "none",
+          "arrow",
+          "triangle",
+          "bar",
+          "dot"
+        ]
+      },
+      "Line points": {
+        "value": 1,
+        "description": "Number of line points between start and end"
+      }
+    },
+    "Downloaded/Normalize Selected Arrows": {
+      "Gap": {
+        "value": 8,
+        "description": "The value of the gap between the connection line and the element, which must be greater than 0. If you want the connector to be next to the element, set it to 1."
+      }
+    },
+    "Downloaded/Convert selected text elements to sticky notes": {
+      "Border color": {
+        "value": "#000000",
+        "description": "Any legal HTML color (#000000, rgb, color-name, etc.). Set to 'transparent' for transparent color."
+      },
+      "Background color": {
+        "value": "transparent",
+        "description": "Background color of the sticky note. Set to 'transparent' for transparent color."
+      },
+      "Background fill style": {
+        "value": "cross-hatch",
+        "description": "Fill style of the sticky note",
+        "valueset": [
+          "hachure",
+          "cross-hatch",
+          "solid"
+        ]
+      }
+    },
+    "Downloaded/Fixed spacing": {
+      "Prompt for spacing?": true,
+      "Default spacing": {
+        "value": 10,
+        "description": "Fixed horizontal spacing between elements"
+      },
+      "Remember last spacing?": false
+    },
+    "Downloaded/Box Selected Elements": {
+      "Prompt for padding?": true,
+      "Default padding": {
+        "value": 10,
+        "description": "Padding between the bounding box of the selected elements, and the box the script creates"
+      }
+    }
+  },
   "defaultTrayMode": true,
-  "previousRelease": "1.6.29",
+  "previousRelease": "1.6.33",
   "showReleaseNotes": true,
+  "mathjaxSourceURL": "https://cdn.jsdelivr.net/npm/mathjax@3.2.1/es5/tex-svg.js",
   "fieldSuggestor": true,
   "loadCount": 1,
   "patchCommentBlock": false,

@@ -1,5 +1,5 @@
 {
-  "theme": "moonstone",
+  "theme": "system",
   "translucency": false,
   "cssTheme": "",
   "enabledCssSnippets": [
@@ -19,9 +19,9 @@
     "markdown.min",
     "status.min"
   ],
-  "baseFontSize": 16,
+  "baseFontSize": 18,
   "baseFontSizeAction": true,
-  "interfaceFontFamily": "MapleX UI,Microsoft YaHei",
-  "textFontFamily": "MapleX UI,Microsoft YaHei",
-  "monospaceFontFamily": "MapleX Code,Consolas"
+  "interfaceFontFamily": "Maple UI,Microsoft YaHei",
+  "textFontFamily": "Maple UI,Microsoft YaHei",
+  "monospaceFontFamily": "Maple Code Vivid,Consolas"
 }

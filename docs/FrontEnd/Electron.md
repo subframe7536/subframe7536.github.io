@@ -122,5 +122,11 @@ if(process.env.NODE_ENV === 'development') {
 - 最好再打个包
 ## 样例
 
-
-`howler` 音频api
+### electron-vite
+electron+vite+vue/react模板
+```shell
+npm create electron-vite
+```
+### howler 
+音频api
+[docs](https://github.com/goldfire/howler.js#documentation)

@@ -30,7 +30,7 @@
   // --internal-link-hover: #5d94ca22;
 
   --quote: var(--file-item-bg);
-  --strong: var(--text-accent);
+  --strong: var(--red-hover);
   --thead: #ffefa9;
   --hr: 2px dashed var(--text-accent);
   --tag: var(--thead);
@@ -49,7 +49,7 @@
   // --internal-link-hover: #58a8fa33;
 
   --quote: var(--file-item-bg);
-  --strong: var(--text-accent);
+  --strong: var(--red-hover);
   --thead: #48576993;
   --hr: 2px dashed var(--text-accent);
   --tag: var(--thead);
@@ -79,7 +79,7 @@
   }
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0px;
     width: 0;
@@ -103,7 +103,7 @@
 }
 
 .markdown-preview-view .cm-link,
-.external-link:not(.external-link[contenteditable="false"]) {
+.external-link:not(.external-link[contenteditable='false']) {
   color: var(--external-link) !important;
   text-decoration: none;
 
@@ -153,6 +153,7 @@ kbd {
   background-color: var(--background-primary);
   line-height: 1.4rem;
   height: 1.4rem;
+  font-family: var(--font-text);
 }
 
 //
@@ -181,12 +182,12 @@ em {
   font-weight: var(--font-bold) !important;
 }
 
-div[data-type="markdown"] {
+div[data-type='markdown'] {
   .cm-strong,
   .cm-em,
   strong,
   em {
-    color: var(--strong);
+    color: var(--strong) !important;
   }
 }
 
@@ -242,7 +243,7 @@ div[data-type="markdown"] {
         font-weight: var(--font-bold);
         height: 0.6rem;
         line-height: 0.6rem;
-        content: "H#{$i}";
+        content: 'H#{$i}';
         opacity: 0;
         transition: var(--transition);
       }
@@ -277,15 +278,15 @@ div[data-type="markdown"] {
   }
 
   // 折叠
-  .collapse-indicator {
-    opacity: 0;
-    transition: var(--transition);
-  }
 
   h#{$i}:hover .collapse-indicator {
     opacity: 1;
     transition: var(--transition);
   }
+}
+.collapse-indicator {
+  top: -2px !important;
+  transition: var(--transition);
 }
 
 h1 {
@@ -297,7 +298,7 @@ h2 {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     height: 3px;
     width: 100%;
     background-color: var(--h2-color);
@@ -380,11 +381,11 @@ h6 {
     text-align: left;
     border-bottom-color: var(--text-faint);
 
-    &[align="right"] {
+    &[align='right'] {
       text-align: right;
     }
 
-    &[align="center"] {
+    &[align='center'] {
       text-align: center;
     }
   }
@@ -403,7 +404,7 @@ ol {
 
   ul,
   ol {
-    padding-inline-start: 1.8rem;
+    padding-inline-start: 3.2rem;
   }
 
   li {
@@ -433,53 +434,68 @@ ul > li > ul > li {
     list-style: circle;
   }
 }
-
+.markdown-rendered.show-indentation-guide li {
+  & > ul::before {
+    left: -1.1em;
+  }
+  & > ol::before {
+    left: -1.8em;
+  }
+}
 .markdown-source-view.mod-cm6 {
-  .HyperMD-list-line .list-bullet:after {
-    right: -1px;
-    font-size: 0.8rem;
-    top: 50%;
-    transform: translateY(-56%);
-    color: var(--text-accent);
-    font-family: "subcode Maple", consolas !important;
+  .HyperMD-list-line {
+    .list-bullet:after {
+      right: -1px;
+      font-size: 0.8rem;
+      top: 50%;
+      transform: translateY(-56%);
+      color: var(--text-accent);
+      font-family: var(--font-monospace), consolas !important;
+    }
   }
 
   .HyperMD-list-line-1 .list-bullet:after {
-    content: "\25cf";
+    content: '\25cf';
   }
 
   .HyperMD-list-line-2 .list-bullet:after {
     font-size: 0.6rem;
     right: 0.2px;
-    content: "\25a0";
+    content: '\25a0';
   }
 
   .HyperMD-list-line-3 .list-bullet:after {
     font-weight: var(--font-bold);
-    content: "\25cb";
+    content: '\25cb';
   }
 
   .HyperMD-list-line-4 .list-bullet:after {
     font-weight: var(--font-bold);
-    content: "\25a1";
+    content: '\25a1';
   }
 
-  // .cm-indent {
-  //   position: relative;
-
-  //   &::before {
-  //     left: 5px;
-  //   }
-  // }
+  .cm-indent {
+    padding-right: 10px;
+  }
 
   .cm-formatting-list {
     color: var(--text-accent);
+    font-family: var(--font-monospace);
+    // &.cm-formatting-list-ol {
+    //   margin-right: -6px;
+    // }
+    // &.cm-formatting-list-ul {
+    //   margin: {
+    //     left: 2px;
+    //     right: 6px;
+    //   }
+    // }
   }
 }
 
 //分割线
 .hr.cm-line::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   border-top: var(--hr);
@@ -564,8 +580,8 @@ $radius: 999px;
   .markdown-embed-link,
   .file-embed-link {
     opacity: 0;
-    top: 4px;
-    right: 2px;
+    top: 6px;
+    right: 8px;
     padding: 4px;
     height: 28px;
     width: 28px;
@@ -580,9 +596,9 @@ $radius: 999px;
     .markdown-embed-link,
     .file-embed-link {
       opacity: 1;
-      background-color: var(--file-item-bg);
 
       &:hover {
+        background-color: var(--file-item-bg);
         box-shadow: var(--shadow);
       }
     }
@@ -667,7 +683,7 @@ mark,
 }
 
 //选中区域
-pre[class*="language-"] *::selection {
+pre[class*='language-'] *::selection {
   background-color: var(--text-selection) !important;
 }
 
@@ -699,6 +715,7 @@ p,
   .HyperMD-codeblock .cm-formatting,
   .code-block-flair {
     color: var(--inline-code) !important;
+    font-family: var(--font-text);
   }
 }
 
@@ -725,7 +742,7 @@ p,
       line-height: 16px;
       font-size: 12px;
       text-align: center;
-      content: "</>";
+      content: '</>';
     }
 
     & > svg {

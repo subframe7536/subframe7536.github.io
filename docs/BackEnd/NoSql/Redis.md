@@ -26,6 +26,14 @@ CONFIG GET CONFIG_SETTING_NAME
 # 修改
 CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE
 ```
+- 命令行登录+使用
+```shell
+$ redis-cli
+127.0.0.1:6379> auth [用户名] 密码
+OK
+127.0.0.1:6379> ping
+PONG
+```
 ## 基本语法
 ### 数据类型
 #### 字符串 String

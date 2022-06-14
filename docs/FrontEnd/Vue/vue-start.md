@@ -53,7 +53,7 @@ npm install
 	- validator: 校验(验证传入的值是否符合规定)
 # element-ui
 ### 样式穿透
-像`el-input`无法对内部的`input`修改，通过`::v-deep`修改
+像`el-input`无法对内部的`input`修改，通过`::v-deep`或`:(deep)`修改
 ```scss
 .address-input ::v-deep .el-input__inner
 ```
@@ -69,3 +69,6 @@ https://blog.csdn.net/webfullstack/article/details/83989895
 # vuex
 `this.$store.dispatch()`
 https://blog.csdn.net/weixin_42554191/article/details/105741120
+
+# Vue3
+https://juejin.cn/post/7028137821269393438

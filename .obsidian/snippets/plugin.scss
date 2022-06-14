@@ -144,9 +144,18 @@
   }
 
   h3 {
-    font-size: 0.75rem !important;
     font-weight: bold !important;
     color: inherit !important;
+    &::before {
+      content: none;
+    }
+  }
+  .panelColumn {
+    h3,
+    legend,
+    .control-label {
+      font-size: 0.9rem !important;
+    }
   }
 }
 

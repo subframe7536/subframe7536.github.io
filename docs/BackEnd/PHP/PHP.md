@@ -22,7 +22,7 @@ echo $cars[0][1];
 ?>
 ```
 ### 时间
-[[时间]]
+[[docs/BackEnd/PHP/content/时间]]
 ### 引用
 `require()` 、 `include()`
 能够调用引用页面的脚本，调用变量和参数

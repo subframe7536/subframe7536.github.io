@@ -131,3 +131,12 @@ git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
 ```
+# Github 镜像
+https://hub.xn--gzu630h.xn--kpry57d/
+https://hub.fastgit.xyz/
+https://cdn.githubjs.cf/
+https://gitclone.com/
+
+## 加/该前缀
+https://api.mtr.pub/zsh-users/zsh-syntax-highlighting.git
+https://ghproxy.com/https://github.com/zsh-users/zsh-autosuggestions.git 

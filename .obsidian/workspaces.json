@@ -29,8 +29,8 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "docs/考研/829/组成原理/中央处理器.md",
-                    "mode": "source",
+                    "file": "docs/考研/829/组成原理/6.总线.md",
+                    "mode": "preview",
                     "source": false
                   }
                 }
@@ -63,7 +63,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "docs/考研/829/组成原理/中央处理器.md"
+                    "file": "docs/考研/829/组成原理/6.总线.md"
                   }
                 }
               },
@@ -111,7 +111,7 @@
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "docs/考研/829/组成原理/中央处理器.md",
+                    "file": "docs/考研/829/组成原理/6.总线.md",
                     "options": {
                       "collapse-filter": false,
                       "search": "",
@@ -146,7 +146,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "docs/考研/829/组成原理/中央处理器.md",
+                    "file": "docs/考研/829/组成原理/6.总线.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",

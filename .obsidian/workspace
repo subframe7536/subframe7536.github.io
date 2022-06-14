@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "c9d955cc94cc0a73",
+        "id": "1d520646db81d2bc",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "杂/字体.md",
+            "file": "docs/课程笔记/大三下/软件架构/复习大纲.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂/字体.md"
+                "file": "docs/课程笔记/大三下/软件架构/复习大纲.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#高数基础",
+                "query": "vue",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316
+    "width": 323
   },
   "right": {
     "id": "1a5a600bbc148501",
@@ -87,7 +87,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "杂/字体.md",
+                "file": "docs/课程笔记/大三下/软件架构/复习大纲.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "杂/字体.md",
+                "file": "docs/课程笔记/大三下/软件架构/复习大纲.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,17 +170,17 @@
     "direction": "horizontal",
     "width": 335
   },
-  "active": "c9d955cc94cc0a73",
+  "active": "1d520646db81d2bc",
   "lastOpenFiles": [
-    "杂/字体.md",
-    "杂/浏览器.md",
-    "_TODO/日常todo.md",
-    "_TODO/面试.md",
-    "_TODO/大三上寒假计划.md",
-    "_TODO/learning tasklist.md",
-    "_temp/软件测试.md",
-    "docs/考研/829/组成原理/6.总线.md",
-    "docs/考研/829/组成原理/5.中央处理器.md",
-    "docs/考研/829/组成原理/4.指令系统.md"
+    "docs/课程笔记/大三下/软件架构/复习大纲.md",
+    "_temp/software.md",
+    "docs/BackEnd/Mysql/Mysql.md",
+    "_temp/装机配置.md",
+    "_temp/test.md",
+    "杂/windows功能.md",
+    "docs/考研/数学/概率/事件&概率.md",
+    "docs/tool/LaTex.md",
+    "docs/FrontEnd/Vue/vue-start.md",
+    "_TODO/日常todo.md"
   ]
 }

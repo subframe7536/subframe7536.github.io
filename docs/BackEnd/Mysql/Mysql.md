@@ -15,6 +15,62 @@
 
 ## MYSQL安装
 打开`installer` -> 选择`developr default` -> 显示`excute`就点`excute`，没有就`next` & `no` ->  等待安装 -> 设置密码
+### 独立版
+#### 下载压缩包
+[地址](https://downloads.mysql.com/archives/get/p/23/file/mysql-8.0.28-winx64.zip)
+解压
+#### 添加配置文件
+解压后的文件夹根目录添加`my.ini`
+```ini
+[mysqld]
+# 设置3306端口
+port=3306
+# 设置mysql的安装目录(修改)
+basedir=D:\code\_env\mysql_8.0.28
+# 设置mysql数据库的数据的存放目录(修改)
+datadir=D:\code\_env\mysql_8.0.28\data
+# 允许最大连接数
+max_connections=200
+# 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
+# 服务端使用的字符集默认为UTFMB4
+character-set-server=utf8mb4
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+# 默认使用“mysql_native_password”插件认证
+default_authentication_plugin=mysql_native_password
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8mb4
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8mb4
+```
+#### 添加服务和用户
+到bin目录下运行管理员powershell
+1. 安装服务
+```shell
+.\mysqld install
+```
+2. 初始化服务，此时root用户没有密码
+```shell
+$ sudo .\mysqld --initialize-insecure
+```
+3. 启动服务
+```shell
+sudo net start mysql
+```
+失败：[[windows功能#删除服务|删除原先的mysql服务或端口占用的进程]]
+4. 登录
+```shell
+.\mysql -uroot
+```
+5. 修改密码
+```shell
+alter user 'root'@localhost identified by '123456';
+```
+6. 将bin目录添加到环境变量
 ## MYSQL备份
 ```shell
 mysqldump -h服务器名 -u用户名 -p密码 --routines --default-character-set=utf8 数据库名 > 文件位置/文件名.sql
@@ -152,3 +208,7 @@ DROP USER 用户名
 ## 注意
 `ifnull(a,0)` a为null，则返回0
 `Date_format(time,'%y-%m-%d')` 格式化时间
+
+## 主从复制
+[docker部署多个mysql节点并开启主从复制](https://blog.csdn.net/KIMTOU/article/details/121570030)
+[[Mybatis#多数据源|mybatis-plus读写分离]]

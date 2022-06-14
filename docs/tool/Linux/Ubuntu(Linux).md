@@ -21,15 +21,20 @@ sudo vim /etc/apt/sources.list
 - 详细：[[Vim]]
 1. 输入国内镜像源
 ```text
-# 默认注释了源码仓库，如有需要可自行取消注释
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-# deb-src https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
 ```
 #### 清华源
 - 网址：[https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/](https://link.zhihu.com/?target=https%3A//mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
@@ -49,77 +54,16 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
-#### 阿里源
-- 网址：[https://opsx.alibaba.com/guide?lang=zh-CN&document=69a2341e-801e-11e8-8b5a-00163e04cdbb](https://link.zhihu.com/?target=https%3A//opsx.alibaba.com/guide%3Flang%3Dzh-CN%26document%3D69a2341e-801e-11e8-8b5a-00163e04cdbb)
-- 源地址：[http://mirrors.aliyun.com/ubuntu/](https://link.zhihu.com/?target=http%3A//mirrors.aliyun.com/ubuntu/)
-```text
-# 默认注释了源码仓库，如有需要可自行取消注释
-deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-# deb-src https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
-# deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-# deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-```
-##### 20.04 LTS
-```text
-deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ focal-backports main restricted universe multiverse
-
-```
-#### 中科大源
--   网址：[http://mirrors.ustc.edu.cn/help/ubuntu.html](https://link.zhihu.com/?target=http%3A//mirrors.ustc.edu.cn/help/ubuntu.html)
--   源地址：[https://mirrors.ustc.edu.cn/ubuntu/](https://link.zhihu.com/?target=https%3A//mirrors.ustc.edu.cn/ubuntu/)
-```text
-# 默认注释了源码仓库，如有需要可自行取消注释
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
-# deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-# deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-```
-#### 网易源
--   网址：[http://mirrors.163.com/.help/ubuntu.html](https://link.zhihu.com/?target=http%3A//mirrors.163.com/.help/ubuntu.html)
--   源地址：[http://mirrors.163.com](https://link.zhihu.com/?target=http%3A//mirrors.163.com/)
-```text
-# 默认注释了源码仓库，如有需要可自行取消注释
-deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-# deb-src https://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-# deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
-# deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-# deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
-# deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-# deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-```
 4. 更新
-`sudo apt-get update`
-`sudo apt-get upgrade`
+```shell
+sudo apt-get update
+sudo apt-get upgrade
+```
+- 如果签名异常
+```shell
+sudo apt-key adv --keyserver keyserver.ubuntu.com\
+--recv-keys 报错的签名
+```
 ### 4. 安装软件
 `sudo apt-get install 软件名`
 ### 5. 用户操作
@@ -134,6 +78,29 @@ deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe mult
 - 如果需要在非默认分发版中更新忘记的密码，请使用命令：`wsl -d Debian -u root`，并将 `Debian` 替换为目标分发版的名称。
 2. 在 PowerShell 内的根级别打开 WSL 发行版后，可使用此命令更新密码：`passwd <WSLUsername>`，其中 `<WSLUsername>` 是 DISTRO 中帐户的用户名，而你忘记了它的密码。
 3. 系统将提示你输入新的 UNIX 密码，然后确认该密码。 在被告知密码已成功更新后，请使用以下命令在 PowerShell 内关闭 WSL：`exit`
+### 7. 查看系统信息
+```shell
+screenfetch
+```
+或者
+```shell
+linuxlogo
+```
+### 8. ssh
+#### 生成密钥
+```shell
+ssh-keygen -t rsa
+```
+#### 放置信任的公钥
+```shell
+# 编辑
+sudo vim ~/.ssh/authorized_keys 
+
+# 输入公钥后保存
+
+# 重启ssh服务
+systemctl restart sshd
+```
 ## oh-my-zsh
 1. 下载zsh
 ```shell
@@ -142,6 +109,14 @@ sudo apt-get install zsh -y
 2. 下载oh-my-zsh
 ```shell
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+- 或者手动安装
+```shell
+git clone https://gitee.com/whereabouts-fork/ohmyzsh.git ~/.oh-my-zsh
+# 拷贝配置文件
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+# 应用配置文件
+source ~/.zshrc
 ```
 - 查看shell
 ```shell
@@ -165,8 +140,9 @@ vim ~/.zshrc
 这是一个命令高亮插件，输入为绿色时表示可用命令，路径带有下划线时表示可用路径
 ```shell
 cd ~/.oh-my-zsh/plugins 
-git clone https://github.com/zsh-users/zsh-autosuggestions.git 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://ghproxy.com/https://github.com/zsh-users/zsh-autosuggestions.git 
+git clone https://ghproxy.com/https://github.com/zsh-users/zsh-syntax-highlighting.git
+https://api.mtr.pub/zsh-users/zsh-syntax-highlighting.git
 ``` 
 ```shell
 vim ~/.zshrc
@@ -186,6 +162,24 @@ omz update
 # 常用命令
 ![[Linux常用命令]]
 
+# CentOS 7
+## 换源
+### 备份
+```shell
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+```
+### 替换阿里源
+```shell
+wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+```
+### 更新
+```shell
+yum update
+```
+## 安装宝塔面板
+```shell
+yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh ed8484bec
+```
 # GDB调试
 ### 1. 生成编译文件
 `g++ 源文件名 -o 编译文件名(一般不用带后缀) -g`

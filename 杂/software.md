@@ -1,0 +1,19 @@
+- [ ] obsidian
+- [ ] kms激活、驱动恢复
+- [ ] bandizip、imagglass、potplayer注册
+- [ ] 安装字体、鼠标、壁纸
+- [ ] utools ![[utools备份]]
+- [ ] wps
+- [ ] 字体替换
+- [ ] java、python、mysql8、git、node、运行库安装
+	- [ ] mysql 启动服务![[Mysql#添加服务和用户]]
+	- [ ] `D:\code\_env\node_16.15\node_modules\npm\.npmrc`放到用户根目录
+- [ ] wsl、terminal
+- [ ] 恢复ssh、rc
+- [ ] 恢复输入法字库
+- [ ] motrix
+- [ ] tim、微信、钉钉、记录恢复
+- [ ] uwp：干净阅读、LyricEase、XBoxGameBar更新
+- [ ] 剪映
+- [ ] flux自动护眼
+- [ ] pandoc

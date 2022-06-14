@@ -9,7 +9,14 @@
 > 国产框架，简化mybatis开发，代码生成、物理分页、性能分析
 ### helloworld
 [[helloworld]]
+### 注解
 [[mybatis-plus注解]]
+### CURD
 [[CURD]]
+### 常用方法
 [[常用方法]]
+### 代码生成器
 [[代码生成器]]
+### 多数据源
+[读写分离](https://blog.51cto.com/u_15069498/4312154)
+[动态加载数据源](https://www.kancloud.cn/tracy5546/dynamic-datasource/2264611)

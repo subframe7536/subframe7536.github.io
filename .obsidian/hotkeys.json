@@ -157,7 +157,7 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "3"
+      "key": "2"
     }
   ],
   "editor:toggle-numbered-list": [
@@ -165,7 +165,7 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "2"
+      "key": "3"
     }
   ],
   "table-editor-obsidian:move-column-left": [
