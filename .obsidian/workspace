@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "日记/2022-07-12.md",
+            "file": "docs/考研/829/操作系统/1.概述.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2022-07-12.md"
+                "file": "docs/考研/829/操作系统/1.概述.md"
               }
             }
           },
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "日记/2022-07-12.md",
+                "file": "docs/考研/829/操作系统/1.概述.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2022-07-12.md",
+                "file": "docs/考研/829/操作系统/1.概述.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,15 +176,15 @@
   },
   "active": "595b11d5e542e6e5",
   "lastOpenFiles": [
-    "日记/2022-07-12.md",
-    "杂/提示框callout.md",
-    "docs/考研/数学/线代/5.特征值与特征向量.md",
-    "_templates/template-daily.md",
-    "_templates/template-shell.md",
     "docs/考研/829/操作系统/1.概述.md",
-    "docs/考研/829/操作系统/虚拟内存.md",
-    "docs/考研/829/操作系统/未命名.md",
-    "docs/考研/数学/高数/基础/content/极坐标图像.md",
-    "docs/考研/数学/高数/基础/content/函数重要结论.md"
+    "日记/2022-07-12.md",
+    "docs/考研/数学/线代/5.特征值与特征向量.md",
+    "杂/提示框callout.md",
+    "杂/好词句.md",
+    "杂/浏览器.md",
+    "杂/编码猜测.md",
+    "杂/大三上寒假计划.md",
+    "杂/75v3键盘快捷键.md",
+    "_templates/template-daily.md"
   ]
 }

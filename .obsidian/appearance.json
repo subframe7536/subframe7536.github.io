@@ -11,11 +11,11 @@
     "things_markdown",
     "things_markdown.min",
     "things_status",
-    "code",
-    "icons",
-    "markdown",
+    "status",
     "plugin",
-    "status"
+    "markdown",
+    "code",
+    "icons"
   ],
   "baseFontSize": 16,
   "baseFontSizeAction": true,

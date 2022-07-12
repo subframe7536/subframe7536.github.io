@@ -67,62 +67,64 @@
   }
 }
 //背景
-.theme-light {
-  .workspace-leaf-content[data-type='markdown'] {
-    .markdown-embed-content {
-      border-radius: 8px;
-      max-height: unset;
-      .markdown-preview-view {
-        background-image: none !important;
-      }
-      P:first-child {
-        margin-top: 10px !important;
-      }
+.workspace-leaf-content[data-type='markdown'] {
+  .markdown-embed-content {
+    border-radius: 8px;
+    max-height: unset;
+    .markdown-preview-view {
+      background-image: none !important;
     }
-    @at-root .theme-light
-        .workspace-leaf-content[data-type='empty']
-        .view-content,
-      .theme-light .markdown-preview-view,
-      .theme-light .cm-editor .cm-scroller {
-      background-image: linear-gradient(
-        170deg,
-        #d08efcbb,
-        #ba92f9bb,
-        #a596f4bb,
-        #9397edbb,
-        #8498e3bb,
-        #749ee3bb,
-        #67a4e0bb,
-        #5fa8dbbb,
-        #54b3dbbb,
-        #54bed7bb,
-        #5fc7d1bb,
-        #72cfc9bb
-      ) !important;
-    }
-    @at-root .theme-dark
-        .workspace-leaf-content[data-type='empty']
-        .view-content,
-      .theme-dark .markdown-preview-view,
-      .theme-dark .cm-editor .cm-scroller {
-      background-image: linear-gradient(
-        170deg,
-        #563e59,
-        #523f5d,
-        #4d4161,
-        #474365,
-        #404568,
-        #37496b,
-        #2c4d6d,
-        #20506e,
-        #0e556d,
-        #035a6a,
-        #0b5e64,
-        #1d625d
-      ) !important;
+    P:first-child {
+      margin-top: 10px !important;
     }
   }
 }
+.theme-light {
+  .workspace-leaf-content[data-type='empty'] .view-content,
+  .markdown-preview-view,
+  .cm-editor .cm-scroller {
+    background-image: linear-gradient(
+      170deg,
+      #d08efcbb,
+      #ba92f9bb,
+      #a596f4bb,
+      #9397edbb,
+      #8498e3bb,
+      #749ee3bb,
+      #67a4e0bb,
+      #5fa8dbbb,
+      #54b3dbbb,
+      #54bed7bb,
+      #5fc7d1bb,
+      #72cfc9bb
+    ) !important;
+  }
+}
+.theme-dark {
+  .workspace-leaf-content[data-type='empty'] .view-content,
+  .markdown-preview-view,
+  .cm-editor .cm-scroller {
+    background-image: linear-gradient(
+      170deg,
+      #563e59,
+      #523f5d,
+      #4d4161,
+      #474365,
+      #404568,
+      #37496b,
+      #2c4d6d,
+      #20506e,
+      #0e556d,
+      #035a6a,
+      #0b5e64,
+      #1d625d
+    ) !important;
+  }
+}
+body.print div .markdown-preview-view {
+  background-image: none !important;
+}
+
 .markdown-preview-view,
 .cm-editor .cm-scroller {
   padding: 0 !important;
@@ -139,13 +141,15 @@
 //链接
 
 //下划线动画
-@mixin mul-transition($attrs) {
-  transition-property: $attrs;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-@mixin underline-anime($color) {
-  $transition: color;
+// @mixin mul-transition($attrs) {
+//   transition-property: $attrs;
+//   transition-duration: 0.3s;
+//   transition-timing-function: ease-in-out;
+// }
+@mixin hover-anime($color) {
+  // $transition: color, box-shadow;
+  --c: #{$color};
+  // todo 预览模式单行，有bug
   // max-width: 90%;
   // height: 26px;
   // line-height: 26px;
@@ -155,38 +159,52 @@
   // word-break: keep-all;
   // white-space: nowrap;
   // text-overflow: ellipsis;
-  position: relative;
-  @include mul-transition($transition);
+  // position: relative;
+  // @include mul-transition($transition);
   border-radius: 4px;
+
   padding: 0 2px;
   border: 2px solid $color;
+  box-sizing: border-box;
   box-shadow: 1px 1px 4px #00000045, -1px -1px 4px #ffffff45;
-  &,
-  & * {
-    z-index: 1;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    width: 0;
-    right: -2px;
-    height: calc(100% + 4px);
-    background: $color;
-    transition: all 0.3s;
-    border-radius: 4px;
-    transform-origin: right;
-    z-index: -1;
-  }
+
+  //https://juejin.cn/post/7116545691312193543
+  //不是很清楚-2px和calc(100% + 2px)是指那种属性...有大佬明白的话麻烦告知一下orz
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, #0000 0) -2px
+      var(--p, 1%) / var(--s, 0%) 200% no-repeat,
+    conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0)
+      calc(100% + 2px) var(--p, 1%) / var(--s, 0%) 200% no-repeat !important;
+  transition: 0.3s ease-in-out, background-position 0s, padding 0s,
+    border-radius 0s, border 0s;
+  //用伪元素实现
+  // &,
+  // & * {
+  //   z-index: 1;
+  // }
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -2px;
+  //   width: 0;
+  //   right: -2px;
+  //   height: calc(100% + 4px);
+  //   background: $color;
+  //   transition: all 0.3s;
+  //   border-radius: 4px;
+  //   transform-origin: right;
+  //   z-index: -1;
+  // }
   &:hover {
+    --p: 96%;
+    --s: calc(50% + 0.9em);
     color: var(--background-primary) !important;
-    @include mul-transition($transition);
+    // @include mul-transition($transition);
     box-shadow: 3px 3px 6px #00000045, -3px -3px 6px #ffffff45;
-    &:before {
-      width: calc(100% + 4px);
-      left: -2px;
-      transform-origin: left;
-    }
+    // &:before {
+    //   width: calc(100% + 4px);
+    //   left: -2px;
+    //   transform-origin: left;
+    // }
   }
 }
 
@@ -211,7 +229,7 @@ span.external-link {
 .markdown-preview-view {
   .cm-line:not(.cm-active) .cm-link,
   .external-link {
-    @include underline-anime(var(--external-link));
+    @include hover-anime(var(--external-link));
   }
 }
 
@@ -232,7 +250,7 @@ span.external-link {
 .markdown-preview-view {
   .cm-line:not(.cm-active) .cm-hmd-internal-link,
   .internal-link {
-    @include underline-anime(var(--internal-link));
+    @include hover-anime(var(--internal-link));
   }
 }
 .cm-formatting-link,

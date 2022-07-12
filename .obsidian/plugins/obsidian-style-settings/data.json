@@ -112,5 +112,8 @@
   "things-style@@text": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
   "blue-topaz-theme@@background-settings-workplace-background-image": true,
   "blue-topaz-theme@@simple-titlebar": false,
-  "blue-topaz-theme@@clutter-free-headings": true
+  "blue-topaz-theme@@clutter-free-headings": true,
+  "blue-topaz-theme@@all-dark": true,
+  "blue-topaz-theme@@hr-for-pagination": true,
+  "blue-topaz-theme@@show-url-after-link": true
 }
