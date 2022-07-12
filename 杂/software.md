@@ -1,19 +1,19 @@
-- [ ] obsidian
-- [ ] kms激活、驱动恢复
-- [ ] bandizip、imagglass、potplayer注册
-- [ ] 安装字体、鼠标、壁纸
-- [ ] utools ![[utools备份]]
+- [x] obsidian
+- [x] kms激活、驱动恢复
+- [x] 安装字体、鼠标、壁纸
+- [x] bandizip、imagglass、potplayer注册、quicklook
+- [x] utools ![[utools备份]]
 - [ ] wps
-- [ ] 字体替换
-- [ ] java、python、mysql8、git、node、运行库安装
+- [x] 字体替换
+- [x] java、python、mysql8、git、node、运行库安装、环境变量
 	- [ ] mysql 启动服务![[Mysql#添加服务和用户]]
-	- [ ] `D:\code\_env\node_16.15\node_modules\npm\.npmrc`放到用户根目录
-- [ ] wsl、terminal
-- [ ] 恢复ssh、rc
-- [ ] 恢复输入法字库
-- [ ] motrix
-- [ ] tim、微信、钉钉、记录恢复
-- [ ] uwp：干净阅读、LyricEase、XBoxGameBar更新
-- [ ] 剪映
-- [ ] flux自动护眼
-- [ ] pandoc
+	- [x] `D:\code\_env\node_16.15\node_modules\npm\.npmrc`放到用户根目录
+- [x] wsl、terminal
+- [x] 恢复ssh、rc
+- [x] 恢复输入法字库
+- [x] motrix
+- [x] tim、微信、钉钉、记录恢复
+- [x] uwp：干净阅读、LyricEase、XBoxGameBar更新
+- [x] 剪映
+- [x] flux自动护眼
+- [x] pandoc

@@ -6,8 +6,7 @@
 [[远程调试]]
 ### hello world
 [[helloworld of springboot]]
-### 文档
-[[spring-boot-reference.pdf|springboot文档]]
+
 ### 内容
 [[Tomcat内嵌]]
 [[容器功能&properites]]

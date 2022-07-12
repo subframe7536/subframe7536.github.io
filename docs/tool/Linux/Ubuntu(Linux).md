@@ -49,10 +49,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricte
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-
-# 预发布软件源，不建议启用
-# deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
 4. 更新
 ```shell
@@ -142,7 +138,6 @@ vim ~/.zshrc
 cd ~/.oh-my-zsh/plugins 
 git clone https://ghproxy.com/https://github.com/zsh-users/zsh-autosuggestions.git 
 git clone https://ghproxy.com/https://github.com/zsh-users/zsh-syntax-highlighting.git
-https://api.mtr.pub/zsh-users/zsh-syntax-highlighting.git
 ``` 
 ```shell
 vim ~/.zshrc
@@ -158,7 +153,13 @@ source ~/.zshrc
 ```shell
 omz update
 ```
-
+7. alias
+```shell
+alias config="vim ~/.zshrc"
+alias refresh="source ~/.zshrc"
+alias l="ls -alF"
+alias cl="clear"
+```
 # 常用命令
 ![[Linux常用命令]]
 

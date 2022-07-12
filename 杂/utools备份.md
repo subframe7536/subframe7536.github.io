@@ -62,6 +62,7 @@
 - <kbd>Alt + S</kbd> 搜索
 - <kbd>Alt + D</kbd> tr
 - <kbd>Alt + Q</kbd> 百度
+- <kbd>Alt + G</kbd> 谷歌
 
 ### 设置
 关闭空格键执行

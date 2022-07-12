@@ -380,15 +380,6 @@
       "key": "K"
     }
   ],
-  "markdown-table-editor:markdown-table-editor-open-horizontal": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "E"
-    }
-  ],
   "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "editor:insert-link": [
@@ -402,5 +393,51 @@
   ],
   "quick-latex:addAlignBlock": [],
   "quick-latex:addCasesBlock": [],
-  "quick-latex:addMatrixBlock": []
+  "quick-latex:addMatrixBlock": [],
+  "obsidian-mind-map:app:markmap-preview": [],
+  "obsidian-memos:open-memos": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "workspaces:open-modal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "markdown-table-editor:markdown-table-editor-open-horizontal": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "obsidian-excalidraw-plugin:excalidraw-autocreate": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "E"
+    }
+  ],
+  "obsidian-excel-to-markdown-table:excel-to-markdown-table": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ]
 }

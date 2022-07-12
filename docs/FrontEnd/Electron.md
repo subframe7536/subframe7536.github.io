@@ -71,10 +71,14 @@ app.on('ready', () => {
 # 渲染
 #todo 
 ## 功能模块
-#### 存储 electron-store+Vuex
+### 存储
+#### (轻量) electron-store+Vuex/Pinia
 `app.getPath('exe')`
-getPath未定义？？？ 
+getPath未定义
 - 使用`remote.app.getPath('exe')`
+#### (大量) sql.js
+https://github.com/sql-js/sql.js
+https://xushanxiang.com/electron-sql-js-sqlite.html
 ### 获取系统字体
 使用`font-list`
 #### 安装
@@ -127,6 +131,9 @@ electron+vite+vue/react模板
 ```shell
 npm create electron-vite
 ```
-### howler 
-音频api
-[docs](https://github.com/goldfire/howler.js#documentation)
+
+
+[外部桌面歌词](https://github.com/qier222/YesPlayMusic/issues/616)
+
+### ffmpeg 
+[electron + fluent-ffmpeg + ffmpeg/installer](http://cache.baiducontent.com/c?m=ghzx_4VF7vA0AEok5DGjQ7EV3a-AyO75Oeq5qPm3xEQyq3yrfL9MNGJpI9_hF-bzzoRDEEueh_-QfTENI8a5LIDwDJEevCrQyCHLp_az--q&p=c06ed1179c904ead08e2977e0f51cf&newp=8d79c71b85cc43ff57ee947c1c4791231610db2151d4d5106b82c825d7331b001c3bbfb422211307d3c37a6606ae4f56e1f43470310923a3dda5c91d9fb4c57479&s=a2a8441d32facfab&user=baidu&fm=sc&query=electron+ffmpeg&qid=db0923f400000eca&p1=2)

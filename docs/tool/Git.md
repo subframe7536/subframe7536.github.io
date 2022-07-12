@@ -22,7 +22,7 @@ Host *
   IdentityFile C:\\Users\\subframe\\.ssh\\none_pass_phrase
 ```
 ## 结构
-![[Pasted image 20220129165357.png]]
+![[git原理.png]]
 ### 暂存、评论、管理修改
 分为 工作空间(working directory) 和 暂存区 ()
 每次暂存将工作空间的修改提交到暂存区，推送时将暂存区的文件推送
@@ -137,6 +137,15 @@ https://hub.fastgit.xyz/
 https://cdn.githubjs.cf/
 https://gitclone.com/
 
-## 加/该前缀
+## 改域名
+`api.mtr.pub`
+### 例
 https://api.mtr.pub/zsh-users/zsh-syntax-highlighting.git
+## 加域名
+`gitclone.com`
+### 例
+https://gitclone.com/github.com/tendermint/tendermint.git
+## 加前缀
+`https://ghproxy.com/`
+### 例
 https://ghproxy.com/https://github.com/zsh-users/zsh-autosuggestions.git 

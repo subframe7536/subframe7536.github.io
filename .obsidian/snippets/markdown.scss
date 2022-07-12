@@ -18,12 +18,12 @@
   --h4-weight: var(--font-bold);
   --h5-weight: var(--font-bold);
   --h6-weight: var(--font-bold);
-  --transition: all 0.2s ease-in;
+  --transition: all 0.3s ease-in-out;
 }
 
 .theme-light {
   --text-selection: #8ec2ff6e;
-
+  --background-primary-transparent: #fefefef0;
   --external-link: #ff9f31;
   --internal-link: #5d94ca;
   // --external-link-hover: #fc774722;
@@ -66,63 +66,169 @@
     filter: var(--hover);
   }
 }
+//背景
+.theme-light {
+  .workspace-leaf-content[data-type='markdown'] {
+    .markdown-embed-content {
+      border-radius: 8px;
+      max-height: unset;
+      .markdown-preview-view {
+        background-image: none !important;
+      }
+      P:first-child {
+        margin-top: 10px !important;
+      }
+    }
+    @at-root .theme-light
+        .workspace-leaf-content[data-type='empty']
+        .view-content,
+      .theme-light .markdown-preview-view,
+      .theme-light .cm-editor .cm-scroller {
+      background-image: linear-gradient(
+        170deg,
+        #d08efcbb,
+        #ba92f9bb,
+        #a596f4bb,
+        #9397edbb,
+        #8498e3bb,
+        #749ee3bb,
+        #67a4e0bb,
+        #5fa8dbbb,
+        #54b3dbbb,
+        #54bed7bb,
+        #5fc7d1bb,
+        #72cfc9bb
+      ) !important;
+    }
+    @at-root .theme-dark
+        .workspace-leaf-content[data-type='empty']
+        .view-content,
+      .theme-dark .markdown-preview-view,
+      .theme-dark .cm-editor .cm-scroller {
+      background-image: linear-gradient(
+        170deg,
+        #563e59,
+        #523f5d,
+        #4d4161,
+        #474365,
+        #404568,
+        #37496b,
+        #2c4d6d,
+        #20506e,
+        #0e556d,
+        #035a6a,
+        #0b5e64,
+        #1d625d
+      ) !important;
+    }
+  }
+}
+.markdown-preview-view,
+.cm-editor .cm-scroller {
+  padding: 0 !important;
+  background-position-y: center;
+  .markdown-preview-sizer,
+  .cm-contentContainer {
+    background-color: var(--background-primary-transparent);
+    padding: 10px 25px !important;
+    max-width: 750px !important;
+    min-height: 100% !important;
+  }
+}
 
 //链接
 
 //下划线动画
 @mixin underline-anime($color) {
+  // max-width: 90%;
+  // height: 26px;
+  // line-height: 26px;
+  // width: fit-content;
+  // display: inline-block;
+  // overflow: hidden;
+  // word-break: keep-all;
+  // white-space: nowrap;
+  // text-overflow: ellipsis;
   position: relative;
-
+  transition: var(--transition);
+  border-radius: 4px;
+  padding: 0 2px;
+  border: 2px solid $color;
+  box-shadow: 1px 1px 4px #00000045, -1px -1px 4px #ffffff45;
   &,
   & * {
-    text-decoration: none !important;
+    z-index: 1;
   }
-
   &:before {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
     width: 0;
-    right: 0;
-    height: 3px;
+    right: -2px;
+    height: calc(100% + 4px);
     background: $color;
     transition: all 0.3s;
     border-radius: 4px;
     transform-origin: right;
+    z-index: -1;
   }
-
-  &:hover:before {
-    width: 100%;
-    left: 0;
-    transform-origin: left;
-  }
-}
-
-.cm-url {
-  color: var(--external-link) !important;
-}
-
-.markdown-preview-view .cm-link,
-.external-link:not(.external-link[contenteditable='false']) {
-  color: var(--external-link) !important;
-  text-decoration: none;
-
-  // @include underline-anime(var(--external-link));
   &:hover {
-    text-decoration: underline;
+    color: var(--background-primary) !important;
+    transition: var(--transition);
+    box-shadow: 3px 3px 6px #00000045, -3px -3px 6px #ffffff45;
+    &:before {
+      width: calc(100% + 4px);
+      left: -2px;
+      transform-origin: left;
+    }
   }
 }
 
+//外部链接
 .cm-link {
-  color: var(--internal-link) !important;
+  color: var(--external-link) !important;
 }
 
-.markdown-preview-view .cm-url,
+.cm-link,
+.external-link {
+  color: var(--external-link) !important;
+
+  &,
+  .cm-underline {
+    text-decoration: none !important;
+  }
+}
+span.external-link {
+  display: none !important;
+}
+.is-live-preview,
+.markdown-preview-view {
+  .cm-line:not(.cm-active) .cm-link,
+  .external-link {
+    @include underline-anime(var(--external-link));
+  }
+}
+
+//内部链接
+.cm-url,//外部链接的url
+.cm-hmd-internal-link,
 .internal-link {
   color: var(--internal-link) !important;
-  @include underline-anime(var(--internal-link));
+  &,
+  .cm-underline {
+    text-decoration: none !important;
+  }
 }
-
+.internal-link {
+  padding: 0 4px;
+}
+.is-live-preview,
+.markdown-preview-view {
+  .cm-line:not(.cm-active) .cm-hmd-internal-link,
+  .internal-link {
+    @include underline-anime(var(--internal-link));
+  }
+}
 .cm-formatting-link,
 .cm-formatting-link-string,
 .cm-formatting-image {
@@ -130,20 +236,6 @@
   font-weight: var(--font-bold);
   margin: 0 2px;
 }
-
-//todo
-// .markdown-preview-view .contains-task-list li,
-// .markdown-preview-view p {
-//   display: flex;
-//   align-items: center;
-
-//   a.external-link {
-//     overflow: hidden;
-//     max-width: 100%;
-//     display: inline-block;
-//     white-space: nowrap;
-//   }
-// }
 
 //键盘
 kbd {
@@ -224,7 +316,7 @@ div[data-type='markdown'] {
     }
 
     @at-root .is-live-preview .HyperMD-header-#{$i},
-      h#{$i} {
+      .workspace-leaf-content[data-type='markdown'] h#{$i} {
       position: relative;
       margin: 14px 0;
 
@@ -263,14 +355,14 @@ div[data-type='markdown'] {
 
     @at-root .theme-light {
       .is-live-preview .HyperMD-header-#{$i}::before,
-      h#{$i}::before {
+      .workspace-leaf-content[data-type='markdown'] h#{$i}::before {
         color: var(--h#{$i}-color);
       }
     }
 
     @at-root .theme-dark {
       .is-live-preview .HyperMD-header-#{$i}::before,
-      h#{$i}::before {
+      .workspace-leaf-content[data-type='markdown'] h#{$i}::before {
         background-color: var(--h#{$i}-color);
         color: #fff;
       }
@@ -285,15 +377,17 @@ div[data-type='markdown'] {
   }
 }
 .collapse-indicator {
-  top: -2px !important;
+  margin-top: -2px !important;
   transition: var(--transition);
+  margin-left: -44px !important;
 }
 
 h1 {
   text-align: center;
 }
 
-h2 {
+h2,
+.HyperMD-header-2 {
   // border-bottom: 3px solid var(--h2-color);
   position: relative;
 
@@ -301,7 +395,11 @@ h2 {
     content: '';
     height: 3px;
     width: 100%;
-    background-color: var(--h2-color);
+    background-image: linear-gradient(
+      to right,
+      var(--h2-color) 40%,
+      transparent 60%
+    );
     position: absolute;
     bottom: 4px;
     left: 0;
@@ -345,7 +443,7 @@ h6 {
   padding: {
     top: 15px;
     bottom: 15px;
-    left: 20px;
+    left: 40px;
   }
 }
 
@@ -358,7 +456,21 @@ h6 {
     bottom: 10px !important;
   }
 }
+/* get more snippets at https://github.com/kmaasrud/awesome-obsidian */
+/* author: https://forum.obsidian.md/u/Thery/summary */
+/* source: https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39 */
 
+blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: '“';
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  margin-left: -10px;
+}
+blockquote p {
+  display: inline;
+}
 //表格
 .cm-embed-block table,
 .markdown-preview-view table {
@@ -459,14 +571,14 @@ ul > li > ul > li {
   }
 
   .HyperMD-list-line-2 .list-bullet:after {
-    font-size: 0.6rem;
-    right: 0.2px;
-    content: '\25a0';
+    font-weight: var(--font-bold);
+    content: '\25cb';
   }
 
   .HyperMD-list-line-3 .list-bullet:after {
-    font-weight: var(--font-bold);
-    content: '\25cb';
+    font-size: 0.6rem;
+    right: 0.2px;
+    content: '\25a0';
   }
 
   .HyperMD-list-line-4 .list-bullet:after {
@@ -474,9 +586,11 @@ ul > li > ul > li {
     content: '\25a1';
   }
 
-  .cm-indent {
-    padding-right: 10px;
-  }
+  // .cm-hmd-list-indent {
+  //   .cm-indent {
+  //     padding-right: 10px;
+  //   }
+  // }
 
   .cm-formatting-list {
     color: var(--text-accent);
@@ -542,14 +656,14 @@ $radius: 999px;
   .cm-hashtag-begin {
     border-top-left-radius: $radius;
     border-bottom-left-radius: $radius;
-    padding-left: 10px;
+    padding-left: 4px;
     border-right: none !important;
   }
 
   .cm-hashtag-end {
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
-    padding-right: 10px;
+    padding-right: 4px;
     border-left: none !important;
   }
 }
@@ -589,10 +703,27 @@ $radius: 999px;
     transition: var(--transition);
     color: var(--text-normal);
   }
+  .markdown-embed-title {
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    width: fit-content;
+    right: 40px;
+    left: unset;
+    font-size: 1rem;
+    top: 6px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 8px;
+    transition: var(--transition);
+    cursor: pointer;
+  }
 
   &:hover {
     transition: var(--transition);
 
+    .markdown-embed-title,
     .markdown-embed-link,
     .file-embed-link {
       opacity: 1;
@@ -637,15 +768,19 @@ $radius: 999px;
     }
   }
 
-  .markdown-embed-title {
-    border-bottom: 4px solid var(--file-item-bg);
+  //  {
+  //   border-bottom: 4px solid var(--file-item-bg);
 
-    margin: {
-      left: 10px;
-      right: 19px;
-    }
+  //   margin: {
+  //     left: 10px;
+  //     right: 19px;
+  //   }
 
-    width: calc(100% - 29px);
+  //   width: calc(100% - 29px);
+  // }
+  /*删除内嵌文档节选的第一行*/
+  .markdown-embed-heading .markdown-preview-section > div:nth-child(2) {
+    display: none;
   }
 }
 

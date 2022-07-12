@@ -22,3 +22,24 @@
 - 数字字符串转数字/boolean转数字/非数字符号转0
 
 `navigator.mediaSession.metadata`
+
+#todo 
+[音乐元数据读取](https://github.com/Borewit/music-metadata#usage)
+[ffmpeg读写元数据](https://github.com/honjes/async-ffmetadata)
+[离线存储localforage](https://github.com/localForage/localForage)
+### howler 
+音频api
+[docs](https://github.com/goldfire/howler.js#documentation)
+### buffer转base64
+```js
+function buffer2Base64(buffer) {
+  let bytes = new Uint8Array(buffer)
+  return window.btoa(
+      bytes.reduce((data, byte) => data + String.fromCharCode(byte), '')
+  );
+}
+```
+## PWA
+[文档](https://developers.google.com/codelabs/project-fugu?hl=zh_cn#0)
+[vite plugin](https://vite-plugin-pwa.netlify.app/guide/)
+[系统集成](https://web.dev/learn/pwa/os-integration/)

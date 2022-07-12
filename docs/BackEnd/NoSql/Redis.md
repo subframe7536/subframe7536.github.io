@@ -19,7 +19,13 @@ tar xzf redis-6.0.8.tar.gz
 cd redis-6.0.8 
 make
 ```
-- 配置
+#### 注意
+gcc版本需要6以上
+编译失败后需要清除文件
+```shell
+make distclean
+```
+#### 配置
 ```shell
 # 查看
 CONFIG GET CONFIG_SETTING_NAME

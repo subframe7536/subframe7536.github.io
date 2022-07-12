@@ -5,7 +5,6 @@
   "blue-topaz-theme@@background-primary-alt-bg-4-bt@@light": "#FAFAFA",
   "blue-topaz-theme@@background-secondary-alt-bg-4-bt@@light": "#FAFAFA",
   "blue-topaz-theme@@background-image-settings-markdown-page-options": "background-image-settings-markdown-page-sea-and-sky",
-  "blue-topaz-theme@@translucent-setting-panel": false,
   "blue-topaz-theme@@background-image-settings-markdown-page-random": false,
   "blue-topaz-theme@@background-image-settings-switch": false,
   "obsidian-prism-theme@@font-family-editor": "'苹方-简', Assistant, sans-serif",
@@ -110,5 +109,8 @@
   "things-style@@font-monospace": "\"Subframe7536 Code Round\",Microsoft YaHei,Menlo,SFMono-Regular,Consolas,\"Roboto Mono\",monospace",
   "things-style@@font-ui": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
   "things-style@@text-editor": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-  "things-style@@text": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+  "things-style@@text": "Microsoft YaHei,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
+  "blue-topaz-theme@@simple-titlebar": false,
+  "blue-topaz-theme@@clutter-free-headings": true
 }

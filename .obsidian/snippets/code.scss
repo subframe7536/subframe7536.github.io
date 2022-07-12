@@ -17,6 +17,9 @@ code {
 
 pre {
   background-color: #181c20 !important;
+  code {
+    background-color: unset !important;
+  }
 }
 
 pre[class*='language-'] {
@@ -68,7 +71,7 @@ $language: c, properties, python, nginx, css, javascript, js, jsp, php, lua,
 @each $lan in $language {
   pre[class~='language-#{$lan}']::before {
     $t: to-upper-case(
-      $string: $lan,
+      $string: $lan
     );
     content: quote($t);
   }

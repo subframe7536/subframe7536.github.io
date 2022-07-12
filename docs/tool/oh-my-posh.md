@@ -1,22 +1,19 @@
 > 类似于linux的oh-my-zsh，用于美化powershell
 ### 安装
 #### 下载
+```shell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+```
 以管理员身份运行
 ```shell
-Set-ExecutionPolicy Bypass
-Install-Module oh-my-posh -Scope CurrentUser
-Install-Module posh-git -Scope CurrentUser
+Set-ExecutionPolicy Bypass;Install-Module oh-my-posh -Scope CurrentUser;
+Install-Module posh-git -Scope CurrentUser;if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 ```
 #### 配置
-```shell
-if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
-```
 打开`C:\user\用户名\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`并输入
 ```powershell
 Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme ys
-Enable-PoshTooltips
+oh-my-posh --init --shell pwsh --config D:\code\_env\ShellTheme.json | Invoke-Expression
 ```
 #### 主体
 修改`C:\Program Files\WindowsPowerShell\Modules\oh-my-posh\6.3.1\themes`中的文件

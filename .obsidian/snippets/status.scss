@@ -12,7 +12,7 @@
   --interactive-accent-hover: #4894eb;
   --background-primary: #fefefe;
   --background-primary-alt: #f4f4f4;
-  --background-modifier-cover: #eeeeeedd;
+  --background-modifier-cover: #00000099;
   --highlight-mix-blend-mode: normal !important;
   // --highlight-search: #973000;
 
@@ -30,9 +30,9 @@
   --shadow-outset: 0px 0px 10px rgb(0 0 0 / 12%) !important;
 
   --red-hover: #d86262;
-  --blue: #5793fa66;
+  --blue: #8db9ff;
   --blue-light: var(--text-accent);
-  --blue-dark: #daf4ff54;
+  --blue-dark: #e2ebf0dd;
 }
 
 .theme-dark {
@@ -42,7 +42,8 @@
   --background-primary-alt: #181818;
   --background-secondary: #20282e;
   --background-secondary-alt: #273339;
-  --background-modifier-cover: #111111dd !important;
+  --background-modifier-cover: #55555599 !important;
+  --background-primary-transparent: #000000aa;
   --text-faint: #aaa;
   --text-normal: #cccccc;
   --text-muted: #9da5a8;
@@ -70,14 +71,6 @@
   --blue-dark: var(--file-item-bg);
 }
 
-@mixin hover {
-  &:hover {
-    box-shadow: var(--shadow);
-    transition: all 0.2s;
-    filter: var(--hover);
-  }
-}
-
 * {
   text-shadow: none !important;
 }
@@ -92,6 +85,9 @@ body .app-container mjx-container * {
 
   mjx-utext {
     font-family: var(--font-text) !important;
+  }
+  mjx-stretchy-h > mjx-ext > mjx-c::before {
+    transform: scaleX(400);
   }
 }
 
@@ -155,24 +151,103 @@ body {
       margin-left: 4px;
     }
 
-    .side-dock-ribbon {
-      background-color: var(--background-primary-alt) !important;
-
-      svg {
-        opacity: 0;
-        transition: var(--transition);
+    //侧边框
+    @at-root body {
+      .workspace-ribbon {
+        &.mod-right {
+          margin-right: -18px;
+          .workspace-ribbon-collapse-btn {
+            position: absolute;
+            width: 32px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 48px;
+            right: -6px;
+            border: 1px solid var(--text-accent);
+            background-color: var(--file-item-bg);
+            transition: 300ms ease-in-out;
+            border-radius: 7px 0 0 7px;
+            padding: 20px 0 20px 3px;
+            margin-right: -15px;
+            &:hover {
+              margin-right: 0px;
+            }
+          }
+          &.side-dock-ribbon.is-collapsed .workspace-ribbon-collapse-btn {
+            border-radius: 0 7px 7px 0;
+            padding: 20px 0 20px 7px;
+          }
+        }
+        &.mod-left {
+          margin-left: -18px;
+          &.side-dock-ribbon.is-collapsed .workspace-ribbon-collapse-btn {
+            border-radius: 7px 0 0 7px;
+            padding: 20px 0 20px 0px;
+          }
+          & > div {
+            width: 40px;
+            position: absolute;
+            // display: flex;
+            align-items: center;
+            text-align: center;
+            left: -10px;
+            border: 1px solid var(--text-accent);
+            background-color: var(--file-item-bg);
+            transition: 300ms ease-in-out;
+            border-radius: 0 7px 7px 0;
+            padding: 20px 0 20px 3px;
+            margin-left: -20px;
+            &:hover {
+              margin-left: 4px;
+            }
+            &.workspace-ribbon-collapse-btn {
+              // border-radius: 7px;
+              justify-content: center;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              height: 48px;
+              &:hover {
+                margin-left: 0px;
+              }
+            }
+            &.side-dock-actions {
+              top: 13%;
+            }
+            &.side-dock-settings {
+              bottom: 0;
+            }
+          }
+        }
+      }
+      // }
+      &.hide-right-ribbon-button-middle
+        .workspace-ribbon.mod-right
+        .workspace-ribbon-collapse-btn {
+        top: 45%;
       }
 
-      &:hover svg {
-        opacity: 1;
-        transition: var(--transition);
+      &.hide-right-ribbon-button-bottom
+        .workspace-ribbon.mod-right
+        .workspace-ribbon-collapse-btn {
+        bottom: 4%;
+      }
+    }
+    .side-dock-ribbon {
+      .side-dock-ribbon-tab,
+      .side-dock-ribbon-action {
+        color: var(--text-normal);
+        &:hover {
+          color: var(--text-accent);
+        }
       }
     }
 
     .workspace-leaf {
       &.mod-active .view-header {
         border-color: var(--file-item-selected-bg) !important;
-        box-shadow: var(--shadow-outset);
+        // box-shadow: var(--shadow-outset);
         background-color: var(--file-item-selected-bg) !important;
 
         & * {
@@ -243,6 +318,16 @@ body {
         padding-bottom: 0;
       }
     }
+    .empty-state-container {
+      padding: 10px 20px 20px 20px !important;
+      border-radius: 12px;
+      background-color: var(--background-primary-transparent);
+      box-shadow: var(--shadow-outset);
+      .empty-state-close-button {
+        right: 0;
+        left: unset;
+      }
+    }
   }
 }
 
@@ -268,13 +353,18 @@ body {
   }
 }
 
-.workspace-tab-header.is-active {
-  border-radius: 6px;
-  background-color: var(--text-accent);
-  color: #fff;
-
-  &:hover {
-    color: #ddd;
+.workspace-tab-header {
+  margin: 0 4px;
+  .workspace-tab-header-inner {
+    padding: 3px 8px;
+  }
+  &.is-active {
+    border-radius: 6px;
+    background-color: var(--text-accent);
+    color: #fff;
+    &:hover {
+      color: #ddd;
+    }
   }
 }
 
@@ -384,8 +474,8 @@ body {
 
   //右侧指示线
   .nav-folder-children {
-    & :first-child {
-      margin-top: -0.1px;
+    & > :first-child {
+      margin-top: 0.1px;
     }
 
     .nav-folder-children {
@@ -464,18 +554,17 @@ body {
       padding-left: 21px;
       font-weight: var(--font-bold);
       color: var(--text-normal);
-
       &:hover {
         background-color: var(--fold-item-bg);
       }
-
+      .nav-folder-collapse-indicator {
+        margin-left: -18px;
+        width: 16px;
+      }
       &.is-being-dragged {
         background-color: var(--fold-item-bg);
         box-shadow: var(--shadow-inset);
-
-        .nav-folder-collapse-indicator {
-          color: var(--text-normal);
-        }
+        color: var(--text-normal);
       }
     }
   }
@@ -489,11 +578,18 @@ body {
     padding: 0;
     border-radius: 4px;
     &.is-being-dragged {
-      color: var(--text-muted) !important;
+      color: var(--background-primary);
+      .nav-file-title-content::before {
+        background-color: var(--background-primary);
+      }
     }
     &:hover {
+      color: var(--text-normal);
       text-decoration: underline;
       box-shadow: var(--shadow);
+      .nav-file-title-content::before {
+        background-color: var(--text-accent);
+      }
     }
   }
 }
@@ -541,6 +637,7 @@ body {
   .tree-item-self {
     .tree-item-flair-outer {
       margin-right: 12px;
+      align-items: center;
     }
 
     &.is-clickable {
@@ -689,7 +786,7 @@ body {
 
       &::before {
         position: absolute;
-        transform: translateY(-2px);
+        transform: translateY(1px);
       }
 
       &:hover {
@@ -709,7 +806,7 @@ body {
 }
 
 //==========================================================
-//应用标题栏
+//应用的标题栏
 .titlebar {
   background: var(--background-secondary);
   height: var(--titlebar-height) !important;
@@ -721,9 +818,11 @@ body {
       weight: var(--font-bold);
       size: 0.8rem;
     }
-
     color: var(--text-normal) !important;
     line-height: var(--titlebar-height);
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
   }
 
   .titlebar-button-container {
@@ -767,7 +866,7 @@ body {
 //菜单
 
 .menu {
-  padding: 8px 4px;
+  padding: 4px;
 
   @at-root .theme-dark .menu {
     border: var(--border);
@@ -789,12 +888,12 @@ body {
     }
 
     &.selected {
-      background-color: var(--file-item-selected-bg) !important;
+      background-color: var(--file-item-bg) !important;
       box-shadow: var(--shadow);
-      color: #fff;
+      color: var(--text-normal);
 
       svg {
-        background-color: #fff;
+        background-color: var(--text-normal);
       }
     }
 
@@ -826,6 +925,10 @@ body {
 //状态栏
 .status-bar {
   border-top: 2px solid var(--background-secondary-alt);
+  padding: 0 12px;
+  .status-bar-item {
+    padding: 0 8px;
+  }
 }
 
 //===================================================
@@ -858,18 +961,14 @@ body {
 
 .workspace-leaf-content {
   padding-bottom: 2px;
+  // content-visibility: auto;
+  // contain-intrinsic-size: 150vh;
 
   img:not([width]):active,
   audio,
   video {
     width: 100%;
   }
-}
-
-.workspace-leaf-content[data-mode='preview'] .view-content,
-.cm-editor {
-  padding: 2px 0;
-  // background-color: #e1faff28;
 }
 
 // .markdown-preview-view {
@@ -891,7 +990,7 @@ body {
   }
 
   .modal-bg {
-    background-color: var(--background-modifier-cover);
+    backdrop-filter: blur(10px);
   }
 
   .modal,
@@ -1069,5 +1168,10 @@ body .suggestion-container {
         box-shadow: var(--shadow);
       }
     }
+  }
+}
+.theme-dark {
+  img {
+    filter: brightness(80%);
   }
 }

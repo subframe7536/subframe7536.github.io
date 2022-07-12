@@ -26,7 +26,7 @@ sfc /SCANNOW
 ```shell
 Set-Service -StartupType Automatic ssh-agent
 Start-Service ssh-agent
-ssh-add C:\Users\subframe\.ssh\id_rsa
+ssh-add C:\Users\subframe7536\.ssh\id_rsa
 # Enter passphrase for C:\Users\subframe\.ssh\id_rsa:
 # Identity added: C:\Users\subframe\.ssh\id_rsa (C:\Users\subframe\.ssh\id_rsa)
 ```
@@ -55,14 +55,18 @@ RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
 3. 打开开发人员选项
 ### 问题
 - 开了虚拟机和bios也无法开启，之前模拟器设置过hyper-v了
-`bcdedit /set hypervisorlaunchtype auto`
+```shell
+bcdedit /set hypervisorlaunchtype auto
+```
 ---
 - 一直无法连接adb
 1. 重启 
 2. 点击 关闭适用于Android... 右边的关闭按钮，等待转圈完毕，点击IP地址右边的按钮，可以看到开发人员模式的地址刷新了，这样就可以使用adb了
 ---
 - 不断需要联网
-`adb shell settings put global captive_portal_mode 0`
+```shell
+adb -s 设备名 shell settings put global captive_portal_mode 0
+```
 
 ## 以太网不见了
 1. 打开服务，找到`network connections`/`wired Auto Config`，打开，重启
@@ -70,10 +74,12 @@ RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
 
 ## Github DNS设置
 微软和GitHub同一家，微软的DNS能够正确的指向GitHub的地址
-微软的DNS是4.2.2.1，4.2.2.2
+微软的DNS：4.2.2.1，4.2.2.2
+- 阿里：233.5.5.5
+- 谷歌：8.8.8.8
 ### 流程
 本地组策略 -> 计算机配置 -> windows设置 -> 域名解析策略 -> 
-![[Pasted image 20220528132746.png]]
+![[域名解析前缀.png]]
 - 如果不行DirectAccress的DNS设置也可以加一下
 ## 计划任务自动深色模式
 进入计划任务，导入计划 #todo 没有全局的深色，需要调整一下注册表
@@ -296,3 +302,5 @@ RP改为slow，输入 `https://www.microsoft.com/store/productId/9P3395VX91NR`
 ```cmd
 sc delete <服务名>
 ```
+## windows安全中心托盘关闭
+本地组策略编辑器 -> 管理模板 -> windows组件 -> windows安全中心 -> systray -> 关闭

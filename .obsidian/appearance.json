@@ -1,5 +1,5 @@
 {
-  "theme": "system",
+  "theme": "moonstone",
   "translucency": false,
   "cssTheme": "",
   "enabledCssSnippets": [
@@ -11,15 +11,13 @@
     "things_markdown",
     "things_markdown.min",
     "things_status",
-    "code.min",
+    "code",
     "icons",
-    "plugin.min",
-    "reveal.min",
-    "callout.min",
-    "markdown.min",
-    "status.min"
+    "markdown",
+    "plugin",
+    "status"
   ],
-  "baseFontSize": 18,
+  "baseFontSize": 16,
   "baseFontSizeAction": true,
   "interfaceFontFamily": "Maple UI,Microsoft YaHei",
   "textFontFamily": "Maple UI,Microsoft YaHei",

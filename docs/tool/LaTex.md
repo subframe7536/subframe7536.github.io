@@ -122,6 +122,12 @@ $\enclose{horizontalstrike}{x+y}$
 #### 省略号
 `\dots`
 $\dots$
+`\cdots`
+$\cdots$
+`\vdots`
+$\vdots$
+`\ddots`
+$\ddots$
 #### 加粗
 `\boldsymbol{a}`
 $\boldsymbol{a}$
@@ -195,7 +201,11 @@ $$\begin{split}
 \end{split}$$
 #### 矩阵
 ```Latex
-\begin{vmatrix}i&j&k\\a_{x}&a_{y}&a_{z}\\b_{x}&b_{y}&b_{z}\end{vmatrix}
+\begin{vmatrix}
+i & j & k\\
+a_{x} & a_{y} & a_{z}\\
+b_{x} & b_{y} & b_{z}
+\end{vmatrix}
 ```
 $$\begin{vmatrix}i&j&k\\a_{x}&a_{y}&a_{z}\\b_{x}&b_{y}&b_{z}\end{vmatrix}$$
 - `matrix` 无边框
@@ -244,3 +254,9 @@ $$\begin{vmatrix}i&j&k\\a_{x}&a_{y}&a_{z}\\b_{x}&b_{y}&b_{z}\end{vmatrix}$$
 `\Omega`
 - $\partial$
 `\partial`
+- $\rho$
+`\rho`
+- $\zeta$
+`\zeta`
+- $\tau$
+`\tau`

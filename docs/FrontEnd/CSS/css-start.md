@@ -50,9 +50,10 @@ https://www.cnblogs.com/guangzan/p/13524990.html
 [[SCSS(SASS)]]
 
 
+[lazyload](https://blog.csdn.net/liuyan19891230/article/details/125230290)
 
-
-
+父元素`scroll-snap-type: y mandatory;` #todo
+子元素`scroll-snap-align:center`
 
 
 

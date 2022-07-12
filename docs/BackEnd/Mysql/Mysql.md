@@ -55,7 +55,7 @@ default-character-set=utf8mb4
 ```
 2. 初始化服务，此时root用户没有密码
 ```shell
-$ sudo .\mysqld --initialize-insecure
+sudo .\mysqld --initialize-insecure
 ```
 3. 启动服务
 ```shell

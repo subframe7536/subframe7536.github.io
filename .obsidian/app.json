@@ -4,7 +4,7 @@
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "showLineNumber": false,
   "pdfExportSettings": {
     "pageSize": "A4",
@@ -12,7 +12,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "attachmentFolderPath": "./_resource",
+  "attachmentFolderPath": "./_assets",
   "foldHeading": false,
   "foldIndent": true,
   "communityPluginSortOrder": "download",
