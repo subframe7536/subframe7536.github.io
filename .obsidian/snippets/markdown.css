@@ -45,7 +45,6 @@
   --quote: var(--file-item-bg);
   --strong: var(--red-hover);
   --thead: #48576993;
-  --hr: 2px dashed var(--text-accent);
   --tag: var(--thead);
   --highlight-line: #8297bb16;
   --highlight-search: #e977428c;
@@ -56,6 +55,7 @@
 .workspace-leaf-content[data-type=markdown] .markdown-embed-content {
   border-radius: 8px;
   max-height: unset;
+  padding: 12px 0 !important;
 }
 .workspace-leaf-content[data-type=markdown] .markdown-embed-content .markdown-preview-view {
   background-image: none !important;
@@ -95,6 +95,27 @@ body.print div .markdown-preview-view {
   min-height: 100% !important;
 }
 
+.is-live-preview .cm-line .cm-hmd-internal-link:not(.cm-formatting),
+.markdown-preview-view .internal-link,
+.is-live-preview .cm-line .cm-link:not(.cm-formatting),
+.markdown-preview-view .external-link {
+  border-radius: 4px;
+  padding: 0 2px;
+  border: 2px solid var(--c);
+  box-sizing: border-box;
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 1%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 1%)/var(--s, 0%) 200% no-repeat !important;
+  transition: 0.3s ease-in-out, background-position 0s, padding 0s, border-radius 0s, border 0s;
+}
+.is-live-preview .cm-line .cm-hmd-internal-link:not(.cm-formatting):hover,
+.markdown-preview-view .internal-link:hover,
+.is-live-preview .cm-line .cm-link:not(.cm-formatting):hover,
+.markdown-preview-view .external-link:hover {
+  --p: 96%;
+  --s: calc(50% + 0.9em);
+  color: var(--background-primary) !important;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2705882353), -3px -3px 6px rgba(255, 255, 255, 0.2705882353);
+}
+
 .cm-link {
   color: var(--external-link) !important;
 }
@@ -114,27 +135,9 @@ span.external-link {
   display: none !important;
 }
 
-.is-live-preview .cm-line:not(.cm-active) .cm-link,
-.is-live-preview .external-link,
-.markdown-preview-view .cm-line:not(.cm-active) .cm-link,
+.is-live-preview .cm-line .cm-link,
 .markdown-preview-view .external-link {
   --c: var(--external-link);
-  border-radius: 4px;
-  padding: 0 2px;
-  border: 2px solid var(--external-link);
-  box-sizing: border-box;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2705882353), -1px -1px 4px rgba(255, 255, 255, 0.2705882353);
-  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 1%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 1%)/var(--s, 0%) 200% no-repeat !important;
-  transition: 0.3s ease-in-out, background-position 0s, padding 0s, border-radius 0s, border 0s;
-}
-.is-live-preview .cm-line:not(.cm-active) .cm-link:hover,
-.is-live-preview .external-link:hover,
-.markdown-preview-view .cm-line:not(.cm-active) .cm-link:hover,
-.markdown-preview-view .external-link:hover {
-  --p: 96%;
-  --s: calc(50% + 0.9em);
-  color: var(--background-primary) !important;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2705882353), -3px -3px 6px rgba(255, 255, 255, 0.2705882353);
 }
 
 .cm-url,
@@ -155,27 +158,9 @@ span.external-link {
   padding: 0 4px;
 }
 
-.is-live-preview .cm-line:not(.cm-active) .cm-hmd-internal-link,
-.is-live-preview .internal-link,
-.markdown-preview-view .cm-line:not(.cm-active) .cm-hmd-internal-link,
+.is-live-preview .cm-line .cm-hmd-internal-link,
 .markdown-preview-view .internal-link {
   --c: var(--internal-link);
-  border-radius: 4px;
-  padding: 0 2px;
-  border: 2px solid var(--internal-link);
-  box-sizing: border-box;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2705882353), -1px -1px 4px rgba(255, 255, 255, 0.2705882353);
-  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 1%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 1%)/var(--s, 0%) 200% no-repeat !important;
-  transition: 0.3s ease-in-out, background-position 0s, padding 0s, border-radius 0s, border 0s;
-}
-.is-live-preview .cm-line:not(.cm-active) .cm-hmd-internal-link:hover,
-.is-live-preview .internal-link:hover,
-.markdown-preview-view .cm-line:not(.cm-active) .cm-hmd-internal-link:hover,
-.markdown-preview-view .internal-link:hover {
-  --p: 96%;
-  --s: calc(50% + 0.9em);
-  color: var(--background-primary) !important;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2705882353), -3px -3px 6px rgba(255, 255, 255, 0.2705882353);
 }
 
 .cm-formatting-link,
@@ -183,7 +168,16 @@ span.external-link {
 .cm-formatting-image {
   color: var(--link-formatting) !important;
   font-weight: var(--font-bold);
-  margin: 0 2px;
+}
+.cm-formatting-link + .cm-hmd-internal-link, .cm-formatting-link + .cm-link,
+.cm-formatting-link-string + .cm-hmd-internal-link,
+.cm-formatting-link-string + .cm-link,
+.cm-formatting-image + .cm-hmd-internal-link,
+.cm-formatting-image + .cm-link {
+  padding: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
 }
 
 kbd {
@@ -231,14 +225,10 @@ h1 {
   font-weight: var(--h1-weight) !important;
   line-height: 1.5;
 }
-h1::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -247,6 +237,8 @@ h1::before {
   color: var(--h1-color) !important;
   font-size: var(--h1-size) !important;
   font-weight: var(--h1-weight) !important;
+  line-height: calc(var(--h1-size) * 1.3);
+  height: calc(var(--h1-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-1,
 .cm-editor .HyperMD-header-1 {
@@ -272,18 +264,14 @@ h1::before {
   content: "H1";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-1:hover::before,
 .workspace-leaf-content[data-type=markdown] h1:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-1::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-1::before,
@@ -308,14 +296,10 @@ h2 {
   font-weight: var(--h2-weight) !important;
   line-height: 1.5;
 }
-h2::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -324,6 +308,8 @@ h2::before {
   color: var(--h2-color) !important;
   font-size: var(--h2-size) !important;
   font-weight: var(--h2-weight) !important;
+  line-height: calc(var(--h2-size) * 1.3);
+  height: calc(var(--h2-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-2,
 .cm-editor .HyperMD-header-2 {
@@ -349,18 +335,14 @@ h2::before {
   content: "H2";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-2:hover::before,
 .workspace-leaf-content[data-type=markdown] h2:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-2::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-2::before,
@@ -385,14 +367,10 @@ h3 {
   font-weight: var(--h3-weight) !important;
   line-height: 1.5;
 }
-h3::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -401,6 +379,8 @@ h3::before {
   color: var(--h3-color) !important;
   font-size: var(--h3-size) !important;
   font-weight: var(--h3-weight) !important;
+  line-height: calc(var(--h3-size) * 1.3);
+  height: calc(var(--h3-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-3,
 .cm-editor .HyperMD-header-3 {
@@ -426,18 +406,14 @@ h3::before {
   content: "H3";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-3:hover::before,
 .workspace-leaf-content[data-type=markdown] h3:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-3::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-3::before,
@@ -462,14 +438,10 @@ h4 {
   font-weight: var(--h4-weight) !important;
   line-height: 1.5;
 }
-h4::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -478,6 +450,8 @@ h4::before {
   color: var(--h4-color) !important;
   font-size: var(--h4-size) !important;
   font-weight: var(--h4-weight) !important;
+  line-height: calc(var(--h4-size) * 1.3);
+  height: calc(var(--h4-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-4,
 .cm-editor .HyperMD-header-4 {
@@ -503,18 +477,14 @@ h4::before {
   content: "H4";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-4:hover::before,
 .workspace-leaf-content[data-type=markdown] h4:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-4::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-4::before,
@@ -539,14 +509,10 @@ h5 {
   font-weight: var(--h5-weight) !important;
   line-height: 1.5;
 }
-h5::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -555,6 +521,8 @@ h5::before {
   color: var(--h5-color) !important;
   font-size: var(--h5-size) !important;
   font-weight: var(--h5-weight) !important;
+  line-height: calc(var(--h5-size) * 1.3);
+  height: calc(var(--h5-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-5,
 .cm-editor .HyperMD-header-5 {
@@ -580,18 +548,14 @@ h5::before {
   content: "H5";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-5:hover::before,
 .workspace-leaf-content[data-type=markdown] h5:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-5::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-5::before,
@@ -616,14 +580,10 @@ h6 {
   font-weight: var(--h6-weight) !important;
   line-height: 1.5;
 }
-h6::before {
-  top: -13px;
-}
 
 .markdown-preview-view .cm-formatting-header,
 .cm-editor .cm-formatting-header {
   filter: grayscale(70%);
-  font-size: 1.2rem !important;
   font-family: var(--font-monospace);
   font-weight: 400 !important;
 }
@@ -632,6 +592,8 @@ h6::before {
   color: var(--h6-color) !important;
   font-size: var(--h6-size) !important;
   font-weight: var(--h6-weight) !important;
+  line-height: calc(var(--h6-size) * 1.3);
+  height: calc(var(--h6-size) * 1.3);
 }
 .markdown-preview-view .HyperMD-header-6,
 .cm-editor .HyperMD-header-6 {
@@ -657,18 +619,14 @@ h6::before {
   content: "H6";
   opacity: 0;
   transition: var(--transition);
+  top: 48%;
+  transform: translateY(-50%);
+  left: -20px;
 }
 .is-live-preview .HyperMD-header-6:hover::before,
 .workspace-leaf-content[data-type=markdown] h6:hover::before {
   transition: var(--transition);
   opacity: 0.8;
-}
-
-.is-live-preview .HyperMD-header-6::before {
-  position: absolute;
-  top: 48%;
-  transform: translateY(-50%);
-  left: -22px;
 }
 
 .theme-light .is-live-preview .HyperMD-header-6::before,
@@ -708,9 +666,13 @@ h2::after,
   width: 100%;
   background-image: linear-gradient(to right, var(--h2-color) 40%, transparent 60%);
   position: absolute;
-  bottom: 4px;
+  bottom: -2px;
   left: 0;
   border-radius: 99px;
+}
+
+.HyperMD-header-2::after {
+  bottom: 4px;
 }
 
 .modal-container h2::after {
@@ -729,7 +691,6 @@ h6 {
   font-variant: small-caps;
 }
 
-.markdown-rendered blockquote,
 .markdown-preview-view blockquote {
   background-color: var(--background-primary-alt);
   border: none !important;
@@ -737,34 +698,35 @@ h6 {
   border-radius: 2px;
   -webkit-margin-end: 0;
           margin-inline-end: 0;
+  position: relative;
   margin-left: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
 }
 
-.HyperMD-quote {
+.is-live-preview .HyperMD-quote {
   border-color: var(--quote) !important;
+  border-left-width: 8px !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
+  padding-left: 50px !important;
 }
 
-/* get more snippets at https://github.com/kmaasrud/awesome-obsidian */
-/* author: https://forum.obsidian.md/u/Thery/summary */
-/* source: https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39 */
-blockquote:before {
+blockquote:before, .is-live-preview div:not(.HyperMD-quote) + .HyperMD-quote:not(.cm-active) > .cm-formatting.cm-formatting-quote.cm-quote::before,
+.is-live-preview .cm-content :first-child:is(.HyperMD-quote):not(.cm-active) > .cm-formatting.cm-formatting-quote.cm-quote::before {
+  position: absolute;
   font: 14px/20px italic Times, serif;
   content: "“";
-  font-size: 3em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
-  margin-left: -10px;
+  font-size: 4em;
+  left: -26px;
+  top: 24px;
 }
 
-blockquote p {
-  display: inline;
+.is-live-preview .HyperMD-callout .cm-quote::before {
+  content: none !important;
 }
 
 .cm-embed-block table,
@@ -879,18 +841,31 @@ ul > li > ul > li ul > li {
   font-family: var(--font-monospace);
 }
 
-.hr.cm-line::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  border-top: var(--hr);
-  border-bottom: var(--hr);
+.markdown-preview-view hr,
+.is-live-preview hr {
+  overflow: visible;
+  line-height: 0;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, transparent 0, var(--text-accent) 46%, transparent 46%, transparent 54%, var(--text-accent) 54%, transparent 100%) 1;
+     border-image: linear-gradient(to right, transparent 0, var(--text-accent) 46%, transparent 46%, transparent 54%, var(--text-accent) 54%, transparent 100%) 1;
+}
+.markdown-preview-view hr::after,
+.is-live-preview hr::after {
+  content: "🌟";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.markdown-preview-view hr {
-  margin: 15px auto;
-  border-top: var(--hr);
-  border-bottom: var(--hr);
+.markdown-preview-view hr::after {
+  font-size: 1rem;
+  position: relative;
 }
 
 .markdown-preview-view a.tag {
@@ -915,8 +890,6 @@ ul > li > ul > li ul > li {
 .cm-line .cm-hashtag-end {
   font-family: var(--font-interface) !important;
   background-color: var(--tag);
-  padding-top: 2px;
-  padding-bottom: 2px;
   text-decoration: none !important;
   border: 2px solid var(--text-accent);
 }
@@ -971,7 +944,7 @@ ul > li > ul > li ul > li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  right: 40px;
+  right: 34px;
   left: unset;
   font-size: 1rem;
   top: 6px;
@@ -981,6 +954,11 @@ ul > li > ul > li ul > li {
   border-radius: 8px;
   transition: var(--transition);
   cursor: pointer;
+}
+.internal-embed.is-loaded .markdown-embed-title:hover {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: inherit !important;
 }
 .internal-embed.is-loaded:hover {
   transition: var(--transition);
@@ -1000,7 +978,6 @@ ul > li > ul > li ul > li {
 .internal-embed.is-loaded .markdown-embed,
 .internal-embed.is-loaded .file-embed {
   border-radius: 8px;
-  box-shadow: var(--shadow-outset);
   transition: var(--transition);
   margin: 0;
   padding: 0;
@@ -1010,11 +987,21 @@ ul > li > ul > li ul > li {
 .internal-embed.is-loaded .file-embed .markdown-preview-view {
   padding: 10px 20px;
 }
-.internal-embed.is-loaded img:hover,
+.internal-embed.is-loaded .markdown-embed,
+.internal-embed.is-loaded .file-embed {
+  margin: 8px 0;
+  border: 3px solid;
+  border-color: var(--file-item-bg);
+}
 .internal-embed.is-loaded .markdown-embed:hover,
 .internal-embed.is-loaded .file-embed:hover {
-  box-shadow: 0 0 6px 0 #aaa;
-  transition: var(--transition);
+  border-color: var(--text-accent);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2705882353), -2px -2px 4px rgba(255, 255, 255, 0.2705882353);
+  transform: translateY(-1px);
+}
+.internal-embed.is-loaded img:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2705882353), -2px -2px 4px rgba(255, 255, 255, 0.2705882353);
+  transform: translateY(-1px);
 }
 .theme-light img,
 .theme-light .markdown-embed,
@@ -1031,6 +1018,9 @@ ul > li > ul > li ul > li {
 .internal-embed.is-loaded .markdown-embed-heading .markdown-preview-section > div:nth-child(2) {
   display: none;
 }
+.internal-embed.is-loaded svg.link {
+  transform: rotate(90deg) translateX(-1px);
+}
 
 .cm-active.cm-line {
   background-color: var(--highlight-line) !important;
@@ -1045,6 +1035,7 @@ mark,
 .cm-s-obsidian span.cm-highlight {
   background-color: var(--highlight-search) !important;
   color: #fff !important;
+  border-radius: 2px;
 }
 .cm-s-obsidian span.obsidian-search-match-highlight *,
 .search-result-file-matched-text *,
@@ -1059,7 +1050,7 @@ mark *,
 .app-container .workspace .cm-editor .is-flashing,
 .search-highlight div.is-active {
   font-weight: var(--font-bold);
-  transition: 0.5s all ease-out;
+  transition: 0.3s all ease-out;
   background-color: unset !important;
   border: 2px solid var(--highlight-search);
   border-radius: 4px;

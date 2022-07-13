@@ -1,7 +1,6 @@
 [
   "file-explorer",
   "global-search",
-  "switcher",
   "graph",
   "backlink",
   "page-preview",
@@ -11,7 +10,6 @@
   "outline",
   "word-count",
   "slides",
-  "open-with-default-app",
   "workspaces",
   "file-recovery"
 ]

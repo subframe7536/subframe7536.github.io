@@ -266,7 +266,6 @@
           margin-right: 4px;
         }
       }
-
       .month {
         font-weight: bold;
         color: var(--interactive-accent);
@@ -275,10 +274,9 @@
   }
 
   thead {
-    & * {
+    * {
       font-size: 0.7rem;
     }
-
     border-bottom: 2px solid var(--text-accent);
   }
 
@@ -453,21 +451,44 @@
       bottom: 0;
       right: 0;
     }
-    background-image: linear-gradient(
-      160deg,
-      #3f9bc599,
-      #26a6c999,
-      #02b2ca99,
-      #00bcc799,
-      #1cc6c199,
-      #3bccbd99,
-      #51d2b999,
-      #65d7b599,
-      #76dbb599,
-      #86dfb699,
-      #94e3b799,
-      #a2e7b999
-    );
+    @at-root .theme-light
+        .workspace-leaf-content[data-type='memos_view']
+        .view-content {
+      background-image: linear-gradient(
+        160deg,
+        #3f9bc599,
+        #26a6c999,
+        #02b2ca99,
+        #00bcc799,
+        #1cc6c199,
+        #3bccbd99,
+        #51d2b999,
+        #65d7b599,
+        #76dbb599,
+        #86dfb699,
+        #94e3b799,
+        #a2e7b999
+      );
+    }
+    @at-root .theme-dark
+        .workspace-leaf-content[data-type='memos_view']
+        .view-content {
+      background-image: linear-gradient(
+        160deg,
+        #3f9bc566,
+        #26a6c966,
+        #02b2ca66,
+        #00bcc766,
+        #1cc6c166,
+        #3bccbd66,
+        #51d2b966,
+        #65d7b566,
+        #76dbb566,
+        #86dfb666,
+        #94e3b766,
+        #a2e7b966
+      ) !important;
+    }
     .tag-span {
       font-family: var(--font-monospace) !important;
       border-radius: 12px !important;
@@ -484,44 +505,33 @@
       }
     }
     a {
-      border-radius: 6px;
+      border-radius: 4px;
+      color: var(--c);
+      padding: 0 2px;
+      border: 2px solid var(--c);
+      box-sizing: border-box;
+      text-decoration: none;
+      // box-shadow: 1px 1px 4px #00000045, -1px -1px 4px #ffffff45;
+      background: conic-gradient(
+            from -135deg at 100% 50%,
+            var(--c) 90deg,
+            #0000 0
+          ) -2px var(--p, 1%) / var(--s, 0%) 200% no-repeat,
+        conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0)
+          calc(100% + 2px) var(--p, 1%) / var(--s, 0%) 200% no-repeat !important;
+      transition: 0.3s ease-in-out, background-position 0s, padding 0s,
+        border-radius 0s, border 0s;
       &:hover {
-        background-color: var(--internal-link);
+        --p: 96%;
+        --s: calc(50% + 0.9em);
+        color: var(--background-primary) !important;
+        box-shadow: 3px 3px 6px #00000045, -3px -3px 6px #ffffff45;
       }
       &.link {
-        color: var(--external-link);
-        position: relative;
-        transition: var(--transition);
-
-        &,
-        & * {
-          z-index: 1;
-        }
-
-        &:before {
-          content: '';
-          position: absolute;
-          bottom: 0px;
-          width: 0;
-          right: 0;
-          height: 100%;
-          background: var(--external-link) !important;
-          transition: all 0.3s;
-          border-radius: 4px;
-          transform-origin: right;
-          z-index: -1;
-        }
-
-        &:hover {
-          color: var(--background-primary) !important;
-          background: var(--external-link) !important;
-          transition: var(--transition);
-          &:before {
-            width: 100%;
-            left: 0;
-            transform-origin: left;
-          }
-        }
+        --c: var(--external-link);
+      }
+      &.internal-link {
+        --c: var(--internal-link);
       }
     }
     .icon-text {
@@ -561,7 +571,7 @@
             p:first-child {
               position: absolute;
               top: 12px;
-              left: 146px;
+              right: 36px !important;
               width: fit-content;
             }
           }
@@ -571,7 +581,7 @@
               p:first-child {
             position: absolute;
             top: 12px;
-            left: 146px;
+            right: 36px !important;
             width: fit-content;
           }
         }
@@ -769,6 +779,11 @@
     ol,
     ul {
       margin: 0;
+    }
+    .frontmatter,
+    .frontmatter-container,
+    .obsidian-metatable {
+      display: none;
     }
   }
   @for $a from 1 to 6 {
@@ -1101,3 +1116,16 @@
     }
   }
 }
+//file-explorer-toolbar
+.workspace-leaf-content[data-type='file-explorer'] .is-flashing {
+  background-color: transparent !important;
+}
+// div.markdown-source-view ul.floating-toc > li {
+//   flex: none;
+//   background-color: transparent;
+//   border: 0px;
+// }
+// div.markdown-source-view ul.floating-toc {
+//   flex-wrap: unset;
+//   max-width: 100%;
+// }

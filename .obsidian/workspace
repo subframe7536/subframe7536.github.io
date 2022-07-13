@@ -4,13 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "595b11d5e542e6e5",
+        "id": "b7f8107773b5be3a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/考研/829/操作系统/1.概述.md",
+            "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
             "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "1c3b8c3a38a29a61",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/BackEnd/Spring/SpringMVC.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -40,7 +52,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/考研/829/操作系统/1.概述.md"
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md"
               }
             }
           },
@@ -97,7 +109,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/考研/829/操作系统/1.概述.md",
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -140,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/考研/829/操作系统/1.概述.md",
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,17 +186,17 @@
     "width": 295.6000061035156,
     "collapsed": true
   },
-  "active": "595b11d5e542e6e5",
+  "active": "43a87de856a8843e",
   "lastOpenFiles": [
-    "docs/考研/829/操作系统/1.概述.md",
-    "日记/2022-07-12.md",
+    "docs/BackEnd/Spring/SpringMVC.md",
+    "docs/BackEnd/Spring/content/静态资源访问.md",
     "docs/考研/数学/线代/5.特征值与特征向量.md",
-    "杂/提示框callout.md",
+    "日记/2022-07-13.md",
     "杂/好词句.md",
-    "杂/浏览器.md",
-    "杂/编码猜测.md",
-    "杂/大三上寒假计划.md",
-    "杂/75v3键盘快捷键.md",
-    "_templates/template-daily.md"
+    "杂/obsidian使用记录.md",
+    "杂/software.md",
+    "杂/vscode.md",
+    "杂/windows功能.md",
+    "docs/课程笔记/English.md"
   ]
 }

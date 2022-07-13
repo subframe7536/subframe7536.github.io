@@ -23,5 +23,6 @@
   "spellcheck": false,
   "spellcheckLanguages": [],
   "trashOption": "local",
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "fileSortOrder": "alphabetical"
 }

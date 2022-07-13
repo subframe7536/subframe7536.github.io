@@ -2,7 +2,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "calendar",
-  "quick-explorer",
   "obsidian-day-planner",
   "obsidian-pandoc",
   "obsidian-metatable",
@@ -17,5 +16,7 @@
   "obsidian-excel-to-markdown-table",
   "oz-clear-unused-images",
   "obsidian-paste-image-rename",
-  "obsidian-memos"
+  "obsidian-memos",
+  "obsidian-file-explorer-toolbar",
+  "omnisearch"
 ]

@@ -400,8 +400,15 @@
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0;
+}
+.theme-light .workspace-leaf-content[data-type=memos_view] .view-content {
   background-image: linear-gradient(160deg, rgba(63, 155, 197, 0.6), rgba(38, 166, 201, 0.6), rgba(2, 178, 202, 0.6), rgba(0, 188, 199, 0.6), rgba(28, 198, 193, 0.6), rgba(59, 204, 189, 0.6), rgba(81, 210, 185, 0.6), rgba(101, 215, 181, 0.6), rgba(118, 219, 181, 0.6), rgba(134, 223, 182, 0.6), rgba(148, 227, 183, 0.6), rgba(162, 231, 185, 0.6));
 }
+
+.theme-dark .workspace-leaf-content[data-type=memos_view] .view-content {
+  background-image: linear-gradient(160deg, rgba(63, 155, 197, 0.4), rgba(38, 166, 201, 0.4), rgba(2, 178, 202, 0.4), rgba(0, 188, 199, 0.4), rgba(28, 198, 193, 0.4), rgba(59, 204, 189, 0.4), rgba(81, 210, 185, 0.4), rgba(101, 215, 181, 0.4), rgba(118, 219, 181, 0.4), rgba(134, 223, 182, 0.4), rgba(148, 227, 183, 0.4), rgba(162, 231, 185, 0.4)) !important;
+}
+
 .workspace-leaf-content[data-type=memos_view] .view-content .tag-span {
   font-family: var(--font-monospace) !important;
   border-radius: 12px !important;
@@ -418,41 +425,26 @@
   color: var(--background-primary) !important;
 }
 .workspace-leaf-content[data-type=memos_view] .view-content a {
-  border-radius: 6px;
+  border-radius: 4px;
+  color: var(--c);
+  padding: 0 2px;
+  border: 2px solid var(--c);
+  box-sizing: border-box;
+  text-decoration: none;
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 1%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 1%)/var(--s, 0%) 200% no-repeat !important;
+  transition: 0.3s ease-in-out, background-position 0s, padding 0s, border-radius 0s, border 0s;
 }
 .workspace-leaf-content[data-type=memos_view] .view-content a:hover {
-  background-color: var(--internal-link);
+  --p: 96%;
+  --s: calc(50% + 0.9em);
+  color: var(--background-primary) !important;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2705882353), -3px -3px 6px rgba(255, 255, 255, 0.2705882353);
 }
 .workspace-leaf-content[data-type=memos_view] .view-content a.link {
-  color: var(--external-link);
-  position: relative;
-  transition: var(--transition);
+  --c: var(--external-link);
 }
-.workspace-leaf-content[data-type=memos_view] .view-content a.link, .workspace-leaf-content[data-type=memos_view] .view-content a.link * {
-  z-index: 1;
-}
-.workspace-leaf-content[data-type=memos_view] .view-content a.link:before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  width: 0;
-  right: 0;
-  height: 100%;
-  background: var(--external-link) !important;
-  transition: all 0.3s;
-  border-radius: 4px;
-  transform-origin: right;
-  z-index: -1;
-}
-.workspace-leaf-content[data-type=memos_view] .view-content a.link:hover {
-  color: var(--background-primary) !important;
-  background: var(--external-link) !important;
-  transition: var(--transition);
-}
-.workspace-leaf-content[data-type=memos_view] .view-content a.link:hover:before {
-  width: 100%;
-  left: 0;
-  transform-origin: left;
+.workspace-leaf-content[data-type=memos_view] .view-content a.internal-link {
+  --c: var(--internal-link);
 }
 .workspace-leaf-content[data-type=memos_view] .view-content .icon-text {
   font-family: var(--font-monospace) !important;
@@ -492,7 +484,7 @@
   .workspace-leaf-content[data-type=memos_view] .view-content .content-wrapper .memolist-wrapper .memo-content-text p:first-child {
     position: absolute;
     top: 12px;
-    left: 146px;
+    right: 36px !important;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -501,7 +493,7 @@
 .workspace-leaf-content[data-type=memos_view]:not(.mobile-view) .memolist-wrapper .memo-content-text p:first-child {
   position: absolute;
   top: 12px;
-  left: 146px;
+  right: 36px !important;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -689,6 +681,11 @@
 .reveal section ol,
 .reveal section ul {
   margin: 0;
+}
+.reveal section .frontmatter,
+.reveal section .frontmatter-container,
+.reveal section .obsidian-metatable {
+  display: none;
 }
 .reveal h1 {
   text-transform: none;
@@ -1243,4 +1240,8 @@
           margin-block-start: 0;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
+}
+
+.workspace-leaf-content[data-type=file-explorer] .is-flashing {
+  background-color: transparent !important;
 }

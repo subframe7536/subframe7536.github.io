@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-file-explorer-toolbar",
+  "name": "File Explorer Toolbar",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.11",
+  "description": "文件资源管理器工具栏增强.",
+  "author": "hiswing",
+  "authorUrl": "https://www.jiangguo.net/",
+  "isDesktopOnly": false
+}

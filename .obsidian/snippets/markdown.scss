@@ -51,7 +51,7 @@
   --quote: var(--file-item-bg);
   --strong: var(--red-hover);
   --thead: #48576993;
-  --hr: 2px dashed var(--text-accent);
+  // --hr: 2px dashed var(--text-accent);
   --tag: var(--thead);
   --highlight-line: #8297bb16;
   --highlight-search: #e977428c;
@@ -71,6 +71,7 @@
   .markdown-embed-content {
     border-radius: 8px;
     max-height: unset;
+    padding: 12px 0 !important;
     .markdown-preview-view {
       background-image: none !important;
     }
@@ -135,6 +136,7 @@ body.print div .markdown-preview-view {
     padding: 10px 25px !important;
     max-width: 750px !important;
     min-height: 100% !important;
+    // z-index: -2;
   }
 }
 
@@ -146,9 +148,9 @@ body.print div .markdown-preview-view {
 //   transition-duration: 0.3s;
 //   transition-timing-function: ease-in-out;
 // }
-@mixin hover-anime($color) {
+@mixin hover-anime {
   // $transition: color, box-shadow;
-  --c: #{$color};
+  // --c: #{$color};
   // todo 预览模式单行，有bug
   // max-width: 90%;
   // height: 26px;
@@ -164,9 +166,8 @@ body.print div .markdown-preview-view {
   border-radius: 4px;
 
   padding: 0 2px;
-  border: 2px solid $color;
+  border: 2px solid var(--c);
   box-sizing: border-box;
-  box-shadow: 1px 1px 4px #00000045, -1px -1px 4px #ffffff45;
 
   //https://juejin.cn/post/7116545691312193543
   //不是很清楚-2px和calc(100% + 2px)是指那种属性...有大佬明白的话麻烦告知一下orz
@@ -207,7 +208,12 @@ body.print div .markdown-preview-view {
     // }
   }
 }
-
+.is-live-preview .cm-line .cm-hmd-internal-link:not(.cm-formatting),
+.markdown-preview-view .internal-link,
+.is-live-preview .cm-line .cm-link:not(.cm-formatting),
+.markdown-preview-view .external-link {
+  @include hover-anime;
+}
 //外部链接
 .cm-link {
   color: var(--external-link) !important;
@@ -225,12 +231,9 @@ body.print div .markdown-preview-view {
 span.external-link {
   display: none !important;
 }
-.is-live-preview,
-.markdown-preview-view {
-  .cm-line:not(.cm-active) .cm-link,
-  .external-link {
-    @include hover-anime(var(--external-link));
-  }
+.is-live-preview .cm-line .cm-link,
+.markdown-preview-view .external-link {
+  --c: var(--external-link);
 }
 
 //内部链接
@@ -246,19 +249,23 @@ span.external-link {
 .internal-link {
   padding: 0 4px;
 }
-.is-live-preview,
-.markdown-preview-view {
-  .cm-line:not(.cm-active) .cm-hmd-internal-link,
-  .internal-link {
-    @include hover-anime(var(--internal-link));
-  }
+.is-live-preview .cm-line .cm-hmd-internal-link,
+.markdown-preview-view .internal-link {
+  --c: var(--internal-link);
 }
 .cm-formatting-link,
 .cm-formatting-link-string,
 .cm-formatting-image {
   color: var(--link-formatting) !important;
   font-weight: var(--font-bold);
-  margin: 0 2px;
+  // margin: 0 2px;
+  & + .cm-hmd-internal-link,
+  & + .cm-link {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
 }
 
 //键盘
@@ -314,17 +321,13 @@ div[data-type='markdown'] {
     font-size: var(--h#{$i}-size) !important;
     font-weight: var(--h#{$i}-weight) !important;
     line-height: 1.5;
-
-    &::before {
-      top: -13px;
-    }
   }
 
   .markdown-preview-view,
   .cm-editor {
     .cm-formatting-header {
       filter: grayscale(70%);
-      font-size: 1.2rem !important;
+      // font-size: 1rem !important;
       font-family: var(--font-monospace);
       font-weight: 400 !important;
     }
@@ -333,6 +336,8 @@ div[data-type='markdown'] {
       color: var(--h#{$i}-color) !important;
       font-size: var(--h#{$i}-size) !important;
       font-weight: var(--h#{$i}-weight) !important;
+      line-height: calc(var(--h#{$i}-size) * 1.3);
+      height: calc(var(--h#{$i}-size) * 1.3);
     }
 
     .HyperMD-header-#{$i} {
@@ -362,6 +367,9 @@ div[data-type='markdown'] {
         content: 'H#{$i}';
         opacity: 0;
         transition: var(--transition);
+        top: calc(48%);
+        transform: translateY(-50%);
+        left: -20px;
       }
 
       &:hover::before {
@@ -370,12 +378,9 @@ div[data-type='markdown'] {
       }
     }
 
-    @at-root .is-live-preview .HyperMD-header-#{$i}::before {
-      position: absolute;
-      top: calc(48%);
-      transform: translateY(-50%);
-      left: -22px;
-    }
+    // @at-root .is-live-preview .HyperMD-header-#{$i}::before {
+    //   position: absolute;
+    // }
 
     @at-root .theme-light {
       .is-live-preview .HyperMD-header-#{$i}::before,
@@ -425,10 +430,13 @@ h2,
       transparent 60%
     );
     position: absolute;
-    bottom: 4px;
+    bottom: -2px;
     left: 0;
     border-radius: 99px;
   }
+}
+.HyperMD-header-2::after {
+  bottom: 4px;
 }
 
 // .modal-container h2::before,
@@ -448,52 +456,50 @@ h6 {
   font-variant: small-caps;
 }
 
-//==引用==
-//预览
-.markdown-rendered blockquote,
+//==引用 quote==
 .markdown-preview-view blockquote {
   background-color: var(--background-primary-alt);
   border: none !important;
   border-left: 8px solid var(--quote) !important;
   border-radius: 2px;
   margin-inline-end: 0;
-
+  position: relative;
   margin: {
     left: 0;
     top: 10px;
     bottom: 10px;
   }
-
   padding: {
-    top: 15px;
-    bottom: 15px;
-    left: 40px;
+    top: 5px;
+    bottom: 5px;
+    left: 50px;
   }
 }
-
-//编辑
-.HyperMD-quote {
+.is-live-preview .HyperMD-quote {
   border-color: var(--quote) !important;
-
+  border-left-width: 8px !important;
   padding: {
     top: 10px !important;
     bottom: 10px !important;
+    left: 50px !important;
   }
 }
-/* get more snippets at https://github.com/kmaasrud/awesome-obsidian */
-/* author: https://forum.obsidian.md/u/Thery/summary */
-/* source: https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39 */
-
-blockquote:before {
-  font: 14px/20px italic Times, serif;
-  content: '“';
-  font-size: 3em;
-  line-height: 0.1em;
-  vertical-align: -0.4em;
-  margin-left: -10px;
-}
-blockquote p {
-  display: inline;
+.is-live-preview {
+  div:not(.HyperMD-quote) + .HyperMD-quote:not(.cm-active),
+  .cm-content :first-child:is(.HyperMD-quote):not(.cm-active) {
+    @at-root blockquote:before,
+      & > .cm-formatting.cm-formatting-quote.cm-quote::before {
+      position: absolute;
+      font: 14px/20px italic Times, serif;
+      content: '“';
+      font-size: 4em;
+      left: -26px;
+      top: 24px;
+    }
+  }
+  .HyperMD-callout .cm-quote::before {
+    content: none !important;
+  }
 }
 //表格
 .cm-embed-block table,
@@ -526,7 +532,6 @@ blockquote p {
     }
   }
 }
-
 //列表
 
 ul,
@@ -631,19 +636,38 @@ ul > li > ul > li {
   }
 }
 
-//分割线
-.hr.cm-line::after {
-  content: '';
-  width: 100%;
-  height: 1px;
-  border-top: var(--hr);
-  border-bottom: var(--hr);
+.markdown-preview-view,
+.is-live-preview {
+  hr {
+    overflow: visible;
+    line-height: 0;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    // border-bottom: 2px solid;
+    border-width: 3px;
+    border-image: linear-gradient(
+        to right,
+        transparent 0,
+        var(--text-accent) 46%,
+        transparent 46%,
+        transparent 54%,
+        var(--text-accent) 54%,
+        transparent 100%
+      )
+      1;
+    &::after {
+      content: '🌟';
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
-
-.markdown-preview-view hr {
-  margin: 15px auto;
-  border-top: var(--hr);
-  border-bottom: var(--hr);
+.markdown-preview-view hr::after {
+  font-size: 1rem;
+  position: relative;
 }
 
 //标签
@@ -671,8 +695,8 @@ $radius: 999px;
   .cm-hashtag-end {
     font-family: var(--font-interface) !important;
     background-color: var(--tag);
-    padding-top: 2px;
-    padding-bottom: 2px;
+    // padding-top: 2px;
+    // padding-bottom: 2px;
     text-decoration: none !important;
     border: 2px solid var(--text-accent);
   }
@@ -732,7 +756,7 @@ $radius: 999px;
     position: absolute;
     z-index: 999;
     width: fit-content;
-    right: 40px;
+    right: 34px;
     left: unset;
     font-size: 1rem;
     top: 6px;
@@ -742,6 +766,11 @@ $radius: 999px;
     border-radius: 8px;
     transition: var(--transition);
     cursor: pointer;
+    &:hover {
+      box-shadow: none !important;
+      border: none !important;
+      background-color: inherit !important;
+    }
   }
 
   &:hover {
@@ -763,19 +792,31 @@ $radius: 999px;
   .markdown-embed,
   .file-embed {
     border-radius: 8px;
-    box-shadow: var(--shadow-outset);
     transition: var(--transition);
     margin: 0;
     padding: 0;
     .markdown-preview-view {
       padding: 10px 20px;
     }
+  }
+  .markdown-embed,
+  .file-embed {
+    margin: 8px 0;
+    border: 3px solid;
+    border-color: var(--file-item-bg);
     &:hover {
-      box-shadow: 0 0 6px 0 #aaa;
-      transition: var(--transition);
+      border-color: var(--text-accent);
+      box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #ffffff45;
+      transform: translateY(-1px);
     }
   }
-
+  img {
+    // box-shadow: var(--shadow-outset);
+    &:hover {
+      box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #ffffff45;
+      transform: translateY(-1px);
+    }
+  }
   @at-root .theme-light {
     img,
     .markdown-embed,
@@ -806,6 +847,9 @@ $radius: 999px;
   .markdown-embed-heading .markdown-preview-section > div:nth-child(2) {
     display: none;
   }
+  svg.link {
+    transform: rotate(90deg) translateX(-1px);
+  }
 }
 
 //==高亮==
@@ -824,7 +868,7 @@ mark,
 .cm-s-obsidian span.cm-highlight {
   background-color: var(--highlight-search) !important;
   color: #fff !important;
-
+  border-radius: 2px;
   * {
     color: #fff !important;
     background-color: transparent !important;
@@ -834,7 +878,7 @@ mark,
 .app-container .workspace .cm-editor .is-flashing,
 .search-highlight div.is-active {
   font-weight: var(--font-bold);
-  transition: 0.5s all ease-out;
+  transition: 0.3s all ease-out;
   background-color: unset !important;
   border: 2px solid var(--highlight-search);
   border-radius: 4px;

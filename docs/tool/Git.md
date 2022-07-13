@@ -1,7 +1,6 @@
-# Git
 > 版本管理、远程仓库、多分支工具
 
-### 初始化
+## 初始化
 1. [官网下载](https://git-scm.com/downloads)
 2. 开始 -> `Git` -> `Git Bash` 能打开说明成功
 3. 设置你的`name`和`email`
