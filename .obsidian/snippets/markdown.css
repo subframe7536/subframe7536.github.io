@@ -60,9 +60,6 @@
 .workspace-leaf-content[data-type=markdown] .markdown-embed-content .markdown-preview-view {
   background-image: none !important;
 }
-.workspace-leaf-content[data-type=markdown] .markdown-embed-content P:first-child {
-  margin-top: 10px !important;
-}
 
 .theme-light .workspace-leaf-content[data-type=empty] .view-content,
 .theme-light .markdown-preview-view,
