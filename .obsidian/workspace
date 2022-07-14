@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "1c3b8c3a38a29a61",
+        "id": "9d1b889df19b81b0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/BackEnd/Spring/SpringMVC.md",
-            "mode": "preview",
+            "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/BackEnd/Spring/SpringMVC.md"
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pip",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306
+    "width": 319.5
   },
   "right": {
     "id": "1a5a600bbc148501",
@@ -89,7 +89,7 @@
       {
         "id": "3e575f46c9d194d1",
         "type": "tabs",
-        "dimension": 48.828125,
+        "dimension": 62.71186440677966,
         "children": [
           {
             "id": "ff86cec1d93aa1e9",
@@ -97,7 +97,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/BackEnd/Spring/SpringMVC.md",
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -140,14 +140,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/BackEnd/Spring/SpringMVC.md",
+                "file": "docs/考研/数学/线代/5.特征值与特征向量.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
               }
             }
           }
@@ -157,7 +157,7 @@
       {
         "id": "1f9e3f3538ecebfb",
         "type": "tabs",
-        "dimension": 51.171875,
+        "dimension": 37.28813559322034,
         "children": [
           {
             "id": "871b2592944d764c",
@@ -174,17 +174,17 @@
     "width": 295.6000061035156,
     "collapsed": true
   },
-  "active": "1c3b8c3a38a29a61",
+  "active": "43a87de856a8843e",
   "lastOpenFiles": [
+    "日记/2022-07-14.md",
     "docs/考研/数学/线代/5.特征值与特征向量.md",
-    "docs/BackEnd/Spring/SpringMVC.md",
-    "docs/BackEnd/Spring/content/静态资源访问.md",
-    "日记/2022-07-13.md",
-    "杂/好词句.md",
-    "杂/obsidian使用记录.md",
-    "杂/software.md",
-    "杂/vscode.md",
-    "杂/windows功能.md",
-    "docs/课程笔记/English.md"
+    "docs/tool/LaTex.md",
+    "杂/字体.md",
+    "_templates/template-daily.md",
+    "杂/提示框callout.md",
+    "docs/考研/数学/线代/2.矩阵&秩.md",
+    "docs/考研/数学/线代/1.行列式.md",
+    "docs/考研/English/短语.md",
+    "docs/考研/English/生词.md"
   ]
 }

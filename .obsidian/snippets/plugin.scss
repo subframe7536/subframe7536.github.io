@@ -511,14 +511,13 @@
       border: 2px solid var(--c);
       box-sizing: border-box;
       text-decoration: none;
-      // box-shadow: 1px 1px 4px #00000045, -1px -1px 4px #ffffff45;
       background: conic-gradient(
             from -135deg at 100% 50%,
             var(--c) 90deg,
             #0000 0
-          ) -2px var(--p, 1%) / var(--s, 0%) 200% no-repeat,
+          ) -2px var(--p, 2%) / var(--s, 0%) 200% no-repeat,
         conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0)
-          calc(100% + 2px) var(--p, 1%) / var(--s, 0%) 200% no-repeat !important;
+          calc(100% + 2px) var(--p, 2%) / var(--s, 0%) 200% no-repeat !important;
       transition: 0.3s ease-in-out, background-position 0s, padding 0s,
         border-radius 0s, border 0s;
       &:hover {
@@ -565,7 +564,7 @@
         }
         .memo-content-text {
           * {
-            line-height: 1.4rem;
+            line-height: 1.6rem;
           }
           @media screen and (min-width: 550px) {
             p:first-child {

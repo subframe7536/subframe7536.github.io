@@ -431,7 +431,7 @@
   border: 2px solid var(--c);
   box-sizing: border-box;
   text-decoration: none;
-  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 1%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 1%)/var(--s, 0%) 200% no-repeat !important;
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, rgba(0, 0, 0, 0) 0) -2px var(--p, 2%)/var(--s, 0%) 200% no-repeat, conic-gradient(from -135deg at 1.2em 50%, rgba(0, 0, 0, 0) 90deg, var(--c) 0) calc(100% + 2px) var(--p, 2%)/var(--s, 0%) 200% no-repeat !important;
   transition: 0.3s ease-in-out, background-position 0s, padding 0s, border-radius 0s, border 0s;
 }
 .workspace-leaf-content[data-type=memos_view] .view-content a:hover {
@@ -478,7 +478,7 @@
   margin-bottom: 6px;
 }
 .workspace-leaf-content[data-type=memos_view] .view-content .content-wrapper .memolist-wrapper .memo-content-text * {
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 @media screen and (min-width: 550px) {
   .workspace-leaf-content[data-type=memos_view] .view-content .content-wrapper .memolist-wrapper .memo-content-text p:first-child {

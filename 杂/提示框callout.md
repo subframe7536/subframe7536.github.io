@@ -3,7 +3,7 @@
 ## 调用办法
 `ctrl+p`  输入 callout 即可自动输入模板
 ### 视频教程
-[告别单调的Obsidian，Ob的版面也可以丰富起来！ (bilibili.com)](https://www.bilibili.com/video/BV1G5411U7m8/)
+[告别单调的Obsidian (bilibili.com)](https://www.bilibili.com/video/BV1G5411U7m8/)
 
 [[test]]
 

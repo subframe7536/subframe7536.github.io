@@ -12,7 +12,7 @@
   --interactive-accent-rgb: 72, 148, 235 !important;
   --interactive-accent-hover: #4894eb;
   --background-primary: #fefefe;
-  --background-primary-alt: #f4f4f4;
+  --background-primary-alt: #f3f3f3;
   --background-modifier-cover: #00000099;
   --highlight-mix-blend-mode: normal !important;
   --language-title: #4d9ddf;
@@ -337,6 +337,7 @@ body .workspace .empty-state-container .empty-state-close-button {
 
 .workspace-leaf-resize-handle {
   background-color: var(--background-secondary-alt);
+  border-color: var(--background-secondary-alt);
 }
 .workspace-leaf-resize-handle:hover {
   background-color: var(--text-accent);
@@ -406,7 +407,7 @@ body .workspace .empty-state-container .empty-state-close-button {
   margin-top: 0.1px;
 }
 .nav-files-container .nav-folder-children .nav-folder-children {
-  margin-left: 18px;
+  margin-left: 20px;
   padding-left: 0;
   border-radius: 0px;
   transition: all 0.2s ease-in;
@@ -425,12 +426,12 @@ body .workspace .empty-state-container .empty-state-close-button {
   background-color: #fff;
 }
 .nav-files-container .nav-file {
-  margin-left: 8px;
+  margin-left: 6px;
 }
 .nav-files-container .nav-file .nav-file-title {
   position: relative;
   border-radius: 4px;
-  margin-left: 0;
+  margin-left: 1px;
   padding-left: 3px;
   width: calc(100% - 8px);
 }
@@ -456,17 +457,26 @@ body .workspace .empty-state-container .empty-state-close-button {
 .nav-files-container .nav-file .nav-file-title .nav-file-tag + .nav-file-title-content {
   padding-left: 1px;
 }
+.nav-files-container .nav-file.has-focus {
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  background-color: transparent !important;
+}
 .nav-files-container .nav-folder .nav-folder-title {
   position: relative;
   padding-left: 22px;
   width: calc(100% - 16px);
+  margin: 1px auto;
   margin-left: 8px;
-  padding-left: 21px;
+  padding-left: 23px;
   font-weight: var(--font-bold);
   color: var(--text-normal);
 }
 .nav-files-container .nav-folder .nav-folder-title:hover {
   background-color: var(--fold-item-bg);
+}
+.nav-files-container .nav-folder .nav-folder-title-content {
+  padding: 2px 6px;
 }
 .nav-files-container .nav-folder .nav-folder-title .nav-folder-collapse-indicator {
   margin-left: -18px;
@@ -477,6 +487,13 @@ body .workspace .empty-state-container .empty-state-close-button {
   box-shadow: var(--shadow-inset);
   color: var(--text-normal);
 }
+.nav-files-container .nav-folder .nav-folder-title.has-active-menu {
+  background-color: var(--fold-item-bg) !important;
+  box-shadow: var(--shadow-inset) !important;
+  color: var(--text-normal) !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
 .nav-files-container .nav-folder-title,
 .nav-files-container .nav-file-title {
   line-height: 1.5rem;
@@ -484,14 +501,6 @@ body .workspace .empty-state-container .empty-state-close-button {
   border: 1px;
   padding: 0;
   border-radius: 4px;
-}
-.nav-files-container .nav-folder-title.is-being-dragged,
-.nav-files-container .nav-file-title.is-being-dragged {
-  color: var(--background-primary);
-}
-.nav-files-container .nav-folder-title.is-being-dragged .nav-file-title-content::before,
-.nav-files-container .nav-file-title.is-being-dragged .nav-file-title-content::before {
-  background-color: var(--background-primary);
 }
 .nav-files-container .nav-folder-title:hover,
 .nav-files-container .nav-file-title:hover {
@@ -693,21 +702,29 @@ body .workspace .empty-state-container .empty-state-close-button {
   border-bottom: 2px solid var(--background-secondary-alt);
 }
 .titlebar .titlebar-text {
-  font-weight: var(--font-bold);
-  font-size: 0.8rem;
-  color: var(--text-normal) !important;
   line-height: var(--titlebar-height);
+  visibility: hidden;
 }
-@media screen and (max-width: 1280px) {
-  .titlebar .titlebar-text {
-    display: none;
-  }
+.titlebar .titlebar-text::before {
+  color: #000 !important;
+  content: "MarkdownNote";
+  position: absolute;
+  font-weight: var(--font-bold);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -44%);
+  visibility: visible;
 }
 .titlebar .titlebar-button-container {
   color: var(--text-normal) !important;
 }
 .titlebar .titlebar-button-container.mod-right {
   transform: translateY(1px);
+}
+.titlebar .titlebar-button-container.mod-left > div {
+  margin: 5px;
 }
 .titlebar .titlebar-button-container > div {
   margin: 4px;
@@ -785,8 +802,11 @@ body .workspace .empty-state-container .empty-state-close-button {
   border-top: 2px solid var(--background-secondary-alt);
   padding: 0 12px;
 }
-.status-bar .status-bar-item {
+.status-bar-item {
   padding: 0 8px;
+}
+.status-bar-item.plugin-editor-status svg {
+  transform: translateY(2px);
 }
 
 * ::-webkit-scrollbar-thumb {
@@ -797,7 +817,7 @@ body .workspace .empty-state-container .empty-state-close-button {
   border: 3px transparent solid !important;
 }
 * ::-webkit-scrollbar-thumb:hover {
-  border-width: 1px !important;
+  border-width: 0px !important;
   background-color: var(--blue-light) !important;
   -webkit-transition: var(--transition) !important;
   transition: var(--transition) !important;
@@ -843,9 +863,14 @@ body .workspace .empty-state-container .empty-state-close-button {
 }
 .modal-container .modal.mod-settings {
   width: 60vw;
+  min-width: 600px;
 }
 .modal-container .modal.mod-settings .vertical-tab-header {
   flex: 0 0 15vw;
+  min-width: 180px;
+}
+.modal-container .modal.mod-settings .vertical-tab-content-container {
+  padding-bottom: 4px;
 }
 .modal-container .modal .modal-content .vertical-tab-header {
   background-color: var(--background-secondary);
@@ -929,6 +954,13 @@ body .workspace .empty-state-container .empty-state-close-button {
 }
 .modal-container .modal .modal-content .community-plugin-search .search-input-container {
   width: 70%;
+}
+.modal-container .modal .modal-content .community-plugin-search .search-input-container .search-input-clear-button:before {
+  line-height: 28px;
+}
+.modal-container .modal .modal-content .community-plugin-info {
+  margin-top: 36px;
+  padding-top: 12px;
 }
 .theme-dark .prompt {
   border: var(--border);

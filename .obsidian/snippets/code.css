@@ -29,24 +29,6 @@ pre[class*=language-] {
   position: relative;
   border-radius: 8px !important;
 }
-pre[class*=language-] .copy-code-button {
-  letter-spacing: 3px;
-  padding: 0 !important;
-  padding-left: 5px !important;
-  border-radius: 5px !important;
-  width: 50px;
-  height: 1.6rem;
-  line-height: 1.6rem;
-  background-color: var(--file-item-bg);
-  transition: var(--transition);
-}
-pre[class*=language-] .copy-code-button:hover {
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-  background-color: var(--file-item-selected-bg);
-  color: #ddd;
-  filter: var(--hover);
-}
 pre[class*=language-]::before {
   content: "未知语言";
   font-family: var(--font-text);
@@ -58,6 +40,25 @@ pre[class*=language-]::before {
   right: 60px;
   top: 9px;
   color: #eee;
+}
+
+body .app-container .copy-code-button {
+  letter-spacing: 3px;
+  padding: 0 !important;
+  padding-left: 5px !important;
+  border-radius: 5px !important;
+  width: 50px;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  background-color: var(--file-item-bg);
+  transition: var(--transition);
+}
+body .app-container .copy-code-button:hover {
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  background-color: var(--file-item-selected-bg);
+  color: #ddd;
+  filter: var(--hover);
 }
 
 pre[class~=language-c]::before {
