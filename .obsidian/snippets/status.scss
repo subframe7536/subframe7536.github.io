@@ -154,6 +154,7 @@ body {
     //侧边框
     @at-root body {
       .workspace-ribbon {
+        height: 100%;
         .workspace-ribbon-collapse-btn {
           margin-top: 0 !important;
           display: flex;
@@ -165,34 +166,37 @@ body {
           background-color: var(--file-item-bg);
           transition: 300ms ease-in-out;
           border-radius: 7px;
-          padding: 20px 0 20px 3px;
           width: 32px;
+          z-index: 999 !important;
         }
         &.mod-right {
           margin-right: -18px;
           .workspace-ribbon-collapse-btn {
             right: -6px;
             margin-right: -15px;
+            padding: 20px 0 20px 7px;
             &:hover {
               margin-right: 0px;
             }
           }
           &.side-dock-ribbon.is-collapsed .workspace-ribbon-collapse-btn {
-            padding: 20px 0 20px 7px;
+            padding: 20px 0 20px 8px;
           }
         }
         &.mod-left {
           margin-left: -18px;
           .workspace-ribbon-collapse-btn {
+            top: var(--titlebar-height);
             left: -6px;
             margin-left: -15px;
             justify-content: center;
+            padding: 20px 0 20px 3px;
             &:hover {
               margin-left: 0px;
             }
           }
           &.side-dock-ribbon.is-collapsed .workspace-ribbon-collapse-btn {
-            padding: 20px 0 20px 0px;
+            padding: 20px 0;
           }
           .side-dock-actions {
             display: none;
@@ -200,23 +204,33 @@ body {
           .side-dock-settings {
             position: absolute;
             margin-bottom: 0;
-            z-index: 99;
+            // z-index: 99;
             padding: 0;
-            padding-top: 1px;
-            bottom: -1px;
+            top: 0px;
             left: 0;
+            height: calc(var(--titlebar-height) - 2px);
+            width: calc(var(--titlebar-height) + 12px);
             background-color: var(--background-primary-alt);
             .side-dock-ribbon-action {
               padding: 6px 0;
               display: none;
               &[aria-label='设置'] {
-                display: block;
-                padding: 0;
-                height: 20px;
-                opacity: 0.2;
+                display: unset;
+                position: relative;
+                padding: calc(var(--titlebar-height) / 6)
+                  calc(var(--titlebar-height) - 10px);
+                svg {
+                  position: absolute;
+                  top: 50%;
+                  transform: translate(-56%, -44%);
+                  height: calc(var(--titlebar-height) - 8px);
+                  width: calc(var(--titlebar-height) - 8px);
+                }
                 &:hover {
-                  opacity: 1;
-                  transition: var(--transition);
+                  background-color: var(--text-accent);
+                  svg {
+                    background-color: var(--background-primary);
+                  }
                 }
               }
             }
@@ -396,8 +410,8 @@ body {
 
 // hr
 .workspace-split > .workspace-leaf-resize-handle {
-  height: calc(100% - 20px) !important;
-  top: 0 !important;
+  height: calc(100% - var(--titlebar-height)) !important;
+  bottom: 0 !important;
   width: 4px !important;
 }
 
@@ -431,7 +445,7 @@ body {
 
   .workspace-leaf {
     border-radius: 8px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   //全局搜索
   .search-input-container {
@@ -857,23 +871,42 @@ button {
 
 //==========================================================
 //应用的标题栏
+body {
+  padding: 0 !important;
+}
+.workspace-split {
+  &.mod-left-split,
+  &.mod-right-split,
+  &.mod-root {
+    padding-top: var(--titlebar-height);
+  }
+}
+.side-dock-ribbon.mod-right {
+  margin-top: var(--titlebar-height);
+}
 .titlebar {
   background: var(--background-secondary);
   height: var(--titlebar-height) !important;
   box-sizing: border-box;
   border-bottom: 2px solid var(--background-secondary-alt);
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - 28px);
+  left: unset;
+  right: 0;
+  // .titlebar-inner {
+  //   display: flex;
+  // }
 
   .titlebar-text {
+    // width: fit-content !important;
     line-height: var(--titlebar-height);
-    // @media screen and (max-width: 1280px) {
-    // display: none;
-    // }
+    padding: 0;
     visibility: hidden;
     &::before {
       color: #000 !important;
       content: 'MarkdownNote';
       position: absolute;
-      // font-size: 1rem;
       font: {
         weight: var(--font-bold);
         size: 0.9rem;
@@ -888,20 +921,26 @@ button {
 
   .titlebar-button-container {
     color: var(--text-normal) !important;
-
-    &.mod-right {
-      transform: translateY(1px);
+    line-height: var(--titlebar-height);
+    height: var(--titlebar-height);
+    top: 0 !important;
+    &.mod-left {
+      left: 13px !important;
+      & > div {
+        margin-right: 8px;
+      }
     }
-    &.mod-left > div {
-      margin: 5px;
+    &.mod-right {
+      right: 4px;
+      & > div {
+        margin-left: 8px;
+      }
     }
     & > div {
-      margin: 4px;
+      transform: translateY(-2px);
+      line-height: calc(var(--titlebar-height) - 6px);
+      height: calc(var(--titlebar-height) - 6px);
       border-radius: 4px;
-      padding: 3px 10px;
-      padding-top: 1px;
-      line-height: calc(var(--titlebar-height) - 10px);
-
       &.mod-back,
       &.mod-forward,
       &.mod-close {
@@ -920,10 +959,6 @@ button {
       }
     }
   }
-}
-
-.app-container {
-  padding-top: calc(var(--titlebar-height) - 24px);
 }
 
 //菜单
@@ -986,23 +1021,14 @@ button {
 
 //===================================================
 //状态栏
-.workspace-split {
-  &.mod-left-split,
-  &.mod-right-split,
-  &.mod-root {
-    padding-bottom: 22px;
-  }
-  @at-root .side-dock-ribbon.mod-right {
-    margin-bottom: 22px;
-  }
-}
+
 .status-bar {
-  border-top: 2px solid var(--background-secondary-alt);
-  padding: 0 12px;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  width: 100%;
+  // border-top: 2px solid var(--background-secondary-alt);
+  // padding: 0 12px;
+  // position: absolute;
+  // z-index: 1;
+  // bottom: 0;
+  // width: 100%;
   &-item {
     padding: 0 8px;
     &.plugin-editor-status svg {

@@ -8,15 +8,14 @@
   "templater-obsidian",
   "obsidian-outliner",
   "obsidian-mind-map",
-  "markdown-table-editor",
   "obsidian-float-toc-plugin",
   "obsidian-style-settings",
   "table-editor-obsidian",
   "quick-latex",
   "obsidian-excel-to-markdown-table",
   "oz-clear-unused-images",
-  "obsidian-paste-image-rename",
   "obsidian-memos",
   "obsidian-file-explorer-toolbar",
-  "ProxyGithub"
+  "ProxyGithub",
+  "obsidian-paste-image-rename"
 ]

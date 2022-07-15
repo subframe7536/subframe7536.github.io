@@ -412,15 +412,6 @@
       "key": "W"
     }
   ],
-  "markdown-table-editor:markdown-table-editor-open-horizontal": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "T"
-    }
-  ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [
     {
       "modifiers": [

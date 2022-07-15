@@ -827,7 +827,12 @@ ul > li > ul > li ul > li {
 }
 
 li .list-collapse-indicator {
-  margin-left: -52px !important;
+  margin-left: -42px !important;
+  opacity: 0;
+}
+li:hover .list-collapse-indicator {
+  opacity: 1;
+  transition: var(--transition);
 }
 
 .markdown-preview-view hr,
@@ -994,7 +999,7 @@ li .list-collapse-indicator {
   display: inline-block;
   width: 100%;
 }
-:not(.excalidraw-svg) .internal-embed.is-loaded.image-embed:hover {
+:not(.excalidraw-svg) .internal-embed.is-loaded.image-embed img:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2705882353), -2px -2px 4px rgba(221, 221, 221, 0.2666666667);
   transform: translateY(-1px);
 }

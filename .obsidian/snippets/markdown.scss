@@ -657,8 +657,15 @@ ul > li > ul > li {
   transition: var(--transition);
   margin-left: -50px !important;
 }
-li .list-collapse-indicator {
-  margin-left: -52px !important;
+li {
+  .list-collapse-indicator {
+    margin-left: -42px !important;
+    opacity: 0;
+  }
+  &:hover .list-collapse-indicator {
+    opacity: 1;
+    transition: var(--transition);
+  }
 }
 //分割线
 .markdown-preview-view,
@@ -840,7 +847,7 @@ $radius: 999px;
     display: inline-block;
     width: 100%;
   }
-  :not(.excalidraw-svg) &.image-embed:hover {
+  :not(.excalidraw-svg) &.image-embed img:hover {
     box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #dddddd44;
     transform: translateY(-1px);
   }

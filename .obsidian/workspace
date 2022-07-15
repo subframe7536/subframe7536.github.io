@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/考研/829/组成原理/2.数据表示和运算.md",
+            "file": "日记/2022-07-15.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/考研/829/组成原理/2.数据表示和运算.md"
+                "file": "日记/2022-07-15.md"
               }
             }
           },
@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "迹",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -60,15 +60,7 @@
             }
           },
           {
-            "id": "3fb9f523ae69dd20",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
-              "state": {}
-            }
-          },
-          {
-            "id": "43a87de856a8843e",
+            "id": "c124fbe2f0edb93f",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -76,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -89,7 +81,7 @@
       {
         "id": "3e575f46c9d194d1",
         "type": "tabs",
-        "dimension": 49.67405475880052,
+        "dimension": 46.73629242819843,
         "children": [
           {
             "id": "ff86cec1d93aa1e9",
@@ -97,7 +89,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/考研/829/组成原理/2.数据表示和运算.md",
+                "file": "日记/2022-07-15.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -127,20 +119,12 @@
             }
           },
           {
-            "id": "a9407cb6ce1722fd",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
             "id": "58c2b50ab89a3491",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/考研/829/组成原理/2.数据表示和运算.md",
+                "file": "日记/2022-07-15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,15 +135,16 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
-        "id": "1f9e3f3538ecebfb",
+        "id": "09d3d7e896dae5ee",
         "type": "tabs",
-        "dimension": 50.32594524119948,
+        "dimension": 53.26370757180157,
         "children": [
           {
-            "id": "871b2592944d764c",
+            "id": "03ef146e93e3f19f",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -170,20 +155,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.6000061035156,
-    "collapsed": true
+    "width": 302
   },
-  "active": "43a87de856a8843e",
+  "active": "58c2b50ab89a3491",
   "lastOpenFiles": [
+    "docs/考研/数学/线代/5.特征值与特征向量.md",
+    "docs/考研/数学/线代/3.向量.md",
+    "docs/考研/829/组成原理/2.数据表示和运算.md",
     "docs/考研/829/操作系统/1.概述.md",
     "日记/2022-07-15.md",
     "Excalidraw/题目.md",
-    "docs/考研/数学/线代/5.特征值与特征向量.md",
     "项目/易循/物联网通信.md",
     "docs/考研/English/短语.md",
-    "docs/考研/数学/线代/3.向量.md",
     "Excalidraw/手绘图.md",
-    "docs/考研/English/生词.md",
-    "docs/考研/829/操作系统/2.进程与线程.md"
+    "docs/考研/English/生词.md"
   ]
 }
