@@ -134,7 +134,7 @@ body.print div .markdown-preview-view {
   .cm-contentContainer {
     background-color: var(--background-primary-transparent);
     padding: 10px 25px !important;
-    padding-bottom: 50px !important;
+    // padding-bottom: 50px !important;
     max-width: 750px !important;
     min-height: 100% !important;
     // z-index: -2;
@@ -328,14 +328,6 @@ div[data-type='markdown'] {
 
   .markdown-preview-view,
   .cm-editor {
-    .cm-formatting-header {
-      filter: grayscale(70%);
-      font-size: 1rem !important;
-      font-family: var(--font-monospace);
-      font-weight: 400 !important;
-      line-height: calc(var(--h#{$i}-size) * 1.2);
-    }
-
     .cm-header-#{$i} {
       color: var(--h#{$i}-color) !important;
       font-size: var(--h#{$i}-size) !important;
@@ -428,7 +420,13 @@ div[data-type='markdown'] {
     transform: translateY(-50%) !important;
   }
 }
-
+.cm-editor .cm-line .cm-formatting-header {
+  filter: grayscale(70%);
+  font-size: 1rem !important;
+  font-family: var(--font-monospace);
+  font-weight: 400 !important;
+  line-height: 1.2rem;
+}
 h1 {
   text-align: center;
 }
@@ -770,7 +768,7 @@ $radius: 999px;
   .file-embed-link {
     opacity: 0;
     top: 6px;
-    right: 6px;
+    right: 5px;
     padding: 4px;
     height: 28px;
     width: 28px;
@@ -817,7 +815,7 @@ $radius: 999px;
   img,
   .markdown-embed,
   .file-embed {
-    border-radius: 8px;
+    border-radius: 12px;
     transition: var(--transition);
     margin: 0;
     padding: 0;
@@ -830,6 +828,7 @@ $radius: 999px;
     margin: 8px 0;
     border: 3px solid;
     border-color: var(--file-item-bg);
+    background-color: var(--background-primary);
     &:hover {
       border-color: var(--text-accent);
       box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #dddddd44;
@@ -838,14 +837,12 @@ $radius: 999px;
   }
   &.image-embed {
     text-align: center;
-  }
-  img {
     display: inline-block;
-    // box-shadow: var(--shadow-outset);
-    &:hover {
-      box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #dddddd44;
-      transform: translateY(-1px);
-    }
+    width: 100%;
+  }
+  :not(.excalidraw-svg) &.image-embed:hover {
+    box-shadow: 2px 2px 4px #00000045, -2px -2px 4px #dddddd44;
+    transform: translateY(-1px);
   }
   @at-root .theme-light {
     img,

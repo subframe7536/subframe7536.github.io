@@ -114,6 +114,9 @@
 }
 
 //excalidraw
+.excalidraw-svg img {
+  border: 3px solid var(--fold-item-bg) !important;
+}
 .excalidraw {
   .context-menu {
     box-shadow: var(--shadow-outset) !important;
@@ -419,7 +422,7 @@
 @media screen and (min-width: 764px) {
   .status-bar-item.plugin-obsidian-day-planner {
     position: absolute !important;
-    left: 6px;
+    left: 18px;
   }
 }
 

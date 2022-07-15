@@ -88,7 +88,6 @@ body.print div .markdown-preview-view {
 .cm-editor .cm-scroller .cm-contentContainer {
   background-color: var(--background-primary-transparent);
   padding: 10px 25px !important;
-  padding-bottom: 50px !important;
   max-width: 750px !important;
   min-height: 100% !important;
 }
@@ -226,14 +225,6 @@ h1 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h1-size) * 1.2);
-}
 .markdown-preview-view .cm-header-1,
 .cm-editor .cm-header-1 {
   color: var(--h1-color) !important;
@@ -298,14 +289,6 @@ h2 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h2-size) * 1.2);
-}
 .markdown-preview-view .cm-header-2,
 .cm-editor .cm-header-2 {
   color: var(--h2-color) !important;
@@ -370,14 +353,6 @@ h3 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h3-size) * 1.2);
-}
 .markdown-preview-view .cm-header-3,
 .cm-editor .cm-header-3 {
   color: var(--h3-color) !important;
@@ -442,14 +417,6 @@ h4 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h4-size) * 1.2);
-}
 .markdown-preview-view .cm-header-4,
 .cm-editor .cm-header-4 {
   color: var(--h4-color) !important;
@@ -514,14 +481,6 @@ h5 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h5-size) * 1.2);
-}
 .markdown-preview-view .cm-header-5,
 .cm-editor .cm-header-5 {
   color: var(--h5-color) !important;
@@ -586,14 +545,6 @@ h6 {
   line-height: 1.5;
 }
 
-.markdown-preview-view .cm-formatting-header,
-.cm-editor .cm-formatting-header {
-  filter: grayscale(70%);
-  font-size: 1rem !important;
-  font-family: var(--font-monospace);
-  font-weight: 400 !important;
-  line-height: calc(var(--h6-size) * 1.2);
-}
 .markdown-preview-view .cm-header-6,
 .cm-editor .cm-header-6 {
   color: var(--h6-color) !important;
@@ -675,6 +626,14 @@ h6 {
   padding-right: 6px !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
+}
+
+.cm-editor .cm-line .cm-formatting-header {
+  filter: grayscale(70%);
+  font-size: 1rem !important;
+  font-family: var(--font-monospace);
+  font-weight: 400 !important;
+  line-height: 1.2rem;
 }
 
 h1 {
@@ -959,7 +918,7 @@ li .list-collapse-indicator {
 .internal-embed.is-loaded .file-embed-link {
   opacity: 0;
   top: 6px;
-  right: 6px;
+  right: 5px;
   padding: 4px;
   height: 28px;
   width: 28px;
@@ -1007,7 +966,7 @@ li .list-collapse-indicator {
 .internal-embed.is-loaded img,
 .internal-embed.is-loaded .markdown-embed,
 .internal-embed.is-loaded .file-embed {
-  border-radius: 8px;
+  border-radius: 12px;
   transition: var(--transition);
   margin: 0;
   padding: 0;
@@ -1022,6 +981,7 @@ li .list-collapse-indicator {
   margin: 8px 0;
   border: 3px solid;
   border-color: var(--file-item-bg);
+  background-color: var(--background-primary);
 }
 .internal-embed.is-loaded .markdown-embed:hover,
 .internal-embed.is-loaded .file-embed:hover {
@@ -1031,11 +991,10 @@ li .list-collapse-indicator {
 }
 .internal-embed.is-loaded.image-embed {
   text-align: center;
-}
-.internal-embed.is-loaded img {
   display: inline-block;
+  width: 100%;
 }
-.internal-embed.is-loaded img:hover {
+:not(.excalidraw-svg) .internal-embed.is-loaded.image-embed:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2705882353), -2px -2px 4px rgba(221, 221, 221, 0.2666666667);
   transform: translateY(-1px);
 }

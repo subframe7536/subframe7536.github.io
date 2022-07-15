@@ -29,6 +29,10 @@ pre[class*=language-] {
   position: relative;
   border-radius: 8px !important;
 }
+pre[class*=language-]:hover button.copy-code-button {
+  transition: var(--transition);
+  opacity: 1 !important;
+}
 pre[class*=language-]::before {
   content: "未知语言";
   font-family: var(--font-text);
@@ -38,7 +42,7 @@ pre[class*=language-]::before {
   letter-spacing: 2px;
   text-align: right;
   right: 60px;
-  top: 9px;
+  top: 10px;
   color: #eee;
 }
 
@@ -50,14 +54,17 @@ body .app-container .copy-code-button {
   width: 50px;
   height: 1.6rem;
   line-height: 1.6rem;
-  background-color: var(--file-item-bg);
+  color: #eee;
+  opacity: 0 !important;
+  background-color: transparent !important;
+  display: inline-block !important;
   transition: var(--transition);
 }
 body .app-container .copy-code-button:hover {
   box-shadow: var(--shadow);
   transition: var(--transition);
-  background-color: var(--file-item-selected-bg);
-  color: #ddd;
+  background-color: var(--file-item-bg) !important;
+  color: #111;
   filter: var(--hover);
 }
 

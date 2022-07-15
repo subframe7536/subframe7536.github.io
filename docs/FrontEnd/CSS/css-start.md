@@ -45,6 +45,9 @@
 **继承的权重永远为0**
 ## 深色模式
 https://www.cnblogs.com/guangzan/p/13524990.html
+## 注意
+1. `z-index`只在`position:absolute`时生效
+
 # LESS
 [[LESS]]
 [[SCSS(SASS)]]

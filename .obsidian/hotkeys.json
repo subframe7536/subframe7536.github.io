@@ -40,7 +40,6 @@
       "key": "ArrowDown"
     }
   ],
-  "graph:open": [],
   "editor:toggle-code": [
     {
       "modifiers": [
@@ -440,7 +439,6 @@
       "key": "V"
     }
   ],
-  "switcher:open": [],
   "omnisearch:show-modal": [
     {
       "modifiers": [
@@ -457,5 +455,15 @@
       ],
       "key": "W"
     }
-  ]
+  ],
+  "graph:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "obsidian-paste-image-rename:batch-rename-all-images": []
 }
