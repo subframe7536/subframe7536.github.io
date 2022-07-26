@@ -9,7 +9,7 @@
 ###### 最大流理解
 # 算法
 #### 素数筛
-```c++
+```cpp
 const int N = 100;
 bool isprime[N];
 int primes[N];
@@ -31,7 +31,7 @@ void judgeprime() {
 //最快
 ```
 
-```c++
+```cpp
 const int N = 1e6 + 11;
 int prime[N];
 void init() {
@@ -46,7 +46,7 @@ void init() {
 ```
 #### 最大公约数
 最大公因数和最小公倍数的乘积等于两个原数的乘积。
-```c++
+```cpp
 int gcd(int x, int y) {
 	return y ? gcd(y, x % y) : x;
 }
@@ -61,7 +61,7 @@ ll gcd(ll a, ll b) {
 //最小公倍数：a * b / gcd(a, b)
 ```
 #### 马拉车算法（回文串）
-```c++
+```cpp
 #include<cstdio>
 #include<cstring>
 #include<algorithm>
@@ -109,7 +109,7 @@ int main() {
 ```
 https://www.jianshu.com/p/392172762e55
 #### 逆元
-```c++
+```cpp
 typedef long long LL;
 //扩展欧几里得算法
 LL exgcd(LL a, LL b, LL& x, LL& y) {
@@ -130,7 +130,7 @@ LL getInv(int a, int mod) {
 ```
 #### dfs（深度优先搜索）
 https://www.cnblogs.com/brucekun/p/8503042.html
-```c++
+```cpp
 void DFS(int x, int y) {
     if (满足所需要的条件) {
         相应的操作；
@@ -148,7 +148,7 @@ void DFS(int x, int y) {
 }
 ```
 
-```c++
+```cpp
 int dfs(int cur, int pre, int dep) {//一般为1,0,1
 	int ans = 1;
 	for (int i = 0; i < edge[cur].size(); i++) {
@@ -162,7 +162,7 @@ int dfs(int cur, int pre, int dep) {//一般为1,0,1
 ```
 #### `bfs`（广度优先搜索）
 https://www.cnblogs.com/brucekun/p/8503042.html
-```c++
+```cpp
 bool vis[maxn][maxn]; // 访问标记
 int dir[4][2] = { 0,1,0,-1,1,0,-1,0 }; // 方向向量
 
@@ -208,7 +208,7 @@ void bfs(node st) {
 }
 ```
 
-```c++
+```cpp
 int n, m, sx, sy;
 const int N = 1e2 + 10;
 char s[N][N];
@@ -245,12 +245,12 @@ void bfs() {
 	printf("%d\n", sum);
 }
 ```
-##### 	例题（`BFS和DFS`两种做法）
-​	<a herf="https://blog.csdn.net/qq_49006646/article/details/107319460" >HDU-1312</a>
+##### 例题（`BFS和DFS`两种做法）
+[HDU-1312](https://blog.csdn.net/qq_49006646/article/details/107319460)
 #### `ida`（迭代加深搜索）
-<a herf="https://www.cnblogs.com/aininot260/p/9629655.html">https://www.cnblogs.com/aininot260/p/9629655.html</a>
+https://www.cnblogs.com/aininot260/p/9629655.html
 #### 并查集（建树）
-```c++
+```cpp
 //输入各个数之间的关系，判断两数之间是否有父子节点的关系，若有，则输出YES；否则，输出NO并使较大的数成为较小的数的父节点
 #include<bits/stdc++.h>
 using namespace std;
@@ -285,10 +285,10 @@ int main() {
 }
 ```
 #### 最短路算法
-##### 	单源
+##### 单源
 ###### `dijkstra`算法
 时间复杂度`O(n^2)`，处理200个点以下的数据，边权必须为正
-```c++
+```cpp
 void dijkstra(int x) {
 	for (int i = 1; i <= n; i++)
 		dis[i] = e[x][i];
@@ -331,7 +331,7 @@ int main() {
 }
 ```
 ###### `Bellman_ford`算法
-```c++
+```cpp
 struct Edge {
     int u, v, w;
 } edge[11000];
@@ -361,10 +361,10 @@ int main() {
     return 0;
 }
 ```
-##### 	多源
+##### 多源
 ###### `floyd`算法
 时间复杂度`O(n^3)`
-```c++
+```cpp
 int dis[N][N];
 void init(int n) {
 	for (int i = 1; i <= n; i++) {
@@ -399,7 +399,7 @@ int main() {
 ```
 ###### `SPFA`算法
 用于求含负权边的单源最短路径，以及判断负权环，时间复杂度`O(KE)`,E为边数，且K<2
-```c++
+```cpp
 void SPFA() {
 	for (int i = 1; i <= n; i++)
 		dis[i] = inf;
@@ -422,7 +422,7 @@ void SPFA() {
 	}
 }
 ```
-#### 最小生成树`lca`
+#### 最小生成树`LCA`
 `kruskal`
 边先排序，从小到大取，记录顶点，重复则跳过
 `prim`
@@ -433,7 +433,7 @@ void SPFA() {
 状态压缩，将各种情况转换为位运算，方便计算
 `i & (1 << j)`：判断第j位是否为1
 `i | (1 << j)`：将第j位数字改为1
-```c++
+```cpp
 int W[20], C[20];
 for (int i = 0; i < n; i++)
    scanf("%d %d", &C[i], &W[i]);
@@ -455,7 +455,7 @@ for (int i = 0; i < (1 << n); i++) {
 ##### 数位`DP`
 通过限制上限的枚举方式遍历求解
 按位遍历，如果有上限，只能取到当前位数；如果没上限，可取到9
-```c++
+```cpp
 typedef long long ll;
 int a[20];
 ll dp[20][state];//不同题目状态不同
@@ -502,7 +502,7 @@ int main() {
 注意：环状区间需要将输入的数组*2
 
 模板：
-```c++
+```cpp
 for (int len = 1; len <= n; len++) {//区间长度
 	for (int l = 1; l + len - 1 <= n; l++) {//区间开始位置
 		int r = l + len - 1;//区间结束位置
@@ -532,7 +532,7 @@ for (int len = 1; len <= n; len++) {//区间长度
 > 第一行为合并得分总和最小值，
 > 第二行为合并得分总和最大值。
 代码：
-```c++
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -580,7 +580,7 @@ int main() {
 
 ```
 ##### 最大上升子序列（LIS）
-```c++
+```cpp
 #include<iostream>
 #include<cstdio>
 #include<algorithm>
@@ -608,7 +608,7 @@ int main() {
 https://blog.csdn.net/lxt_Lucia/article/details/81206439
 #### 逆序对数
 使用归并排序（O nlog<sub>n</sub>）
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -676,7 +676,7 @@ hash函数：`hash[i]=hash[i-1]*进制数(素数)+当前字符的ASCII值`
 常用素数：13331，233，131，1e9+7(一般会卡)，193(2^7)，1610612741(2^31)
 ##### 自然溢出法
 用 unsigned long long 将溢出的值自动取2<sup>64</sup>-1的模，防止冲突(重复)
-```c++
+```cpp
 typedef unsigned long long ull;
 char s[6];
 ull hashs(char s[]) {
@@ -689,7 +689,7 @@ ull hashs(char s[]) {
 ```
 ##### 拉链法
 ##### 预处理
-```c++
+```cpp
 int a[N];
 int base[N], hash[N];
 const int p = 13331;
@@ -705,7 +705,7 @@ ull getsubhash(int start, int len) {
 #### 哈希排序
 #### 线段树
 ##### 建树+区间求和+区间修改
-```c++
+```cpp
 #include<iostream>
 using namespace std;
 typedef long long ll;
@@ -801,7 +801,7 @@ int main() {
 }
 ```
 ##### 染色问题
-```c++
+```cpp
 
 ```
 #### 二分
@@ -825,7 +825,7 @@ int binary_search(int start, int end, int key) {
 ```
 #### 背包问题
 ##### 01背包
-```c++
+```cpp
 for (int i = 1; i <= n; i++)
     for (int j = V; j >= 0; j--)
         f[j] = max(f[j], f[j - w[i]] + v[i]);
@@ -833,7 +833,7 @@ for (int i = 1; i <= n; i++)
 #### 图
 ##### 建图
 ###### 无向无权图
-```c++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5;
@@ -857,7 +857,7 @@ int main() {
 }
 ```
 ###### 	有向无权图
-```c++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5;
@@ -881,7 +881,7 @@ int main() {
 }
 ```
 ###### 有向有权图（链式前向星）
-```c++
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 const int maxn = 1005;//点数最大值
@@ -956,7 +956,7 @@ int main() {
 ##### 判断
 无长度为奇数长的回路
 ###### 染色法：
-```c++
+```cpp
 bool bfs(int s) {
 	queue<int> q;
 	memset(col, 0, sizeof col);
@@ -985,7 +985,7 @@ bool bfs(int s) {
 完美匹配：所有顶点都有配对。完美匹配一定是最大匹配。
 ###### 	匈牙利算法
 `o(n^2)`，根据一个初始匹配不停的找增广路，直到没有增广路为止。
-```c++
+```cpp
 int m, n;//m表示左侧集合，n表示右侧集合
 int mapp[N][N];//邻接矩阵存图
 int match[N];//左侧元素当前的匹配
@@ -1018,7 +1018,7 @@ int matching() {
 带权的最大匹配
 ###### `KM`算法
 每次都帮一个顶点匹配最大权重边，利用匈牙利算法完成最大匹配
-```c++
+```cpp
 const int N = 301;
 const int INF = (1 << 31) - 1;
 int w[N][N];
@@ -1101,7 +1101,7 @@ int main() {
 最小路径覆盖 = 最大独立集 = 顶点数 - 最大匹配
 #### 堆
 ##### 大顶堆
-```c++
+```cpp
 int n;
 int H[N] = { 0 };
 cin >> n ;
@@ -1115,7 +1115,7 @@ for (int i = 1; i <= n; i++) {
 }
 ```
 ##### 小顶堆
-```c++
+```cpp
 int n;
 int H[N] = { 0 };
 cin >> n ;
@@ -1144,7 +1144,7 @@ for (int i = 1; i <= n; i++) {
 例题：<a herf=https://www.luogu.com.cn/problem/P1886> 洛谷P1886</a>
 
 大致题意：有一个长为 *n* 的序列 *a*，以及一个大小为 *k* 的窗口。现在这个从左边开始向右滑动，每次滑动一个单位，求出每次滑动后窗口中的最大值和最小值。
-```c++
+```cpp
 #include<bits/stdc++.h>
 using namespace std;
 int x;
@@ -1185,7 +1185,7 @@ int main() {
 }
 ```
 
-```c++
+```cpp
 #include<iostream>
 #include<cstring>
 #include<algorithm>
@@ -1232,7 +1232,7 @@ int main() {
 }
 ```
 #### 大数除法
-```c++
+```cpp
 int x;//除数
 int s = 0, n = 0; //被除数，位数
 scanf("%d", &x);
@@ -1251,7 +1251,7 @@ while (1) {
 ```
 #### 字典树`trie tree`（前缀树）
 原理：将所有字符串建成一棵树，用边记录字符，公共节点记录不同的后缀，用结束标记记录字符串结束位置
-```c++
+```cpp
 #include<cstdio>
 #include<iostream>
 #include<cstring>
@@ -1312,7 +1312,7 @@ int main() {
 ```
 #### KMP算法
 用next数组存最长的相同前缀减少遍历的次数
-```c++
+```cpp
 void getnext(char *p, int *next) {
    next[0] = -1;
    int i = 0, j = -1;
@@ -1350,7 +1350,7 @@ int kmp(char *t, char *p) {
 
 设`n=k(m+1)+b`，`b=0`时，先手拿x个，只要后手拿`m+1-x`个就必胜，所以**后手必胜**；`b!=0`时，先手拿b个，后手拿x个，先手只要再拿`m+1-x`个就必胜，所以**先手必胜**
 
-```c++
+```cpp
 int n, m;
 cin >> n >> m;
 if (n % (m + 1))
@@ -1365,7 +1365,7 @@ else
 
 先手必败的情况为：`<0,0> <1,2> <3,5> <4,7> <6,10>……<a[i],a[i]+i>`，`a[i]`为当前从未出现的最小自然数，`i`为次序，此时的情况称为奇异局势，若`abs(m-n)*(int)((sqrt(5)+1)/2.0)==min(n,m)`则**先手必败**
 
-```c++
+```cpp
 int n, m;
 cin >> n >> m;
 double temp = (sqrt(5) + 1) / 2.0;
@@ -1381,7 +1381,7 @@ else
 
 n为斐波那契数时先手必败
 
-```c++
+```cpp
 11 a[60], n;
 a[0] = 1;
 a[1] = 1;
@@ -1401,7 +1401,7 @@ else
 
 对每一堆的数量进行异或运算，当结果是0时先手必败。
 
-```c++
+```cpp
 int n, ans, temp;
 scanf("%d", &n);
 temp = 0; //0和任何数异或都为其本身；
@@ -1416,7 +1416,7 @@ else
 ```
 `hdu1580`
 题意：尼姆博弈，且需要输出先手方案个数
-```c++
+```cpp
 #include<iostream>
 #include<cstdio>
 #include<algorithm>
@@ -1447,7 +1447,7 @@ int main() {
 题目：在n堆物品中，每人每次只能在一堆里面至少拿一个，无上限，当取完最后一个时该人失败。
 对每一堆的数量进行异或运算`ans`，记录富裕堆（物品数量>1）的个数`cnt`，当`ans == 0 && cnt == 0 || ans != 0 && cnt != 0`时**先手必胜**。
 
-```c++
+```cpp
 int n;
 scanf("%d", &n);
 int x, y, sum = 0, ans = 0;
@@ -1470,7 +1470,7 @@ https://blog.csdn.net/txl199106/article/details/64441994
 ##### 最大流
 从源点s到汇点t的的流量的最大值
 最大流 = 最小割
-```c++
+```cpp
 #include <queue>  
 #include <cstdio>  
 #include <cstring>  
@@ -1522,7 +1522,7 @@ int EK(int s, int t) {
 }
 ```
 ##### `dinic`
-```c++
+```cpp
 #include <iostream>
 #include <cstdio>
 #include <queue>
@@ -1620,7 +1620,7 @@ int main() {
 指数/2，底数*底数
 ( a * b ) % c = ( a % c * b % c ) % c
 注意：记录指数为奇时多出来的底数
-```c++
+```cpp
 typedef long long ll;
 const int mod = 1000;
 ll fastPower(ll base, ll power) {
@@ -1636,7 +1636,7 @@ ll fastPower(ll base, ll power) {
 ```
 #### 矩阵快速幂
 快速幂中的乘法改成矩阵乘法
-```c++
+```cpp
 typedef long long ll;
 struct matr {
 	ll m[101][101];
@@ -1671,7 +1671,7 @@ matr pow(matr x, ll y) { //矩阵快速幂
 结构：`memset(数组,赋值,sizeof 数组)`
 作用：给s数组按字节初始化，`int`数组一般赋0或-1或`INF`
 
-```c++
+```cpp
 #include<stdio.h>
 #include<cstring>
 using namespace std;
@@ -1712,7 +1712,7 @@ int main() {
 
 作用：将当前排列的下一个前n个数的进行全排列，如果有，输出true;
 
-```c++
+```cpp
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -1742,7 +1742,7 @@ int main()
 
 结构：
 
-```c++
+```cpp
 struct Node
 {
 	int ans, id, cnt;
@@ -1769,7 +1769,7 @@ struct Node
 
 作用：输出该数组（已排序）中第一个大于等于要找的数的地址，减去首地址就是找出的数的下标
 
-```c++
+```cpp
 #include<algorithm> 
 using namespace std;
 int main() {
@@ -1793,7 +1793,7 @@ int main() {
 
 作用：以`O(n^2)`的时间复杂度输出已排序数组中是否有该数，有，输出1，无，输出0；
 
-```c++
+```cpp
 #include<algorithm> 
 using namespace std;
 int main() {
@@ -1816,7 +1816,7 @@ int main() {
 
 作用：去重（必须先排序）
 
-```c++
+```cpp
 #include<iostream>
 #include<cstdio>
 #include<algorithm>
@@ -1852,7 +1852,7 @@ a^(p-1)%p=1
 
 通式：φ(n)=n * (1-1/p1) * (1-1/p2) * (1-1/p3) * (1-1/p4)…… * (1-1/pn)
 
-```c++
+```cpp
 typedef long long ll;
 ll phi(ll n) {
 	ll ans = n;
@@ -1999,7 +1999,7 @@ set可能包含的元素的最大个数：`st.max_size()`
 
 清空队列：
 
-```c++
+```cpp
 void clear(queue<int>& q) {
     queue<int> empty;
     swap(empty,q);
@@ -2009,7 +2009,7 @@ void clear(queue<int>& q) {
 
 建立：`priority_queue<数据类型,容器类型(只能用数组),优先级(重载运算符)> pq`
 
-```c++
+```cpp
 //升序队列，小顶堆
 priority_queue <int,vector<int>,greater<int> > q;
 //降序队列，大顶堆
@@ -2084,18 +2084,18 @@ int main() {
 
 ##### `int`中的最大值
 
-```c++
+```cpp
 const int inf = 0x3f3f3f3f
 ```
 
 ##### `long long`中的最大值
 
-```c++
+```cpp
 const long long INF = 0x3f3f3f3f3f3f3f3f
 ```
 
 ##### 简写
 
-```c++
+```cpp
 typedef long long/*原函数名*/ ll/*修改后名*/
 ```

@@ -6,222 +6,26 @@
         "type": "split",
         "children": [
           {
-            "id": "dfbc368589aeeac3",
-            "type": "split",
-            "children": [
-              {
-                "id": "5383c9225cf05246",
-                "type": "leaf",
-                "dimension": 47.08939708939708,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "docs/考研/829/大纲.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c9d955cc94cc0a73",
-                "type": "leaf",
-                "dimension": 52.91060291060291,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "docs/考研/829/组成原理/6.总线.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "direction": "vertical"
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "81b38d2624157c21",
-        "type": "split",
-        "children": [
-          {
-            "id": "5b093ab7c7062ae6",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "9e92a312ba3184ec",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {}
-                }
-              },
-              {
-                "id": "15a90fe8f3e2638d",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "docs/考研/829/组成原理/6.总线.md"
-                  }
-                }
-              },
-              {
-                "id": "d8ddfd97073244dd",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "tag:#高数基础",
-                    "matchingCase": true,
-                    "explainSearch": true,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "3fb9f523ae69dd20",
-                "type": "leaf",
-                "state": {
-                  "type": "timeline",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 276,
-        "collapsed": true
-      },
-      "right": {
-        "id": "1a5a600bbc148501",
-        "type": "split",
-        "children": [
-          {
-            "id": "37917c2df535ce63",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ff86cec1d93aa1e9",
-                "type": "leaf",
-                "state": {
-                  "type": "localgraph",
-                  "state": {
-                    "file": "docs/考研/829/组成原理/6.总线.md",
-                    "options": {
-                      "collapse-filter": false,
-                      "search": "",
-                      "localJumps": 1,
-                      "localBacklinks": true,
-                      "localForelinks": true,
-                      "localInterlinks": false,
-                      "showTags": true,
-                      "showAttachments": false,
-                      "hideUnresolved": false,
-                      "collapse-color-groups": false,
-                      "colorGroups": [],
-                      "collapse-display": true,
-                      "showArrow": false,
-                      "textFadeMultiplier": 0,
-                      "nodeSizeMultiplier": 0.608846153846154,
-                      "lineSizeMultiplier": 1,
-                      "collapse-forces": false,
-                      "centerStrength": 0.86551724137931,
-                      "repelStrength": 5.94109195402299,
-                      "linkStrength": 0.62816091954023,
-                      "linkDistance": 278,
-                      "scale": 1.000000000000001,
-                      "close": true
-                    }
-                  }
-                }
-              },
-              {
-                "id": "58c2b50ab89a3491",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "docs/考研/829/组成原理/6.总线.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": true,
-                    "searchQuery": "",
-                    "backlinkCollapsed": true,
-                    "unlinkedCollapsed": false
-                  }
-                }
-              },
-              {
-                "id": "a9407cb6ce1722fd",
-                "type": "leaf",
-                "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
-                }
-              },
-              {
-                "id": "4919fa2c17a8b425",
-                "type": "leaf",
-                "state": {
-                  "type": "git-view",
-                  "state": {}
-                }
-              }
-            ]
-          },
-          {
-            "id": "37886f2bdf528e19",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "871b2592944d764c",
-                "type": "leaf",
-                "state": {
-                  "type": "calendar",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 335,
-        "collapsed": true
-      },
-      "active": "c9d955cc94cc0a73"
-    },
-    "数学": {
-      "main": {
-        "id": "88c7cf786abd1393",
-        "type": "split",
-        "children": [
-          {
-            "id": "c9d955cc94cc0a73",
+            "id": "9ef5ec1c4a6429f7",
             "type": "leaf",
-            "dimension": 74.95812395309883,
+            "dimension": 63.89588581024349,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/考研/数学/高数/基础/积分应用.md",
+                "file": "docs/考研/829/操作系统/2.进程与线程.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "775327725aff435b",
+            "id": "c22a76639d535621",
             "type": "leaf",
-            "dimension": 25.041876046901173,
+            "dimension": 36.10411418975651,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/tool/LaTex.md",
+                "file": "docs/考研/829/大纲.md",
                 "mode": "preview",
                 "source": false
               }
@@ -252,7 +56,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "docs/考研/数学/高数/基础/积分应用.md"
+                    "file": "docs/考研/829/操作系统/2.进程与线程.md"
                   }
                 }
               },
@@ -262,7 +66,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:#高数基础",
+                    "query": "git branch",
                     "matchingCase": true,
                     "explainSearch": true,
                     "collapseAll": false,
@@ -272,7 +76,15 @@
                 }
               },
               {
-                "id": "3fb9f523ae69dd20",
+                "id": "c124fbe2f0edb93f",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "d69ddbd7c8a7e531",
                 "type": "leaf",
                 "state": {
                   "type": "timeline",
@@ -283,23 +95,41 @@
           }
         ],
         "direction": "horizontal",
-        "width": 276
+        "width": 317
       },
       "right": {
         "id": "1a5a600bbc148501",
         "type": "split",
         "children": [
           {
-            "id": "37917c2df535ce63",
+            "id": "3e575f46c9d194d1",
             "type": "tabs",
+            "dimension": 48.82506527415144,
             "children": [
+              {
+                "id": "58c2b50ab89a3491",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "docs/考研/829/操作系统/2.进程与线程.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": true,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
               {
                 "id": "ff86cec1d93aa1e9",
                 "type": "leaf",
                 "state": {
                   "type": "localgraph",
                   "state": {
-                    "file": "docs/考研/数学/高数/基础/积分应用.md",
+                    "file": "docs/考研/829/操作系统/2.进程与线程.md",
                     "options": {
                       "collapse-filter": false,
                       "search": "",
@@ -327,48 +157,16 @@
                     }
                   }
                 }
-              },
-              {
-                "id": "58c2b50ab89a3491",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "docs/考研/数学/高数/基础/积分应用.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": true,
-                    "searchQuery": "",
-                    "backlinkCollapsed": true,
-                    "unlinkedCollapsed": false
-                  }
-                }
-              },
-              {
-                "id": "a9407cb6ce1722fd",
-                "type": "leaf",
-                "state": {
-                  "type": "advanced-tables-toolbar",
-                  "state": {}
-                }
-              },
-              {
-                "id": "4919fa2c17a8b425",
-                "type": "leaf",
-                "state": {
-                  "type": "git-view",
-                  "state": {}
-                }
               }
             ]
           },
           {
-            "id": "37886f2bdf528e19",
+            "id": "09d3d7e896dae5ee",
             "type": "tabs",
+            "dimension": 51.17493472584856,
             "children": [
               {
-                "id": "871b2592944d764c",
+                "id": "03ef146e93e3f19f",
                 "type": "leaf",
                 "state": {
                   "type": "calendar",
@@ -379,11 +177,192 @@
           }
         ],
         "direction": "horizontal",
-        "width": 335,
+        "width": 302,
         "collapsed": true
       },
-      "active": "c9d955cc94cc0a73"
+      "active": "9ef5ec1c4a6429f7"
+    },
+    "math": {
+      "main": {
+        "id": "88c7cf786abd1393",
+        "type": "split",
+        "children": [
+          {
+            "id": "b3f7dc792c5e3486",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/考研/背诵/数学.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "478db030f0fa2c01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/考研/数学/高数/典型.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "81b38d2624157c21",
+        "type": "split",
+        "children": [
+          {
+            "id": "5b093ab7c7062ae6",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "9e92a312ba3184ec",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "15a90fe8f3e2638d",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "docs/考研/数学/高数/典型.md"
+                  }
+                }
+              },
+              {
+                "id": "d8ddfd97073244dd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "git branch",
+                    "matchingCase": true,
+                    "explainSearch": true,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "c124fbe2f0edb93f",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "d69ddbd7c8a7e531",
+                "type": "leaf",
+                "state": {
+                  "type": "timeline",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 317,
+        "collapsed": true
+      },
+      "right": {
+        "id": "1a5a600bbc148501",
+        "type": "split",
+        "children": [
+          {
+            "id": "3e575f46c9d194d1",
+            "type": "tabs",
+            "dimension": 48.82506527415144,
+            "children": [
+              {
+                "id": "58c2b50ab89a3491",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "docs/考研/数学/高数/典型.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": true,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "ff86cec1d93aa1e9",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "docs/考研/数学/高数/典型.md",
+                    "options": {
+                      "collapse-filter": false,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": false,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 0.608846153846154,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": false,
+                      "centerStrength": 0.86551724137931,
+                      "repelStrength": 5.94109195402299,
+                      "linkStrength": 0.62816091954023,
+                      "linkDistance": 278,
+                      "scale": 1.000000000000001,
+                      "close": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "09d3d7e896dae5ee",
+            "type": "tabs",
+            "dimension": 51.17493472584856,
+            "children": [
+              {
+                "id": "03ef146e93e3f19f",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 302,
+        "collapsed": true
+      },
+      "active": "478db030f0fa2c01"
     }
   },
-  "active": "829"
+  "active": "math"
 }

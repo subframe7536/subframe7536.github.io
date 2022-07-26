@@ -84,7 +84,7 @@ export const useTodos = defineStore('todos', {
   }),
   getters: {
     finishedTodos(state) {
-      // autocompletion! ✨
+      // autocompletion! 
       return state.todos.filter((todo) => todo.isFinished)
     },
     unfinishedTodos(state) {
@@ -95,7 +95,7 @@ export const useTodos = defineStore('todos', {
      */
     filteredTodos(state) {
       if (this.filter === 'finished') {
-        // call other getters with autocompletion ✨
+        // call other getters with autocompletion 
         return this.finishedTodos
       } else if (this.filter === 'unfinished') {
         return this.unfinishedTodos
@@ -137,7 +137,7 @@ export default {
     const counter = useCounterStore()
 
     counter.count++
-    // with autocompletion ✨
+    // with autocompletion 
     counter.$patch({ count: counter.count + 1 })
     // or using an action instead
     counter.increment()
@@ -147,8 +147,11 @@ export default {
 
 # Vue3
 https://juejin.cn/post/7028137821269393438
+
 ### setup语法糖
 https://blog.csdn.net/jiangsheer/article/details/120181520
+
+
 ```js
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -172,6 +175,32 @@ onMounted(() => {
 </template>
 ```
 
+### ref 和 reactive
+`ref` 一般定义原始数据类型
+`reactive` 一般定义对象
+#### toRefs
+`reactive` 中的属性可以直接访问，但是会拆掉响应式，可以使用`toRefs()`加回来
+```js
+import { reactive, toRefs } from 'vue'
+const book = reactive({
+	name: 'test',
+	value: '111'
+})
+const { name, value } = toRefs(book)
+```
+### setup语法糖添加name
+另写一个`<script>`，用普通模式写
+```html
+<script>
+  export default {
+    name: 'CustomName',
+  }
+</script>
+
+<script setup>
+  // script setup logic
+</script>
+```
 ### 配置路径别名
 #### tsconfig.json
 ```json

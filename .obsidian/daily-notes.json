@@ -2,5 +2,5 @@
   "folder": "日记",
   "template": "_templates/template-daily",
   "format": "",
-  "autorun": true
+  "autorun": false
 }

@@ -15,8 +15,9 @@ code {
   color: var(--inline-code);
 }
 
-pre {
+pre:not(.dataview) {
   background-color: #181c20 !important;
+  border-radius: 12px !important;
   code {
     background-color: unset !important;
   }
@@ -40,8 +41,8 @@ pre[class*='language-'] {
     position: absolute;
     letter-spacing: 2px;
     text-align: right;
-    right: 60px;
-    top: 10px;
+    right: 56px;
+    top: 9px;
     color: #eee;
   }
 }
@@ -50,10 +51,12 @@ body .app-container .copy-code-button {
   padding: 0 !important;
   padding-left: 5px !important;
   border-radius: 5px !important;
-  width: 50px;
+  width: 48px;
   height: 1.6rem;
   line-height: 1.6rem;
   color: #eee;
+  text-align: center;
+  font-family: var(--font-text);
   // background-color: var(--file-item-bg);
   opacity: 0 !important;
   background-color: transparent !important;
@@ -62,9 +65,8 @@ body .app-container .copy-code-button {
 
   &:hover {
     box-shadow: var(--shadow);
-    transition: var(--transition);
-    background-color: var(--file-item-bg) !important;
-    color: #111;
+    background-color: var(--text-accent) !important;
+    // color: #111;
     filter: var(--hover);
   }
 }
@@ -73,7 +75,8 @@ body .app-container .copy-code-button {
 
 $language: c, properties, python, nginx, css, javascript, js, jsp, php, lua,
   shell, powershell, flow, sequence, sql, yaml, yml, ini, xml, cs, cpp, java,
-  html, txt, md, bat, json, groovy, scss, bash, cmd, latex;
+  html, txt, md, bat, json, groovy, scss, bash, cmd, latex, zig, ssml, jsx, tsx,
+  tsconfig, git, csharp, csv, cue, nginx, toml, kt;
 
 @each $lan in $language {
   pre[class~='language-#{$lan}']::before {
@@ -89,7 +92,7 @@ $language: c, properties, python, nginx, css, javascript, js, jsp, php, lua,
   --red: #ff7070;
   --orange: #ff9f31;
   --yellow: #ffd080;
-  --green: #a3e6a1;
+  --green: #b5e8b3;
   --green-dark: #6fcc74;
   --cyan: #b1cbe8;
   --blue: #6fa9ff;
@@ -153,6 +156,7 @@ pre {
       }
 
       &.string,
+      &.char,
       &.important,
       &.attr-value {
         color: var(--color-string) !important;
@@ -168,6 +172,7 @@ pre {
       &.comment,
       &.comment * {
         color: var(--color-comment) !important;
+        font-style: italic;
       }
 
       // yml

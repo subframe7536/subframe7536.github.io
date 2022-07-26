@@ -20,7 +20,7 @@
   }
 }
 
-//git
+//#mark git
 .workspace-leaf-content[data-type='git-view'] {
   .opener {
     position: relative;
@@ -113,9 +113,10 @@
   }
 }
 
-//excalidraw
+//#mark excalidraw
 .excalidraw-svg img {
   border: 3px solid var(--fold-item-bg) !important;
+  border-radius: 12px;
 }
 .excalidraw {
   .context-menu {
@@ -177,21 +178,21 @@
 }
 
 // quick explorer
-#quick-explorer {
-  align-items: center;
-  border-radius: 4px;
-  margin-left: 20px;
-  line-height: 16px;
+// #quick-explorer {
+//   align-items: center;
+//   border-radius: 4px;
+//   margin-left: 20px;
+//   line-height: 16px;
 
-  span {
-    padding: 2px 0 !important;
-    padding-left: 1kpx !important;
-    margin: 0 !important;
-    border-radius: 2px;
-  }
-}
+//   span {
+//     padding: 2px 0 !important;
+//     padding-left: 1kpx !important;
+//     margin: 0 !important;
+//     border-radius: 2px;
+//   }
+// }
 
-//calendar
+//#mark calendar
 #calendar-container {
   & * {
     transition: none;
@@ -288,7 +289,7 @@
   }
 }
 
-//day planner
+//#mark day planner
 .theme-light {
   --day-planner-pie: #eee;
   --day-planner-timeline: #111;
@@ -410,31 +411,30 @@
   }
 }
 
-.day-planner-status-bar-text {
-  margin-top: 0px !important;
-}
-
-@media screen and (max-width: 764px) {
-  .status-bar-item.plugin-obsidian-day-planner {
+.status-bar-item.plugin-obsidian-day-planner {
+  strong {
+    color: var(--text-accent) !important;
+  }
+  .day-planner-status-card {
+    background-color: var(--file-item-bg) !important;
+    filter: brightness(106%);
+    .arrow-down {
+      border-top-color: var(--file-item-bg);
+    }
+  }
+  .day-planner-status-bar-text {
+    margin-top: 0px !important;
+  }
+  @media screen and (max-width: 764px) {
     display: none !important;
   }
-}
-@media screen and (min-width: 764px) {
-  .status-bar-item.plugin-obsidian-day-planner {
+  @media screen and (min-width: 764px) {
     position: absolute !important;
     left: 8px;
   }
 }
 
-//看板
-.kanban-plugin {
-  padding-bottom: 3px;
-
-  .kanban-plugin__item-title-wrapper {
-    align-items: center;
-  }
-}
-//memos
+//#mark memos
 .dialog-wrapper.showup {
   backdrop-filter: blur(10px);
 }
@@ -631,6 +631,8 @@
           border-bottom-left-radius: 8px;
           border-bottom-right-radius: 8px;
           margin-bottom: 10px;
+          padding-right: 0px;
+          justify-content: center;
         }
         &.queries-wrapper,
         &.tags-wrapper {
@@ -769,7 +771,7 @@
     }
   }
 }
-//演示模式
+//#mark 演示模式
 .reveal {
   font-size: 1.3rem !important;
   tab-size: 8;
@@ -866,7 +868,7 @@
     }
   }
 }
-//callout
+//#mark callout
 .callout {
   border-radius: 2px !important;
 
@@ -1131,3 +1133,81 @@
 //   flex-wrap: unset;
 //   max-width: 100%;
 // }
+//workspace plus
+.status-bar-item.plugin-workspaces-plus.mod-clickable {
+  margin-top: 2px;
+  .icon {
+    bottom: -2px;
+  }
+}
+.workspaces-plus-modal {
+  &.quick-switch {
+    width: 48vw !important;
+    max-width: 400px !important;
+  }
+  .is-selected {
+    background-color: var(--file-item-bg) !important;
+  }
+}
+//setting search
+.settings-search-container {
+  position: fixed;
+  top: calc(15vh);
+  // left: calc(20vw);
+  width: calc(15vw);
+  min-width: 180px;
+  z-index: 1;
+  height: fit-content;
+  background-color: var(--background-primary-alt);
+  border-top-left-radius: 8px;
+  padding: 6px 2px 4px 4px;
+  .vertical-tab-nav-item:hover {
+    box-shadow: none !important;
+  }
+  & + .vertical-tab-header-group {
+    padding-top: 0 !important;
+  }
+  .settings-search-input {
+    margin: 2px !important;
+    .setting-item-control {
+      flex: none !important;
+      width: 13vw;
+      margin: 0 !important;
+    }
+    .search-input-container {
+      width: fit-content;
+      input {
+        width: 13vw;
+      }
+    }
+  }
+  .search-input-clear-button {
+    top: 4px;
+  }
+}
+.modal-content .vertical-tab-header {
+  margin-top: 52px !important;
+}
+//commander
+.cmdr {
+  &[aria-label='设置'] {
+    position: fixed;
+    left: 0;
+    padding: 0 10px !important;
+    padding-right: 12px !important;
+    margin-right: 0 !important;
+    &:hover {
+      background-color: var(--text-accent);
+      svg {
+        color: white;
+      }
+    }
+  }
+  svg {
+    height: calc(var(--titlebar-height) / 1.8);
+    width: calc(var(--titlebar-height) / 1.8);
+  }
+}
+.view-action:not(:last-child) {
+  margin-right: 12px !important;
+}

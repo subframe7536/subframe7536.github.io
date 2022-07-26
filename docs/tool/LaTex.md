@@ -1,4 +1,4 @@
-# LaTex
+> https://zhuanlan.zhihu.com/p/472919794 
 ## 排版
 ### 行内
 `$...$`
@@ -94,6 +94,9 @@ $\sim$
 #### 约等于
 `\approx`
 $\approx$
+#### 合同
+`\backsimeq`
+$\backsimeq$
 #### 异或
 `\oplus`
 $\oplus$
@@ -113,6 +116,9 @@ $\nrightarrow$
 $\Rightarrow$
 #### 双箭头
 $\Leftrightarrow$
+#### 箭头上加字符
+`\xrightarrow{test}`
+$\xrightarrow{test}$
 #### 上划线
 `\overline{111}`
 $\overline{111}$

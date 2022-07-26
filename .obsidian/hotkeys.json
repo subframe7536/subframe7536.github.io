@@ -83,14 +83,6 @@
       "key": "O"
     }
   ],
-  "editor:focus": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": "Escape"
-    }
-  ],
   "editor:rename-heading": [
     {
       "modifiers": [
@@ -131,14 +123,6 @@
         "Mod"
       ],
       "key": "ArrowUp"
-    }
-  ],
-  "slides:start": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "R"
     }
   ],
   "workspace:split-horizontal": [
@@ -379,7 +363,6 @@
       "key": "K"
     }
   ],
-  "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "obsidian-excalidraw-plugin:toggle-lock": [],
   "editor:insert-link": [
     {
@@ -401,15 +384,6 @@
         "Mod"
       ],
       "key": "M"
-    }
-  ],
-  "workspaces:open-modal": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "W"
     }
   ],
   "obsidian-excalidraw-plugin:excalidraw-autocreate": [
@@ -447,7 +421,37 @@
       "key": "W"
     }
   ],
+  "obsidian-paste-image-rename:batch-rename-all-images": [],
+  "workspaces:load": [],
+  "workspaces-plus:open-workspaces-plus": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "obsidian-excalidraw-plugin:insert-link-to-element": [],
   "graph:open": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "G"
+    }
+  ],
+  "editor:insert-embed": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ],
+  "workspace:move-to-new-window": [
     {
       "modifiers": [
         "Alt",
@@ -456,5 +460,29 @@
       "key": "P"
     }
   ],
-  "obsidian-paste-image-rename:batch-rename-all-images": []
+  "window:toggle-always-on-top": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "Z"
+    }
+  ],
+  "file-explorer:reveal-active-file": [
+    {
+      "modifiers": [],
+      "key": "F5"
+    }
+  ],
+  "obsidian-advanced-slides:open-advanced-slides-preview": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "S"
+    }
+  ],
+  "obsidian-advanced-slides:reload-advanced-slides-preview": []
 }

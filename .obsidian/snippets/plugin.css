@@ -76,6 +76,7 @@
 
 .excalidraw-svg img {
   border: 3px solid var(--fold-item-bg) !important;
+  border-radius: 12px;
 }
 
 .excalidraw .context-menu {
@@ -125,19 +126,6 @@
 
 .excalidraw-svg img {
   box-shadow: none;
-}
-
-#quick-explorer {
-  align-items: center;
-  border-radius: 4px;
-  margin-left: 20px;
-  line-height: 16px;
-}
-#quick-explorer span {
-  padding: 2px 0 !important;
-  padding-left: 1kpx !important;
-  margin: 0 !important;
-  border-radius: 2px;
 }
 
 #calendar-container * {
@@ -366,10 +354,19 @@
   background-color: var(--event-item-color10) !important;
 }
 
-.day-planner-status-bar-text {
+.status-bar-item.plugin-obsidian-day-planner strong {
+  color: var(--text-accent) !important;
+}
+.status-bar-item.plugin-obsidian-day-planner .day-planner-status-card {
+  background-color: var(--file-item-bg) !important;
+  filter: brightness(106%);
+}
+.status-bar-item.plugin-obsidian-day-planner .day-planner-status-card .arrow-down {
+  border-top-color: var(--file-item-bg);
+}
+.status-bar-item.plugin-obsidian-day-planner .day-planner-status-bar-text {
   margin-top: 0px !important;
 }
-
 @media screen and (max-width: 764px) {
   .status-bar-item.plugin-obsidian-day-planner {
     display: none !important;
@@ -380,12 +377,6 @@
     position: absolute !important;
     left: 8px;
   }
-}
-.kanban-plugin {
-  padding-bottom: 3px;
-}
-.kanban-plugin .kanban-plugin__item-title-wrapper {
-  align-items: center;
 }
 
 .dialog-wrapper.showup {
@@ -545,6 +536,8 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   margin-bottom: 10px;
+  padding-right: 0px;
+  justify-content: center;
 }
 .workspace-leaf-content[data-type=memos_view] .view-content .memos-sidebar-wrapper > div.queries-wrapper, .workspace-leaf-content[data-type=memos_view] .view-content .memos-sidebar-wrapper > div.tags-wrapper {
   border-radius: 8px;
@@ -1248,4 +1241,84 @@
 
 .workspace-leaf-content[data-type=file-explorer] .is-flashing {
   background-color: transparent !important;
+}
+
+.status-bar-item.plugin-workspaces-plus.mod-clickable {
+  margin-top: 2px;
+}
+.status-bar-item.plugin-workspaces-plus.mod-clickable .icon {
+  bottom: -2px;
+}
+
+.workspaces-plus-modal.quick-switch {
+  width: 48vw !important;
+  max-width: 400px !important;
+}
+.workspaces-plus-modal .is-selected {
+  background-color: var(--file-item-bg) !important;
+}
+
+.settings-search-container {
+  position: fixed;
+  top: 15vh;
+  width: 15vw;
+  min-width: 180px;
+  z-index: 1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--background-primary-alt);
+  border-top-left-radius: 8px;
+  padding: 6px 2px 4px 4px;
+}
+.settings-search-container .vertical-tab-nav-item:hover {
+  box-shadow: none !important;
+}
+.settings-search-container + .vertical-tab-header-group {
+  padding-top: 0 !important;
+}
+.settings-search-container .settings-search-input {
+  margin: 2px !important;
+}
+.settings-search-container .settings-search-input .setting-item-control {
+  flex: none !important;
+  width: 13vw;
+  margin: 0 !important;
+}
+.settings-search-container .settings-search-input .search-input-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.settings-search-container .settings-search-input .search-input-container input {
+  width: 13vw;
+}
+.settings-search-container .search-input-clear-button {
+  top: 4px;
+}
+
+.modal-content .vertical-tab-header {
+  margin-top: 52px !important;
+}
+
+.cmdr[aria-label=设置] {
+  position: fixed;
+  left: 0;
+  padding: 0 10px !important;
+  padding-right: 12px !important;
+  margin-right: 0 !important;
+}
+.cmdr[aria-label=设置]:hover {
+  background-color: var(--text-accent);
+}
+.cmdr[aria-label=设置]:hover svg {
+  color: white;
+}
+.cmdr svg {
+  height: calc(var(--titlebar-height) / 1.8);
+  width: calc(var(--titlebar-height) / 1.8);
+}
+
+.view-action:not(:last-child) {
+  margin-right: 12px !important;
 }

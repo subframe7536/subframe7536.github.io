@@ -1,0 +1,63 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [
+    {
+      "id": "obsidian-advanced-slides:open-advanced-slides-preview",
+      "icon": "airplay",
+      "name": "加载幻灯片",
+      "mode": "any"
+    }
+  ],
+  "fileMenu": [],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [
+    {
+      "id": "obsidian-excalidraw-plugin:excalidraw-autocreate",
+      "icon": "brush",
+      "name": "新建Excalidraw",
+      "mode": "any"
+    },
+    {
+      "id": "app:open-settings",
+      "icon": "settings",
+      "name": "设置",
+      "mode": "any"
+    }
+  ],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "workspace:export-pdf",
+      "icon": "book-open",
+      "name": "导出为 PDF",
+      "mode": "any"
+    },
+    {
+      "id": "obsidian-mind-map:app:markmap-preview",
+      "icon": "git-fork",
+      "name": "切换为思维导图",
+      "mode": "any"
+    },
+    {
+      "id": "window:toggle-always-on-top",
+      "icon": "lucide-pin",
+      "name": "置顶窗口",
+      "mode": "any"
+    },
+    {
+      "id": "workspace:move-to-new-window",
+      "icon": "share",
+      "name": "新窗口打开",
+      "mode": "any"
+    }
+  ],
+  "macros": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": "12"
+}

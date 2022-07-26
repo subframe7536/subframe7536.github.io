@@ -69,7 +69,6 @@ app.on('ready', () => {
 4. 控制台`electron main.js`/`electron .`
 运行
 # 渲染
-#todo 
 ## 功能模块
 ### 存储
 #### (轻量) electron-store+Vuex/Pinia

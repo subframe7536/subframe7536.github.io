@@ -304,3 +304,13 @@ sc delete <服务名>
 ```
 ## windows安全中心托盘关闭
 本地组策略编辑器 -> 管理模板 -> windows组件 -> windows安全中心 -> systray -> 关闭
+## WSL
+### 设置代理
+添加至`.zshrc`
+端口为代理端口，此处为7890
+[来源](https://www.jianshu.com/p/af6a02f98d5a)
+```txt
+export hostip=$(cat /etc/resolv.conf |grep -oP '(?<=nameserver\ ).*')
+alias setproxy='export https_proxy="http://${hostip}:7890";export http_proxy="http://${hostip}:7890";export all_proxy="socks5://${hostip}:7890";'
+alias unsetproxy='unset all_proxy'
+```

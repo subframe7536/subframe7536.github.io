@@ -1,0 +1,17 @@
+{
+  "port": "5600",
+  "autoReload": true,
+  "exportDirectory": "/export",
+  "enableChalkboard": false,
+  "enableOverview": false,
+  "enableMenu": false,
+  "theme": "css/mattropolis.css",
+  "highlightTheme": "monokai",
+  "transition": "slide",
+  "transitionSpeed": "normal",
+  "controls": true,
+  "progress": true,
+  "slideNumber": false,
+  "showGrid": false,
+  "autoComplete": "inPreview"
+}

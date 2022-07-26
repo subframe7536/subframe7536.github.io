@@ -124,6 +124,15 @@ git push remoteName branchName
 git merge branchName
 ```
 github中pull request，然后原作者选择是否合并分支
+#### 删除分支
+```shell
+git branch -d branchName
+```
+#### 恢复分支
+```shell
+git log -g # 查看最后一次该分支提交的commitId
+git branch branchName commitId # 根据commitId恢复分支
+```
 ### gitignore失效
 ```shell
 git rm -r --cached .

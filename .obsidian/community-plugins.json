@@ -1,5 +1,4 @@
 [
-  "obsidian-excalidraw-plugin",
   "obsidian-git",
   "calendar",
   "obsidian-day-planner",
@@ -13,9 +12,12 @@
   "table-editor-obsidian",
   "quick-latex",
   "obsidian-excel-to-markdown-table",
-  "oz-clear-unused-images",
   "obsidian-memos",
+  "obsidian-paste-image-rename",
+  "obsidian-excalidraw-plugin",
   "obsidian-file-explorer-toolbar",
-  "ProxyGithub",
-  "obsidian-paste-image-rename"
+  "workspaces-plus",
+  "settings-search",
+  "obsidian-advanced-slides",
+  "cmdr"
 ]
