@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "f636c0d9e70abef6",
+        "id": "cf073ed56be180ea",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/tool/c++算法&函数.md",
-            "mode": "preview",
+            "file": "日记/2022-07-27.md",
+            "mode": "source",
             "backlinks": false,
             "source": false
           }
@@ -41,7 +41,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/tool/c++算法&函数.md"
+                "file": "日记/2022-07-27.md"
               }
             }
           },
@@ -51,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "vite",
+                "query": "动态链接",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/tool/c++算法&函数.md",
+                "file": "日记/2022-07-27.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "docs/tool/c++算法&函数.md",
+                "file": "日记/2022-07-27.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -168,15 +168,15 @@
   },
   "active": "7052899692d57d36",
   "lastOpenFiles": [
-    "docs/考研/数学/高数/典型.md",
-    "docs/考研/829/数据结构/1.基本概念.md",
-    "日记/2022-07-26.md",
-    "docs/tool/c++算法&函数.md",
-    "docs/考研/829/大纲.md",
-    "docs/考研/829/操作系统/6.磁盘和文件系统.md",
-    "docs/考研/829/操作系统/7.操作系统接口.md",
-    "docs/考研/829/组成原理/2.数据表示和运算.md",
-    "docs/考研/数学/高数/基础/导数&微分方程.md",
-    "docs/考研/背诵/数学.md"
+    "日记/2022-07-27.md",
+    "docs/FrontEnd/JavaScript/javascript-start.md",
+    "日记/2022-07-17.md",
+    "日记/2022-07-18.md",
+    "日记/2022-07-19.md",
+    "日记/2022-07-20.md",
+    "日记/2022-07-21.md",
+    "日记/2022-07-22.md",
+    "日记/2022-07-23.md",
+    "日记/2022-07-24.md"
   ]
 }

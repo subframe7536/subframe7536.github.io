@@ -889,6 +889,7 @@ button {
 
 .modal-container .modal.mod-settings .vertical-tab-header {
   padding: 0;
+  height: calc(70vh - 52px);
 }
 .modal-container .hotkey-settings-container {
   height: -webkit-fit-content;

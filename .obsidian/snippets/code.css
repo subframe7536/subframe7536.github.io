@@ -8,10 +8,10 @@
 }
 
 code {
-  font-family: var(--font-monospace);
-  background-color: var(--background-primary-alt);
-  border-radius: 4px;
-  font-size: 0.85em;
+  font-family: var(--font-monospace) !important;
+  background-color: var(--background-primary-alt) !important;
+  border-radius: 4px !important;
+  font-size: 0.85em !important;
   line-height: 1.8rem !important;
   color: var(--inline-code);
 }

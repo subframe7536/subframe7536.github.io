@@ -12,14 +12,14 @@
     "things_markdown.min",
     "things_status",
     "icons",
-    "plugin",
     "status",
     "code",
-    "markdown"
+    "markdown",
+    "plugin"
   ],
   "baseFontSize": 17,
   "baseFontSizeAction": true,
   "interfaceFontFamily": "Maple UI,Microsoft YaHei",
   "textFontFamily": "Maple UI,Microsoft YaHei",
-  "monospaceFontFamily": "Maple Code,Fira Code,Consolas"
+  "monospaceFontFamily": "Maple Code,Fira Code,Consolas,Maple UI"
 }

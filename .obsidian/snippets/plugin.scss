@@ -118,6 +118,9 @@
   border: 3px solid var(--fold-item-bg) !important;
   border-radius: 12px;
 }
+.workspace-leaf-content[data-type='excalidraw'] .cmdr-page-header {
+  display: none !important;
+}
 .excalidraw {
   .context-menu {
     box-shadow: var(--shadow-outset) !important;

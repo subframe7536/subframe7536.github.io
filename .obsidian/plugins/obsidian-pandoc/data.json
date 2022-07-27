@@ -3,7 +3,7 @@
   "addExtensionsToInternalLinks": "html",
   "injectAppCSS": "light",
   "injectThemeCSS": false,
-  "customCSSFile": ".obsidian/snippets/markdown.min.css",
+  "customCSSFile": ".obsidian/snippets/markdown.css",
   "displayYAMLFrontmatter": false,
   "linkStrippingBehaviour": "text",
   "highDPIDiagrams": true,

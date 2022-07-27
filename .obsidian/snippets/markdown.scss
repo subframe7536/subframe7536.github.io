@@ -68,6 +68,10 @@
     filter: var(--hover);
   }
 }
+//latex
+.TEX-I {
+  font-family: inherit !important;
+}
 //#mark 背景
 .workspace-leaf-content[data-type='markdown'] {
   .markdown-embed-content {

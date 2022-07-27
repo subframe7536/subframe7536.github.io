@@ -54,6 +54,10 @@
   --folder-file-icon: var(--text-accent);
 }
 
+.TEX-I {
+  font-family: inherit !important;
+}
+
 .workspace-leaf-content[data-type=markdown] .markdown-embed-content {
   border-radius: 8px;
   max-height: unset;
